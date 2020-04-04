@@ -9,7 +9,7 @@ TERA-Guide
 
 (Velik’s Sanctuary)
 
-RK-9机库 (RK-9 Kennel)
+(RK-9 Kennel)
 
 (Red Refuge)
 
