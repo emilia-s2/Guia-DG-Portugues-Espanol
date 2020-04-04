@@ -1,7 +1,7 @@
 TERA-Guide
 ======
 
-# 功能简介: 为TERA的常用副本提供[技能]辅助 文字提示
+# Informaçoes das DGs incluidas
 
 岱魔鲁斯的轮盘 (Demon's Wheel)
 
@@ -35,16 +35,4 @@ RK-9机库 (RK-9 Kennel)
 
 狂气竞技场(Forbidden Arena)
 
-------
-
-/8频道 键入命令 | 效果说明
---- | ---
-辅助 | 开启/关闭模组
-辅助 主播 | [提示文字] 发送到 代理频道
-
-------
-
-Proxy(/8) Usage (proxy command) | description
---- | ---
-guide | enabled / disabled
-guide stream(st) | Send To Stream
+Este guia foi traduzido com base no https://github.com/tera-mod/TERA-Guide
