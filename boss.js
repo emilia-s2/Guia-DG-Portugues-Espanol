@@ -39,7 +39,7 @@ module.exports = {
 		{id: 205, msg: 'Repelir (devagar)'},
 		{id: 218, msg: 'Repelir'},
 		{id: 211, msg: 'Difusao (Dentro-> Fora)'},
-		{id: 212, msg: 'Encolhimento (Fora-> Dentro)'},
+		{id: 212, msg: 'Encolhimento (Fora-> Dentro!!!)'},
 		{id: 219, msg: 'Dentro e fora!!!'}
 	],
 	// 拉坎里斯的废墟 (Ruinous Manor)
