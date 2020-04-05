@@ -36,9 +36,9 @@ module.exports = {
 		
 	],
 	DF_BOSS_3 : [
-		{id: 205, msg: 'Repelir (muito devagar)!'},
+		{id: 205, msg: 'Repelir (devagar)'},
 		{id: 218, msg: 'Repelir'},
-		{id: 211, msg: 'Difusao (Dentro-> Fora)'},
+		{id: 211, msg: 'Difusao (Dentro-> Fora)!'},
 		{id: 212, msg: 'Encolhimento (Fora-> Dentro)'},
 		{id: 219, msg: 'Dentro e fora'}
 	],
