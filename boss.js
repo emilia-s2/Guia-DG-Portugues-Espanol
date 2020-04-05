@@ -400,8 +400,8 @@ module.exports = {
 		// 205 前方跳跃(回避)
 		// 206 后方跳跃(闪避)
 		// 131 广域1实例
-		{id: 103, msg: 'Cauda (voando !!)'},
-		{id: 153, msg: 'Cauda (voando !!)'},
+		{id: 103, msg: 'Cauda (voando!!!)'},
+		{id: 153, msg: 'Cauda (voando!!!)'},
 		{id: 108, msg: 'Vire a Direita(Repelir!!)'},
 		{id: 158, msg: 'Vire a Direita(Repelir!!)'},
 		{id: 109, msg: 'Vire a Esquerda(Repelir!!)'},
