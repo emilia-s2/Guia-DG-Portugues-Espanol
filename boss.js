@@ -402,7 +402,7 @@ module.exports = {
 		// 131 广域1实例
 		{id: 103, msg: 'Cauda (voando!!!)'},
 		{id: 153, msg: 'Cauda (voando!!!)'},
-		{id: 108, msg: 'Vire a Direita(Repelir!!)'},
+		{id: 108, msg: 'Vire a Direita(Repelir)'},
 		{id: 158, msg: 'Vire a Direita(Repelir!!)'},
 		{id: 109, msg: 'Vire a Esquerda(Repelir!!)'},
 		{id: 159, msg: 'Vire a Esquerda(Repelir!!)'},
