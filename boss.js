@@ -36,11 +36,11 @@ module.exports = {
 		
 	],
 	DF_BOSS_3 : [
-		{id: 205, msg: 'Repelir (devagar)'},
+		{id: 205, msg: 'Repelir (muito devagar)!'},
 		{id: 218, msg: 'Repelir'},
 		{id: 211, msg: 'Difusao (Dentro-> Fora)'},
-		{id: 212, msg: 'Encolhimento (Fora-> Dentro!!!)'},
-		{id: 219, msg: 'Dentro e fora!!!'}
+		{id: 212, msg: 'Encolhimento (Fora-> Dentro)'},
+		{id: 219, msg: 'Dentro e fora'}
 	],
 	// 拉坎里斯的废墟 (Ruinous Manor)
 	RM_BOSS_1 : [
