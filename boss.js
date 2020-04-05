@@ -405,7 +405,7 @@ module.exports = {
 		{id: 108, msg: 'Vire a Direita(Repelir)'},
 		{id: 158, msg: 'Vire a Direita(Repelir!!)'},
 		{id: 109, msg: 'Vire a Esquerda(Repelir!!)'},
-		{id: 159, msg: 'Vire a Esquerda(Repelir!!)'},
+		{id: 159, msg: 'Vire a Esquerda(Repelir)'},
 		{id: 118, msg: '~Jogar para o alto~'},
 		{id: 160, msg: '~Jogar para o alto~'},
 		{id: 137, msg: '[Corra]Keck sike economiza energia'},
