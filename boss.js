@@ -408,8 +408,8 @@ module.exports = {
 		{id: 159, msg: 'Vire a Esquerda(Repelir)'},
 		{id: 118, msg: '~Jogar para o alto~'},
 		{id: 160, msg: '~Jogar para o alto~'},
-		{id: 137, msg: '[Corra]Keck sike economiza energia'},
-		{id: 138, msg: 'Corra 50 metros do bos!!'},
+		{id: 137, msg: '[Corra]Distanciar do bos 50m'},
+		{id: 138, msg: 'Ataque Amplo!!'},
 		{id: 110, msg: 'Mao de FOGO(FORA)'},
 		{id: 112, msg: 'Mao de GELO(FORA)'},
 		{id: 114, msg: 'Fogueira a Frente DOT(FORA)'},
@@ -425,10 +425,10 @@ module.exports = {
 		// 107 双脚_快
 		// 157 双脚_快
 		{id: 145, msg: 'Pes_Lentos(STUN)'},
-		{id: 104, msg: 'AOE-Magia de gelo(Grande)'},
-		{id: 154, msg: 'AOE-Magia de gelo(Pequeno)'},
-		{id: 105, msg: 'AOE-Magia de Fogo(Grande)'},
-		{id: 155, msg: 'AOE-Magia de Fogo(Pequeno)'},
+		{id: 104, msg: 'AOE-Magia de GELO(Grande)'},
+		{id: 154, msg: 'AOE-Magia de GELO(Pequeno)'},
+		{id: 105, msg: 'AOE-Magia de FOGO(Grande)'},
+		{id: 155, msg: 'AOE-Magia de FOGO(Pequeno)'},
 		// 内外鉴定
 		{id: 212, msg: 'Fogo Dentro '}, // 212 -> 141
 		{id: 213, msg: 'Gelo Dentro '}, // 213 -> 143
