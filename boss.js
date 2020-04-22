@@ -212,79 +212,6 @@ module.exports = {
 		{id: 315, msg: 'Medo (succao de sangue)'}
 	],
 	DRC_TipMsg : ["100%能量!!"],
-	// 里安的地下殿堂 (Grotto of Lost Souls)
-	GLS_BOSS_1 : [
-		{id: 106, msg: 'Golpe pesado'},
-		{id: 107, msg: 'EMPURAO (repelir)'},
-		{id: 109, msg: 'Rochas (pequeno)'},
-		{id: 110, msg: 'Rochas (Grande)'},
-		{id: 116, msg: 'Ataque em tela cheia!!'},
-		{id: 301, msg: 'Flor Canibal (STURN)'},
-		{id: 307, msg: 'Gaiola (proibida)'},
-		{id: 309, msg: '1 FLOR - Identificada!!'},
-		{id: 310, msg: '2 FLORES - Identificada!!'},
-		{id: 312, msg: 'Flor Dourada!!'}
-	],
-	GLS_BOSS_2 : [
-		{id: 105, msg: 'GIRAR Atras'},
-		{id: 113, msg: 'Maos (STURN)'},
-		{id: 114, msg: 'ENTRAR'},
-		{id: 116, msg: 'Frente - Atraz'},
-		{id: 301, msg: 'SAIR + ESQUIVAR'},
-		{id: 302, msg: 'ENTRAR + ESQUIVAR'}
-	],
-	GLS_BOSS_3 : [
-		{id: 118, msg: 'Triplo Dianteiro (spray Esquerdo-Direito)'},
-		{id: 143, msg: '<<<<ESQUERDO Atras'},
-		{id: 145, msg: '<<<<ESQUERDO Atras'},
-		{id: 146, msg: 'ESQUERDA Traseira(Pulsos)', sign_degrees: 325, sign_distance: 370},
-		{id: 154, msg: 'ESQUERDA Traseira(Pulsos)', sign_degrees: 325, sign_distance: 370},
-		{id: 144, msg: 'DIREITA Atraz>>>>'},
-		{id: 147, msg: 'DIREITA Atraz>>>>'},
-		{id: 148, msg: 'DIREITA Traseira(Pulsos)>>>>'},
-		{id: 155, msg: 'DIREITA Traseira(Pulsos)>>>>'},
-		{id: 161, msg: 'Frente - Atras'},
-		{id: 162, msg: 'Frente - Atras'},
-		{id: 213, msg: 'Cauda!!'},
-		{id: 215, msg: 'Cauda!!'},
-		{id: 139, msg: '<--ESQUERDA Segura'}, //151
-		{id: 150, msg: '<--ESQUERDA Segura'}, //151
-		{id: 141, msg: 'DIEITO SEGURO-->'}, //153
-		{id: 152, msg: 'DIEITO SEGURO-->'}, //153
-		{id: 300, msg: 'DESPERTAR', level_Msg: ['1!', '2!!', '3!!!', '<font color="#FF0000">4!!!!</font>']},
-		{id: 399, msg: 'Despertar Secundario', level_Msg: ['1!', '<font color="#FF0000">2!!</font>']},
-		{id: 360, msg: 'Explosao !! Explosao!!'}
-	],
-		// 巴哈勒神殿 (Bahaar's Sanctum)
-	BS_BOSS : [
-		{id: 103, msg: 'Esmagar A Frente(Dodge)'},
-		{id: 111, msg: 'Martelo Atras (STUN)'},
-		{id: 137, msg: 'Martelo Atras'},
-		{id: 139, msg: 'Circulo(Derrubar)'},
-		{id: 308, msg: '1 Halo'},
-		{id: 309, msg: '2 Halo'},
-		{id: 310, msg: '3 Halo'},
-		
-		{id: 119, msg: 'DIREITO Seguro>>>>>'},
-		{id: 120, msg: '<<<<<Seguro ESQUERDA'},
-		{id: 311, msg: 'Escudo'},
-		{id: 312, msg: 'Escudo'},
-		{id: 131, msg: 'Frente, Direita >> segura, Atraz'}, // 131 132 134
-		{id: 125, msg: 'Frente, << Esquerda Segura, Atraz'}, // 125 126 127
-		{id: 101, msg: 'Martelo BLOCO-> 270-> Knockback'}, // 101 105
-		{id: 121, msg: '<<<<<Ondas ESQUERDA'},
-		{id: 122, msg: '<<<<<Ondas ESQUERDA'},
-		{id: 123, msg: '<<<<<Ondas ESQUERDA'},
-		{id: 140, msg: 'Ondas DIREITO>>>>>'},
-		{id: 141, msg: 'Ondas DIREITO>>>>>'},
-		{id: 142, msg: 'Ondas DIREITO>>>>>'},
-		
-		{id: 114, msg: 'Matar (Seckill) - Frente Bater'},
-		{id: 116, msg: 'ForA'},
-		{id: 112, msg: 'Bloco perfeito'},
-		{id: 135, msg: 'Bloco perfeito'}
-	],
-	BS_TipMsg : ["Preparar para o Stun (pronto)", "[Stun Skill] para parar a tempestade de raiva", `<font color="#FF0000">LASER(Spike)</font>`],
 	// 费尔奎娜巢穴 (Gossamer Vault)
 	GV_BOSS_1 : [
 		{id: 124, msg: 'Escarro Frontal'},
@@ -370,9 +297,9 @@ module.exports = {
 		{id: 103, msg: 'Succao Azul (Esquiva)'}
 	],
 	SI_BOSS_3 : [
-		{id: 108, msg: 'Carga (Halo Tan)'},
+		{id: 108, msg: 'Ataque a Frente'},
 		{id: 128, msg: 'Golfe (voar)'},
-		{id: 129, msg: 'Siga o cranio reto do inimigo'},
+		{id: 129, msg: 'Ataque Atras'},
 		{id: 135, msg: "Pular corda"},
 		{id: 204, msg: "30% Transformar"},
 		{id: 137, msg: 'Espalhar'},
@@ -390,7 +317,7 @@ module.exports = {
 	//  {id: 134, msg: 'Grande circulo'},  // Terceiro Hit
 	],
 	//           121+120=241 122+120=242           121+123=244 122+123=245
-	SI_TipMsg : ["FORA-DENTRO-DENTRO", "Dentro-Fora-Dentro 1","Stun(ESQUIVAR)!!!", "FORA-DENTRO-FORA", "Dentro-Fora-Dentro 2"],
+	SI_TipMsg : ["SAIR-ENTRAR-ENTRAR", "Entrar-Sair-Entrar 1","Stun(ESQUIVAR)!!!", "SAIR-ENTRAR-SAIR", "Entrar-Sair-Entrar 2"],
 	// 凯尔赛克隐藏地(Corrupted Skynest)
 	CK_BOSS : [
 		// 120 猛烈的咆哮
