@@ -357,10 +357,10 @@ module.exports = {
 		{id: 105, msg: 'AOE-Magia de FOGO(Grande)'},
 		{id: 155, msg: 'AOE-Magia de FOGO(Pequeno)'},
 		// 内外鉴定
-		{id: 212, msg: 'Fogo Dentro '}, // 212 -> 141
-		{id: 213, msg: 'Gelo Dentro '}, // 213 -> 143
-		{id: 214, msg: 'Gelo Dentro '}, // 214 -> 142
-		{id: 215, msg: 'Fogo Dentro '}, // 215 -> 144
+		{id: 212, msg: ''}, // 212 -> 141
+		{id: 213, msg: ''}, // 213 -> 143
+		{id: 214, msg: ''}, // 214 -> 142
+		{id: 215, msg: ''}, // 215 -> 144
 	// 以下未知
 		{id: 119, msg: 'Rosnado fraco'},
 		{id: 161, msg: 'Rosnado fraco'},
