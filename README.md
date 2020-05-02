@@ -3,10 +3,6 @@ TERA-Guide
 
 # Informaçoes das DGs incluidas
 
-(Demon's Wheel)
-
-(Ruinous Manor)
-
 (Velik’s Sanctuary)
 
 (RK-9 Kennel)
@@ -15,17 +11,9 @@ TERA-Guide
 
 (Antaroth's Abyss)
 
-(Dark Reach Citadel)
-
 (Grotto of Lost Souls)
 
-(Bahaar's Sanctum) Em Breve
-
 (Gossamer Vault)
-
-(Demokron Factory)
-
-(Forsaken Island)
 
 (Akalath Quarantine)
 
