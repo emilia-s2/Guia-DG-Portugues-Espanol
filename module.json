@@ -4,9 +4,9 @@
         "niceName": "Guide-DG",
         "guiName": "(Tera-Guide-Pt-Br)"
     },
-    "author": "ZC / Emilia",
+    "author": "ZC / Maura /Emilia",
     "description": "Guia DG para TERA",
     "servers": ["https://raw.githubusercontent.com/emilia-s2/Guia-DG-Portugues/master/"],
     "supportUrl": "https://github.com/emilia-s2/Guia-DG-Portugues/issues",
-    "version": "93.0"
+    "version": "93.03"
 }

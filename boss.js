@@ -86,10 +86,10 @@ module.exports = {
 		{id: 152, msg: 'Escudo a Frente - Empurrar Atras (repelir)'},
 		{id: 701, msg: 'Empurrar atras - Ataque Frontal '},
 		{id: 103, msg: 'Raios (Espalhar)'},
-		{id: 301, msg: 'Bomba (Juntar) Cleanse'},
+		{id: 301, msg: 'Bomba (Juntar) + Cleanse'},
 		{id: 404, msg: 'Debuff (perto)'},
 		{id: 105, msg: 'Raios (Juntar)'},
-		{id: 302, msg: 'Bomba (Juntar) Cleanse'},
+		{id: 302, msg: 'Bomba (Juntar) No Cleanse'},
 		{id: 405, msg: 'Debuff (longe)'},
 		{id: 401, msg: 'Dissipar!!'},
 		{id: 402, msg: 'Halo!!'}
@@ -171,7 +171,7 @@ module.exports = {
         {id: 106, msg: 'GIRO'},
         {id: 106, msg: 'GIRO'}, // rage
         {id: 119, msg: 'Vermelho, Fora Seguro'},
-        {id: 220, msg: 'Azu, Dentro Seguro'}  
+        {id: 220, msg: 'Azul, Dentro Seguro'}  
 	],
 	AA_BOSS_3 : [
 		{id: 113, msg: 'Frente, Atras stun'},
@@ -362,10 +362,10 @@ module.exports = {
 		{id: 105, msg: 'AOE-Magia de FOGO(Grande)'},
 		{id: 155, msg: 'AOE-Magia de FOGO(Pequeno)'},
 		// 内外鉴定
-		{id: 212, msg: ''}, // 212 -> 141
-		{id: 213, msg: ''}, // 213 -> 143
-		{id: 214, msg: ''}, // 214 -> 142
-		{id: 215, msg: ''}, // 215 -> 144
+		{id: 212, msg: 'Fogo Dentro'}, // 212 -> 141
+		{id: 213, msg: 'Gelo Dentro'}, // 213 -> 143
+		{id: 214, msg: 'Gelo Dentro'}, // 214 -> 142
+		{id: 215, msg: 'Fogo Dentro'}, // 215 -> 144
 	// 以下未知
 		{id: 119, msg: 'Rosnado fraco'},
 		{id: 161, msg: 'Rosnado fraco'},
@@ -401,8 +401,8 @@ module.exports = {
 		{id: 211, msg: 'Fim de rotacao'},// "회전종료용_ModeAlarm_노멀"
 		{id: 302, msg: 'Aleatorio Buff'}// "무적버프_wait_노멀"
 	],
-	//            0     1
-	CK_TipMsg : ["ENTRAR", "SAIR"],
+			//            0     1     2      3
+	CK_TipMsg : ["ENTRAR", "SAIR", "Seguro", "Seguro"],
 	// 狂气竞技场 (Forbidden Arena)
 	FA_BOSS : [
 		{id: 108, msg: 'Espadada Frontal (Lenta)'},    // 101 121 122 連續攻擊 -> 108 一刀兩斷(坦)
