@@ -159,26 +159,34 @@ module.exports = {
 	],
 	// 安塔洛斯的深渊 (Antaroth's Abyss)
 	AA_BOSS_1 : [
-		{id: 116, msg: 'Fora do círculo'},
-		{id: 117, msg: 'Dentro do circulo'},
-		{id: 300, msg: 'Esquivar (Jogar para o Alto)'}
+		{id: 130, msg: 'Entrar-Sair'}, // (big aoe)
+        {id: 130, msg: 'Sair-Entrar'}, // (big aoe) rage
+        {id: 116, msg: 'Sair-Entrar'},
+        {id: 116, msg: 'Sair-Entrar'}, // rage
+        {id: 117, msg: 'Entrar-Sair'},
+        {id: 117, msg: 'Entrar-Sair'}, // rage
+        {id: 300, msg: 'Jogar para o Alto(Iframe)'} //deletionTimer: true},
 	],
 	AA_BOSS_2 : [
-		{id: 119, msg: 'Maldicao !!'}
+        {id: 106, msg: 'GIRO'},
+        {id: 106, msg: 'GIRO'}, // rage
+        {id: 119, msg: 'Vermelho, Fora Seguro'},
+        {id: 220, msg: 'Azu, Dentro Seguro'}  
 	],
 	AA_BOSS_3 : [
-		{id: 104, msg: 'ATRAS STURN'},
-		{id: 113, msg: 'Frente - ATRAS STURN'},
-		{id: 202, msg: 'Retirada - Circulo'},
-		{id: 109, msg: ' <<<ESQUERDO SEGURO'},
-		{id: 111, msg: 'DIREITO SEGURO>>>'},
+		{id: 113, msg: 'Frente, Atras stun'},
+        {id: 113, msg: 'Frente, Atras stun'}, // rage
+        {id: 111, msg: 'Direito Seguro, SAIR Seguro'}, //msgForTanks: 'Left Safe, OUT safe'},
+        {id: 111, msg: 'Direito Seguro, SAIR Seguro'}, //msgForTanks: 'Left Safe, OUT safe'}, // rage
+        {id: 109, msg: 'Esquerdo Seguro, ETRAR Seguro'},   //msgForTanks: 'Right Safe, IN safe'},
+        {id: 109, msg: 'Esquerdo Seguro, ETRAR Seguro'},   //msgForTanks: 'Right Safe, IN safe'}, // rage
 		{id: 310, msg: 'Onda de agua'},
 		{id: 311, msg: 'Onda de agua'},
 		{id: 312, msg: 'Onda de agua'},
 		{id: 313, msg: 'Onda de agua'},
 		{id: 314, msg: 'Onda de agua'},
-		{id: 400, msg: 'Fantasma x3'}, // 三幻影-剑气 205 500 400 204 204
-		{id: 401, msg: 'Circulo fantasma x3'}  // 三幻影-转圈 205 500 401 115 309
+        {id: 104, msg: 'Atras Stun'}, //checkTwoUp: true}, // HM
+        {id: 104, msg: 'Atras stun'} //checkTwoUp: true} // HM Rage
 	],
 	// 泰内布利斯城堡 (Dark Reach Citadel)
 	DRC_BOSS_1 : [
