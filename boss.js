@@ -17,6 +17,9 @@ module.exports = {
 		{zone: 9783, string: 'Bem-Vindo a <font color="#56B4E9">Dark Reach Citadel</font> <font color="#E69F00">Normal</font>'},
 		{zone: 9983, string: 'Bem-Vindo a <font color="#56B4E9">Dark Reach Citadel</font> <font color="#b603fc">Dificil</font>'},
 		{zone: 3018, string: 'Bem-Vindo a <font color="#56B4E9">Dark Reach Citadel</font> <font color="#FF0000"> 7 Pessoas</font>'},
+		{zone: 9782, string: 'Bem-Vindo a <font color="#56B4E9">Grotto of Lost Souls</font> <font color="#E69F00">Normal</font>'},
+		{zone: 9982, string: 'Bem-Vindo a <font color="#56B4E9">Grotto of Lost Souls</font> <font color="#b603fc">Dificil</font>'},
+		{zone: 3019, string: 'Bem-Vindo a <font color="#56B4E9">Grotto of Lost Souls</font> <font color="#FF0000"> 7 Pessoas</font>'},		
 		{zone: 3101, string: 'Bem-Vindo a <font color="#56B4E9">Gossamer Vault</font> <font color="#E69F00">Normal</font>'},
 		{zone: 3201, string: 'Bem-Vindo a <font color="#56B4E9">Gossamer Vault</font> <font color="#b603fc">Dificil</font>'},
 		{zone: 3023, string: 'Bem-Vindo a <font color="#56B4E9">Akalath Quarantine</font>'},
@@ -159,12 +162,8 @@ module.exports = {
 	],
 	// 安塔洛斯的深渊 (Antaroth's Abyss)
 	AA_BOSS_1 : [
-		{id: 130, msg: 'Entrar-Sair'}, // (big aoe)
-        {id: 130, msg: 'Sair-Entrar'}, // (big aoe) rage
-        {id: 116, msg: 'Sair-Entrar'},
-        {id: 116, msg: 'Sair-Entrar'}, // rage
-        {id: 117, msg: 'Entrar-Sair'},
-        {id: 117, msg: 'Entrar-Sair'}, // rage
+		{id: 116, msg: 'Fora do circulo circulo'},
+		{id: 117, msg: 'Dentro do circulo'},
         {id: 300, msg: 'Jogar para o Alto(Iframe)'} //deletionTimer: true},
 	],
 	AA_BOSS_2 : [
@@ -217,6 +216,49 @@ module.exports = {
 		{id: 315, msg: 'Medo (succao de sangue)'}
 	],
 	DRC_TipMsg : ["100%能量!!"],
+		// 里安的地下殿堂 (Grotto of Lost Souls)
+	GLS_BOSS_1 : [
+		{id: 106, msg: 'Golpe pesado'},
+		{id: 107, msg: 'EMPURAO (repelir)'},
+		{id: 109, msg: 'Rochas (pequeno)'},
+		{id: 110, msg: 'Rochas (Grande)'},
+		{id: 116, msg: 'Ataque em tela cheia!!'},
+		{id: 301, msg: 'Flor Canibal (STURN)'},
+		{id: 307, msg: 'Gaiola (proibida)'},
+		{id: 309, msg: '1 FLOR - Identificada!!'},
+		{id: 310, msg: '2 FLORES - Identificada!!'},
+		{id: 312, msg: 'Flor Dourada!!'}
+	],
+	GLS_BOSS_2 : [
+		{id: 105, msg: 'GIRAR Atras'},
+		{id: 113, msg: 'Maos (STURN)'},
+		{id: 114, msg: 'ENTRAR'},
+		{id: 116, msg: 'Frente - Atraz'},
+		{id: 301, msg: 'SAIR + ESQUIVAR'},
+		{id: 302, msg: 'ENTRAR + ESQUIVAR'}
+	],
+	GLS_BOSS_3 : [
+		{id: 118, msg: 'Triplo Dianteiro (spray Esquerdo-Direito)'},
+		{id: 143, msg: '<<<<ESQUERDO Atras'},
+		{id: 145, msg: '<<<<ESQUERDO Atras'},
+		{id: 146, msg: 'ESQUERDA Traseira(Pulsos)', sign_degrees: 325, sign_distance: 370},
+		{id: 154, msg: 'ESQUERDA Traseira(Pulsos)', sign_degrees: 325, sign_distance: 370},
+		{id: 144, msg: 'DIREITA Atraz>>>>'},
+		{id: 147, msg: 'DIREITA Atraz>>>>'},
+		{id: 148, msg: 'DIREITA Traseira(Pulsos)>>>>'},
+		{id: 155, msg: 'DIREITA Traseira(Pulsos)>>>>'},
+		{id: 161, msg: 'Frente - Atras'},
+		{id: 162, msg: 'Frente - Atras'},
+		{id: 213, msg: 'Cauda!!'},
+		{id: 215, msg: 'Cauda!!'},
+		{id: 139, msg: '<--ESQUERDA Segura'}, //151
+		{id: 150, msg: '<--ESQUERDA Segura'}, //151
+		{id: 141, msg: 'DIEITO SEGURO-->'}, //153
+		{id: 152, msg: 'DIEITO SEGURO-->'}, //153
+		{id: 300, msg: 'DESPERTAR', level_Msg: ['1!', '2!!', '3!!!', '<font color="#FF0000">4!!!!</font>']},
+		{id: 399, msg: 'Despertar Secundario', level_Msg: ['1!', '<font color="#FF0000">2!!</font>']},
+		{id: 360, msg: 'Explosao !! Explosao!!'}
+	],
 	// 费尔奎娜巢穴 (Gossamer Vault)
 	GV_BOSS_1 : [
 		{id: 124, msg: 'Escarro Frontal'},
@@ -322,7 +364,7 @@ module.exports = {
 	//  {id: 134, msg: 'Grande circulo'},  // Terceiro Hit
 	],
 	//           121+120=241 122+120=242           121+123=244 122+123=245
-	SI_TipMsg : ["SAIR-ENTRAR-ENTRAR", "Entrar-Sair-Entrar 1","Stun(ESQUIVAR)!!!", "SAIR-ENTRAR-SAIR", "Entrar-Sair-Entrar 2"],
+	SI_TipMsg : ["SAIR-ENTRAR-ENTRAR", "ENTRAR-SAIR-ENTRAR","Stun(ESQUIVAR)!!!", "SAIR-ENTRAR-SAIR", "ENTRAR-SAIR-SAIR"],
 	// 凯尔赛克隐藏地(Corrupted Skynest)
 	CK_BOSS : [
 		// 120 猛烈的咆哮
