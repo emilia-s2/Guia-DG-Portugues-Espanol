@@ -470,8 +470,8 @@ module.exports = {
 		{id: 356, msg: 'Flash (Iframe)'},  //    356 瞬閃点名 -> 147 一刀兩斷
 		{id: 134, msg: 'Cuidado (Ataque Atras)'},  //    134 要害攻擊 -> 147 一刀兩斷
 		
-		{id: 357, msg: 'Roxo-> explosao (SAIR)'}, // 357 吸收力量 -> 110 起身攻擊 -> 氣斬
-		{id: 350, msg: 'Vermelho-> Rosquinha'},     // 350 吸收力量                 -> 302 甜甜圈
+		{id: 357, msg: 'SAIR-> explosao (Iframe)'}, // 357 吸收力量 -> 110 起身攻擊 -> 氣斬
+		{id: 350, msg: 'SAIR-> ENTRAR'},     // 350 吸收力量                 -> 302 甜甜圈
 		
 		{id: 351, msg: 'Quebrar Escudo!!'},       // 护盾开始 环形爆发
 		{id: 401, msg: '30% (Iframe)'}           // 开始
