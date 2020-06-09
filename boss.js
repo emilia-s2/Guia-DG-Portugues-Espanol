@@ -183,7 +183,7 @@ module.exports = {
 		{id: 313, msg: 'Onda de agua'},
 		{id: 314, msg: 'Onda de agua'},
         {id: 400, msg: 'Fantasma Slash x3'}, // 三幻影-剑气 205 500 400 204 204
-		{id: 401, msg: 'Circulo Fantasma x3'}  // 三幻影-转圈 205 500 401 115 309
+		{id: 401, msg: 'Circulo Fantasma x3'},  // 三幻影-转圈 205 500 401 115 309
         {id: 104, msg: 'Atras Stun'}, //checkTwoUp: true}, // HM
         {id: 104, msg: 'Atras stun'} //checkTwoUp: true} // HM Rage
 	],
