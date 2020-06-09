@@ -162,28 +162,28 @@ module.exports = {
 	],
 	// 安塔洛斯的深渊 (Antaroth's Abyss)
 	AA_BOSS_1 : [
-		{id: 116, msg: 'Fora do circulo circulo'},
-		{id: 117, msg: 'Dentro do circulo'},
         {id: 300, msg: 'Jogar para o Alto(Iframe)'} //deletionTimer: true},
 	],
 	AA_BOSS_2 : [
         {id: 106, msg: 'GIRO'},
         {id: 106, msg: 'GIRO'}, // rage
-        {id: 119, msg: 'Vermelho, Fora Seguro'},
-        {id: 220, msg: 'Azul, Dentro Seguro'}  
+        {id: 119, msg: 'FORA Seguro'},
+        {id: 220, msg: 'DENTRO Seguro'}  
 	],
 	AA_BOSS_3 : [
-		{id: 113, msg: 'Frente, Atras stun'},
-        {id: 113, msg: 'Frente, Atras stun'}, // rage
-        {id: 111, msg: 'Direito Seguro, SAIR Seguro'}, //msgForTanks: 'Left Safe, OUT safe'},
-        {id: 111, msg: 'Direito Seguro, SAIR Seguro'}, //msgForTanks: 'Left Safe, OUT safe'}, // rage
-        {id: 109, msg: 'Esquerdo Seguro, ETRAR Seguro'},   //msgForTanks: 'Right Safe, IN safe'},
-        {id: 109, msg: 'Esquerdo Seguro, ETRAR Seguro'},   //msgForTanks: 'Right Safe, IN safe'}, // rage
+		{id: 113, msg: 'Frente - Atras stun'},
+        {id: 113, msg: 'Frente - Atras stun'}, // rage
+        {id: 111, msg: 'DIREITO Seguro, SAIR ->'}, //msgForTanks: 'Left Safe, OUT safe'},
+        {id: 111, msg: 'DIREITO Seguro, SAIR ->'}, //msgForTanks: 'Left Safe, OUT safe'}, // rage
+        {id: 109, msg: '<- ESQUERDO Seguro, ENTRAR'},   //msgForTanks: 'Right Safe, IN safe'},
+        {id: 109, msg: '<- ESQUERDO Seguro, ENTRAR'},   //msgForTanks: 'Right Safe, IN safe'}, // rage
 		{id: 310, msg: 'Onda de agua'},
 		{id: 311, msg: 'Onda de agua'},
 		{id: 312, msg: 'Onda de agua'},
 		{id: 313, msg: 'Onda de agua'},
 		{id: 314, msg: 'Onda de agua'},
+        {id: 400, msg: 'Fantasma Slash x3'}, // 三幻影-剑气 205 500 400 204 204
+		{id: 401, msg: 'Circulo Fantasma x3'}  // 三幻影-转圈 205 500 401 115 309
         {id: 104, msg: 'Atras Stun'}, //checkTwoUp: true}, // HM
         {id: 104, msg: 'Atras stun'} //checkTwoUp: true} // HM Rage
 	],
@@ -241,10 +241,10 @@ module.exports = {
 		{id: 118, msg: 'Triplo Dianteiro (spray Esquerdo-Direito)'},
 		{id: 143, msg: '<<<<ESQUERDO Atras'},
 		{id: 145, msg: '<<<<ESQUERDO Atras'},
-		{id: 146, msg: 'ESQUERDA Traseira(Pulsos)', sign_degrees: 325, sign_distance: 370},
-		{id: 154, msg: 'ESQUERDA Traseira(Pulsos)', sign_degrees: 325, sign_distance: 370},
-		{id: 144, msg: 'DIREITA Atraz>>>>'},
-		{id: 147, msg: 'DIREITA Atraz>>>>'},
+		{id: 146, msg: '<<<ESQUERDA Traseira(Pulsos)', sign_degrees: 325, sign_distance: 370},
+		{id: 154, msg: '<<<ESQUERDA Traseira(Pulsos)', sign_degrees: 325, sign_distance: 370},
+		{id: 144, msg: 'DIREITA Atras>>>'},
+		{id: 147, msg: 'DIREITA Atras>>>'},
 		{id: 148, msg: 'DIREITA Traseira(Pulsos)>>>>'},
 		{id: 155, msg: 'DIREITA Traseira(Pulsos)>>>>'},
 		{id: 161, msg: 'Frente - Atras'},
@@ -380,8 +380,8 @@ module.exports = {
 		{id: 158, msg: 'Vire a Direita(Repelir!!)'},
 		{id: 109, msg: 'Vire a Esquerda(Repelir!!)'},
 		{id: 159, msg: 'Vire a Esquerda(Repelir)'},
-		{id: 118, msg: '~Jogar para o alto~'},
-		{id: 160, msg: '~Jogar para o alto~'},
+		{id: 118, msg: '~Jogar para o alto~(Iframe)'},
+		{id: 160, msg: '~Jogar para o alto~(Iframe)'},
 		{id: 137, msg: '[Corra]Distanciar do bos 50m'},
 		{id: 138, msg: 'Ataque Amplo!!'},
 		{id: 110, msg: 'Mao de FOGO(FORA)'},
@@ -398,7 +398,7 @@ module.exports = {
 		// 152 左脚(冰_格挡)
 		// 107 双脚_快
 		// 157 双脚_快
-		{id: 145, msg: 'Pes_Lentos(STUN)'},
+		{id: 145, msg: 'Pes-Lentos(STUN)'},
 		{id: 104, msg: 'AOE-Magia de GELO(Grande)'},
 		{id: 154, msg: 'AOE-Magia de GELO(Pequeno)'},
 		{id: 105, msg: 'AOE-Magia de FOGO(Grande)'},
@@ -444,7 +444,7 @@ module.exports = {
 		{id: 302, msg: 'Aleatorio Buff'}// "무적버프_wait_노멀"
 	],
 			//            0     1     2      3
-	CK_TipMsg : ["ENTRAR", "SAIR", "Seguro", "Seguro"],
+	CK_TipMsg : ["ENTRAR", "SAIR", "ESQUERDO Seguro", "DIREITO Seguro"],
 	// 狂气竞技场 (Forbidden Arena)
 	FA_BOSS : [
 		{id: 108, msg: 'Espadada Frontal (Lenta)'},    // 101 121 122 連續攻擊 -> 108 一刀兩斷(坦)
