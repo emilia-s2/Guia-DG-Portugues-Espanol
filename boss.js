@@ -444,7 +444,7 @@ module.exports = {
 		{id: 302, msg: 'Aleatorio Buff'}// "무적버프_wait_노멀"
 	],
 			//            0     1     2      3
-	CK_TipMsg : ["ENTRAR", "SAIR", "ESQUERDO Seguro", "DIREITO Seguro"],
+	CK_TipMsg : ["", "", "", ""],
 	// 狂气竞技场 (Forbidden Arena)
 	FA_BOSS : [
 		{id: 108, msg: 'Espadada Frontal (Lenta)'},    // 101 121 122 連續攻擊 -> 108 一刀兩斷(坦)
