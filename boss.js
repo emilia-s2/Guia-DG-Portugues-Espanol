@@ -172,11 +172,9 @@ module.exports = {
 	],
 	AA_BOSS_3 : [
 		{id: 113, msg: 'Frente - Atras stun'},
-        {id: 113, msg: 'Frente - Atras stun'}, // rage
-        {id: 111, msg: 'DIREITO Seguro, SAIR ->'}, //msgForTanks: 'Left Safe, OUT safe'},
-        {id: 111, msg: 'DIREITO Seguro, SAIR ->'}, //msgForTanks: 'Left Safe, OUT safe'}, // rage
-        {id: 109, msg: '<- ESQUERDO Seguro, ENTRAR'},   //msgForTanks: 'Right Safe, IN safe'},
-        {id: 109, msg: '<- ESQUERDO Seguro, ENTRAR'},   //msgForTanks: 'Right Safe, IN safe'}, // rage
+        {id: 113, msg: 'Frente - Atras stun'},
+        {id: 111, msg: 'DIREITO Seguro, SAIR ->'},
+        {id: 109, msg: '<- ESQUERDO Seguro, ENTRAR'},
 		{id: 310, msg: 'Onda de agua'},
 		{id: 311, msg: 'Onda de agua'},
 		{id: 312, msg: 'Onda de agua'},
