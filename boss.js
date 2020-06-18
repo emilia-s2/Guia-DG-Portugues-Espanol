@@ -378,8 +378,8 @@ module.exports = {
 		{id: 158, msg: ' Vire a Direita(Repelir!!)'},
 		{id: 109, msg: ' Vire a Esquerda(Repelir!!)'},
 		{id: 159, msg: ' Vire a Esquerda(Repelir)'},
-		{id: 118, msg: ' Jogar ao alto(Iframe)'},
-		{id: 160, msg: ' Jogar ao alto(Iframe)'},
+		{id: 118, msg: ' Jogar ao alto (Iframe)'},
+		{id: 160, msg: ' Jogar ao alto (Iframe)'},
 		{id: 137, msg: ' [Corra]Distanciar do bos 50m'},
 		{id: 138, msg: ' Ataque Amplo!!'},
 		{id: 110, msg: ' Mao de FOGO(FORA)'},
@@ -469,7 +469,7 @@ module.exports = {
 		{id: 134, msg: ' Cuidado (Ataque Atras)'},  //    134 要害攻擊 -> 147 一刀兩斷
 		
 		{id: 357, msg: ' SAIR-> explosao (Iframe)'}, // 357 吸收力量 -> 110 起身攻擊 -> 氣斬
-		{id: 350, msg: 'S AIR-> ENTRAR'},     // 350 吸收力量                 -> 302 甜甜圈
+		{id: 350, msg: ' SAIR-> ENTRAR'},     // 350 吸收力量                 -> 302 甜甜圈
 		
 		{id: 351, msg: ' Quebrar Escudo!!'},       // 护盾开始 环形爆发
 		{id: 401, msg: ' 30% (Iframe)'}           // 开始
