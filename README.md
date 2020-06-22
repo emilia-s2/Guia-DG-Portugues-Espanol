@@ -23,6 +23,8 @@ Guide-DG
 
 (Forbidden Arena)
 
+(Bahaar's Sanctum)
 
+(Draakon Arena)
 
 Este guia foi traduzido com base no https://github.com/tera-mod/TERA-Guide
