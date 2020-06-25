@@ -71,25 +71,25 @@ module.exports = {
 	// 贝里克神殿 (Velik's Sanctuary)
 	VS_BOSS_1 : [
 		{id: 301, msg: 'Veneno(Geral)'},
-		{id: 304, msg: 'Ataque Dentro e Fora'},
-		{id: 401, msg: '<<<<ESQUERDO SEGURO', msg_tk: '->', sign_degrees: 270},
-		{id: 402, msg: 'DIREITO Seguro>>>>', msg_tk: '<-', sign_degrees:  90}
+		//{id: 304, msg: 'Ataque Dentro e Fora'},
+		//{id: 401, msg: '<<<<ESQUERDO SEGURO', msg_tk: '->', sign_degrees: 270},
+		//{id: 402, msg: 'DIREITO Seguro>>>>', msg_tk: '<-', sign_degrees:  90}
 	],
 	VS_BOSS_2 : [
-		{id: 106, msg: 'Atras'},
-		{id: 108, msg: 'Frente'},
-		{id: 131, msg: '<--ESQUERDO seguro'},
-		{id: 130, msg: 'DIREITO Seguro-->'},
+		//{id: 106, msg: 'Atras'},
+		//{id: 108, msg: 'Frente'},
+		//{id: 131, msg: '<--ESQUERDO seguro'},
+		//{id: 130, msg: 'DIREITO Seguro-->'},
 		{id: 134, msg: 'Debuff'}
 	],
 	VS_BOSS_3 : [
-		{id: 116, msg: 'Escudo Frontal Donut (voando)'},
-		{id: 138, msg: 'Ataque Circulo!!'},
-		{id: 144, msg: 'Fora Seguro'},
-		{id: 145, msg: 'Dentro seguro'},
+		{id: 116, msg: 'Stun Frontal'},
+		{id: 138, msg: 'Cuidado!!'},
+		{id: 144, msg: 'SAIR'},
+		{id: 145, msg: 'ENTRAR'},
 		// 149 前刺(坦)
 		{id: 151, msg: 'Stun + Tres capturas)'},
-		{id: 152, msg: 'Escudo a Frente - Empurrar Atras (repelir)'},
+		{id: 152, msg: 'Stun Frontal - Empurrar Atras (repelir)'},
 		{id: 701, msg: 'Empurrar atras - Ataque Frontal '},
 		{id: 103, msg: 'Raios (Espalhar)'},
 		{id: 301, msg: 'Bomba (Juntar) + Cleanse'},
@@ -101,7 +101,7 @@ module.exports = {
 		{id: 402, msg: 'Halo!!'}
 	],
 	//            0           1           2           3           1+3=4       2+3=5       3+3=6
-	VS_TipMsg : ["Next -> ", "(PERTOx2)", "Flash(Espalhados)", "Bomba(Decolar)", "Atencao(LONGEx2)", "Flash(Concentracao)", "Bomba(Adicione Sangue)"],
+	VS_TipMsg : ["Proximo -> ", "Debuff (Perto)", "Raios (Espalhar)", "Bomba (Juntar + Claense)", "Debuff (Longe)", "Raios (Juntar)", "Bomba(Juntar No Cleanse)"],
 	// RK-9机库 (RK-9 Kennel)
 	RK_BOSS_1 : [
 		{id: 104, msg: 'Stun Frontal'},
@@ -135,7 +135,7 @@ module.exports = {
 		{id: 105, msg: 'Girar (Repelir)'},
 		// 上级
 		{id: 305, msg: 'Adsorcao (fechar)'},
-		{id: 304, msg: 'Explosao (longe)!!'}
+		{id: 304, msg: 'Explosao (Saia)!!'}
 	],
 	RK_BOSS_3 : [
 		{id: 117, msg: 'S Mao ESQUERDA'}, // 117 121 123
@@ -221,10 +221,10 @@ module.exports = {
 	GLS_BOSS_1 : [
 		{id: 106, msg: 'Golpe pesado'},
 		{id: 107, msg: 'EMPURAO (repelir)'},
-		{id: 109, msg: 'Rochas (pequeno)'},
+		{id: 109, msg: 'Rochas (pequena)'},
 		{id: 110, msg: 'Rochas (Grande)'},
 		{id: 116, msg: 'Ataque em tela cheia!!'},
-		{id: 301, msg: 'Flor Canibal (STURN)'},
+		{id: 301, msg: 'Flor Canibal (STUN)'},
 		{id: 307, msg: 'Gaiola (proibida)'},
 		{id: 309, msg: '1 FLOR - Identificada!!'},
 		{id: 310, msg: '2 FLORES - Identificada!!'},
@@ -232,97 +232,97 @@ module.exports = {
 	],
 	GLS_BOSS_2 : [
 		{id: 105, msg: 'GIRAR Atras'},
-		{id: 113, msg: 'Maos (STURN)'},
+		{id: 113, msg: 'Maos (STUN)'},
 		{id: 114, msg: 'ENTRAR'},
-		{id: 116, msg: 'Frente - Atraz'},
+		{id: 116, msg: 'Frente - Atras'},
 		{id: 301, msg: 'SAIR + ESQUIVAR'},
 		{id: 302, msg: 'ENTRAR + ESQUIVAR'}
 	],
 	GLS_BOSS_3 : [
-		{id: 118, msg: 'Triplo Dianteiro (spray Esquerdo-Direito)'},
-		{id: 143, msg: '<<<<ESQUERDO Atras'},
-		{id: 145, msg: '<<<<ESQUERDO Atras'},
-		{id: 146, msg: '<<<ESQUERDA Traseira(Pulsos)', sign_degrees: 325, sign_distance: 370},
-		{id: 154, msg: '<<<ESQUERDA Traseira(Pulsos)', sign_degrees: 325, sign_distance: 370},
-		{id: 144, msg: 'DIREITA Atras>>>'},
-		{id: 147, msg: 'DIREITA Atras>>>'},
-		{id: 148, msg: 'DIREITA Traseira(Pulsos)>>>>'},
-		{id: 155, msg: 'DIREITA Traseira(Pulsos)>>>>'},
-		{id: 161, msg: 'Frente - Atras'},
-		{id: 162, msg: 'Frente - Atras'},
-		{id: 213, msg: 'Cauda!!'},
-		{id: 215, msg: 'Cauda!!'},
-		{id: 139, msg: '<--ESQUERDA Segura'}, //151
-		{id: 150, msg: '<--ESQUERDA Segura'}, //151
-		{id: 141, msg: 'DIEITO SEGURO-->'}, //153
-		{id: 152, msg: 'DIEITO SEGURO-->'}, //153
-		{id: 300, msg: 'DESPERTAR', level_Msg: ['1!', '2!!', '3!!!', '<font color="#FF0000">4!!!!</font>']},
-		{id: 399, msg: 'Despertar Secundario', level_Msg: ['1!', '<font color="#FF0000">2!!</font>']},
-		{id: 360, msg: 'Explosao !! Explosao!!'}
+//		{id: 118, msg: 'FRENTE Triplo (Esquerdo-Direito)'},
+//		{id: 143, msg: '<<<<ESQUERDO Atras'},
+//		{id: 145, msg: '<<<<ESQUERDO Atras'},
+//		{id: 146, msg: '<<<ESQUERDA Traseira(Pulsos)'},
+//		{id: 154, msg: '<<<ESQUERDA Traseira(Pulsos)'},
+//		{id: 144, msg: 'DIREITA Atras>>>'},
+//		{id: 147, msg: 'DIREITA Atras>>>'},
+//		{id: 148, msg: 'DIREITA Traseira(Pulsos)>>>>'},
+//		{id: 155, msg: 'DIREITA Traseira(Pulsos)>>>>'},
+//		{id: 161, msg: 'Frente - Atras'},
+//		{id: 162, msg: 'Frente - Atras'},
+//		{id: 213, msg: 'Cauda!!'},
+//		{id: 215, msg: 'Cauda!!'},
+//		{id: 139, msg: '<<<<<ESQUERDA Segura'}, //151
+//		{id: 150, msg: '<<<<<ESQUERDA Segura'}, //151
+//		{id: 141, msg: 'DIEITO Seguro>>>>>'}, //153
+//		{id: 152, msg: 'DIEITO Seguro>>>>>'}, //153
+//		{id: 300, msg: 'DESPERTAR', level_Msg: ['1!', '2!!', '3!!!', '<font color="#FF0000">4!!!!</font>']},
+//		{id: 399, msg: 'Despertar Secundario', level_Msg: ['1!', '<font color="#FF0000">2!!</font>']},
+//		{id: 360, msg: 'Explosao !! Explosao!!'}
 	],
 	// 费尔奎娜巢穴 (Gossamer Vault)
 	GV_BOSS_1 : [
-		{id: 124, msg: 'Escarro Frontal'},
-		{id: 104, msg: 'Escarro Frontal'},
-		{id: 133, msg: 'PULAR'},
-		{id: 113, msg: '(Lento) PULAR (Voar)'},
-		{id: 138, msg: 'PULAR'},
-		{id: 118, msg: '(Lento) PULAR (Voar)'},
+		{id: 124, msg: 'Stun Frontal'},
+		{id: 104, msg: 'Stun Frontal'},
+		{id: 133, msg: 'Pular (Rapido)'},
+		{id: 113, msg: 'PULAR (Lento)'},
+		{id: 138, msg: 'Pular (Rapido)'},
+		{id: 118, msg: 'PULAR (Lento)'},
 		// 147 向前连续攻击
 		{id: 149, msg: 'Poder da mao ESQUERDA (voando)'},
 		{id: 148, msg: 'Poder da mao DIREITA (voando)'},
 		
-		{id: 127, msg: '|EMPURRAR ATRAZ|'},
-		{id: 107, msg: '(Lento) - EMPURRAR ATRAZ|'},
-		{id: 131, msg: 'SPRAY ATRAZ'},
-		{id: 111, msg: '(Lento) SPRAY ATRAZ'},
+		{id: 127, msg: 'Empurrar ATRAS (Rapido)'},
+		{id: 107, msg: 'Empurrar ATRAS (Lento)'},
+		{id: 131, msg: 'SPRAY ATRAS (Rapido)'},
+		{id: 111, msg: 'SPRAY ATRAS (Lento) '},
 		{id: 132, msg: '<-Spray ESQUERDO e DIREITO->'},
 		{id: 112, msg: '<-Spray ESQUERDO e DIREITO->'},
-		{id: 139, msg: 'Spray FRENTE e ATRAZ'},
-		{id: 119, msg: 'Spray FRENTE e ATRAZ'},
-		{id: 314, msg: 'Circulo DENTRO e FORA'},
-		{id: 313, msg: 'Circulo DENTRO e FORA'},
+		{id: 139, msg: 'Spray FRENTE e ATRAS'},
+		{id: 119, msg: 'Spray FRENTE e ATRAS'},
+		{id: 314, msg: 'Circulo DENTRO e FORA (Rapido)'},
+		{id: 313, msg: 'Circulo DENTRO e FORA (Lento)'},
 		
 		{id: 305, msg: 'Pizza'}, // 143 / 145
 		
-		{id: 312, msg: 'Tela cheia (Repelir)'},
-		{id: 311, msg: '(LENTO) Tela cheia (Repelir)'}
+		{id: 312, msg: 'Tela cheia (Repelir)(Rapido)'},
+		{id: 311, msg: 'Tela Cheia (Repelir)(Lento) '}
 	],
 	GV_BOSS_2 : [
-		{id: 105, msg: 'Espinho da frente'}, // 104 105
+		{id: 105, msg: 'Espinho da Frente'}, // 104 105
 		{id: 109, msg: 'Esquivar (devagar)'},
 		{id: 108, msg: 'Ataque Frontal - Ataque ATRAS'},
 		{id: 228, msg: 'Juntar time'},
 		{id: 227, msg: 'Explosao!!'},
 		{id: 230, msg: 'AOE!!'},
-		{id: 231, msg: 'FORA circulo'},
-		{id: 232, msg: 'DENTRO circulo'},
+		{id: 231, msg: 'SAIR'},
+		{id: 232, msg: 'ENTRAR'},
 		{id: 235, msg: 'Debuff!!'},
-		{id: 236, msg: '(Repelir a frente)'}
+		{id: 236, msg: '(Repelir a Frente)'}
 	],
 	// 贝尔亚克城堡 (Akalath Quarantine)
 	AQ_BOSS_1 : [
-		{id: 1104, msg: 'Saltar Sturn'},
-		{id: 2104, msg: 'Saltar Sturn'},
-		{id: 1110, msg: 'Frontal Sturn'},
-		{id: 2110, msg: 'Frontal Sturn'},
-		{id: 1111, msg: 'Esquerda ZOLA'},
-		{id: 1113, msg: 'Esquerda ZOLA'}, // 1112 1113
-		{id: 2111, msg: 'Esquerda ZOLA'},
-		{id: 2113, msg: 'Esquerda ZOLA'}, // 2112 2113
-		{id: 1112, msg: 'Direita ZOLA'},
-		{id: 1114, msg: 'Direita ZOLA'}, // 1111 1114
-		{id: 2112, msg: 'Direita ZOLA'},
-		{id: 2114, msg: 'Direita ZOLA'}, // 2111 2114
-		{id: 1115, msg: 'Semicirculo Traseiro'},
-		{id: 2115, msg: 'Semicirculo Traseiro'},
+		{id: 1104, msg: 'Saltar Stun'},
+		{id: 2104, msg: 'Saltar Stun'},
+		{id: 1110, msg: 'Frontal Stun'},
+		{id: 2110, msg: 'Frontal Stun'},
+		{id: 1111, msg: 'Esquerda SLASH'},
+		{id: 1113, msg: 'Esquerda SLASH'}, // 1112 1113
+		{id: 2111, msg: 'Esquerda SLASH'},
+		{id: 2113, msg: 'Esquerda SLASH'}, // 2112 2113
+		{id: 1112, msg: 'Direita SLASH'},
+		{id: 1114, msg: 'Direita SLASH'}, // 1111 1114
+		{id: 2112, msg: 'Direita SLASH'},
+		{id: 2114, msg: 'Direita SLASH'}, // 2111 2114
+		{id: 1115, msg: 'Semi-circulo Traseiro'},
+		{id: 2115, msg: 'Semi-circulo Traseiro'},
 		{id: 1116, msg: 'Explosao (Shield/Kaias)!!'}, // 1117
 		{id: 2116, msg: 'Explosao (Shield/Kaias)!!'}, // 2117
 		{id: 3107, msg: 'Onda a Frente'},
 		{id: 3115, msg: 'Ataque rotativo'}, // 1106 2106
 		{id: 3116, msg: 'Circulos + Ataque Rotativo'}, // 1106 2106
-		{id: 3119, msg: 'Maldicao ', TIP: ["FORA", "ENTRAR"]}, // 红出 | 蓝进
-		{id: 3220, msg: 'Maldicao ', TIP: ["ENTRAR", "FORA"]}  // 红进 | 蓝出
+		{id: 3119, msg: 'Maldicao ', TIP: ["SAIR", "ENTRAR"]}, // 红出 | 蓝进
+		{id: 3220, msg: 'Maldicao ', TIP: ["ENTRAR", "SAIR"]}  // 红进 | 蓝出
 	],
 	AQ_BOSS_2 : [
 		{id: 164, msg: 'Ataque de (SANGRAMENTO)'},
@@ -333,7 +333,7 @@ module.exports = {
 		{id: 182, msg: 'Pise no chao (derrubar)'}, // 183 184
 		// 302 209 点名-踩地(击倒) 182 183 184
 		{id: 185, msg: 'Explosao (Shield/Kaias)!!'},
-		{id: 202, msg: 'Facada Trasera + Delantera'},  // 177
+		{id: 202, msg: 'Facada Trasera + Frontal'},  // 177
 		{id: 207, msg: 'Fantasma x5 (sangramento)'}, // 204 206 205
 		{id: 212, msg: 'Flash (sangramento)'}    // 180
 	],
@@ -451,7 +451,7 @@ module.exports = {
 		{id: 108, msg: 'Espadada Frontal (Lenta)'},    // 101 121 122 連續攻擊 -> 108 一刀兩斷(坦)
 		{id: 355, msg: 'Quebra de mandibula'},    // 102 121 103 連續攻擊 -> 355 右手蓄力 -> 114 下巴粉碎
 		{id: 135, msg: 'Uma Espadada Frontal (Lenta)'},    //         104 連續攻擊 -> 135 左手蓄力 -> 130 一刀兩斷
-		{id: 111, msg: 'Stun - Espadada frontal'}, //         104 連續攻擊 -> 111 刀背打擊 -> 130 一刀兩斷
+		{id: 111, msg: 'Stun - Frontal'}, //         104 連續攻擊 -> 111 刀背打擊 -> 130 一刀兩斷
 		{id: 112, msg: 'Salto atras - Espada'}, //     121 102 連續攻擊 -> 112 後退踢擊 -> 130 一刀兩斷
 		{id: 109, msg: 'salto a Frente - Espadada'},         // 109 向下劈擊 -> 402 等待     -> 130 一刀兩斷
 		
