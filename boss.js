@@ -377,19 +377,19 @@ module.exports = {
 		// 131 广域1实例
 		{id: 103, msg: 'Cauda (voando!!!)'},
 		{id: 153, msg: 'Cauda (voando!!!)'},
-		{id: 108, msg: 'Vire a Direita(Repelir)'},
-		{id: 158, msg: 'Vire a Direita(Repelir!!)'},
-		{id: 109, msg: 'Vire a Esquerda(Repelir!!)'},
-		{id: 159, msg: 'Vire a Esquerda(Repelir)'},
+		{id: 108, msg: 'Vire a Direita (Repelir)'},
+		{id: 158, msg: 'Vire a Direita (Repelir!!)'},
+		{id: 109, msg: 'Vire a Esquerda (Repelir!!)'},
+		{id: 159, msg: 'Vire a Esquerda (Repelir)'},
 		{id: 118, msg: 'Jogar ao alto (Iframe)'},
 		{id: 160, msg: 'Jogar ao alto (Iframe)'},
 		{id: 137, msg: '[Corra]Distanciar do bos 50m'},
 		{id: 138, msg: 'Ataque Amplo!!'},
-		{id: 110, msg: 'Mao de FOGO(FORA)'},
-		{id: 112, msg: 'Mao de GELO(FORA)'},
-		{id: 114, msg: 'Fogueira a Frente DOT(FORA)'},
-		{id: 139, msg: '[Temperatura] 60 TODOS(GELO)'},
-		{id: 140, msg: '[Temperatura] 40 TODOS(FOGO)'},
+		{id: 110, msg: 'Mao de FOGO (FORA)'},
+		{id: 112, msg: 'Mao de GELO (FORA)'},
+		{id: 114, msg: 'Fogueira a Frente DOT (FORA)'},
+		{id: 139, msg: '[Temperatura] 60% TODOS (GELO)'},
+		{id: 140, msg: '[Temperatura] 40% TODOS (FOGO)'},
 		// 164 [温度] 100° 全灭
 		// 165 [温度] 0° 全灭
 		// 切换DeBuff
@@ -399,11 +399,11 @@ module.exports = {
 		// 152 左脚(冰_格挡)
 		// 107 双脚_快
 		// 157 双脚_快
-		{id: 145, msg: 'Pes-Lentos(STUN)'},
-		{id: 104, msg: 'AOE-Magia de GELO(Grande)'},
-		{id: 154, msg: 'AOE-Magia de GELO(Pequeno)'},
-		{id: 105, msg: 'AOE-Magia de FOGO(Grande)'},
-		{id: 155, msg: 'AOE-Magia de FOGO(Pequeno)'},
+		{id: 145, msg: 'Pes-Lentos (STUN)'},
+		{id: 104, msg: 'AOE-Magia de GELO (Grande)'},
+		{id: 154, msg: 'AOE-Magia de GELO (Pequeno)'},
+		{id: 105, msg: 'AOE-Magia de FOGO (Grande)'},
+		{id: 155, msg: 'AOE-Magia de FOGO (Pequeno)'},
 		// 内外鉴定
 		{id: 212, msg: 'Fogo Dentro'}, // 212 -> 141
 		{id: 213, msg: 'Gelo Dentro'}, // 213 -> 143
@@ -450,20 +450,20 @@ module.exports = {
 	FA_BOSS : [
 		{id: 108, msg: 'Espadada Frontal (Lenta)'},    // 101 121 122 連續攻擊 -> 108 一刀兩斷(坦)
 		{id: 355, msg: 'Quebra de mandibula'},    // 102 121 103 連續攻擊 -> 355 右手蓄力 -> 114 下巴粉碎
-		{id: 135, msg: 'Uma Espadada Frontal (Lenta)'},    //         104 連續攻擊 -> 135 左手蓄力 -> 130 一刀兩斷
-		{id: 111, msg: 'Stun - Frontal'}, //         104 連續攻擊 -> 111 刀背打擊 -> 130 一刀兩斷
-		{id: 112, msg: 'Salto atras - Espada'}, //     121 102 連續攻擊 -> 112 後退踢擊 -> 130 一刀兩斷
+		{id: 135, msg: 'Espadada Frontal (Lenta)'},    //         104 連續攻擊 -> 135 左手蓄力 -> 130 一刀兩斷
+		{id: 111, msg: 'Stun - Fronta'}, //         104 連續攻擊 -> 111 刀背打擊 -> 130 一刀兩斷
+		{id: 112, msg: 'Salto Aleatorio - Espada'}, //     121 102 連續攻擊 -> 112 後退踢擊 -> 130 一刀兩斷
 		{id: 109, msg: 'salto a Frente - Espadada'},         // 109 向下劈擊 -> 402 等待     -> 130 一刀兩斷
 		
-		{id: 116, msg: 'Bloco perfeito (Iframe)'},    // 116 斬擊
-		{id: 140, msg: 'Bloco perfeito (Iframe)'},    // 140 斬擊
+//		{id: 116, msg: 'Bloco perfeito (Iframe)'},    // 116 斬擊
+//		{id: 140, msg: 'Bloco perfeito (Iframe)'},    // 140 斬擊
 		
 		{id: 145, msg: '3 Circulos - Slash'},  // 145 重擊斬 139 迴旋砍擊x2 -> 140 斬擊
 		{id: 136, msg: '2 Circulos - Golpe Frontal'},  // 136 重擊斬 144 迴旋砍擊x1 -> 130 一刀兩斷
 		
 		{id: 141, msg: 'Ataque Circular - Espadada Frontal'}, // 141 破壞氣魄+迴旋砍擊x2 -> 146 114 130
 		{id: 146, msg: 'Ataque Circular - Espadada Frontal'}, // 146 一刀兩斷       -> 114 下巴粉碎 -> 130 一刀兩斷
-		{id: 142, msg: 'Ataque con Giro - Ataque Barbilla'}, // 142 破壞氣魄+迴旋砍擊x2 -> 143 114 130
+		{id: 142, msg: 'Ataque com Giro '}, // 142 破壞氣魄+迴旋砍擊x2 -> 143 114 130
 		{id: 143, msg: 'Espadada Frontal'},        // 143 一刀兩斷(取消) -> 114 下巴粉碎 -> 130 一刀兩斷
 		
 		{id: 151, msg: 'Tres cortes - Tamanho Unico'}, // 151 149 148三斬 -> 130 一刀兩斷
@@ -471,11 +471,11 @@ module.exports = {
 		{id: 356, msg: 'Flash (Iframe)'},  //    356 瞬閃点名 -> 147 一刀兩斷
 		{id: 134, msg: 'Cuidado (Ataque Atras)'},  //    134 要害攻擊 -> 147 一刀兩斷
 		
-		{id: 357, msg: 'SAIR-> Explosao (Iframe)'}, // 357 吸收力量 -> 110 起身攻擊 -> 氣斬
+//		{id: 357, msg: 'SAIR + Explosao (Iframe)'}, // 357 吸收力量 -> 110 起身攻擊 -> 氣斬
 		{id: 350, msg: 'SAIR-> ENTRAR'},     // 350 吸收力量                 -> 302 甜甜圈
 		
-		{id: 351, msg: 'Quebrar Escudo!!'},       // 护盾开始 环形爆发
+//		{id: 351, msg: 'Quebrar Escudo!!'},       // 护盾开始 环形爆发
 		{id: 401, msg: '30% (Iframe)'}           // 开始
 	],
-	FA_TipMsg : ["Carga de Skill Compelta (Cuidado)!!"]
+	FA_TipMsg : ["Carga de Skill Completa (Cuidado)!!"]
 }
