@@ -25,8 +25,8 @@ module.exports = {
 		{zone: 3023, string: 'Bem-Vindo a <font color="#8eff05">Akalath Quarantine</font>'},
 		{zone: 3020, string: 'Bem-Vindo a <font color="#8eff05">Sea Of Honor</font>'},
 		{zone: 9044, string: 'Bem-Vindo a <font color="#8eff05">Bahaars Sanctum</font>'},
-		{zone: 3102, string: 'Bem-Vindo a <font color="#8eff05">Draakon Arena</font> <font color="09c0e1">Normal</font>'},
-		{zone: 3202, string: 'Bem-Vindo a <font color="#8eff05">Draakon Arena</font> <font color="#deda12">Beta</font>'},
+		{zone: 3102, string: 'Bem-Vindo a <font color="#8eff05">Draakon Arena</font> <font color="#09c0e1">Normal</font>'},
+		{zone: 3202, string: 'Bem-Vindo a <font color="#8eff05">Draakon Arena Hard</font> <font color="#deda12">Beta</font>'},
 		{zone: 3026, string: 'Bem-Vindo a <font color="#8eff05">Corrupted Skynest</font> <font color="#09c0e1">Normal</font>'},
 		{zone: 3126, string: 'Bem-Vindo a <font color="#8eff05">Corrupted Skynest</font> <font color="#d92b3c">Dificil</font>'},
 		{zone: 3027, string: 'Bem-Vindo a <font color="#8eff05">Forbidden Arena Challenge</font>'}
