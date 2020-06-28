@@ -1,7 +1,7 @@
-TERA-Guide-Area
+TERA-Guide
 ======
 
-# 功能简介: 为TERA的常用副本提供[技能]辅助 地面提示
+# 功能简介: 为TERA的常用副本提供[技能]辅助 文字提示
 
 岱魔鲁斯的轮盘 (Demon's Wheel)
 
@@ -39,8 +39,12 @@ RK-9机库 (RK-9 Kennel)
 
 /8频道 键入命令 | 效果说明
 --- | ---
-地面提示 | 开启/关闭模组
+辅助 | 开启/关闭模组
+辅助 主播 | [提示文字] 发送到 代理频道
+
+------
 
 Proxy(/8) Usage (proxy command) | description
 --- | ---
-area | enabled / disabled
+guide | enabled / disabled
+guide stream(st) | Send To Stream
