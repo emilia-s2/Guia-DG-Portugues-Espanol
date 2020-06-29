@@ -19,11 +19,11 @@ Informações das DG incluídas
 (Skynest Corrompido)
 
 (Arena Proibida)
---- | ---
+
 (Santuário de Bahaar)
 
 (Arena Draakon)
---- | ---
+
 Guide Base https://github.com/tera-mod/TERA-Guide
 
 ------
