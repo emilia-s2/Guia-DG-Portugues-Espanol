@@ -23,7 +23,7 @@ Informações das DG incluídas
 (Santuário de Bahaar)
 
 (Arena Draakon)
-
+--- | ---
 Guide Base https://github.com/tera-mod/TERA-Guide
 
 ------
