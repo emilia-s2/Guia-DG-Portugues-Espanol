@@ -1,4 +1,7 @@
-Informações das DG incluídas
+Guide-DG
+======
+
+#DG incluídas
 
 (Velik's Sanctuary)
 
