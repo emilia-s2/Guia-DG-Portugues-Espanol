@@ -29,12 +29,12 @@ Este guia foi traduzido com base no https://github.com/tera-mod/TERA-Guide
 ------
 Se voce nao gosta das marcaçoes do bos no piso, entao use o seguinte comando
 
---- | ---
+
 
 
 ------
 
-Proxy(/8) Usage (proxy command) | description
+/8 para abrir o chat (comando proxy) | Descriçao
 --- | ---
-guide | enabled / disabled
+guide | Ativado / Desativado
 guide stream(st) | Send To Stream
