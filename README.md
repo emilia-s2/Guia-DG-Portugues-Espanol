@@ -19,7 +19,7 @@ Informações das DG incluídas
 (Skynest Corrompido)
 
 (Arena Proibida)
-
+---|---
 (Santuário de Bahaar)
 
 (Arena Draakon)
@@ -37,4 +37,4 @@ Se voce nao gosta das marcaçoes do bos no piso, entao use o seguinte comando
 /8 para abrir o chat (comando proxy) | Descriçao
 --- | ---
 guia SpawnObject | Ativado / Desativado
-ou pode digitar direamente fora do chat do proxy | !guia spawnObject
+!guia spawnObject  | ou digitando direamente fora do chat do proxy
