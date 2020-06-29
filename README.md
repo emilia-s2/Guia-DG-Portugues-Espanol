@@ -36,5 +36,5 @@ Se voce nao gosta das marcaçoes do bos no piso, entao use o seguinte comando
 
 /8 para abrir o chat (comando proxy) | Descriçao
 --- | ---
-guide | Ativado / Desativado
-guide stream(st) | Send To Stream
+guia SpawnObject | Ativado / Desativado
+ou pode digitar direamente fora do chat do proxy | !guia spawnObject
