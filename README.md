@@ -3,7 +3,6 @@ Guide-DG
 
 ## Dungeons incluídas
 
-
 (Velik's Sanctuary)
 
 (RK-9 Kennel)
@@ -28,10 +27,16 @@ Guide-DG
 
 Guide Base https://github.com/tera-mod/TERA-Guide
 
+
+----
+
+####  Para o perfeito fucionamento é necessário 2 modulos extras, eles são instalados automaticamente pelo toolbox
+#####  library
+#####  Guide-Complemento-ESP
+
 ------
+
 Se você não gosta das marcaçoes do bos no piso, então use o seguinte comando
-
-
 
 
 ------
