@@ -1,7 +1,7 @@
 Guide-DG
 ======
 
-DG incluídas
+Dungeons incluídas
 ======
 
 (Velik's Sanctuary)
