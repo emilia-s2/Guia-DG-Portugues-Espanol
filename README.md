@@ -1,46 +1,36 @@
-TERA-Guide
-======
+Informações das DG incluídas
 
-# 功能简介: 为TERA的常用副本提供[技能]辅助 文字提示
+(Santuário de Velik)
 
-岱魔鲁斯的轮盘 (Demon's Wheel)
+(Canil RK-9)
 
-拉坎里斯的废墟 (Ruinous Manor)
+(Refúgio Vermelho)
 
-贝里克神殿 (Velik’s Sanctuary)
+(Abismo de Antaroth)
 
-RK-9机库 (RK-9 Kennel)
+(Gruta das Almas Perdidas)
 
-革命团总部 (Red Refuge)
+(Cofre Gossamer)
 
-安塔洛斯的深渊 (Antaroth's Abyss)
+(Quarentena de Akalath)
 
-泰内布利斯城堡 (Dark Reach Citadel)
+(Instância de Vela)
 
-里安的地下殿堂 (Grotto of Lost Souls)
+(Skynest Corrompido)
 
-巴哈勒神殿 (Bahaar's Sanctum)
+(Arena Proibida)
 
-费尔奎娜巢穴 (Gossamer Vault)
+(Santuário de Bahaar)
 
-费勒诺的实验室 (Demokron Factory)
+(Arena Draakon)
 
-伯恩斯坦恶灵岛 (Forsaken Island)
-
-贝尔亚克城堡 (Akalath Quarantine)
-
-金鳞号 (Sailing Instance)
-
-凯尔赛克隐藏地(Corrupted Skynest)
-
-狂气竞技场(Forbidden Arena)
+Este guia foi traduzido com base no https://github.com/tera-mod/TERA-Guide
 
 ------
+Se voce nao gosta das marcaçoes do bos no piso, entao use o seguinte comando
 
-/8频道 键入命令 | 效果说明
 --- | ---
-辅助 | 开启/关闭模组
-辅助 主播 | [提示文字] 发送到 代理频道
+
 
 ------
 
