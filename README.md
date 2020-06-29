@@ -19,15 +19,15 @@ Informações das DG incluídas
 (Skynest Corrompido)
 
 (Arena Proibida)
----|---
+--- | ---
 (Santuário de Bahaar)
 
 (Arena Draakon)
 
-Este guia foi traduzido com base no https://github.com/tera-mod/TERA-Guide
+Guide Base https://github.com/tera-mod/TERA-Guide
 
 ------
-Se voce nao gosta das marcaçoes do bos no piso, entao use o seguinte comando
+Se você não gosta das marcaçoes do bos no piso, então use o seguinte comando
 
 
 
@@ -37,4 +37,4 @@ Se voce nao gosta das marcaçoes do bos no piso, entao use o seguinte comando
 /8 para abrir o chat (comando proxy) | Descriçao
 --- | ---
 guia SpawnObject | Ativado / Desativado
-!guia spawnObject  | ou digitando direamente fora do chat do proxy
+!guia spawnObject  | ou digitando diretamente fora do chat do proxy
