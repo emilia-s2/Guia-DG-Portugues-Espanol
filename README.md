@@ -1,28 +1,26 @@
 Informações das DG incluídas
 
-(Santuário de Velik)
+(Velik's Sanctuary)
 
-(Canil RK-9)
+(RK-9 Kennel)
 
-(Refúgio Vermelho)
+(Red Refuge)
 
-(Abismo de Antaroth)
+(Antaroth's Abyss - Hard)
 
-(Gruta das Almas Perdidas)
+(Gossamer Vault - Hard)
 
-(Cofre Gossamer)
+(Akalath Quarantine)
 
-(Quarentena de Akalath)
+(Sea Of Honor)
 
-(Instância de Vela)
+(Corrupted Skynest - NM-HM)
 
-(Skynest Corrompido)
+(Forbidden Arena)
 
-(Arena Proibida)
+(Bahaar's Sanctum)
 
-(Santuário de Bahaar)
-
-(Arena Draakon)
+(Draakon Arena - NM-HM) -  Beta_Test
 
 Guide Base https://github.com/tera-mod/TERA-Guide
 
