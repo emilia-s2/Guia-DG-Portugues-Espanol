@@ -31,8 +31,8 @@ Guide Base https://github.com/tera-mod/TERA-Guide
 ----
 
 ####  Para o perfeito fucionamento é necessário 2 modulos extras, eles são instalados automaticamente pelo toolbox
-#####  library
-#####  Guide-Complemento-PT
+##### > library
+##### > Guide-Complemento-PT
 
 ------
 
