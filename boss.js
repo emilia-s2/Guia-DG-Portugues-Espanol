@@ -26,7 +26,7 @@ module.exports = {
 		{zone: 3020, string: '<font color="#ff5cde">Bem-Vindo a</font> <font color="#8eff05">Sea Of Honor</font>'},
 		{zone: 9044, string: '<font color="#ff5cde">Bem-Vindo a</font> <font color="#8eff05">Bahaars Sanctum</font>'},
 		{zone: 3102, string: '<font color="#ff5cde">Bem-Vindo a</font> <font color="#8eff05">Draakon Arena</font> <font color="#09c0e1">Normal</font>'},
-		{zone: 3202, string: '<font color="#ff5cde">Bem-Vindo a</font> <font color="#8eff05">Draakon Arena</font> <font color="#d92b3c">Dificil</font> <font color="#f2ff00">(Beta)</font>'},	
+		{zone: 3202, string: '<font color="#ff5cde">Bem-Vindo a</font> <font color="#8eff05">Draakon Arena</font> <font color="#d92b3c">Dificil</font>'},	
 		{zone: 3026, string: '<font color="#ff5cde">Bem-Vindo a</font> <font color="#8eff05">Corrupted Skynest</font> <font color="#09c0e1">Normal</font>'},
 		{zone: 3126, string: '<font color="#ff5cde">Bem-Vindo a</font> <font color="#8eff05">Corrupted Skynest</font> <font color="#d92b3c">Dificil</font>'},
 		{zone: 3027, string: '<font color="#ff5cde">Bem-Vindo a</font> <font color="#8eff05">Forbidden Arena Challenge</font>'}
@@ -106,8 +106,8 @@ module.exports = {
 	RK_BOSS_1 : [
 		{id: 104, msg: 'Stun Frontal'},
 		{id: 112, msg: 'Ataque ATRAS'},
-		{id: 304, msg: 'SAIR!!'},
-		{id: 305, msg: 'ENTRAR!!'},
+		{id: 304, msg: 'SAIR'},
+		{id: 305, msg: 'ENTRAR'},
 		{id: 306, msg: 'Bombda e demolicao!!'},
 		{id: 307, msg: 'PUXAR'},
 		{id: 309, msg: 'PULAR'},
@@ -448,10 +448,10 @@ module.exports = {
 	CK_TipMsg : ["", "", "", ""],
 	// 狂气竞技场 (Forbidden Arena)
 	FA_BOSS : [
-		{id: 108, msg: 'Espadada Frontal (Lenta)'},    // 101 121 122 連續攻擊 -> 108 一刀兩斷(坦)
+		{id: 108, msg: 'Espadada Frontal (CUIDADO)'},    // 101 121 122 連續攻擊 -> 108 一刀兩斷(坦)
 		{id: 355, msg: 'Quebra de mandibula'},    // 102 121 103 連續攻擊 -> 355 右手蓄力 -> 114 下巴粉碎
 		{id: 135, msg: 'Espadada Frontal (Lenta)'},    //         104 連續攻擊 -> 135 左手蓄力 -> 130 一刀兩斷
-		{id: 111, msg: 'Stun - Fronta'}, //         104 連續攻擊 -> 111 刀背打擊 -> 130 一刀兩斷
+		{id: 111, msg: 'Stun - Frontal'}, //         104 連續攻擊 -> 111 刀背打擊 -> 130 一刀兩斷
 		{id: 112, msg: 'Salto Aleatorio - Espada'}, //     121 102 連續攻擊 -> 112 後退踢擊 -> 130 一刀兩斷
 		{id: 109, msg: 'salto a Frente - Espadada'},         // 109 向下劈擊 -> 402 等待     -> 130 一刀兩斷
 		
