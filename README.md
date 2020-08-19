@@ -38,3 +38,16 @@ proxy(/8) | Command descrição
 **guia&nbsp;verbose&nbsp;+`ID`**<br>(padrao: todas on) | Ativar/desativar Guia menssagem para alguma DG especifica ON/OFF<br>EX: (guia verbose 9781) ID=Velik's Sanctuary
 **guia&nbsp;spawnObject&nbsp;+`ID`**<br>(padrao:todas on) | Ativar/desativar marcacao para alguma DG especifica ON/OFF<br>Ex: (guia spawnObject 9781) ID=Velik's Sanctuary 
 **guia&nbsp;ajuda** | Lista de todos os comandos suportados
+
+---
+
+## Configuraçoes de Menssagens 
+
+* Quando o **lNotice** estiver *Ativado*. os avisos serão exibidos na parte inferior da tela como Take Notice.
+  ![](https://i.imgur.com/BPlK58M.png)
+
+* Quando **gNotice** e o **lNotice** estiver *Desligado*, os avisos serao exebidos na parte superior da tela, sem ser na forma de Take Notice.   
+  ![](https://i.imgur.com/r2bb8Wc.png)   
+
+* Quando o **gNotice** estiver *Ativado* e o **lNotice** *Desativado* os avisos deixarão de ser exebidos na tela, e serão exebidos apenas no chat da party.   
+  
