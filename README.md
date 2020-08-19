@@ -33,10 +33,10 @@ proxy(/8) | Command descrição
 **guia** | Module on/off | digitando diretamente fora do chat proxy
 **guia&nbsp;lNotice**<br>(padrão: on) | Mensagem enviada para Take notice ON/OFF 
 **guia&nbsp;gNotice**<br>(padrão: off) | Mensagem enviada para Chat party ON/OFF
-**guia&nbsp;spawnObject**<br>(padrãot: on) | Objetos de marcacao ON/OFF
+**guia&nbsp;spawnObject**<br>(padrão: on) | Objetos de marcação ON/OFF
 **guia&nbsp;dungeons** | Lista de todas as dungeons + IDs
-**guia&nbsp;verbose&nbsp;+`ID`**<br>(padrao: todas on) | Ativar/desativar Guia menssagem para alguma DG especifica ON/OFF<br>EX: (guia verbose 9781) ID=Velik's Sanctuary
-**guia&nbsp;spawnObject&nbsp;+`ID`**<br>(padrao:todas on) | Ativar/desativar marcacao para alguma DG especifica ON/OFF<br>Ex: (guia spawnObject 9781) ID=Velik's Sanctuary 
+**guia&nbsp;verbose&nbsp;+`ID`**<br>(padrão: todas on) | Ativar/desativar Guia menssagem para alguma DG especifica ON/OFF<br>EX: (guia verbose 9781) ID=Velik's Sanctuary
+**guia&nbsp;spawnObject&nbsp;+`ID`**<br>(padrão:todas on) | Ativar/desativar marcação para alguma DG especifica ON/OFF<br>Ex: (guia spawnObject 9781) ID=Velik's Sanctuary 
 **guia&nbsp;ajuda** | Lista de todos os comandos suportados
 
 ---
