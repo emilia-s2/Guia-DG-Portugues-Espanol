@@ -44,7 +44,7 @@ proxy(/8) | Command descrição
 ## Configuraçoes de Menssagens 
 
 * Quando o **lNotice** estiver *Ativado*. os avisos serão exibidos na parte inferior da tela como Take Notice.
-  ![](https://i.imgur.com/BPlK58M.png)
+  ![](https://i.imgur.com/CdA4kYL.png)
 
 * Quando **gNotice** e o **lNotice** estiver *Desligado*, os avisos serao exebidos na parte superior da tela, sem ser na forma de Take Notice.   
   ![](https://i.imgur.com/r2bb8Wc.png)   
