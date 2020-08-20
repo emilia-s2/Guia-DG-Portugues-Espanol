@@ -44,7 +44,7 @@ proxy(/8) | Comando descrição
 ## Configuraçoes de Menssagens
 
  
- ATENÇÃO | Cuidado ao digitar o comando **lNotice** o *(I) de INotice* não  é um *I* maiúsculo, e sim um *(L)*, porém minúsculo
+ ATENÇÃO | Cuidado ao digitar o comando **lNotice** o *(I) de INotice* não  é um *(I)* maiúsculo, e sim um *(L)* minúsculo
 ---- | ----
 
 
