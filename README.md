@@ -45,11 +45,13 @@ proxy(/8) | Command descrição
 
 * Quando o **lNotice** estiver *Ativado*. os avisos serão exibidos na parte inferior da tela como Take Notice.
 
-  ![](https://i.imgur.com/CdA4kYL.png)
+  ![](https://i.imgur.com/qAVCiuv.jpg)
 
 
 * Quando **gNotice** e o **lNotice** estiver *Desligado*, os avisos serao exebidos na parte superior da tela, sem ser na forma de Take Notice.   
-  ![](https://i.imgur.com/r2bb8Wc.png)   
+  ![](https://i.imgur.com/R2PuTGK.jpg)   
 
-* Quando o **gNotice** estiver *Ativado* e o **lNotice** *Desativado* os avisos deixarão de ser exebidos na tela, e serão exebidos apenas no chat da party.   
+* Quando o **gNotice** estiver *Ativado* e o **lNotice** *Desativado* os avisos deixarão de ser exebidos na tela, e serão exebidos apenas no chat da party. 
+ 
+![](https://i.imgur.com/W9PHxHm.jpg)  
   
