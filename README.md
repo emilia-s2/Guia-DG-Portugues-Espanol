@@ -50,7 +50,7 @@ proxy(/8) | Command descrição
 
 * Quando **gNotice** e o **lNotice** estiver *Desligado*, os avisos serao exebidos na parte superior da tela, sem ser na forma de Take Notice. (cor padrão da menssagem é verde, mas voce pode alterar para a cor que dejesar, bastar digitar /8 guia ajuda par aobter a lista completa de cores disponíveis)  
   
-![](https://i.imgur.com/R2PuTGK.jpg)   
+  ![](https://i.imgur.com/R2PuTGK.jpg)   
 
 * Quando o **gNotice** estiver *Ativado* e o **lNotice** *Desativado* os avisos deixarão de ser exebidos na tela, e serão exebidos apenas no chat da party. 
  
