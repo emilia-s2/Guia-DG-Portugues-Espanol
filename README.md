@@ -57,6 +57,7 @@ proxy(/8) | Command descrição
   
 
 ## Credits
+- **[hsdn](https://github.com/hsdn)** 
 - **[Kasea](https://github.com/tera-toolbox-mods)** 
 - **[michengs](https://github.com/michengs)** 
 - **[ZC](https://github.com/tera-mod)** 
