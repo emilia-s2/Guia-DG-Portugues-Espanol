@@ -27,8 +27,8 @@ ID | Nome das Dungeons
 
 ------
 
-## Commands 
-proxy(/8) | Command descrição 
+## Comandos 
+proxy(/8) | Comando descrição 
 --- | ---
 **guia** | Module on/off | digitando diretamente fora do chat proxy
 **guia&nbsp;lNotice**<br>(padrão: on) | Mensagem enviada para Take notice ON/OFF 
