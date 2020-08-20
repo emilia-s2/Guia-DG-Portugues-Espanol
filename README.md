@@ -43,19 +43,20 @@ proxy(/8) | Command descrição
 
 ## Configuraçoes de Menssagens 
 
-* Quando o **lNotice** estiver *Ativado*. os avisos serão exibidos na parte inferior da tela como Take Notice.
+* Quando o **lNotice** estiver *Ativado*, os avisos serão exibidos na parte inferior da tela como Take Notice.
 
   ![](https://i.imgur.com/qAVCiuv.jpg)
 
-## 
+##
 
-* Quando **gNotice** e o **lNotice** estiver *Desligado*, os avisos serão exebidos na parte superior da tela, sem ser na forma de Take Notice. (cor padrão da menssagem é verde, mas você pode alterar para a cor que dejesar, bastar digitar /8 guia ajuda para obter a lista completa de cores disponíveis)  
+* Quando **gNotice** e o **lNotice** estiver *Desativados*, os avisos serão exebidos na parte superior da tela, sem ser na forma de Take Notice. (Cor padrão da menssagem é verde, mas você pode alterar para a cor que dejesar, bastar digitar /8 guia ajuda para obter a lista completa de cores disponíveis)  
   
   ![](https://i.imgur.com/R2PuTGK.jpg)
 
 ##   
 
 * Quando o **gNotice** estiver *Ativado* e o **lNotice** *Desativado* os avisos deixarão de ser exebidos na tela, e serão exebidos apenas no chat da party. 
+(Não se preocupe, o pessoal da party nao  irão ver as menssagens exebibas pelo o guia...)
  
   ![](https://i.imgur.com/WhbAsFr.jpg)  
 
