@@ -53,5 +53,5 @@ proxy(/8) | Command descrição
 
 * Quando o **gNotice** estiver *Ativado* e o **lNotice** *Desativado* os avisos deixarão de ser exebidos na tela, e serão exebidos apenas no chat da party. 
  
-![](https://i.imgur.com/W9PHxHm.jpg)  
+  ![](https://i.imgur.com/WhbAsFr.jpg)  
   
