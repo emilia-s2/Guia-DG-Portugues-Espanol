@@ -55,3 +55,10 @@ proxy(/8) | Command descrição
  
   ![](https://i.imgur.com/WhbAsFr.jpg)  
   
+
+## Credits
+- **[Kasea](https://github.com/tera-toolbox-mods)** 
+- **[michengs](https://github.com/michengs)** 
+- **[ZC](https://github.com/tera-mod)** 
+- **[Owyn](https://github.com/Owyn)** 
+- **[ITunk](https://github.com/GrafNikola)** 
