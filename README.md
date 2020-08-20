@@ -2,7 +2,7 @@ Guide-DG
 ======
 
 ##  Dungeons Suportadas
-ID | Dungeon Nome 
+ID | Nome das Dungeons 
 --- | ---
 9781 | Velik's Sanctuary 
 9735 | RK-9 Kennel 
@@ -35,8 +35,8 @@ proxy(/8) | Command descrição
 **guia&nbsp;gNotice**<br>(padrão: off) | Mensagem enviada para Chat party ON/OFF
 **guia&nbsp;spawnObject**<br>(padrão: on) | Objetos de marcação ON/OFF
 **guia&nbsp;dungeons** | Lista de todas as dungeons + IDs
-**guia&nbsp;verbose&nbsp;+`ID`**<br>(padrão: todas on) | Ativar/desativar Guia menssagem para alguma DG especifica ON/OFF<br>EX: (guia verbose 9781) ID=Velik's Sanctuary
-**guia&nbsp;spawnObject&nbsp;+`ID`**<br>(padrão:todas on) | Ativar/desativar marcação para alguma DG especifica ON/OFF<br>Ex: (guia spawnObject 9781) ID=Velik's Sanctuary 
+**guia&nbsp;verbose&nbsp;+`ID`**<br>(padrão: todas on) | Ativar/desativar Guia menssagem para alguma DG específica ON/OFF<br>EX: (guia verbose 9781) ID=Velik's Sanctuary
+**guia&nbsp;spawnObject&nbsp;+`ID`**<br>(padrão:todas on) | Ativar/desativar marcação para alguma DG específica ON/OFF<br>Ex: (guia spawnObject 9781) ID=Velik's Sanctuary 
 **guia&nbsp;ajuda** | Lista de todos os comandos suportados
 
 ---
