@@ -41,7 +41,12 @@ proxy(/8) | Comando descrição
 
 ---
 
-## Configuraçoes de Menssagens 
+## Configuraçoes de Menssagens
+
+ 
+ ATENÇAO | Cuidado ao digitar o comando **lNotice** o *(I) de INotice* nao  é um *I* maiúsculo, e sim um *(L)*, porém minúsculo
+---- | ----
+
 
 * Quando o **lNotice** estiver *Ativado*, os avisos serão exibidos na parte inferior da tela como Take Notice.
 
