@@ -68,8 +68,8 @@ proxy(/8) | Comando descrição
 ###  
 
 ## Credits
-- **[hsdn](https://github.com/hsdn)** 
-- **[Kasea](https://github.com/tera-toolbox-mods)** 
+- **[Kasea](https://github.com/tera-toolbox-mods)**
+- **[hsdn](https://github.com/hsdn)**  
 - **[michengs](https://github.com/michengs)** 
 - **[ZC](https://github.com/tera-mod)** 
 - **[Owyn](https://github.com/Owyn)** 
