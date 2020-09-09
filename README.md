@@ -15,9 +15,12 @@ ID | Nome das Dungeons
 3020 | Sea of Honor 
 3026 | Corrupted Skynest 
 3126 | Corrupted Skynest (Hard) 
-3027 | Forbidden Arena 
 3102 | Draakon Arena 
 3202 | Draakon Arena (Hard) 
+3027 | Forbidden Arena [Hagufna]
+3103 | Forbidden Arena [Undying Warlord]
+3203 | Forbidden Arena [Nightmare Undying Warlord]
+
 
 ----
 
@@ -43,7 +46,7 @@ proxy(/8) | Comando descrição
 
 ## Configuraçoes de Menssagens
  
- ATENÇÃO | Cuidado ao digitar o comando **lNotice** o *(I) de INotice* não  é um *(I)* maiúsculo, e sim um *(L)* minúsculo
+ ATENÇÃO | Ao digitar o comando **lNotice** o *(I) de INotice* não  é um *(I)* maiúsculo, e sim um *(L)* minúsculo
 ---- | ----
 
 
@@ -59,17 +62,18 @@ proxy(/8) | Comando descrição
 
 ##   
 
-* Quando o **gNotice** estiver *Ativado* e o **lNotice** *Desativado* os avisos deixarão de ser exebidos na tela, e serão exebidos apenas no chat da party. 
-(Não se preocupe, o pessoal da party nao  irão ver as menssagens exebibas pelo o guia...)
+* Uma Janela de comandos, onde você pode mudar e personalizar o Guia como desejar ( comando de Ativaçao /8 guia gui )
  
-  ![](https://i.imgur.com/WhbAsFr.jpg)  
+  ![](https://i.imgur.com/zYYabIz.png)  
 
 ###  
 
 ## Credits
-- **[Kasea](https://github.com/tera-toolbox-mods)**
-- **[hsdn](https://github.com/hsdn)**  
-- **[michengs](https://github.com/michengs)** 
-- **[ZC](https://github.com/tera-mod)** 
-- **[Owyn](https://github.com/Owyn)** 
-- **[ITunk](https://github.com/GrafNikola)** 
+- **[Kasea](https://github.com/tera-toolbox-mods)** - Desenvolvedor original do módulo Tera-Guide
+- **[hsdn](https://github.com/hsdn)** - Autor das principais funçoes
+- **[michengs](https://github.com/michengs)** - Autor do código base para a maioria dos guias e núcleo do módulo
+- **[Multarix](https://github.com/Multarix)** - Autor do guia RR e também fazendo alterações na tradução para o inglês
+- **[Kuroine](https://github.com/Kuroine)** - Autor do código base para o guia DA
+- **[ZC](https://github.com/tera-mod)** - Coordenadas fornecidas para renderização de áreas de ataque e mecânica
+- **[Owyn](https://github.com/Owyn)** - Autor do guia RR e também fazendo alterações na tradução para o inglês
+- **[ITunk](https://github.com/GrafNikola)** Autor da tradução inicial para o russo
