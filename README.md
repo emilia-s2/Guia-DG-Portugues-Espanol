@@ -33,7 +33,8 @@ ID | Nome das Dungeons
 ## Comandos 
 proxy(/8) | Comando descrição 
 --- | ---
-**guia** | Module on/off | digitando diretamente fora do chat proxy
+**guia** | Module on/off
+**guia&nbsp;gui** | Mostrar Janela de personalizacao GUI
 **guia&nbsp;lNotice**<br>(padrão: on) | Mensagem enviada para Take notice ON/OFF 
 **guia&nbsp;gNotice**<br>(padrão: off) | Mensagem enviada para Chat party ON/OFF
 **guia&nbsp;spawnObject**<br>(padrão: on) | Objetos de marcação ON/OFF
@@ -61,7 +62,7 @@ proxy(/8) | Comando descrição
   ![](https://i.imgur.com/R2PuTGK.jpg)
 
 ##   
-
+   #### Interface GUI
 * Uma Janela de comandos, onde você pode mudar e personalizar o Guia como desejar ( comando de Ativaçao /8 guia gui )
  
   ![](https://i.imgur.com/zYYabIz.png)  
