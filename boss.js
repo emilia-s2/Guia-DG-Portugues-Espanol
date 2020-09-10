@@ -32,7 +32,7 @@ module.exports = {
 		{zone: 3027, string: '<font color="#ff5cde">Bem-Vindo a</font> <font color="#8eff05">Forbidden Arena</font> <font color="#09c0e1"> [Hagufna]</font>'},
 		{zone: 3103, string: '<font color="#ff5cde">Bem-Vindo a</font> <font color="#8eff05">Forbidden Arena</font> <font color="#09c0e1"> [Undying Warlord]</font>'},
 		{zone: 3203, string: '<font color="#ff5cde">Bem-Vindo a</font> <font color="#8eff05">Forbidden Arena</font> <font color="#d92b3c"> [Nightmare Undying Warlord]</font>'},
-		{zone: 9053, string: '<font color="#ff5cde">BemVenido a</font> <font color="#8eff05">Kezzels Gorge</font>'}
+		{zone: 9053, string: '<font color="#ff5cde">Bem-Vindo a</font> <font color="#8eff05">Kezzels Gorge</font>'}
 	],
 	// 费勒诺的实验室 (Demokron Factory)
 	DF_BOSS_1 : [
