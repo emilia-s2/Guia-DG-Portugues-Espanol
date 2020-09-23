@@ -55,7 +55,7 @@ proxy(/8) | Comando descrição
 * Quando o **lNotice** estiver *Ativado*, os avisos serão exibidos na parte inferior da tela como Take Notice.
 
   ![](https://i.imgur.com/qAVCiuv.jpg)
-- **[Confira em tamanho real aqui](https://i.imgur.com/NnQFXbT.png)**
+- **[Confira em tamanho real aqui](https://camo.githubusercontent.com/062034582b8db13a74347784cf388ea1315ea37e/68747470733a2f2f692e696d6775722e636f6d2f4e6e51465862542e706e67)**
 
 ##
 
