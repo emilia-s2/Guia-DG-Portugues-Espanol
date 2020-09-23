@@ -62,13 +62,13 @@ proxy(/8) | Comando descrição
 * Quando **lNotice** estiver *Desativado* e o **gNotice** *Ativado*, os avisos serão exebidos na parte superior da tela, sem ser na forma de Take Notice. (Cor padrão da menssagem é verde, mas você pode alterar para a cor que dejesar, basta digitar o comando /8 guia ajuda para obter a lista completa de cores disponíveis, ou usar o comando (/8 guia gui)  
   
   ![](https://i.imgur.com/R2PuTGK.jpg)
+- **[Confira em tamanho real apertando aqui](https://i.imgur.com/mdAKfX0.png)** 
 
 ##   
    #### Interface GUI
 * Uma Janela de comandos, onde você pode mudar e personalizar o Guia como desejar ( comando de Ativação /8 guia gui )
  
   ![](https://i.imgur.com/v599kxm.png) 
-- **[Confira em tamanho real apertando aqui](https://i.imgur.com/mdAKfX0.png)** 
 
 ###  
 
