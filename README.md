@@ -34,19 +34,19 @@ ID | Nome das Dungeons
 proxy(/8) | Comando descrição 
 --- | ---
 **guia**<br>(padrão: on) | Module on/off
-**guia&nbsp;gui** | Mostrar Janela de personalizacao GUI
+**guia&nbsp;gui** | Mostrar Janela de personalização GUI
 **guia&nbsp;stream**<br>(padrão: off) | Mensagens apenas no chat, e todos os objetos de marcações serão destivados ON/OFF
 **guia&nbsp;lNotice**<br>(padrão: on) | Mensagem enviada para Take notice ON/OFF 
 **guia&nbsp;gNotice**<br>(padrão: off) | Mensagem enviada para Chat party ON/OFF
 **guia&nbsp;spawnObject**<br>(padrão: on) | Objetos de marcação ON/OFF
 **guia&nbsp;dungeons** | Lista de todas as dungeons + IDs
-**guia&nbsp;verbose&nbsp;+`ID`**<br>(padrão: todas on) | Ativar/desativar Guia menssagem para alguma DG específica ON/OFF<br>EX: (guia verbose 9781) ID=Velik's Sanctuary
-**guia&nbsp;spawnObject&nbsp;+`ID`**<br>(padrão:todas on) | Ativar/desativar marcação para alguma DG específica ON/OFF<br>Ex: (guia spawnObject 9781) ID=Velik's Sanctuary 
+**guia&nbsp;verbose&nbsp;+`ID`**<br>(padrão: todas on) |Guia menssagem para alguma DG específica ON/OFF<br>EX: (guia verbose 9781) ID=Velik's Sanctuary
+**guia&nbsp;spawnObject&nbsp;+`ID`**<br>(padrão:todas on) | Marcação para alguma DG específica ON/OFF<br>Ex: (guia spawnObject 9781) ID=Velik's Sanctuary 
 **guia&nbsp;ajuda** | Lista de todos os comandos suportados
 
 ---
 
-## Configuraçoes de Menssagens
+## Configurações de Menssagens
  
  ATENÇÃO | Ao digitar o comando **lNotice** o *(I) de INotice* não  é um *(I)* maiúsculo, e sim um *(L)* minúsculo
 ---- | ----
@@ -64,7 +64,7 @@ proxy(/8) | Comando descrição
 
 ##   
    #### Interface GUI
-* Uma Janela de comandos, onde você pode mudar e personalizar o Guia como desejar ( comando de Ativaçao /8 guia gui )
+* Uma Janela de comandos, onde você pode mudar e personalizar o Guia como desejar ( comando de Ativação /8 guia gui )
  
   ![](https://i.imgur.com/v599kxm.png)  
 
@@ -72,7 +72,7 @@ proxy(/8) | Comando descrição
 
 ## Credits
 - **[Kasea](https://github.com/tera-toolbox-mods)** - Desenvolvedor original do módulo Tera-Guide
-- **[hsdn](https://github.com/hsdn)** - Autor das principais funçoes
+- **[hsdn](https://github.com/hsdn)** - Autor das principais funçoes e novidades
 - **[michengs](https://github.com/michengs)** - Autor do código base para a maioria dos guias e núcleo do módulo
 - **[Multarix](https://github.com/Multarix)** - Autor do guia RR e também fazendo alterações na tradução para o inglês
 - **[Kuroine](https://github.com/Kuroine)** - Autor do código base para o guia DA
