@@ -55,14 +55,14 @@ proxy(/8) | Comando descrição
 * Quando o **lNotice** estiver *Ativado*, os avisos serão exibidos na parte inferior da tela como Take Notice.
 
   ![](https://i.imgur.com/qAVCiuv.jpg)
-- **[Confira em tamanho real apertando aqui](https://i.imgur.com/NnQFXbT.png)**
+- **[Confira em tamanho real aqui](https://i.imgur.com/NnQFXbT.png)**
 
 ##
 
 * Quando **lNotice** estiver *Desativado* e o **gNotice** *Ativado*, os avisos serão exebidos na parte superior da tela, sem ser na forma de Take Notice. (Cor padrão da menssagem é verde, mas você pode alterar para a cor que dejesar, basta digitar o comando /8 guia ajuda para obter a lista completa de cores disponíveis, ou usar o comando (/8 guia gui)  
   
   ![](https://i.imgur.com/R2PuTGK.jpg)
-- **[Confira em tamanho real apertando aqui](https://i.imgur.com/mdAKfX0.png)** 
+- **[Confira em tamanho real aqui](https://i.imgur.com/mdAKfX0.png)** 
 
 ##
 * Quando o modo Stream estiver *Ativado* as mensagens serão exebidas unicamente no chat, e todas as marcaçoes serão desativadas
