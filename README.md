@@ -71,7 +71,7 @@ proxy(/8) | Comando descrição
 
 ##   
    #### Interface GUI
-* Uma Janela de comandos, onde você pode mudar e personalizar o Guia como desejar ( comando de Ativação /8 guia gui )
+* Uma Janela de comandos, onde você pode mudar e personalizar o Guia como desejar<br>( comando de Ativação /8 guia gui )
  
   ![](https://i.imgur.com/v599kxm.png) 
 
