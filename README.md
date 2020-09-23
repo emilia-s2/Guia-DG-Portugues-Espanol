@@ -55,6 +55,7 @@ proxy(/8) | Comando descrição
 * Quando o **lNotice** estiver *Ativado*, os avisos serão exibidos na parte inferior da tela como Take Notice.
 
   ![](https://i.imgur.com/qAVCiuv.jpg)
+- **[Confira em tamanho real apertando aqui](https://i.imgur.com/NnQFXbT.png)**
 
 ##
 
@@ -66,7 +67,8 @@ proxy(/8) | Comando descrição
    #### Interface GUI
 * Uma Janela de comandos, onde você pode mudar e personalizar o Guia como desejar ( comando de Ativação /8 guia gui )
  
-  ![](https://i.imgur.com/v599kxm.png)  
+  ![](https://i.imgur.com/v599kxm.png) 
+- **[Confira em tamanho real apertando aqui](https://i.imgur.com/mdAKfX0.png)** 
 
 ###  
 
