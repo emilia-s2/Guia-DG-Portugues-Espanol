@@ -33,9 +33,9 @@ ID | Nome das Dungeons
 ## Comandos 
 proxy(/8) | Comando descrição 
 --- | ---
-**guia** | Module on/off
+**guia**<br>(padrão: on) | Module on/off
 **guia&nbsp;gui** | Mostrar Janela de personalizacao GUI
-**guia&nbsp;stream** | Mensagens apenas no chat, e todos os objetos de marcações serão destivados ON/OFF
+**guia&nbsp;stream**<br>(padrão: off) | Mensagens apenas no chat, e todos os objetos de marcações serão destivados ON/OFF
 **guia&nbsp;lNotice**<br>(padrão: on) | Mensagem enviada para Take notice ON/OFF 
 **guia&nbsp;gNotice**<br>(padrão: off) | Mensagem enviada para Chat party ON/OFF
 **guia&nbsp;spawnObject**<br>(padrão: on) | Objetos de marcação ON/OFF
