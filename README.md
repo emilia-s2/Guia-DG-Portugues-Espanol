@@ -65,7 +65,7 @@ proxy(/8) | Comando descrição
 - **[Confira em tamanho real apertando aqui](https://i.imgur.com/mdAKfX0.png)** 
 
 ##
-* Quando o Stream mod estiver *Ativado* as mensagens serão exebidas unicamente no chat, e todas as marcaçoes serão desativadas
+* Quando o modo Stream estiver *Ativado* as mensagens serão exebidas unicamente no chat, e todas as marcaçoes serão desativadas
 
   ![](https://i.imgur.com/kbRd3Xd.png)
 
