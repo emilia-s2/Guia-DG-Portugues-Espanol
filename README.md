@@ -55,14 +55,14 @@ proxy(/8) | Comando descrição
 * Quando o **lNotice** estiver *Ativado*, os avisos serão exibidos na parte inferior da tela como Take Notice.
 
   ![](https://i.imgur.com/qAVCiuv.jpg)
-- **[Confira em tamanho real aqui](https://camo.githubusercontent.com/062034582b8db13a74347784cf388ea1315ea37e/68747470733a2f2f692e696d6775722e636f6d2f4e6e51465862542e706e67)**
+- **[Confira em tamanho real aqui](https://camo.githubusercontent.com/c8cc521b78404cf796eb6b87d0f8b10fbda2e9a2/68747470733a2f2f692e696d6775722e636f6d2f465a5046397a742e706e67)**
 
 ##
 
 * Quando **lNotice** estiver *Desativado* e o **gNotice** *Ativado*, os avisos serão exebidos na parte superior da tela, sem ser na forma de Take Notice. (Cor padrão da menssagem é verde, mas você pode alterar para a cor que dejesar, basta digitar o comando /8 guia ajuda para obter a lista completa de cores disponíveis, ou usar o comando (/8 guia gui)  
   
   ![](https://i.imgur.com/R2PuTGK.jpg)
-- **[Confira em tamanho real aqui](https://camo.githubusercontent.com/293acbbfaf60df832116e1dbd85a509ffa9762ad/68747470733a2f2f692e696d6775722e636f6d2f6d64414b6658302e706e67)** 
+- **[Confira em tamanho real aqui](https://camo.githubusercontent.com/76e36f0630a62a456a43324790b16fce124d4a13/68747470733a2f2f692e696d6775722e636f6d2f6d3656515738552e706e67)** 
 
 ##
 * Quando o modo Stream estiver *Ativado* as mensagens serão exebidas unicamente no chat, e todas as marcaçoes serão desativadas
