@@ -24,7 +24,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", message: "Kaia's Shield", message_RU: "Кайа", class_position: "priest" },
 			{ type: "text", sub_type: "message", message: "Thrall of Protection", message_RU: "Кайа", class_position: "mystic" },
 			{ type: "text", sub_type: "message", message: "Derrubar", message_RU: "Кайа", class_position: "tank" },
-			{ type: "text", sub_type: "message", message: "Derrubar", message_RU: "Кайа", class_position: "dps" }
+			{ type: "text", sub_type: "message", message: "Derrubar", message_RU: "Кайа", class_position: "dps" },
 			{ type: "spawn", func: "circle", args: [true, 553, 0, 0, 10, 500, 0, 6000] }
 		],
 		"s-453-999-120-0": [
