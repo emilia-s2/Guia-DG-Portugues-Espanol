@@ -5,8 +5,8 @@ module.exports.general = {
 
 	// Русский
 	en: {
-		    unknowncommand: "Comando desconhecido, Para ver todos os comandos tente \"guia ajuda\"",
-		    helpheader: "Enter \"guia ajuda\" para mais informações",
+		    unknowncommand: "Comando desconhecido, Para ver todos os comandos tente \"guia help\"",
+		    helpheader: "guia help\" para mais informações",
 			helpbody: [
 			["guia cr, Mensagem Cor VERMELHO", "CRMSG"],
 			["guia co, Mensagem Cor LARANJA", "COMSG"],
@@ -39,8 +39,8 @@ module.exports.general = {
 		settings: "Configurações",
 		spawnObject: "Marcações",
 		speaks: "Mensagens por voz",
-		lNotice: "lNotice Mensagens (Take notice)",
-		gNotice: "gNotice Mensagens (Chat party)",
+		lNotice: "lNotice (Take notice)",
+		gNotice: "gNotice (Chat party)",
 		stream: "Streamer Mode",
 		rate: "Velocidade da voz",
 		color: "Mudar a Cor",
@@ -56,7 +56,7 @@ module.exports.general = {
 		ratechanged: "velocidade da Voz lvl",
 		dgnotfound: "Dungeon não Encontrada.",
 		dgnotspecified: "ID da DG não Especificada.",
-		enterdg: "Enter Dungeon",
+		enterdg: "Bem-vindo a",
 		enterspdg: "Bem-vindo a",
 		enteresdg: "Bem-vindo a",
 		fordungeon: "Para a Dungeon",
