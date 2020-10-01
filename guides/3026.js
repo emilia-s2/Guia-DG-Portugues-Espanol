@@ -280,36 +280,36 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"112-0": [{ type: "text", sub_type: "message", message: "Mao de GELO (FORA)", message_RU: "Лед (полоса)" }],
 		"110-0": [{ type: "text", sub_type: "message", message: "Mao de FOGO (FORA)", message_RU: "Огонь (лужа)" }],
 		"108-0": [
-			{ type: "text", sub_type: "message", message: "Vire a Direita (Repelir!)", message_RU: "Поворот вправо (откид)" },
+			{ type: "text", sub_type: "message", message: "Giro a Direita (Repelir!)", message_RU: "Поворот вправо (откид)" },
 			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 8, 440, 0, 2000] }
 		],
 		"158-0": [
-			{ type: "text", sub_type: "message", message: "Vire a Direita (Repelir!)", message_RU: "Поворот вправо (откид)" },
+			{ type: "text", sub_type: "message", message: "Giro a Direita (Repelir!)", message_RU: "Поворот вправо (откид)" },
 			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 8, 440, 0, 2000] }
 		],
 		"109-0": [
-			{ type: "text", sub_type: "message", message: "Vire a Esquerda (Repelir!)", message_RU: "Поворот влево (откид)" },
+			{ type: "text", sub_type: "message", message: "Giro a Esquerda (Repelir!)", message_RU: "Поворот влево (откид)" },
 			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 8, 440, 0, 2000] }
 		],
 		"159-0": [
-			{ type: "text", sub_type: "message", message: "Vire a Esquerda (Repelir!)", message_RU: "Поворот влево (откид)" },
+			{ type: "text", sub_type: "message", message: "Giro a Esquerda (Repelir!)", message_RU: "Поворот влево (откид)" },
 			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 8, 440, 0, 2000] }
 		],
-		"120-0": [{ type: "text", sub_type: "message", message: "Juntar", message_RU: "Яростный рев" }],
-		"145-0": [{ type: "text", sub_type: "message", message: "Pes-Lentos (Stun)", message_RU: "Стан" }],
-//		"157-0": [{ type: "text", sub_type: "message", message: "Change", message_RU: "Смена" }],
+		"120-0": [{ type: "text", sub_type: "message", message: "JUNTAR", message_RU: "Яростный рев" }],
+		"145-0": [{ type: "text", sub_type: "message", message: "Pes (Stun)", message_RU: "Стан" }],
+//	    "157-0": [{ type: "text", sub_type: "message", message: "Change", message_RU: "Смена" }],
 		"103-0": [
 			{ type: "text", sub_type: "message", message: "Cauda (voando)", message_RU: "Хвост (полет)" },
 			{ type: "text", sub_type: "message", message: "Arise!", message_RU: "Удочка!", delay: 1500, class_position: "priest" },
 			{ type: "spawn", func: "semicircle", args: [140, 260, 553, 0, 0, 10, 500, 0, 2000] },
-			{ type: "spawn", func: "vector", args: [553, 0, 0, 140, 500, 0, 2000] },  //135>140 alterado Dentro
+			{ type: "spawn", func: "vector", args: [553, 0, 0, 135, 500, 0, 2000] },
 			{ type: "spawn", func: "vector", args: [553, 0, 0, 260, 500, 0, 2000] }
 		],
 		"153-0": [
 			{ type: "text", sub_type: "message", message: "Cauda (voando)", message_RU: "Хвост (полет!!)" },
 			{ type: "text", sub_type: "message", message: "Arise!", message_RU: "Удочка!", delay: 1500, class_position: "priest" },
-			{ type: "spawn", func: "semicircle", args: [140, 260, 553, 0, 0, 10, 500, 0, 2000] },
-			{ type: "spawn", func: "vector", args: [553, 0, 0, 140, 500, 0, 2000] },  //135>140 alterado Dentro
+			{ type: "spawn", func: "semicircle", args: [140, 260, 912, 0, 0, 10, 500, 0, 2000] },
+			{ type: "spawn", func: "vector", args: [553, 0, 0, 135, 500, 0, 2000] },
 			{ type: "spawn", func: "vector", args: [553, 0, 0, 260, 500, 0, 2000] }
 		],
 		"118-0": [{ type: "text", sub_type: "message", message: "Jogar ao alto (iframe)", message_RU: "Прыжок" }],
@@ -318,7 +318,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		// AOE лед (большой)
 		"104-0": [
 			{ type: "text", sub_type: "message", message: "Magia de GELO (GRANDE)", message_RU: "Ледяные лужи" },
-			{ type: "spawn", func: "circle", args: [false, 553, 0, 80, 8, 520, 0, 6500] }], //0>80 | 500>520 alterado
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 500, 0, 5000] }
 		],
 		// AOE огонь (большой)
 		"105-0": [
@@ -335,17 +335,17 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		// AOE лед (малый)
 		"154-0": [
 			{ type: "text", sub_type: "message", message: "Magia de GELO (Pequeno)", message_RU: "Ледяной шторм" },
-			{ type: "spawn", func: "circle", args: [false, 553, 0, 80, 8, 520, 0, 6500] }], //0>80 | 500>520 alterado
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 500, 0, 6000] }
 		],
 		// AOE огонь (малый)
 		"155-0": [{ type: "text", sub_type: "message", message: "AOE de FOGO (Pequeno)", message_RU: "Огненный столб (опрокид)" },
-			{ type: "text", sub_type: "message", delay: 1200, message: "Iframe", message_RU: "Эвейд" }
+			{ type: "text", sub_type: "message", delay: 1200, message: "Esquiva", message_RU: "Эвейд" }
 		],
 
 		"206-0": [{ type: "text", sub_type: "message", message: "Pulo Atras", message_RU: "Прыжок назад" }],
 //		"206-2": [{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 15, 350, 0, 3000] }],
         "164-0": [{ type: "text", sub_type: "message", message: "R.I.P xD e.e (100%)", message_RU: "Прыжок назад" }], 
-		"165-0": [{ type: "text", sub_type: "message", message: "R.I.P xD e.e (0%)", message_RU: "Прыжок назад" }], 
+		"165-0": [{ type: "text", sub_type: "message", message: "R.I.P xD e.e (0%)", message_RU: "Прыжок назад" }],
 		"137-0": [{ type: "text", sub_type: "message", message: "Derrubar + Explosao Ampla (50metros)", message_RU: "Опрокидывание" }],
 		"138-0": [{ type: "text", sub_type: "message", message: "Explosao Ampla!!", message_RU: "AOE" }],
 		"139-0": [
