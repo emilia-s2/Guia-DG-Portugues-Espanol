@@ -9,7 +9,6 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	let green = false;
 	let purple = false;
 	let boss_thirty = false;
-	let party_makers = [];
 
 	function boss_mech_event(skillid) {
 		// (зеленый) "Ближе!"
