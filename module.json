@@ -6,7 +6,7 @@
         "guiName": "(Tera-Guide-Pt-Br)",
         "settingsFile": "config.json",
         "settingsMigrator": "settings_migrator.js",
-        "settingsVersion": 1.14
+        "settingsVersion": 1.15
     },
     "author": "HSDN / ZC / Kasea / Emilia",
     "description": "Guia de DG para TERA totalmente em Português",
