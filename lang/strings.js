@@ -5,8 +5,8 @@ module.exports.general = {
 
 	// Русский
 	en: {
-		    unknowncommand: "Comando desconhecido, Para ver todos os comandos tente \"guia help\"",
-		    helpheader: "Use o comando \"guia help\ para mais informações",
+		    unknowncommand: "Comando desconhecido, Para ver todos os comandos tente (guia help)",
+		    helpheader: "Use o comando \"guia help\" para mais informações",
 			helpbody: [
 			["guia cr, Mensagem Cor VERMELHO", "CRMSG"],
 			["guia co, Mensagem Cor LARANJA", "COMSG"],
@@ -26,8 +26,8 @@ module.exports.general = {
 			["guia voice, Converte notices de texto em falas ON/OFF", "COMSG"],
 			["guia 1~10, Configurar velocidade da voz", "COMSG"],
 			["guia stream, Modo stream (mensagens apenas no chat) ON/OFF", "COMSG"],
-			["guia lNotice, Mensagens mostradas em Take notice (parte inferior) ON/OFF", "CGMSG"],
-			["guia gNotice, Mensagens mostradas na (parte superior) da tela ON/OFF", "CGMSG"],
+			["guia lNotice, Mensagens mostradas em Take notice (parte Inferior) ON/OFF", "CGMSG"],
+			["guia gNotice, Mensagens mostradas no (Caht da party)ON/OFF", "CGMSG"],
 			["guia spawnObject, Mostrar Marcações ON/OFF", "CGMSG"],
 			["guia dungeons, Lista de todas as dungeons + IDs suportadas", "CRMSG"],
 			["guia cc, Ver a Cor da Mensagem de notificação atual", "CRMSG"],
