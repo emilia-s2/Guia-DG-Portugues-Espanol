@@ -211,6 +211,10 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		   { type: "spawn", func: "circle", args: [false, 553, 180, 250, 10, 200, 0, 2750] }   //Adicionado
 		],
 		"s-3034-1003-205-0": [{ type: "text", sub_type: "alert", message: "Ventilador", message_RU: "Ветер (кайя)!" }],
+		"s-3034-1004-205-0": [{ type: "alias", id: "s-3034-1003-205-0" }],
+		"s-3034-1005-205-0": [{ type: "alias", id: "s-3034-1003-205-0" }],
+		"s-3034-1006-205-0": [{ type: "alias", id: "s-3034-1003-205-0" }],
+		"s-3034-1007-205-0": [{ type: "alias", id: "s-3034-1003-205-0" }],
 		"s-3034-1000-304-0": [
 		   { type: "text", sub_type: "message", message: "SAIR", message_RU: "От него" },
 		   { type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 350, 100, 4000] } // Adicionado
