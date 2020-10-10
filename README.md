@@ -4,6 +4,8 @@ Guide-DG
 ##  Dungeons Suportadas
 ID | Nome das Dungeons 
 --- | ---
+7011 | Guardian Blightwood
+7015 | Guardian Balder's Refuge
 9781 | Velik's Sanctuary 
 9735 | RK-9 Kennel 
 3034 | RK-9 Kennel (Hard) 
