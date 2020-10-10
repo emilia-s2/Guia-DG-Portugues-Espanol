@@ -29,7 +29,7 @@ ID | Nome das Dungeons
 
 ----
 
-### Orignal Guide
+### Original Guide
 - **[Original Guide - HSDN ](https://github.com/hsdn/tera-guide)**
 
 ---
