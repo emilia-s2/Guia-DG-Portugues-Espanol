@@ -24,9 +24,20 @@ ID | Nome das Dungeons
 
 ----
 
-####  Para o perfeito fucionamento é necessário 3 modulos extras, eles são instalados automaticamente pelo toolbox
-##### > library
-##### > tera-guide-core
+### Tera-Guide
+#### O módulo Dungeons Guide mostra notificações de voz, mensagens na tela, marcadores de área de ataque e mecânica dos boses. Disponível em *Português*.
+
+----
+
+### Orignal Guide
+- **[Original Guide - HSDN ](https://github.com/hsdn/tera-guide)**
+
+---
+## Dependencies
+###  São instalados automaticamente pelo toolbox
+
+- **[tera-guide-core](https://github.com/GrafNikola)**
+
 ------
 
 ## Comandos 
