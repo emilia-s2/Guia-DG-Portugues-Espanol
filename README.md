@@ -31,8 +31,8 @@ ID | Nome das Dungeons
 
 ----
 
-### Original Guide
-- **[Original Guide - HSDN ](https://github.com/hsdn/tera-guide)**
+### (Original) Guide in english
+- **[Guide-HSDN](https://github.com/hsdn/tera-guide)**
 
 ---
 ## Dependencies
