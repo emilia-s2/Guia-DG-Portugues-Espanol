@@ -4,43 +4,43 @@
 module.exports = {
 
     9781: {
-	"en": "Velik's Sanctuary Normal"},
+	"pt": "Velik's Sanctuary Normal"},
 	9739: {
-	"en": "Red Refuge Normal"},
+	"pt": "Red Refuge Normal"},
 	9735: {
-	"en": "RK-9 Kennel Normal"},
+	"pt": "RK-9 Kennel Normal"},
 	3034: {
-	"en": "Rampaging RK-9 Kennel"},
+	"pt": "Rampaging RK-9 Kennel"},
 	9920: {
-	"en": "Antaroth's Abyss (Dificil)"},
+	"pt": "Antaroth's Abyss (Dificil)"},
 	9982: {
-	"en": "Grotto of Lost Souls (Dificil)"},
+	"pt": "Grotto of Lost Souls (Dificil)"},
 	9044: {
-	"en": "Bahaar's Sanctum"},
+	"pt": "Bahaar's Sanctum"},
 	3201: {
-	"en": "Gossamer Vault (Dificil)"},
+	"pt": "Gossamer Vault (Dificil)"},
 	3023: {
-    "en": "Akalath Quarantine"},
+    "pt": "Akalath Quarantine"},
 	3020: {
-	"en": "Sea of Honor"},
+	"pt": "Sea of Honor"},
 	3026: {
-	"en": "Corrupted Skynest Normal"},
+	"pt": "Corrupted Skynest Normal"},
 	3126: {
-	"en": "Corrupted Skynest (Dificil)"},
+	"pt": "Corrupted Skynest (Dificil)"},
 	3102: {
-	"en": "Draakon Arena"},
+	"pt": "Draakon Arena"},
 	3202: {
-	"en": "Draakon Arena (Dificil)"},
+	"pt": "Draakon Arena (Dificil)"},
 	3027: {
-	"en": "Forbidden Arena [Hagufna]"},
+	"pt": "Forbidden Arena [Hagufna]"},
 	3103: {
-	"en": "Forbidden Arena [Undying Warlord]"},
+	"pt": "Forbidden Arena [Undying Warlord]"},
 	3203: {
-	"en": "Forbidden Arena [Nightmare Undying Warlord]"},
+	"pt": "Forbidden Arena [Nightmare Undying Warlord]"},
 	9053: {
-    "en": "Kezzel's Gorge (5-Person)"},
+    "pt": "Kezzel's Gorge (5-Person)"},
 	7011: {
-    "en": "Guardian Blightwood"},
+    "pt": "Guardian Blightwood"},
 	7015: {
-    "en": "Guardian Balder's Refuge"},
+    "pt": "Guardian Balder's Refuge"},
 };
