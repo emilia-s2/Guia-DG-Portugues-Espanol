@@ -47,21 +47,21 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			dispatch.setTimeout(() => notice = true, 4000);
 
 			dispatch.setTimeout(() => {
-				handlers.text({
+/*				handlers.text({
 					sub_type: "alert",
 					message_RU: "Скоро дебафф...",
 					message_PT: "Debuff Chegando..."
-				});
+				});*/
 			}, 55000);
 		}
 
 		if (notice && skillid === 234) {
-			dispatch.setTimeout(() => {
+/*			dispatch.setTimeout(() => {
 				handlers.text({
 					sub_type: "alert",
 					message_RU: "Скоро дебафф...",
 					message_PT: "Debuff Chegando..."
-				});	
+				});	*/
 			}, 55000);
 		}
 	}
