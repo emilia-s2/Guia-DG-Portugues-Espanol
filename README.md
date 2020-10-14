@@ -91,7 +91,7 @@ proxy(/8) | Comando descrição
 ###  
 
 ## Credits
-- **[Kasea](https://github.com/tera-toolbox-mods)** - Desenvolvedor original do módulo Tera-Guide
+- **[Kasea](https://github.com/Kaseaa)** - Desenvolvedor original do módulo Tera-Guide
 - **[hsdn](https://github.com/hsdn)** - Autor atual das principais funçoes e novidades
 - **[michengs](https://github.com/michengs)** - Autor do código base para a maioria dos guias e núcleo do módulo
 - **[Multarix](https://github.com/Multarix)** - Autor do guia RR e também fazendo alterações na tradução para o inglês
