@@ -27,7 +27,7 @@ ID | Nome das Dungeons
 ----
 
 ### Tera-Guide
-#### O módulo Dungeons Guide mostra notificações de voz, mensagens na tela, marcadores de área de ataque e mecânica dos boses. Disponível em idioma *Português*.
+O módulo Dungeons Guide mostra notificações em voz, mensagens na tela, marcadores de área de ataque e mecânica dos boses. Disponível em idioma *Português*.
 
 ----
 
