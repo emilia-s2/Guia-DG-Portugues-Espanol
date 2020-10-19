@@ -12,8 +12,6 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	let timer1 = null;
 	let timer2 = null;
 	let timer3 = null;
-	let timer4 = null;
-	let timer5 = null;
 	let boss_ent = null;
 	let boss_offset = 0;
 	let qbacting = null;
@@ -68,16 +66,6 @@ module.exports = (dispatch, handlers, guide, lang) => {
 
 		timer1 = dispatch.setTimeout(() => {
 			if (debuff != null) {
-				handlers.text({
-					sub_type: "message",
-					message_PT: "Fim o Debuff em 20 segundos",
-					message_RU: "Дебафф 20 сек."
-				});
-			}
-		}, 50000);
-
-		timer2 = dispatch.setTimeout(() => {
-			if (debuff != null) {
 				dispatch.setTimeout(() => {
 					handlers.text({
 						sub_type: "alert",
@@ -85,25 +73,15 @@ module.exports = (dispatch, handlers, guide, lang) => {
 						message_RU: (`${debuff_messages[debuff % 2].message_RU}`)
 					});
 				}, 2000);
-/*				handlers.text({
+				handlers.text({
 					sub_type: "message",
-					message_PT: "Debuff 50 seconds",
-					message_RU: "Дебафф 50 сек."
-				});*/
-			}
-		}, 70000);
-
-		timer3 = dispatch.setTimeout(() => {
-			if (debuff != null) {
-/*				handlers.text({
-					sub_type: "message",
-					message_PT: "Warning! Debuff 15 seconds",
+					message_PT: "Fim do Debuff em 15 segundos",
 					message_RU: "Дебафф 15 сек."
-				});*/
+				});
 			}
-		}, 55000);
+		}, 40000);
 
-		timer4 = dispatch.setTimeout(() => {
+		timer2 = dispatch.setTimeout(() => {
 			if (debuff != null) {
 				handlers.text({
 					sub_type: "message",
@@ -111,17 +89,17 @@ module.exports = (dispatch, handlers, guide, lang) => {
 					message_RU: "Дебафф 10 сек."
 				});
 			}
-		}, 60000);
+		}, 45000);
 
-		timer5 = dispatch.setTimeout(() => {
+		timer3 = dispatch.setTimeout(() => {
 			if (debuff != null) {
-/*				handlers.text({
+				handlers.text({
 					sub_type: "message",
-					message_PT: "Warning! Debuff 5 seconds",
+					message_PT: "Fim do Debuff em 5 segundos",
 					message_RU: "Дебафф 5 сек."
-				});*/
+				});
 			}
-		}, 65000);
+		}, 50000);
 
 		if (blue) {
 			handlers.text({
@@ -147,8 +125,6 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		dispatch.clearTimeout(timer1);
 		dispatch.clearTimeout(timer2);
 		dispatch.clearTimeout(timer3);
-		dispatch.clearTimeout(timer4);
-		dispatch.clearTimeout(timer5);
 	}
 
 	function skilld_event(skillid, ent) {
