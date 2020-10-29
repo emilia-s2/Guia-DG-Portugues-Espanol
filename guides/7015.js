@@ -13,7 +13,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-620-1000-115-0": [{ type: "text", sub_type: "message", message_PT: "Bolas de Fogo", message_RU: "nao sei russo :c desculpa" }],
 		"s-620-1000-127-0": [{ type: "text", sub_type: "message", message_PT: "Salto Atras", message_RU: "nao sei russo :c desculpa" },
 			{ type: "spawn", func: "circle", args: [false, 553, 180, 376, 12, 232, 0, 5000] }
-		],	
+		],
 		"s-620-1000-120-0": [{ type: "text", sub_type: "message", message_PT: "Onda de Fogo", message_RU: "nao sei russo :c desculpa" }],
 		"s-620-1000-121-0": [{ type: "text", sub_type: "message", message_PT: "Repelir (iframe)", message_RU: "nao sei russo :c desculpa" }],
 		"s-620-1000-119-0": [{ type: "text", sub_type: "message", message_PT: "Explosao | Entrar", message_RU: "nao sei russo :c desculpa" },
@@ -31,7 +31,6 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-620-1005-303-0": [{ type: "alias", id: "s-620-1001-303-0" }],
 		
 		"s-620-1000-129-0": [{ type: "text", sub_type: "message", message_PT: "Bolas de Fogo", message_RU: "nao sei russo :c desculpa" }],
-		"s-620-1000-106-0": [{ type: "text", sub_type: "message", message_PT: "Salto Aleatorio", message_RU: "nao sei russo :c desculpa" }],
-
+		"s-620-1000-106-0": [{ type: "text", sub_type: "message", message_PT: "Salto Aleatorio", message_RU: "nao sei russo :c desculpa" }]
 	};
 };

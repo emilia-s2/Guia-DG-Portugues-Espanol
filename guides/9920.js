@@ -36,14 +36,15 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			const colour_rotation = clockwise ? ["red", "yellow", "blue"] : ["blue", "yellow", "red"];
 
 			for (let i = 0; i < 3; i++) {
-				let current_colour = colour_rotation[(colour_rotation.indexOf(colour_to_use) + i) % 3];
+				const current_colour = colour_rotation[(colour_rotation.indexOf(colour_to_use) + i) % 3];
 
 				handlers.spawn({
 					func: "marker",
 					args: [false, COLOURS_OFFSETS[current_colour], 150, i * 2600, (i + 1) * 3000, true, null] 
 				}, ent);
 			}
-
+			
+            // eslint-disable-next-line no-param-reassign
 			dispatch.setTimeout(()=> clockwise = null, 12000);
 		}, 1000);
 	}
@@ -52,7 +53,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		colour_to_use = colour;
 	}
 
-	let SPAWNING_FIRST_CIRCLE_FLOWERS = [
+	const SPAWNING_FIRST_CIRCLE_FLOWERS = [
 		{ type: "text", class_position: "tank", sub_type: "message", message_PT: "DIREITO | ENTRAR - SAIR (Donuts)", message_RU: "Вправо сейф > Волны внутрь" },
 		{ type: "text", class_position: "dps", sub_type: "message", message_PT: "ESQUERDO | ENTRAR - SAIR (Donuts)", message_RU: "Влево сейф > Волны внутрь" },
 		{ type: "text", class_position: "heal", sub_type: "message", message_PT: "ESQUERDO | ENTRAR - SAIR (Donuts)", message_RU: "Влево сейф > Волны внутрь" },
@@ -63,7 +64,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		{ type: "spawn", func: "circle", args: [false, 445, 0, 0, 12, 293, 1500, 5000] }
 	];
 
-	let SPAWNING_SECOND_CIRCLE_FLOWERS = [
+	const SPAWNING_SECOND_CIRCLE_FLOWERS = [
 		{ type: "text", class_position: "tank", sub_type: "message", message_PT: "ESQUERDO | SAIR - ENTRAR (Donuts)", message_RU: "Влево сейф > Волны наружу" },
 		{ type: "text", class_position: "dps", sub_type: "message", message_PT: "DIREITO | SAIR - ENTRAR (Donuts)", message_RU: "Вправо сейф > Волны наружу" },
 		{ type: "text", class_position: "heal", sub_type: "message", message_PT: "DIREITO | SAIR - ENTRAR (Donuts)", message_RU: "Вправо сейф > Волны наружу" },
