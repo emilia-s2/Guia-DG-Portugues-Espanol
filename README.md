@@ -31,7 +31,7 @@ O módulo Dungeons Guide mostra notificações em voz, mensagens na tela, marcad
 
 ----
 
-### Outras traducciones
+### Outras Traduçôes
 - **[Inglês (English) by HSDN](https://github.com/hsdn/tera-guide)**
 - **[Taiwanese (臺灣話) by michengs](https://github.com/michengs/Dungeon-guide)**
 
