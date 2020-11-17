@@ -44,5 +44,5 @@ module.exports = {
 	7015: {
     "pt": "Guardian Balder's Refuge"},
 	3036: {
-    "pt": "Sky Cruiser (Difícil"},
+    "pt": "Sky Cruiser (Difícil)"},
 };
