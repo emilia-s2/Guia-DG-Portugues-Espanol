@@ -12,13 +12,13 @@ module.exports = {
 	3034: {
 	"pt": "Rampaging RK-9 Kennel"},
 	9920: {
-	"pt": "Antaroth's Abyss (Dificil)"},
+	"pt": "Antaroth's Abyss (Difícil)"},
 	9982: {
-	"pt": "Grotto of Lost Souls (Dificil)"},
+	"pt": "Grotto of Lost Souls (Difícil)"},
 	9044: {
 	"pt": "Bahaar's Sanctum"},
 	3201: {
-	"pt": "Gossamer Vault (Dificil)"},
+	"pt": "Gossamer Vault (Difícil)"},
 	3023: {
     "pt": "Akalath Quarantine"},
 	3020: {
@@ -26,11 +26,11 @@ module.exports = {
 	3026: {
 	"pt": "Corrupted Skynest Normal"},
 	3126: {
-	"pt": "Corrupted Skynest (Dificil)"},
+	"pt": "Corrupted Skynest (Difícil)"},
 	3102: {
 	"pt": "Draakon Arena"},
 	3202: {
-	"pt": "Draakon Arena (Dificil)"},
+	"pt": "Draakon Arena (Difícil)"},
 	3027: {
 	"pt": "Forbidden Arena [Hagufna]"},
 	3103: {
@@ -43,4 +43,6 @@ module.exports = {
     "pt": "Guardian Blightwood"},
 	7015: {
     "pt": "Guardian Balder's Refuge"},
+	3036: {
+    "pt": "Sky Cruiser (Difícil"},
 };
