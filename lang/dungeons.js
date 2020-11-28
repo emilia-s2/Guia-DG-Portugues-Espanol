@@ -9,8 +9,6 @@ module.exports = {
 	"pt": "Red Refuge Normal"},
 	9735: {
 	"pt": "RK-9 Kennel Normal"},
-	3034: {
-	"pt": "Rampaging RK-9 Kennel"},
 	9920: {
 	"pt": "Antaroth's Abyss (Difícil)"},
 	9982: {
@@ -45,4 +43,6 @@ module.exports = {
     "pt": "Guardian Balder's Refuge"},
 	3036: {
     "pt": "Sky Cruiser (Difícil)"},
+	9056: {
+    "pt": "Timescape (Difícil)"},
 };
