@@ -6,6 +6,10 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	guide.type = SP;
 
 	let triple_attack = false;
+	let back_print = false;
+	let back_time = 0;
+	let end_back_time = 0;
+	let is_one_back = false;
 	let timer1 = null;
 	let timer2 = null;
 	let enrage = 0;
@@ -21,19 +25,36 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		4: { message: "Four Split Strikes", message_PT: "Dois Ataques divididos" }
 	};
 
-	function boss_backattack_event() {
+	function boss_backcombo_event() {
 		dispatch.clearTimeout(timer2);
 		counter++;
 
 		if (counter >= 2 && triple_attack) {
 			handlers.text({
 				sub_type: "message",
-				message: "Back Attack",
-				message_PT: "Ataque Atrás"
+				message: "Back Combo",
+				message_PT: "Atrás Combo"
 			});
 		}
 
 		timer2 = dispatch.setTimeout(() => counter = 0, enrage == 1 ? 2200 : 2500);
+	}
+
+	function boss_backattack_event() {
+		end_back_time = new Date() - back_time;
+
+		if (!back_print) {
+			back_print = true;
+			is_one_back = end_back_time > 0 && end_back_time < 1500;
+
+			handlers.text({
+				sub_type: "message",
+				message: is_one_back ? "Back!" : "!!!",
+				message_PT: is_one_back ? "Atras!" : "!!!"
+			});
+		}
+
+		dispatch.setTimeout(() => back_print = false, 2500);
 	}
 
 	function boss_tripleattack_event() {
@@ -89,6 +110,10 @@ module.exports = (dispatch, handlers, guide, lang) => {
 
 	return {
 		// Phase 1
+		"ns-3036-1001": [
+			{ type: "spawn", func: "marker", args: [false, 281, -500, 100, 60000000, false] },
+			{ type: "spawn", func: "point", args: [513, 261, 500, 100, 60000000] }
+		],
 		"nd-3036-1001": [
 			{ type: "stop_timers" },
 			{ type: "despawn_all" }
@@ -98,7 +123,9 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		// Phase 2
 		"ns-3036-1000": [
 			{ type: "func", func: () => enrage = 0 },
-			{ type: "func", func: () => mech_counter = 0 }
+			{ type: "func", func: () => mech_counter = 0 },
+			{ type: "spawn", func: "marker", args: [false, 281, -500, 100, 60000000, false] },
+			{ type: "spawn", func: "point", args: [513, 261, 500, 100, 60000000] }
 		],
 		"nd-3036-1000": [
 			{ type: "stop_timers" },
@@ -116,21 +143,31 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"h-3036-1000-100": [{ type: "func", func: () => is_hp_79 = false }],
 		"h-3036-1000-94": [{ type: "text", sub_type: "message", message: "94%" }],
 		"h-3036-1000-79": [{ type: "text", sub_type: "message", message: "79%" }, { type: "func", func: () => is_hp_79 = true }],
-		"s-3036-1000-1103-0": [{ type: "func", func: boss_backattack_event }],
-		"s-3036-1000-1106-0": [{ type: "func", func: boss_backattack_event }],
-		"s-3036-1000-1112-0": [{ type: "text", sub_type: "message", message: "Back Move", message_PT: "Movimento para trás" }],
+		"h-3036-1000-35": [{ type: "text", sub_type: "message", message: "Watch the countdown", message_PT: "Veja a Contagem Regressiva" }],
+		"h-3036-1000-34": [{ type: "text", sub_type: "message", message: "Third layer of shrinking ring preparation", message_PT: "Terceira Camada do Anel de Encolhimento" }],
+		"h-3036-1000-65": [{ type: "text", sub_type: "message", message: "Second layer of shrinking ring preparation", message_PT: "Segunda Camada do Anel de Encolhimento" }],
+		"s-3036-1000-1101-0": [{ type: "func", func: boss_backattack_event }],
+		"s-3036-1000-1102-0": [{ type: "func", func: () => back_time = new Date() }],
+		"s-3036-1000-1103-0": [{ type: "func", func: boss_backcombo_event }],
+		"s-3036-1000-1106-0": [{ type: "func", func: boss_backcombo_event }],
+		"s-3036-1000-1112-0": [{ type: "text", sub_type: "message", message: "Back Move", message_PT: "Movimento Atrás" }],
 		"s-3036-1000-1114-0": [
 			{ type: "text", sub_type: "message", message: "Invisible Fire", message_PT: "Fogo Invisível" },
-			{ type: "spawn", func: "vector", args: [553, 90, 150, 0, 1300, 0, 8830] },
-			{ type: "spawn", func: "vector", args: [553, 90, 75, 0, 1300, 0, 8830] },
-			{ type: "spawn", func: "vector", args: [553, 0, 0, 0, 1300, 0, 8830] },
-			{ type: "spawn", func: "vector", args: [553, 270, 75, 0, 1300, 0, 8830] },
-			{ type: "spawn", func: "vector", args: [553, 270, 150, 0, 1300, 0, 8830] }
+			{ type: "spawn", func: "vector", args: [553, 90, 150, 0, 1300, 0, 5830] },
+			{ type: "spawn", func: "vector", args: [553, 90, 75, 0, 1300, 0, 5830] },
+			{ type: "spawn", func: "vector", args: [553, 0, 0, 0, 1300, 0, 5830] },
+			{ type: "spawn", func: "vector", args: [553, 270, 75, 0, 1300, 0, 5830] },
+			{ type: "spawn", func: "vector", args: [553, 270, 150, 0, 1300, 0, 5830] }
 		],
-		"s-3036-1000-1115-0": [{ type: "text", sub_type: "message", delay: 3200, message: "Dodge", message_PT: "Iframe" }],
+		"s-3036-1000-1115-0": [
+			{ type: "text", sub_type: "message", message: "3" },
+			{ type: "text", sub_type: "message", delay: 1000, message: "2" },
+			{ type: "text", sub_type: "message", delay: 2000, message: "1" },
+			{ type: "text", sub_type: "message", delay: 3200, message: "Dodge", message_PT: "Iframe" }
+		],
 		"s-3036-1000-1117-0": [{ type: "text", sub_type: "message", message: "Front", message_PT: "Frente" }],
 		"s-3036-1000-1118-0": [
-			{ type: "text", sub_type: "message", message: "Front Cut | Dodge", message_PT: "Corte Frontal | Iframe" },
+			{ type: "text", sub_type: "message", message: "Front Cut | Dodge", message_PT: "Corte Frontal | iframe" },
 			{ type: "spawn", func: "semicircle", args: [0, 60, 553, 0, 0, 15, 60, 0, 2000] },
 			{ type: "spawn", func: "semicircle", args: [0, 55, 553, 0, 0, 15, 160, 0, 2000] },
 			{ type: "spawn", func: "semicircle", args: [0, 45, 553, 0, 0, 10, 250, 0, 2000] },
@@ -144,6 +181,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", message: "AOE", message_PT: "AOE" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 500, 100, 6000] }
 		],
+		"s-3036-1000-2101-0": "s-3036-1000-1101-0",
+		"s-3036-1000-2102-0": "s-3036-1000-1102-0",
 		"s-3036-1000-1303-0": [{ type: "text", sub_type: "message", message: "Spin Attack", message_PT: "Ataque Giratorio" }],
 		"s-3036-1000-1401-0": [{ type: "func", func: boss_mech_event, args: [1401] }],
 		"s-3036-1000-1402-0": [{ type: "func", func: boss_mech_event, args: [1402] }],
@@ -164,12 +203,13 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 250, 0, 6000] },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 430, 0, 6000] }
 		],
-		"s-3036-1000-2103-0": [{ type: "func", func: boss_backattack_event }],
-		"s-3036-1000-2106-0": [{ type: "func", func: boss_backattack_event }],
-		"s-3036-1000-2112-0": [{ type: "text", sub_type: "message", message: "Back Move", message_PT: "Movimento para trás" }],
-		"s-3036-1000-2115-0": [{ type: "text", sub_type: "message", delay: 3200, message: "Dodge", message_PT: "Iframe" }],
-		"s-3036-1000-2117-0": [{ type: "text", sub_type: "message", message: "Front", message_PT: "Frente" }],
-		"s-3036-1000-2118-0": [{ type: "text", sub_type: "message", message: "Front Cut | Dodge", message_PT: "Corte Frontal | Iframe" }],
+		"s-3036-1000-2103-0": "s-3036-1000-1103-0",
+		"s-3036-1000-2106-0": "s-3036-1000-1106-0",
+		"s-3036-1000-2112-0": "s-3036-1000-1112-0",
+		"s-3036-1000-2114-0": "s-3036-1000-1114-0",
+		"s-3036-1000-2115-0": "s-3036-1000-1115-0",
+		"s-3036-1000-2117-0": "s-3036-1000-1117-0",
+		"s-3036-1000-2118-0": "s-3036-1000-1118-0",
 		"qb-3036-1000-3036039": [{ type: "func", func: boss_tripleattack_event }],
 		"qb-3036-1000-3036040": [{ type: "func", func: boss_tripleattack_event }],
 		"qb-3036-1000-3036041": [{ type: "func", func: boss_tripleattack_event }]
