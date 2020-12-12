@@ -24,6 +24,8 @@ ID | Nome das Dungeons
 3203 | Forbidden Arena [Nightmare Undying Warlord]
 9053 |	Kezzel's Gorge (5-Person)
 3036	| Sky Cruiser (Difícil)
+9056	| Timescape (Hard)
+3037	| Bahaar's Sanctum (Treino)
 
 ----
 
@@ -80,7 +82,7 @@ proxy(/8) | Comando descrição
 - **[Confira em tamanho real aqui](https://camo.githubusercontent.com/76e36f0630a62a456a43324790b16fce124d4a13/68747470733a2f2f692e696d6775722e636f6d2f6d3656515738552e706e67)** 
 
 ##
-* Quando o modo Stream estiver *Ativado* as mensagens serão exebidas unicamente no chat, e todas as marcaçoes serão desativadas
+* Quando o modo **Stream** estiver *Ativado* as mensagens serão exebidas unicamente no chat, e todas as marcaçoes serão desativadas
 
   ![](https://i.imgur.com/kbRd3Xd.png)
 
