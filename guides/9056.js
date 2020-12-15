@@ -9,18 +9,24 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		// Boss 1 (phase 1)
 		"s-456-401-104-0": [
 			{ type: "text", sub_type: "message", message: "Bomb", message_PT: "Bomba" },
-			{ type: "text", sub_type: "warning", message: "(1)", speech: false, delay: 550 },
-			{ type: "text", sub_type: "warning", message: "(2)", speech: false, delay: 1300 },
-			{ type: "text", sub_type: "warning", message: "(3)", speech: false, delay: 2050 },
-			{ type: "text", sub_type: "message", message: "(4) Dodge!", message_PT: "(4) Iframe!", delay: 2650 }
+			{ type: "text", sub_type: "warning", message: "(1)", speech: false, delay: 300 },
+			{ type: "text", sub_type: "warning", message: "(2)", speech: false, delay: 800 },
+			{ type: "text", sub_type: "warning", message: "(3)", speech: false, delay: 1300 },
+			{ type: "text", sub_type: "message", message: "(4) Dodge!", message_PT: "(4) Iframe!", delay: 1800  }
 		],
 		"s-456-1001-107-0": [{ type: "text", sub_type: "alert", message: "Shot", message_PT: "Tiro", speech: false }],
 
 		// Boss 1 (phase 2)
-		"s-456-413-104-0": "s-456-401-104-0",
-		"s-456-414-104-0": "s-456-401-104-0",
-		"s-456-415-104-0": "s-456-401-104-0",
-		"s-456-416-104-0": "s-456-401-104-0",
+		"s-456-413-104-0": [
+			{ type: "text", sub_type: "message", message: "Bomb", message_PT: "Bomnba" },
+			{ type: "text", sub_type: "warning", message: "(1)", speech: false, delay: 550 },
+			{ type: "text", sub_type: "warning", message: "(2)", speech: false, delay: 1300 },
+			{ type: "text", sub_type: "warning", message: "(3)", speech: false, delay: 2050 },
+			{ type: "text", sub_type: "message", message: "(4) Dodge!", message_PT: "(4) Iframe!", delay: 2800 }
+		],
+		"s-456-414-104-0": "s-456-413-104-0",
+		"s-456-415-104-0": "s-456-413-104-0",
+		"s-456-416-104-0": "s-456-413-104-0",
 		"s-456-1000-107-0": [{ type: "text", sub_type: "alert", message: "Shot", message_PT: "Tiro", speech: false }],
 		"ab-456-1000-905685": [
            { type: "text", sub_type: "message", message: "Plague of Exhaustion", message_PT: "Plague of Exhaustion", "class_position": "priest" },
@@ -32,7 +38,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-456-1002-103-0": [{ type: "text", sub_type: "message", message: "Combo", message_PT: "Combo" }],
 		"s-456-1002-104-0": [{ type: "text", sub_type: "message", message: "Shot (target)", message_PT: "Tiro (Alvo)" }],
 		"s-456-1002-107-0": [{ type: "text", sub_type: "message", message: "Many Pokes", message_PT: "Muitos Golpes" }],
-		"s-456-1002-110-0": [{ type: "text", sub_type: "message", message: "Clap", message_PT: "Atacar" }],
+		"s-456-1002-110-0": [{ type: "text", sub_type: "message", message: "Clap", message_PT: "Aplaudir" }],
+		"s-456-1002-212-0": [{ type: "text", sub_type: "message", message: "Jump Back", message_PT: "Salto Atrás" }],
 		"s-456-1002-3110-0": [{ type: "text", sub_type: "message", message: "Breath", message_PT: "Respiração" }],
 		"s-456-1002-3113-0": [{ type: "text", sub_type: "message", message: "AOE", message_PT: "АОЕ", delay: 4000 }],
 
@@ -42,7 +49,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		   { type: "text", sub_type: "message", message: "Cleanse + Regression", message_PT: "Cleanse + Regression", "class_position": "mystic" }
 		],
 		"s-456-1003-103-0": [{ type: "text", sub_type: "message", message: "Spin", message_PT: "Giro" }],
-		"s-456-1003-104-0": [{ type: "text", sub_type: "message", message: "Clap", message_PT: "Atacar" }],
+		"s-456-1003-104-0": [{ type: "text", sub_type: "message", message: "Clap", message_PT: "Aplaudir" }],
 		"s-456-1003-105-0": [{ type: "text", sub_type: "message", message: "Front", message_PT: "Frente" }],
 		"s-456-1003-105-1": [{ type: "text", sub_type: "message", message: "Back", message_PT: "Atrás" }],
 		"s-456-1003-107-0": [{ type: "text", sub_type: "message", message: "Swipe", message_PT: "Deslizar" }],
