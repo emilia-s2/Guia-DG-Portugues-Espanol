@@ -137,10 +137,10 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-781-2000-2134-1": [
 		    { type: "spawn", func: "circle", args: [true, 553, 0, 80, 8, 390, 0, 2000] } // Adicionado,
 		],
-		"s-781-2000-1134-1": [{ type: "text", sub_type: "message", message_PT: "Ataque combo (iframe)", message_RU: "Задний" },
+		"s-781-2000-1134-1": [
 			{ type: "spawn", func: "circle", args: [true, 553, 0, 80, 8, 390, 0, 2000] } // Adicionado,
 		],
-		"s-781-2000-1134-0": [
+		"s-781-2000-1134-0": [{ type: "text", sub_type: "message", message_PT: "Ataque combo (iframe)", message_RU: "Задний" },
 			{ type: "spawn", func: "circle", args: [true, 553, 0, 75, 15, 175, 100, 2000] } // Adicionado
 		],
 		"dm-0-0-9781024": [{ type: "text", sub_type: "message", message_PT: "Pizza", message_RU: "Задний" }],
@@ -224,8 +224,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-781-3000-1151-0": [{ type: "text", sub_type: "message", message_PT: "Stun (escudo)", message_RU: "Стан" }],
 		"s-781-3000-2151-0": [{ type: "text", sub_type: "message", message_PT: "Atencao stun", message_RU: "Стан" }],
 		"s-781-3000-2113-0": [{ type: "text", sub_type: "message", message_PT: "bait", message_RU: "Байт" }],	 
-		"s-781-3000-1152-0": [{ type: "text", sub_type: "message", message_PT: "Stun Frontal | Empurrar Atras", message_RU: "Стан + Откид назад" }],
-		"s-781-3000-2152-0": [{ type: "text", sub_type: "message", message_PT: "Stun Frontal | Empurrar Atras", message_RU: "Стан + Откид назад" }],
+		"s-781-3000-1152-0": [{ type: "text", sub_type: "message", message_PT: "Stun Frontal + Empurrar Atras", message_RU: "Стан + Откид назад" }],
+		"s-781-3000-2152-0": [{ type: "text", sub_type: "message", message_PT: "Stun Frontal + Empurrar Atras", message_RU: "Стан + Откид назад" }],
 		"s-781-3000-2138-0": [{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 250, 0, 6000] }],
 		"s-781-3000-1138-0": [{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 250, 0, 6000] }],
 		"s-781-3000-1144-0": [{ type: "text", sub_type: "message", message_PT: "SAIR", message_RU: "Наружу" }],
