@@ -12,49 +12,49 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			// Lakan has noticed you.
 			case 1043:
 				if (!thirdboss_fifty) {
-					handlers.text({
+				/*	handlers.text({
 						sub_type: "notification",
 						message_PT: "Debuff (Perto)",
 						message_RU: "ДКБ"
-					});
+					});*/
 				} else {
-					handlers.text({
+				/*	handlers.text({
 						sub_type: "notification",
 						message_PT: "Debuffs > Bombs > Circles",
 						message_RU: "ДБК"
-					});
+					});*/
 				}
 				break;
 			// Lakan is trying to take you on one at a time.
 			case 1044:
 				if (!thirdboss_fifty) {
-					handlers.text({
+				/*	handlers.text({
 						sub_type: "notification",
 						message_PT: "Circles > Bombs > Debuffs",
 						message_RU: "КБД"
-					});
+					});*/
 				} else {
-					handlers.text({
+				/*	handlers.text({
 						sub_type: "notification",
 						message_PT: "Circles > Debuffs > Bombs",
 						message_RU: "КДБ"
-					});
+					});*/
 				}
 				break;
 			// Lakan intends to kill all of you at once.
 			case 1045:
 				if (!thirdboss_fifty) {
-					handlers.text({
+				/*	handlers.text({
 						sub_type: "notification",
 						message_PT: "Bombs > Debuffs > Circles",
 						message_RU: "БДК"
-					});
+					});*/
 				} else {
-					handlers.text({
+				/*	handlers.text({
 						sub_type: "notification",
 						message_PT: "Bombs (juntar + Cleanse)",
 						message_RU: "БКД"
-					});
+					});*/
 				}
 				break;
 		}
@@ -76,11 +76,14 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-781-1000-2401-0": [
 			{ type: "text", sub_type: "message", message_PT: "DIREITO", message_RU: "Откид вправо" },
+			{ type: "spawn", func: "vector", args: [553, 360, 400, 180, 800, 0, 2000] },
 			{ type: "spawn", func: "marker", args: [false, 300, 100, 0, 2000, true, null] },
 			{ type: "spawn", func: "marker", args: [false, 230, 100, 0, 2000, true, null] }
+		
 		],
 		"s-781-1000-2402-0": [
 			{ type: "text", sub_type: "message", message_PT: "ESQUERDO", message_RU: "Откид влево" },
+			{ type: "spawn", func: "vector", args: [553, 360, 400, 180, 800, 0, 2000] },
 			{ type: "spawn", func: "marker", args: [false, 60, 100, 0, 2000, true, null] },
 			{ type: "spawn", func: "marker", args: [false, 130, 100, 0, 2000, true, null] }
 		],
@@ -95,11 +98,13 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-781-1000-2309-0": [{ type: "text", sub_type: "message", message_PT: "ENTRAR", message_RU: "Внутрь" }],
 		"s-781-1000-1401-0": [
 			{ type: "text", sub_type: "message", message_PT: "DIREITO", message_RU: "Откид вправо" },
+			{ type: "spawn", func: "vector", args: [553, 360, 400, 180, 800, 0, 2000] },
 			{ type: "spawn", func: "marker", args: [false, 300, 100, 0, 2000, true, null] },
 			{ type: "spawn", func: "marker", args: [false, 230, 100, 0, 2000, true, null] }
 		],
 		"s-781-1000-1402-0": [
 			{ type: "text", sub_type: "message", message_PT: "ESQUERDO", message_RU: "Откид влево" },
+			{ type: "spawn", func: "vector", args: [553, 360, 400, 180, 800, 0, 2000] },
 			{ type: "spawn", func: "marker", args: [false, 60, 100, 0, 2000, true, null] },
 			{ type: "spawn", func: "marker", args: [false, 130, 100, 0, 2000, true, null] }
 		],
@@ -123,7 +128,26 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		// Cage Mechanic
 		//"s-781-2000-1503-0": [{ type: "text", sub_type: "message", message_PT: "坦快跑远", message_RU: "坦快跑远" }], // наткнул
-		"s-781-2000-1106-0": [{ type: "text", sub_type: "message", message_PT: "Atras", message_RU: "Задний" }],
+		"s-781-2000-1106-0": [{ type: "text", sub_type: "message", message_PT: "Atras", message_RU: "Задний" },
+		     { type: "spawn", func: "circle", args: [false, 553, 180, 340, 14, 270, 0, 2600]}
+		],
+		"s-781-2000-2134-0": [{ type: "text", sub_type: "message", message_PT: "Ataque Combo (iframe)", message_RU: "Задний" },
+			{ type: "spawn", func: "circle", args: [true, 553, 0, 75, 15, 175, 100, 2000] } // Adicionado
+		],
+		"s-781-2000-2134-1": [
+		    { type: "spawn", func: "circle", args: [true, 553, 0, 80, 8, 390, 0, 2000] } // Adicionado,
+		],
+		"s-781-2000-1134-1": [{ type: "text", sub_type: "message", message_PT: "Ataque combo (iframe)", message_RU: "Задний" },
+			{ type: "spawn", func: "circle", args: [true, 553, 0, 80, 8, 390, 0, 2000] } // Adicionado,
+		],
+		"s-781-2000-1134-0": [
+			{ type: "spawn", func: "circle", args: [true, 553, 0, 75, 15, 175, 100, 2000] } // Adicionado
+		],
+		"dm-0-0-9781024": [{ type: "text", sub_type: "message", message_PT: "Pizza", message_RU: "Задний" }],
+		"s-781-2000-1502-1": [{ type: "text", sub_type: "message", message_PT: "Ataque Repelir", message_RU: "Задний" }],
+		"s-781-2000-1502-0": [{ type: "text", sub_type: "message", message_PT: "Ataque Repelir", message_RU: "Задний" }],
+		"s-781-2000-2502-1": [{ type: "text", sub_type: "message", message_PT: "Ataque Repelir", message_RU: "Задний" }],
+		"s-781-2000-2502-0": [{ type: "text", sub_type: "message", message_PT: "Ataque Repelir", message_RU: "Задний" }],
 		"s-781-2000-1108-0": [{ type: "text", sub_type: "message", message_PT: "Frente", message_RU: "Передний" }],
 		"s-781-2000-1111-0": [{ type: "text", sub_type: "message", message_PT: "Ataque 360", message_RU: "Круговая" }],
 		"s-781-2000-1302-0": [{ type: "text", sub_type: "message", message_PT: "Bait", message_RU: "Байт" }],
@@ -136,16 +160,20 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-781-2000-1130-0": [
 			{ type: "text", sub_type: "message", message_PT: "ESQUERDO", message_RU: "Откид влево" },
+			{ type: "spawn", func: "vector", args: [553, 360, 400, 180, 800, 0, 2000] },
 			{ type: "spawn", func: "marker", args: [false, 60, 100, 0, 2000, true, null] },
 			{ type: "spawn", func: "marker", args: [false, 130, 100, 0, 2000, true, null] }
 		],
 		"s-781-2000-1131-0": [
 			{ type: "text", sub_type: "message", message_PT: "DIREITO", message_RU: "Откид вправо" },
+			{ type: "spawn", func: "vector", args: [553, 360, 400, 180, 800, 0, 2000] },
 			{ type: "spawn", func: "marker", args: [false, 300, 100, 0, 2000, true, null] },
 			{ type: "spawn", func: "marker", args: [false, 230, 100, 0, 2000, true, null] }
 		],
 		//"s-781-2000-2503-0": [{ type: "text", sub_type: "message", message_PT: "坦快跑远", message_RU: "坦快跑远" }], // дурион выбрал цель
-		"s-781-2000-2106-0": [{ type: "text", sub_type: "message", message_PT: "Atras", message_RU: "Задний" }],
+		"s-781-2000-2106-0": [{ type: "text", sub_type: "message", message_PT: "Atras", message_RU: "Задний" },
+		     { type: "spawn", func: "circle", args: [false, 553, 180, 340, 14, 270, 0, 2600]}
+		],
 		"s-781-2000-2108-0": [{ type: "text", sub_type: "message", message_PT: "Frente", message_RU: "Передний" }],
 		"s-781-2000-2111-0": [{ type: "text", sub_type: "message", message_PT: "Ataque 360", message_RU: "Круговая" }],
 		//"s-781-2000-2121-0": [{ type: "text", sub_type: "message", message_PT: "Summon Mobs", message_RU: "Призыв мобов" }],
@@ -156,10 +184,12 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", delay: 3000, message_PT: "1" }
 		],
 		"s-781-2000-2130-0": [{ type: "text", sub_type: "message", message_PT: "ESQUERDO", message_RU: "Откид влево" },
+		    { type: "spawn", func: "vector", args: [553, 360, 400, 180, 800, 0, 2000] },
 			{ type: "spawn", func: "marker", args: [false, 60, 100, 0, 2000, true, null] },
 			{ type: "spawn", func: "marker", args: [false, 130, 100, 0, 2000, true, null] }
 		],
 		"s-781-2000-2131-0": [{ type: "text", sub_type: "message", message_PT: "DIREITO", message_RU: "Откид вправо" },
+		{ type: "spawn", func: "vector", args: [553, 360, 400, 180, 800, 0, 2000] },
 			{ type: "spawn", func: "marker", args: [false, 300, 100, 0, 2000, true, null] },
 			{ type: "spawn", func: "marker", args: [false, 230, 100, 0, 2000, true, null] }
 		],
@@ -186,14 +216,14 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-781-3000-1302-0": [{ type: "text", sub_type: "message", message_PT: "(Bombas) Juntar No cleanse", message_RU: "Бомбы (вместе!) + без клинса" }],
 		"s-781-3000-3103-0": [{ type: "text", sub_type: "message", message_PT: "(Raios) Espalhar", message_RU: "Круги (отдельно!)" }],
 		"s-781-3000-3105-0": [{ type: "text", sub_type: "message", message_PT: "(Raios) Juntar", message_RU: "Круги (вместе!)" }],
-		"s-781-3000-1116-0": [{ type: "text", sub_type: "message", message_PT: "Empurrar Atras | Stun Frontal", message_RU: "Волны" }],
-		"s-781-3000-2116-0": [{ type: "text", sub_type: "message", message_PT: "Empurrar Atras | Stun Frontal", message_RU: "Круг" }],
+		"s-781-3000-1116-0": [{ type: "text", sub_type: "message", message_PT: "Stun Frontal", message_RU: "Волны" }],
+		"s-781-3000-2116-0": [{ type: "text", sub_type: "message", message_PT: "Stun Frontal", message_RU: "Круг" }],
 		"s-781-3000-1136-0": [{ type: "text", sub_type: "message", message_PT: "Claw", message_RU: "Когти" }],
-		"s-781-3000-1701-0": [{ type: "text", sub_type: "message", message_PT: "Empurrar atras | Ataque Frontal", message_RU: "Назад + Вперед" }],
+		"s-781-3000-1701-0": [{ type: "text", sub_type: "message", message_PT: "Empurrar Atras + Frente", message_RU: "Назад + Вперед" }],
 		"s-781-3000-1113-0": [{ type: "text", sub_type: "message", message_PT: "Bait", message_RU: "Байт" }],
-		"s-781-3000-1151-0": [{ type: "text", sub_type: "message", message_PT: "Stun + Tres capturas)", message_RU: "Стан" }],
+		"s-781-3000-1151-0": [{ type: "text", sub_type: "message", message_PT: "Stun (escudo)", message_RU: "Стан" }],
 		"s-781-3000-2151-0": [{ type: "text", sub_type: "message", message_PT: "Atencao stun", message_RU: "Стан" }],
-		"s-781-3000-2113-0": [{ type: "text", sub_type: "message", message_PT: "Bait", message_RU: "Байт" }],
+		"s-781-3000-2113-0": [{ type: "text", sub_type: "message", message_PT: "bait", message_RU: "Байт" }],	 
 		"s-781-3000-1152-0": [{ type: "text", sub_type: "message", message_PT: "Stun Frontal | Empurrar Atras", message_RU: "Стан + Откид назад" }],
 		"s-781-3000-2152-0": [{ type: "text", sub_type: "message", message_PT: "Stun Frontal | Empurrar Atras", message_RU: "Стан + Откид назад" }],
 		"s-781-3000-2138-0": [{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 250, 0, 6000] }],
