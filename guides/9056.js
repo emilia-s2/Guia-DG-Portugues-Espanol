@@ -29,8 +29,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-456-416-104-0": "s-456-413-104-0",
 		"s-456-1000-107-0": [{ type: "text", sub_type: "alert", message: "Shot", message_PT: "Tiro", speech: false }],
 		"ab-456-1000-905685": [
-           { type: "text", sub_type: "message", message: "Plague of Exhaustion", message_PT: "Plague of Exhaustion", "class_position": "priest" },
-           { type: "text", sub_type: "message", message: "Regression", message_PT: "Regression", "class_position": "mystic" }
+           { type: "text", sub_type: "message", message: "Plague of Exhaustion", message_PT: "Plague of Exhaustion", class_position: "priest" },
+           { type: "text", sub_type: "message", message: "Regression", message_PT: "Regression", class_position: "mystic" }
 		],
 
 		// Boss 2
@@ -45,8 +45,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 
 		// Boss 3
 		"ab-456-1003-905607": [
-		   { type: "text", sub_type: "message", message: "Cleanse + Plague of Exhaustion", message_PT: "Cleanse + Plague of Exhaustion", "class_position": "priest" },
-		   { type: "text", sub_type: "message", message: "Cleanse + Regression", message_PT: "Cleanse + Regression", "class_position": "mystic" }
+		   { type: "text", sub_type: "message", message: "Cleanse + Plague of Exhaustion", message_PT: "Cleanse + Plague of Exhaustion", class_position: "priest" },
+		   { type: "text", sub_type: "message", message: "Cleanse + Regression", message_PT: "Cleanse + Regression", class_position: "mystic" }
 		],
 		"s-456-1003-103-0": [{ type: "text", sub_type: "message", message: "Spin", message_PT: "Giro" }],
 		"s-456-1003-104-0": [{ type: "text", sub_type: "message", message: "Clap", message_PT: "Aplaudir" }],
