@@ -135,8 +135,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-3201-2000-108-0": [{ type: "text", sub_type: "message", message_PT: "Ataque Frente | Atras", message_RU: "Откид назад!" }],
 		"s-3201-2000-150-0": [{ type: "text", sub_type: "message", message_PT: "Fantasma", message_RU: "Фантом" }],
 		"s-3201-2000-228-0": [
-			{ type: "text", sub_type: "message", message_ES: "Juntar Time", message_RU: "Камни (вместе)!!!" },
-			{ type: "text", sub_type: "message", delay: 4000, message_ES: "ESQUIVA", message_RU: "Эвейд" }
+			{ type: "text", sub_type: "message", message_PT: "Juntar Time", message_RU: "Камни (вместе)!!!" },
+			{ type: "text", sub_type: "message", delay: 4000, message_PT: "ESQUIVA", message_RU: "Эвейд" }
 		],
 		"s-3201-2000-230-0": [{ type: "text", sub_type: "message", message_PT: "AOE", message_RU: "AOE!!" }],
 
@@ -148,7 +148,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 300, 0, 3000] },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 3, 1000, 0, 3000] }
 		],
-		"s-3201-2000-235-0": [{ type: "text", sub_type: "message", message_ES: "Debuffs", message_RU: "注视2人吃鉴定" }],
-		"s-3201-2000-236-0": [{ type: "text", sub_type: "message", message_ES: "Repelir a Frente", message_RU: "Конус вперед (байт)" }]
+		"s-3201-2000-235-0": [{ type: "text", sub_type: "message", message_PT: "Debuffs", message_RU: "注视2人吃鉴定" }],
+		"s-3201-2000-236-0": [{ type: "text", sub_type: "message", message_PT: "Repelir a Frente", message_RU: "Конус вперед (байт)" }]
     };
 };
