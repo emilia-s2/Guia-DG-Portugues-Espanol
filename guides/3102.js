@@ -21,14 +21,14 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		// 120 > 114
 		"s-3102-1000-120-0": [
 		    { type: "text", sub_type: "message", delay: 400, message_PT: "Stun", message_RU: "Несколько ударов | Стан (AOE)" },
-	        { type: "text", sub_type: "message", delay: 2350, message_PT: "Iframe!", message_RU: "Эвейд!" },
+	        { type: "text", sub_type: "message", delay: 2100, message_PT: "Iframe!", message_RU: "Эвейд!" },
 			{ type: "spawn", func: "circle", args: [true, 553, 0, 0, 8, 425, 100, 3000] }
 		],
 //		"s-3102-1000-114-0": [
 //			{ type: "text", sub_type: "message", message_PT: "Stun (AOE)", message_RU: "Стан (AOE)" },
 
 		"s-3102-1000-111-0": [{ type: "text", sub_type: "message", message_PT: "Salto (Stun)", message_RU: "Прыжок (стан)" },
-		    { type: "text", sub_type: "message", delay: 2000, message_PT: "Iframe!", message_RU: "Эвейд!" }
+		    { type: "text", sub_type: "message", delay: 1800, message_PT: "Iframe!", message_RU: "Эвейд!" }
 		],	
 		"s-3102-1000-115-0": [
 			{ type: "text", sub_type: "message", message_PT: "AOE Bombas (Juntar)", message_RU: "AOE бомбы (вместе)" }
