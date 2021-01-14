@@ -9,13 +9,13 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "stop_timers" },
 			{ type: "despawn_all" }
 		],
-		"s-739-1000-105-0": [{ type: "text", sub_type: "message", message_PT: "Virar + Respiracao", message_RU: "Поворот + дыхание" }],
+		"s-739-1000-105-0": [{ type: "text", sub_type: "message", message_PT: "Virar + Respiração", message_RU: "Поворот + дыхание" }],
 		"s-739-1000-308-0": [
 			{ type: "text", sub_type: "message", message_PT: "Entrar - Sair", message_RU: "К нему > От него" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 300, 0, 7500] }
 		],
 		"s-739-1000-308-1": [{ type: "text", sub_type: "message", message_PT: "Sair", message_RU: "От него" }],
-		"s-739-1000-112-0": [{ type: "text", sub_type: "message", message_PT: "Spray Atras", message_RU: "Волна назад" }],
+		"s-739-1000-112-0": [{ type: "text", sub_type: "message", message_PT: "Spray Atrás", message_RU: "Волна назад" }],
 		"s-739-1000-107-0": [{ type: "text", sub_type: "message", message_PT: "Pulo", message_RU: "Прыжок" }],
 		"s-739-1000-306-0": [
 			{ type: "text", sub_type: "message", message_PT: "Sair - Entrar", message_RU: "От него > К нему" },
@@ -40,7 +40,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 360, 0, 6500] }
 		],
 		"s-739-2000-119-0": [{ type: "text", sub_type: "message", message_PT: "Spray a Frente", message_RU: "Спереди" }],
-		"s-739-2000-120-0": [{ type: "text", sub_type: "message", message_PT: "Disparo de Canhao Atras", message_RU: "Сзади" }],
+		"s-739-2000-120-0": [{ type: "text", sub_type: "message", message_PT: "Disparo de Canhao Atrás", message_RU: "Сзади" }],
 		"s-739-2000-303-0": [{ type: "text", sub_type: "message", message_PT: "Chicote", message_RU: "Кнут" }],
 
 		// 3 BOSS
@@ -50,7 +50,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-739-3001-201-0": [
 		    { type: "text", sub_type: "message", message_PT: "Rugido Forte (Stun)", message_RU: "Стан" },
-		    { type: "text", sub_type: "message", delay: 3800, message_PT: "Iframe", message_RU: "Эвейд!" }  
+		    { type: "text", sub_type: "message", delay: 3700, message_PT: "Iframe", message_RU: "Эвейд!" }  
 		],	
 		"s-739-3001-107-0": [{ type: "text", sub_type: "message", message_PT: "Muitos Hits (Garras)", message_RU: "Несколько ударов" }],
 		"s-739-3001-115-0": [
