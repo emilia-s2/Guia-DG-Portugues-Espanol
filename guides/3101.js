@@ -12,10 +12,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "despawn_all" }
 		],
 		"s-3101-1000-104-0": [{ type: "text", class_position: "tank", sub_type: "message", message_PT: "Stun Frontal", message_RU: "Стан!" }],
-		"s-3101-1000-107-0": [
 		"s-3101-1000-112-0": [{ type: "text", sub_type: "message", message_PT: "<-Spray ESQUERDO e DIREITO->", message_RU: "Лево + Право" }],
-		],
-		"s-3101-1000-119-0": [{ type: "text", sub_type: "message", delay: 0, message_PT: "Spray FRENTE e ATRÁS", message_RU: "Вперед + Назад" },
+		"s-3101-1000-119-0": [{ type: "text", sub_type: "message", delay: 0, message_PT: "Spray FRENTE e ATRÁS", message_RU: "Вперед + Назад" }],
 		"s-3101-1000-124-0": [{ type: "text", class_position: "tank", sub_type: "message", message_PT: "Stun Frontal", message_RU: "Стан (фаст)" }],
 		"s-3101-1000-127-0": [{ type: "text", class_position: "dps", sub_type: "message", message_PT: "Empurrar Atrás (Rapido)", message_RU: "Полоса (фаст)" },
 			{ type: "text", class_position: "heal", sub_type: "message", message_PT: "Empurrar Atrás", message_RU: "Полоса (фаст)" },
@@ -41,7 +39,6 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "circle", args: [false, 553, 340, 150, 10, 300, 0, 4000] }  //Adicionado
 		],
 		"s-3101-1000-151-0": [{ type: "text", sub_type: "message", message_PT: "Ataque Stun", message_RU: "Стан!" }],
-		"s-3101-1000-311-0": [
 		"s-3101-1000-313-0": [
 			{ type: "text", sub_type: "message", message_PT: "DENTRO e FORA (Lento)", message_RU: "Кольцо" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 75, 10, 300, 0, 6000] }

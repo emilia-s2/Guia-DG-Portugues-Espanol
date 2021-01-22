@@ -48,7 +48,7 @@ module.exports = {
 	3037: {
     "pt": "Bahaar's (Treino)"},
 	9770: {
-    "pt": "Ruinous Manor (Normal)"},
+    "pt": "Ruinous Manor Normal (BETA)"},
 	9970: {
     "pt": "Guía em Construção..."},
 	3101: {
