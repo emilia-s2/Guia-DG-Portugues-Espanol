@@ -47,4 +47,14 @@ module.exports = {
     "pt": "Timescape (Difícil)"},
 	3037: {
     "pt": "Bahaar's (Treino)"},
+	9770: {
+    "pt": "Ruinous Manor (Normal)"},
+	9970: {
+    "pt": "Guía em Construção..."},
+	3101: {
+    "pt": "Gossamer Vault Normal"},
+	3104: {
+    "pt": "Catalepticon Normal (BETA)"},
+	3204: {
+    "pt": "Guía em Construção..."},
 };
