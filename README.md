@@ -26,6 +26,11 @@ ID | Nome das Dungeons
 3036	| Sky Cruiser (Difícil)
 9056	| Timescape (Hard)
 3037	| Bahaar's Sanctum (Treino)
+9770	| Ruinous Manor (Normal)
+9970	| Ruinous Manor Hard (em Construção...)
+3101	| Gossamer Vault (Normal)
+3104	| Catalepticon Normal (BETA)
+3204	| Catalepticon Hard (em Construção...)
 
 ----
 
