@@ -1,4 +1,4 @@
-﻿// Bahaar's Sanctum
+﻿// Bahaar's Sanctum (Treino)
 //
 // made by michengs
 
