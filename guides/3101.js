@@ -13,7 +13,12 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-3101-1000-104-0": [{ type: "text", class_position: "tank", sub_type: "message", message_PT: "Stun Frontal", message_RU: "Стан!" }],
 		"s-3101-1000-112-0": [{ type: "text", sub_type: "message", message_PT: "<-Spray ESQUERDO e DIREITO->", message_RU: "Лево + Право" }],
-		"s-3101-1000-119-0": [{ type: "text", sub_type: "message", delay: 0, message_PT: "Spray FRENTE e ATRÁS", message_RU: "Вперед + Назад" }],
+		"s-3101-1000-139-0": [{ type: "text", sub_type: "message", message_PT: "Spray FRENTE e ATRAS", message_RU: "Вперед + Назад (фаст)" },
+		    { type: "spawn", func: "vector", args: [553, 2, 0, 70, 800, 0, 2500] },  //Adicionado
+			{ type: "spawn", func: "vector", args: [553, 2, 0, 110, 800, 0, 2500] }, //Adicionado
+			{ type: "spawn", func: "vector", args: [553, 2, 0, 250, 800, 0, 2500] }, //Adicionado
+			{ type: "spawn", func: "vector", args: [553, 2, 0, 290, 800, 0, 2500] }  //Adicionado
+	    ],
 		"s-3101-1000-124-0": [{ type: "text", class_position: "tank", sub_type: "message", message_PT: "Stun Frontal", message_RU: "Стан (фаст)" }],
 		"s-3101-1000-127-0": [{ type: "text", class_position: "dps", sub_type: "message", message_PT: "Empurrar Atrás (Rapido)", message_RU: "Полоса (фаст)" },
 			{ type: "text", class_position: "heal", sub_type: "message", message_PT: "Empurrar Atrás", message_RU: "Полоса (фаст)" },
@@ -27,16 +32,16 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-3101-1000-132-0": [{ type: "text", sub_type: "message", message_PT: "<-Spray ESQUERDO e DIREITO->", message_RU: "Лево + Право (фаст)" }],
 		"s-3101-1000-133-0": [{ type: "text", sub_type: "message", delay: 0, message_PT: "Salto", message_RU: "Прыжок (фаст)" },
-		{ type: "text", sub_type: "message", delay: 700, message_PT: "Iframe", message_RU: "Камень!" }
+		{ type: "text", sub_type: "message", delay: 1400, message_PT: "Iframe", message_RU: "Iframe!" }
 		],
 		"s-3101-1000-138-0": [{ type: "text", sub_type: "message", delay: 0, message_PT: "Salto", message_RU: "Прыжок (фаст)" },
-		{ type: "text", sub_type: "message", delay: 700, message_PT: "Iframe", message_RU: "Камень!" }
+		{ type: "text", sub_type: "message", delay: 1400, message_PT: "Iframe", message_RU: "Iframe!" }
 		],
 		"s-3101-1000-148-0": [{ type: "text", sub_type: "message", message_PT: "Poder da Mao DIREITA (voando)", message_RU: "Правая рука (подлет)" },
-			{ type: "spawn", func: "circle", args: [false, 553, 20, 150, 10, 300, 0, 4000] }  //Adicionado
+			{ type: "spawn", func: "circle", args: [false, 553, 20, 150, 10, 320, 0, 4000] }  //Adicionado
 		],		
 		"s-3101-1000-149-0": [{ type: "text", sub_type: "message", message_PT: "Poder da Mao ESQUERDA (voando)", message_RU: "Левая рука (подлет)" },
-			{ type: "spawn", func: "circle", args: [false, 553, 340, 150, 10, 300, 0, 4000] }  //Adicionado
+			{ type: "spawn", func: "circle", args: [false, 553, 340, 150, 10, 320, 0, 4000] }  //Adicionado
 		],
 		"s-3101-1000-151-0": [{ type: "text", sub_type: "message", message_PT: "Ataque Stun", message_RU: "Стан!" }],
 		"s-3101-1000-313-0": [
@@ -60,7 +65,9 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-3101-2000-228-0": [
 			{ type: "text", sub_type: "message", message_PT: "Juntar Time", message_RU: "Камни (вместе)!!!" },
 		],
-		"s-3101-2000-230-0": [{ type: "text", sub_type: "message", message_PT: "AOE", message_RU: "AOE!!" }],
+		"s-3101-2000-230-0": [{ type: "text", sub_type: "message", message_PT: "AOE", message_RU: "AOE!!" },
+				{ type: "text", sub_type: "message", delay: 1300, message_PT: "Iframe", message_RU: "Iframe!" }
+		],
 		"s-3101-2000-231-0": [
 			{ type: "text", sub_type: "message", message_PT: "SAIR", message_RU: "От него" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 300, 0, 3000] }
