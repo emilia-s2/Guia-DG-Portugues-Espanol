@@ -76,8 +76,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "semicircle", args: [90, 280, 553, 0, 0, 15, 160, 100, 2000] }, //alterado 270>280  | 20>15
 			{ type: "spawn", func: "semicircle", args: [90, 275, 553, 0, 0, 10, 220, 100, 2000] }, //alterado 280>275  | 12>10
 			{ type: "spawn", func: "semicircle", args: [90, 270, 553, 0, 0, 10, 340, 100, 2000] }, //alterado 300>340  | 270>285
-		    { type: "spawn", func: "vector", args: [553, 90, 150, 90, 150, 0, 2000] },   //Adicionado
-			{ type: "spawn", func: "vector", args: [553, 270, 150, 270, 150, 0, 2000] }  //Adicionado
+			{ type: "spawn", func: "vector", args: [553, 90, 150, 90, 150, 0, 2000] },	 //Adicionado
+			{ type: "spawn", func: "vector", args: [553, 270, 150, 270, 150, 0, 2000] }	 //Adicionado
 		],
 		"s-3023-1000-116-0": [
 			{ type: "text", sub_type: "message", message_PT: "Explosao", message_RU: "Кайа", class_position: "dps" },

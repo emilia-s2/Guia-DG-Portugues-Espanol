@@ -41,7 +41,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "circle", args: [true, 553, 180, -50, 10, 380, 0, 2000] }
 		],
 		"s-3204-1000-107-0": [
-			{ type: "text", sub_type: "alert", message: "Line Forward + Side Lines", message_PT: "Linhas no Meio e  Laterais" },
+			{ type: "text", sub_type: "alert", message: "Line Forward + Side Lines", message_PT: "Linhas no Meio e	Laterais" },
 			{ type: "spawn", func: "vector", args: [553, 90, 50, 0, 1000, 0, 2000] },
 			{ type: "spawn", func: "vector", args: [553, 270, 50, 0, 1000, 0, 2000] },
 			{ type: "spawn", func: "vector", args: [553, 90, 50, 180, 1000, 0, 2000] },

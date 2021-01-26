@@ -14,15 +14,15 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-3101-1000-104-0": [{ type: "text", class_position: "tank", sub_type: "message", message_PT: "Stun Frontal", message_RU: "Стан!" }],
 		"s-3101-1000-112-0": [{ type: "text", sub_type: "message", message_PT: "<-Spray ESQUERDO e DIREITO->", message_RU: "Лево + Право" }],
 		"s-3101-1000-139-0": [{ type: "text", sub_type: "message", message_PT: "Spray FRENTE e ATRAS", message_RU: "Вперед + Назад (фаст)" },
-		    { type: "spawn", func: "vector", args: [553, 2, 0, 70, 800, 0, 2500] },  //Adicionado
+			{ type: "spawn", func: "vector", args: [553, 2, 0, 70, 800, 0, 2500] },	 //Adicionado
 			{ type: "spawn", func: "vector", args: [553, 2, 0, 110, 800, 0, 2500] }, //Adicionado
 			{ type: "spawn", func: "vector", args: [553, 2, 0, 250, 800, 0, 2500] }, //Adicionado
-			{ type: "spawn", func: "vector", args: [553, 2, 0, 290, 800, 0, 2500] }  //Adicionado
-	    ],
+			{ type: "spawn", func: "vector", args: [553, 2, 0, 290, 800, 0, 2500] }	 //Adicionado
+		],
 		"s-3101-1000-124-0": [{ type: "text", class_position: "tank", sub_type: "message", message_PT: "Stun Frontal", message_RU: "Стан (фаст)" }],
 		"s-3101-1000-127-0": [{ type: "text", class_position: "dps", sub_type: "message", message_PT: "Empurrar Atrás (Rapido)", message_RU: "Полоса (фаст)" },
 			{ type: "text", class_position: "heal", sub_type: "message", message_PT: "Empurrar Atrás", message_RU: "Полоса (фаст)" },
-			{ type: "spawn", func: "vector", args: [553, 90, 139, 173, 800, 0, 2000] },  //Adicionado
+			{ type: "spawn", func: "vector", args: [553, 90, 139, 173, 800, 0, 2000] },	 //Adicionado
 			{ type: "spawn", func: "vector", args: [553, 270, 139, -173, 800, 0, 2000] } //Adicionado
 		],
 		"s-3101-1000-131-0": [{ type: "text", class_position: "dps", sub_type: "message", message_PT: "Spray Atrás", message_RU: "Волна назад (фаст)" },
@@ -32,10 +32,10 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-3101-1000-132-0": [{ type: "text", sub_type: "message", message_PT: "<-Spray ESQUERDO e DIREITO->", message_RU: "Лево + Право (фаст)" }],
 		"s-3101-1000-133-0": [{ type: "text", sub_type: "message", delay: 0, message_PT: "Salto", message_RU: "Прыжок (фаст)" },
-		    { type: "text", sub_type: "message", delay: 1400, message_PT: "Iframe", message_RU: "Iframe!" }
+			{ type: "text", sub_type: "message", delay: 1400, message_PT: "Iframe", message_RU: "Iframe!" }
 		],
 		"s-3101-1000-138-0": [{ type: "text", sub_type: "message", delay: 0, message_PT: "Salto", message_RU: "Прыжок (фаст)" },
-		    { type: "text", sub_type: "message", delay: 1400, message_PT: "Iframe", message_RU: "Iframe!" }
+			{ type: "text", sub_type: "message", delay: 1400, message_PT: "Iframe", message_RU: "Iframe!" }
 		],
 		"s-3101-1000-148-0": [{ type: "text", sub_type: "message", message_PT: "Poder da Mao DIREITA (voando)", message_RU: "Правая рука (подлет)" },
 			{ type: "spawn", func: "circle", args: [false, 553, 20, 150, 10, 320, 0, 4000] }  //Adicionado
@@ -54,10 +54,10 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 
 	// 2 BOSS
-	    "nd-3101-2000": [
-		    { type: "stop_timers" },
-		    { type: "despawn_all" }
-        ],
+		"nd-3101-2000": [
+			{ type: "stop_timers" },
+			{ type: "despawn_all" }
+		],
 		"h-3101-2000-81": [{ type: "text", sub_type: "message", message_PT: "80%", message_RU: "Дебафф" }],
 		"h-3101-2000-76": [{ type: "text", sub_type: "message", message_PT: "75%", message_RU: "Камни" }],
 		"s-3101-2000-108-0": [{ type: "text", sub_type: "message", message_PT: "Ataque Frente | Atras", message_RU: "Откид назад!" }],
@@ -78,5 +78,5 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-3101-2000-235-0": [{ type: "text", sub_type: "message", message_PT: "Debuffs", message_RU: "注视2人吃鉴定" }],
 		"s-3101-2000-236-0": [{ type: "text", sub_type: "message", message_PT: "Repelir a Frente", message_RU: "Конус вперед (байт)" }]
-    };
+	};
 };

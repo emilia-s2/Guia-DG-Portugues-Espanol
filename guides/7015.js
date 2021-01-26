@@ -17,7 +17,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-620-1000-120-0": [{ type: "text", sub_type: "message", message_PT: "Onda de Fogo", message_RU: "nao sei russo :c desculpa" }],
 		"s-620-1000-121-0": [{ type: "text", sub_type: "message", message_PT: "Repelir (iframe)", message_RU: "nao sei russo :c desculpa" }],
 		"s-620-1000-119-0": [{ type: "text", sub_type: "message", message_PT: "Explosao | Entrar", message_RU: "nao sei russo :c desculpa" },
-		    { type: "spawn", func: "circle", args: [false, 553, 0, 8, 14, 216, 100, 6000] }  
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 8, 14, 216, 100, 6000] }	 
 		],
 		"s-620-1000-108-0": [{ type: "text", sub_type: "message", message_PT: "Ataque (Atras)", message_RU: "nao sei russo :c desculpa" }],
 		"s-620-1000-103-0": [{ type: "text", sub_type: "message", message_PT: "Stun Frontal", message_RU: "nao sei russo :c desculpa" }],
