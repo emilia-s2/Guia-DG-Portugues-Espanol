@@ -1,5 +1,5 @@
 // Gossamer Vault (Normal)
-// made by michengs/Emilia-s2
+// made by michengs / Emilia-s2
 
 module.exports = (dispatch, handlers, guide, lang) => {
 	let boss = null;
@@ -10,7 +10,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"nd-3101-1000": [
 			{ type: "stop_timers" },
 			{ type: "despawn_all" }
-		],
+		]
 		"s-3101-1000-104-0": [{ type: "text", class_position: "tank", sub_type: "message", message_PT: "Stun Frontal", message_RU: "Стан!" }],
 		"s-3101-1000-112-0": [{ type: "text", sub_type: "message", message_PT: "<-Spray ESQUERDO e DIREITO->", message_RU: "Лево + Право" }],
 		"s-3101-1000-139-0": [{ type: "text", sub_type: "message", message_PT: "Spray FRENTE e ATRAS", message_RU: "Вперед + Назад (фаст)" },
@@ -32,10 +32,10 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-3101-1000-132-0": [{ type: "text", sub_type: "message", message_PT: "<-Spray ESQUERDO e DIREITO->", message_RU: "Лево + Право (фаст)" }],
 		"s-3101-1000-133-0": [{ type: "text", sub_type: "message", delay: 0, message_PT: "Salto", message_RU: "Прыжок (фаст)" },
-		{ type: "text", sub_type: "message", delay: 1400, message_PT: "Iframe", message_RU: "Iframe!" }
+		    { type: "text", sub_type: "message", delay: 1400, message_PT: "Iframe", message_RU: "Iframe!" }
 		],
 		"s-3101-1000-138-0": [{ type: "text", sub_type: "message", delay: 0, message_PT: "Salto", message_RU: "Прыжок (фаст)" },
-		{ type: "text", sub_type: "message", delay: 1400, message_PT: "Iframe", message_RU: "Iframe!" }
+		    { type: "text", sub_type: "message", delay: 1400, message_PT: "Iframe", message_RU: "Iframe!" }
 		],
 		"s-3101-1000-148-0": [{ type: "text", sub_type: "message", message_PT: "Poder da Mao DIREITA (voando)", message_RU: "Правая рука (подлет)" },
 			{ type: "spawn", func: "circle", args: [false, 553, 20, 150, 10, 320, 0, 4000] }  //Adicionado
@@ -54,9 +54,9 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 
 	// 2 BOSS
-	"nd-3101-2000": [
-		{ type: "stop_timers" },
-		{ type: "despawn_all" }
+	    "nd-3101-2000": [
+		    { type: "stop_timers" },
+		    { type: "despawn_all" }
         ],
 		"h-3101-2000-81": [{ type: "text", sub_type: "message", message_PT: "80%", message_RU: "Дебафф" }],
 		"h-3101-2000-76": [{ type: "text", sub_type: "message", message_PT: "75%", message_RU: "Камни" }],
@@ -66,7 +66,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", message_PT: "Juntar Time", message_RU: "Камни (вместе)!!!" },
 		],
 		"s-3101-2000-230-0": [{ type: "text", sub_type: "message", message_PT: "AOE", message_RU: "AOE!!" },
-				{ type: "text", sub_type: "message", delay: 1300, message_PT: "Iframe", message_RU: "Iframe!" }
+			{ type: "text", sub_type: "message", delay: 1300, message_PT: "Iframe", message_RU: "Iframe!" }
 		],
 		"s-3101-2000-231-0": [
 			{ type: "text", sub_type: "message", message_PT: "SAIR", message_RU: "От него" },
