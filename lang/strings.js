@@ -1,13 +1,13 @@
-'use strict';
+"use strict";
 
 // Available strings for different languages
 module.exports.general = {
 
 	// Português
 	pt: {
-		    unknowncommand: "Comando desconhecido, Para ver todos os comandos tente (guia help)",
-		    helpheader: "Use o comando \"guia help\" para mais informações",
-			helpbody: [
+		unknowncommand: "Comando desconhecido, Para ver todos os comandos tente (guia help)",
+		helpheader: "Use o comando \"guia help\" para mais informações",
+		helpbody: [
 			["guia cr, Mensagem Cor VERMELHO", "CRMSG"],
 			["guia co, Mensagem Cor LARANJA", "COMSG"],
 			["guia cy, Mensagem Cor AMARELO", "CYMSG"],
