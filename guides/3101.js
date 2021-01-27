@@ -6,11 +6,10 @@ module.exports = (dispatch, handlers, guide, lang) => {
 
 	return {
 	// 1 BOSS
-
 		"nd-3101-1000": [
 			{ type: "stop_timers" },
 			{ type: "despawn_all" }
-		]
+		],
 		"s-3101-1000-104-0": [{ type: "text", class_position: "tank", sub_type: "message", message_PT: "Stun Frontal", message_RU: "Стан!" }],
 		"s-3101-1000-112-0": [{ type: "text", sub_type: "message", message_PT: "<-Spray ESQUERDO e DIREITO->", message_RU: "Лево + Право" }],
 		"s-3101-1000-139-0": [{ type: "text", sub_type: "message", message_PT: "Spray FRENTE e ATRAS", message_RU: "Вперед + Назад (фаст)" },

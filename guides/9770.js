@@ -9,7 +9,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"nd-770-1000": [
 			{ type: "stop_timers" },
 			{ type: "despawn_all" }
-		]
+		],
 		"s-770-1000-1206-0": [{ type: "text", sub_type: "message", message_PT: "Pular Atrás", message_RU: "nao sei russo :c desculpa" }],
 		"s-770-1000-2206-0": [{ type: "text", sub_type: "message", message_PT: "Pular Atrás", message_RU: "nao sei russo :c desculpa" }],
 		"s-770-1000-1106-0": [{ type: "text", sub_type: "message", message_PT: "Salto Frente Stun (Iframe)", message_RU: "nao sei russo :c desculpa" }],
