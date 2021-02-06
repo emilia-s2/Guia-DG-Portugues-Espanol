@@ -14,18 +14,18 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-770-1000-2206-0": [{ type: "text", sub_type: "message", message_PT: "Pular Atrás", message_RU: "nao sei russo :c desculpa" }],
 		"s-770-1000-1106-0": [{ type: "text", sub_type: "message", message_PT: "Salto Frente Stun (Iframe)", message_RU: "nao sei russo :c desculpa" }],
 		"s-770-1000-2106-0": [{ type: "text", sub_type: "message", message_PT: "Salto Frente Stun (Iframe)", message_RU: "nao sei russo :c desculpa" }],
-		"s-770-1000-1107-0": [{ type: "text", sub_type: "message", message_PT: "Frente Empurrar 1", message_RU: "nao sei russo :c desculpa" },
+		"s-770-1000-1107-0": [{ type: "text", sub_type: "message", message_PT: "Frente Empurrar", message_RU: "nao sei russo :c desculpa" },
 			{ type: "spawn", func: "semicircle", args: [320, 404, 553, 0, 0, 7, 405, 0, 3500] },
 			{ type: "spawn", func: "vector", args: [553, 0, 10, 406, 400, 0, 3500] },
 			{ type: "spawn", func: "vector", args: [553, 0, 10, -406, 400, 0, 3500] }
 		],
-		"s-770-1000-2107-0": [{ type: "text", sub_type: "message", message_PT: "Frente Empurrar 2", message_RU: "nao sei russo :c desculpa" },
+		"s-770-1000-2107-0": [{ type: "text", sub_type: "message", message_PT: "Frente Empurrar", message_RU: "nao sei russo :c desculpa" },
 			{ type: "spawn", func: "semicircle", args: [320, 404, 553, 0, 0, 7, 405, 0, 3500] },
 			{ type: "spawn", func: "vector", args: [553, 0, 10, 406, 400, 0, 3500] },
 			{ type: "spawn", func: "vector", args: [553, 0, 10, -406, 400, 0, 3500] }
 		],
-		"s-770-1000-1117-0": [{ type: "text", sub_type: "message", message_PT: "Esmagar Frente", message_RU: "nao sei russo :c desculpa" }],
-		"s-770-1000-2117-0": [{ type: "text", sub_type: "message", message_PT: "Esmagar Frente", message_RU: "nao sei russo :c desculpa" }],
+//		"s-770-1000-1117-0": [{ type: "text", sub_type: "message", message_PT: "Esmagar Frente", message_RU: "nao sei russo :c desculpa" }],
+//		"s-770-1000-2117-0": [{ type: "text", sub_type: "message", message_PT: "Esmagar Frente", message_RU: "nao sei russo :c desculpa" }],
 	
 	// 2-3 BOSS
 			"nd-770-3000": [
