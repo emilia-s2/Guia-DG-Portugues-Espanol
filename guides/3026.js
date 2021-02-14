@@ -343,14 +343,14 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"165-0": [{ type: "text", sub_type: "message", message_PT: "R.I.P xD e.e (0%)", message_RU: "Прыжок назад" }],
 		"137-0": [{ type: "text", sub_type: "message", message_PT: "Derrubar + Explosao Ampla (50metros)", message_RU: "Опрокидывание" }],
 		"138-0": [{ type: "text", sub_type: "message", message_PT: "Explosao Ampla!!", message_RU: "AOE" }],
-		"139-0": [
-			{ type: "text", sub_type: "message", message_PT: "[Temperatura] 60+ TODOS (GELO)", message_RU: "60° (Огонь всем)" }
+//		"139-0": [
+//			{ type: "text", sub_type: "message", message_PT: "[Temperatura] 60+ TODOS (GELO)", message_RU: "60° (Огонь всем)" }
 //			{ type: "text", sub_type: "message", delay: 4000, message_PT: "Lower the temp", message_RU: "Снизить температуру" }
-		],
-		"140-0": [
-			{ type: "text", sub_type: "message", message_PT: "[Temperatura] 40- TODOS (FOGO)", message_RU: "40° (Лед всем)" }
+//		],
+//		"140-0": [
+//			{ type: "text", sub_type: "message", message_PT: "[Temperatura] 40- TODOS (FOGO)", message_RU: "40° (Лед всем)" }
 //			{ type: "text", sub_type: "message", delay: 4000, message_PT: "Raise the temp", message_RU: "Повысить температуру" }
-		],
+//		],
 
 		"die": [{ type: "func", func: debuff_removed }],
 		"nd-3026-1000": [
