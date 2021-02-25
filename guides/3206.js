@@ -40,12 +40,12 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-3206-1000-211-0": [{ type: "text", sub_type: "message", message: "Push", message_PT: "Empurrar" }],
 		"s-3206-1000-216-0": [{ type: "text", sub_type: "message", message: "Somersault", message_PT: "Salto Mortal" }],
 		"s-3206-1000-508-0": [
-			{ type: "text", sub_type: "message", message: "Waves Outward", message_PT: "Ondas para Fora" },
+			{ type: "text", sub_type: "message", message: "Waves Outward", message_PT: "Ondas DENTRO" },
 			{ type: "spawn", func: "circle", args: [false, 445, 0, 0, 18, 157, 1500, 5000] },
 			{ type: "spawn", func: "circle", args: [false, 445, 0, 0, 12, 307, 1500, 5000] }
 		],
 		"s-3206-1000-509-0": [
-			{ type: "text", sub_type: "message", message: "Waves Inward", message_PT: "Ondas para Dentro" },
+			{ type: "text", sub_type: "message", message: "Waves Inward", message_PT: "Ondas FORA" },
 			{ type: "spawn", func: "circle", args: [false, 445, 0, 0, 18, 157, 1500, 5000] },
 			{ type: "spawn", func: "circle", args: [false, 445, 0, 0, 12, 307, 1500, 5000] }
 		],
