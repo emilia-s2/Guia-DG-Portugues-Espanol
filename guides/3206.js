@@ -6,23 +6,41 @@ module.exports = (dispatch, handlers, guide, lang) => {
 
 	let combo_start = false;
 
+	dispatch.hook("S_USER_EFFECT", 1, event => {
+		if (event.circle == 3 && event.operation == 1) {
+			handlers.marker({ id: event.target, color: "yellow", sub_delay: 1000000 });
+		} else if (event.circle == 3 && event.operation == 2) {
+			handlers.marker_remove_all({ delay: 1000 });
+		}
+	});
+
 	return {
 		"nd-3206-1000": [
 			{ type: "stop_timers" },
-			{ type: "despawn_all" }
+			{ type: "despawn_all" },
+			{ type: "marker_remove_all" }
+		],
+		"h-3206-1000-99": [
+			{ type: "spawn", func: "marker", args: [false, 3, -700, 100, 60000000, false, ["Giant", "Giant Direçao"]] }
 		],
 
-		"qb-3106-1000-32061001": [
+		"qb-3206-1000-32061001": [
 			{ type: "text", sub_type: "message", message: "Debuff (Close)", message_PT: "Bebuff perto" },
 			{ type: "text", sub_type: "alert", message: "Soon to give stun...", message_PT: "Usar Stun embreve...", delay: 2000 }
 		],
-		"qb-3106-1000-32061002": [
+		"qb-3206-1000-32061002": [
 			{ type: "text", sub_type: "message", message: "Debuff (Furthest)", message_PT: "Debuff Longe" },
 			{ type: "text", sub_type: "alert", message: "Soon to give stun...", message_PT: "Usar Stun embreve...", delay: 2000 }
 		],
-
-		"s-3206-1000-106-0": [{ type: "text", sub_type: "message", message: "Knockback Spin", message_PT: "Giro Atrás (Empurrão)" }],
-		"s-3206-1000-108-0": [{ type: "text", sub_type: "message", message: "Knockback Spin", message_PT: "Giro Atrás (Empurrão)" }],
+		"s-3206-1000-102-0": [
+			{ type: "func", func: () => combo_start = true },
+			{ type: "func", func: () => combo_start = false, delay: 1400 }
+		],
+		"s-3206-1000-105-0": [{ type: "text", sub_type: "message", message: "Knockback Spin (Kaia)", message_PT: "Giro Atrás Empurrão (KAIA)", check_func: () => combo_start === true }],
+		"s-3206-1000-106-0": [
+			{ type: "text", sub_type: "message", message: "Knockback", message_PT: "Atrás (Empurrão)" },
+			{ type: "spawn", func: "circle", args: [true, 553, 0, 50, 10, 350, 0, 3000] }
+		],
 		"s-3206-1000-109-0": [{ type: "text", sub_type: "message", message: "Jump (Knockdown)", message_PT: "Salto (Derrubar)" }],
 		"s-3206-1000-201-0": [{ type: "text", sub_type: "message", message: "Front", message_PT: "Frente" }],
 		"s-3206-1000-202-0": [{ type: "text", sub_type: "message", message: "Front", message_PT: "Frente AoE" }],

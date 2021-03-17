@@ -72,7 +72,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-3204-1000-119-0": [{ type: "text", sub_type: "message", message: "Two Strikes", message_PT: "Dois Golpes" }],
 		"s-3204-1000-120-0": [
 			{ type: "text", sub_type: "message", message: "Two Strikes + Stun (AOE)", message_PT: "Explosão Ampla Stun" },
-			{ type: "text", sub_type: "message", message: "Stun (AOE)", message_PT: "Iframe", delay: 2050 },
+			{ type: "text", sub_type: "message", message: "Esquiva", message_PT: "Iframe", delay: 2050 },
 			{ type: "spawn", func: "circle", args: [true, 553, 180, -100, 10, 700, 0, 2500], delay: 1500 }
 		],
 		"s-3204-1000-123-0": [{ type: "text", sub_type: "message", message: "Spin", message_PT: "Giro" }],
@@ -95,7 +95,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-3204-1000-158-0": [{ type: "text", sub_type: "alert", message: "Gather!", message_PT: "Juntar!", delay: 5000 }],
 		"s-3204-1000-159-0": [
 			{ type: "text", sub_type: "message", message: "AOE", message_PT: "АОЕ" },
-			{ type: "text", sub_type: "message", message: "Stun (AOE)", message_PT: "Iframe", delay: 1150 },
+			{ type: "text", sub_type: "message", message: "Esquiva", message_PT: "Iframe", delay: 1150 },
 			{ type: "marker_remove_all" }
 		]
 	};
