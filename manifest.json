@@ -16,7 +16,7 @@
         "guides/7011.js": "60d6998769ae64ff901420337d9078ce110cf3315dfc3d81db2c0a9a5cee8aea",
         "guides/7015.js": "f3b6992c560a41570ff365827ce7be19cc7bed2afb71ef1cf663030523476d3f",
         "guides/9044.js": "4aaa303df4e16ba165b86e19106360fb624890d23c228790f452a100abb119c2",
-        "guides/9070.js": "43f6fe25f4bbfbe1f0a69071d20e1fac9f241cd8c3ba420ee7e4a6e46c6d93dd",
+        "guides/9070.js": "a9c76d2f7d09a9f5a0c847512789c2e045287b5b946c34e1cb7299beaca08b3a",
         "guides/9770.js": "bbe1e15a2204dc472ef3343cae071c815c03bab8f90d2edf677a70a419a0224b",
         "guides/9970.js": "53e0b492aa0e8df6c437d7e01c3817358f62c7630594a4ba5f362006f3edb321",
         "index.js": "2816cdc1f5282024e3c6764f04ddfa9230ed2b2ea8228283990e435e043ae857",
@@ -28,6 +28,7 @@
     "defs": {
         "S_ABNORMALITY_BEGIN": 4,
         "S_ABNORMALITY_END": 1,
+        "S_DUNGEON_EVENT_GAGE": 1,
         "S_USER_EFFECT": 1
     }
 }
