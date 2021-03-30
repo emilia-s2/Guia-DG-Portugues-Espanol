@@ -292,7 +292,6 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"120-0": [{ type: "text", sub_type: "message", message_PT: "JUNTAR", message_RU: "Яростный рев" }],
 		"145-0": [{ type: "text", sub_type: "message", message_PT: "Pes (Stun)", message_RU: "Стан" }],
-//		"157-0": [{ type: "text", sub_type: "message", message_PT: "Change", message_RU: "Смена" }],
 		"103-0": [
 			{ type: "text", sub_type: "message", message_PT: "Cauda (voando)", message_RU: "Хвост (полет)" },
 			{ type: "text", sub_type: "message", message_PT: "Arise!", message_RU: "Удочка!", delay: 1500, class_position: "priest" },
@@ -308,7 +307,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "vector", args: [553, 0, 0, 260, 500, 0, 2000] }
 		],
 		"118-0": [{ type: "text", sub_type: "message", message_PT: "Jogar ao alto (iframe)", message_RU: "Прыжок" }],
-		"118-1": [{ type: "text", sub_type: "message", message_PT: "Iframe", message_RU: "Эвейд!", delay: 640 }],
+		"118-1": [{ type: "text", sub_type: "message", message_PT: "Iframe", message_RU: "Эвейд!", delay: 615 }],
 
 		// AOE лед (большой)
 		"104-0": [

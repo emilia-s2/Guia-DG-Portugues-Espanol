@@ -40,6 +40,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-770-3000-2103-0": [{ type: "text", sub_type: "message", message_PT: "Cauda Golpe", message_RU: "nao sei russo :c desculpa" }],
 		"s-770-3000-1301-0": [{ type: "text", sub_type: "message", message_PT: "Círculos Explosivos", message_RU: "nao sei russo :c desculpa" }],
 		"s-770-3000-2301-0": [{ type: "text", sub_type: "message", message_PT: "Círculos Explosivos", message_RU: "nao sei russo :c desculpa" }],
+		"s-770-3000-1106-0": [{ type: "text", sub_type: "message", message_PT: "Deslize Frontal", message_RU: "Передний удар" }],
+		"s-770-3000-2106-0": [{ type: "text", sub_type: "message", message_PT: "Deslize Frontal", message_RU: "Передний удар" }],
 		"s-770-3000-1110-0": [{ type: "text", sub_type: "message", message_PT: "Cauda AOE (pule na frente)", message_RU: "nao sei russo :c desculpa" }],
 		"s-770-3000-2110-0": [{ type: "text", sub_type: "message", message_PT: "Cauda AOE (pule na frente)", message_RU: "nao sei russo :c desculpa" }],
 		"s-770-3000-1304-0": [{ type: "text", sub_type: "message", message_PT: "Prepare-se! (para dentro e fora)", message_RU: "nao sei russo :c desculpa" }],

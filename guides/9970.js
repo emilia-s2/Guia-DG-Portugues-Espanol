@@ -21,6 +21,9 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-970-3000-1103-0": [{ type: "text", sub_type: "message", message_PT: "Cauda Slam", message_RU: "Хвост" }],
 		"s-970-3000-2103-0": [{ type: "text", sub_type: "message", message_PT: "Cauda Slam", message_RU: "Хвост" }],
 		"s-970-3000-1301-0": [{ type: "text", sub_type: "message", message_PT: "Círculos Explosivos", message_RU: "Круги" }],
+		"s-970-3000-2301-0": [{ type: "text", sub_type: "message", message_PT: "Círculos Explosivos", message_RU: "Круги" }],
+		"s-970-3000-1106-0": [{ type: "text", sub_type: "message", message_PT: "Deslize Frontal", message_RU: "Передний удар" }],
+		"s-970-3000-2106-0": [{ type: "text", sub_type: "message", message_PT: "Deslize Frontal", message_RU: "Передний удар" }],
 		"s-970-3000-2110-0": [{ type: "text", sub_type: "message", message_PT: "Cauda AOE (Pule para Frente)", message_RU: "Хвост АОЕ (прыгать вперед)" }],
 		"s-970-3000-1110-0": [{ type: "text", sub_type: "message", message_PT: "Cauda AOE (Pule para Frente)", message_RU: "Хвост АОЕ (прыгать вперед)" }],
 		"s-970-3000-1304-0": [{ type: "text", sub_type: "message", message_PT: "Prepare-se! (Para Dentro e Fora!", message_RU: "Готовность!" }],
@@ -42,5 +45,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-970-3000-1319-0": [{ type: "text", sub_type: "message", message_PT: "Pegue a Cabeça Vermelha!!", message_RU: "Взять красную голову!" }],
 		"s-970-3000-1322-0": [{ type: "text", sub_type: "message", message_PT: "Esquiva dos Padrões", message_RU: "Эвейд!" }],
 		"s-970-3000-1311-0": [{ type: "text", sub_type: "message", message_PT: "Juntar para Cleanse", message_RU: "Очищение" }]
+		"s-970-3000-1120-0": [{ type: "text", sub_type: "message", message_PT: "Cabeças Disparar", message_RU: "nao sei russo :c desculpa" }],
+		"s-970-3000-2120-0": [{ type: "text", sub_type: "message", message_PT: "Cabeças Disparar", message_RU: "nao sei russo :c desculpa" }],
 	};
 };
