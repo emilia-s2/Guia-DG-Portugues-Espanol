@@ -73,11 +73,17 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-470-1000-1106-0": [{ type: "text", sub_type: "message", message: "Smash", message_PT: "Esmagar" }],
 		"s-470-1000-1120-0": [{ type: "text", sub_type: "message", message: "Pull", message_PT: "Puxar" }],
 		"s-470-1000-1114-0": [{ type: "text", sub_type: "message", message: "Spray", message_PT: "Spray" }],
-		"s-470-1000-1201-0": [{ type: "text", sub_type: "message", message: "Stun", message_PT: "Stun" }],
+		"s-470-1000-1201-0": [
+			{ type: "text", sub_type: "message", message: "Stun", message_PT: "Stun" },
+			{ type: "spawn", func: "circle", args: [true, 553, 0, 0, 12, 250, 0, 2500] }
+		],
 		"s-470-1000-1307-0": [{ type: "text", sub_type: "message", message: "With a Bomb - Go away. No Bomb - Enter the circle", message_PT: "Uma Bomba - Sair  |  Sem Bomba - Entre no Círculo" }],
 		"s-470-1000-2105-0": [{ type: "text", sub_type: "message", message: "Jump", message_PT: "Salto" }],
 		"s-470-1000-2106-0": [{ type: "text", sub_type: "message", message: "Smash", message_PT: "Esmagar" }],
-		"s-470-1000-2107-0": [{ type: "text", sub_type: "message", message: "Stun", message_PT: "Stun" }],
+		"s-470-1000-2107-0": [
+			{ type: "text", sub_type: "message", message: "Stun", message_PT: "Stun" },
+			{ type: "spawn", func: "circle", args: [true, 553, 0, 100, 12, 250, 0, 2500] }
+		],
 		"s-470-1000-2114-0": [{ type: "text", sub_type: "message", message: "Line", message_PT: "Linha" }],
 		"s-470-1000-3106-0": [{ type: "text", sub_type: "message", message: "100" }],
 

@@ -340,8 +340,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 //		"206-2": [{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 15, 350, 0, 3000] }],
 		"164-0": [{ type: "text", sub_type: "message", message_PT: "R.I.P xD e.e (100%)", message_RU: "Прыжок назад" }], 
 		"165-0": [{ type: "text", sub_type: "message", message_PT: "R.I.P xD e.e (0%)", message_RU: "Прыжок назад" }],
-		"137-0": [{ type: "text", sub_type: "message", message_PT: "Derrubar + Explosao Ampla (50metros)", message_RU: "Опрокидывание" }],
-		"138-0": [{ type: "text", sub_type: "message", message_PT: "Explosao Ampla!!", message_RU: "AOE" }],
+		"137-0": [{ type: "text", sub_type: "message", message_PT: "Derrubar + Explosão Ampla (50metros)", message_RU: "Опрокидывание" }],
+		"138-0": [{ type: "text", sub_type: "message", message_PT: "Explosão (Iframe)", message_RU: "AOE", delay: 1700 }],
 //		"139-0": [
 //			{ type: "text", sub_type: "message", message_PT: "[Temperatura] 60+ TODOS (GELO)", message_RU: "60° (Огонь всем)" }
 //			{ type: "text", sub_type: "message", delay: 4000, message_PT: "Lower the temp", message_RU: "Снизить температуру" }

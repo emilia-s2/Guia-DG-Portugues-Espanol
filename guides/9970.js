@@ -45,7 +45,9 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-970-3000-1319-0": [{ type: "text", sub_type: "message", message_PT: "Pegue a Cabeça Vermelha!!", message_RU: "Взять красную голову!" }],
 		"s-970-3000-1322-0": [{ type: "text", sub_type: "message", message_PT: "Esquiva dos Padrões", message_RU: "Эвейд!" }],
 		"s-970-3000-1311-0": [{ type: "text", sub_type: "message", message_PT: "Juntar para Cleanse", message_RU: "Очищение" }],
-		"s-970-3000-1120-0": [{ type: "text", sub_type: "message", message_PT: "Cabeças Disparar", message_RU: "nao sei russo :c desculpa" }],
-		"s-970-3000-2120-0": [{ type: "text", sub_type: "message", message_PT: "Cabeças Disparar", message_RU: "nao sei russo :c desculpa" }],
+		"s-970-3000-1120-0": [{ type: "text", sub_type: "message", message_PT: "Cabeças Laser (Triplo)", message_RU: "nao sei russo :c desculpa" }],
+		"s-970-3000-2120-0": [{ type: "text", sub_type: "message", message_PT: "Cabeças Laser (Triplo)", message_RU: "nao sei russo :c desculpa" }],
+		"s-970-3000-1121-0": [{ type: "text", sub_type: "message", message_PT: "Cabeças Laser (Duplo)", message_RU: "Double shooting skulls" }],
+		"s-970-3000-2121-0": [{ type: "text", sub_type: "message", message_PT: "Cabeças Laser (Duplo)", message_RU: "Double shooting skulls" }]
 	};
 };

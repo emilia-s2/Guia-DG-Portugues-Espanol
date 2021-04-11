@@ -34,8 +34,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-770-3000-1102-0": [{ type: "text", sub_type: "message", message_PT: "Mão Esquerda", message_RU: "nao sei russo :c desculpa" }],
 		"s-770-3000-2102-0": [{ type: "text", sub_type: "message", message_PT: "Mão Esquerda", message_RU: "nao sei russo :c desculpa" }],
-		"s-770-3000-1101-0": [{ type: "text", sub_type: "message", message_PT: "Mão direita", message_RU: "nao sei russo :c desculpa" }],
-		"s-770-3000-2101-0": [{ type: "text", sub_type: "message", message_PT: "Mão direita", message_RU: "nao sei russo :c desculpa" }],
+		"s-770-3000-1101-0": [{ type: "text", sub_type: "message", message_PT: "Mão Direita", message_RU: "nao sei russo :c desculpa" }],
+		"s-770-3000-2101-0": [{ type: "text", sub_type: "message", message_PT: "Mão Direita", message_RU: "nao sei russo :c desculpa" }],
 		"s-770-3000-1103-0": [{ type: "text", sub_type: "message", message_PT: "Cauda Golpe", message_RU: "nao sei russo :c desculpa" }],
 		"s-770-3000-2103-0": [{ type: "text", sub_type: "message", message_PT: "Cauda Golpe", message_RU: "nao sei russo :c desculpa" }],
 		"s-770-3000-1301-0": [{ type: "text", sub_type: "message", message_PT: "Círculos Explosivos", message_RU: "nao sei russo :c desculpa" }],
@@ -63,7 +63,9 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-770-3000-1319-0": [{ type: "text", sub_type: "message", message_PT: "OBTER CRÂNIO VERMELHO", message_RU: "nao sei russo :c desculpa" }],
 		"s-770-3000-1322-0": [{ type: "text", sub_type: "message", message_PT:"Iframe os Padrões!", message_RU: "nao sei russo :c desculpa" }],
 		"s-770-3000-1311-0": [{ type: "text", sub_type: "message", message_PT: "Juntar Para Limpar", message_RU: "nao sei russo :c desculpa" }],
-		"s-770-3000-1120-0": [{ type: "text", sub_type: "message", message_PT: "Cabeças Disparar", message_RU: "nao sei russo :c desculpa" }],
-		"s-770-3000-2120-0": [{ type: "text", sub_type: "message", message_PT: "Cabeças Disparar", message_RU: "nao sei russo :c desculpa" }],
+		"s-770-3000-1120-0": [{ type: "text", sub_type: "message", message_PT: "Cabeças Laser (Triplo)", message_RU: "nao sei russo :c desculpa" }],
+		"s-770-3000-2120-0": [{ type: "text", sub_type: "message", message_PT: "Cabeças Laser (Triplo)", message_RU: "nao sei russo :c desculpa" }],
+		"s-770-3000-1121-0": [{ type: "text", sub_type: "message", message_PT: "Cabeças Laser (Duplo)", message_RU: "Double shooting skulls" }],
+		"s-770-3000-2121-0": [{ type: "text", sub_type: "message", message_PT: "Cabeças Laser (Duplo)", message_RU: "Double shooting skulls" }]
 	};
 };
