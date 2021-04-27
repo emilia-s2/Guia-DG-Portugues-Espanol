@@ -68,10 +68,13 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", message: "Waves Inward", message_PT: "Ondas FORA" },
 			{ type: "text", sub_type: "message", message: "Sair", message_PT: "Sair", delay: 3000 },
 			{ type: "spawn", func: "circle", args: [false, 413, 0, 0, 16, 180, 200, 5000] },
-			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 350, 200, 5000] }
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 350, 200, 5000] }		
 		],
+		"s-3106-1000-512-0": [{ type: "text", sub_type: "message", message: "Turn | Spin", message_PT: "Virar | Girar" }],	
+		
 		"s-3106-1000-507-0": [{ type: "text", sub_type: "message", message: "Leash + Jump (Knockdown)", message_PT: "Puxar + Salto (Derrubar)" }],
 
+		"s-3106-1000-502-0": [{ type: "text", sub_type: "message", message: "Unleash", message_PT: "Liberar" }],
 		"s-3106-1000-518-0": [{ type: "text", sub_type: "message", message: "Unleash", message_PT: "Liberar" }],
 		"s-3106-1000-519-0": [{ type: "text", sub_type: "message", message: "Unleash", message_PT: "Liberar" }],
 		"s-3106-1000-306-0": [{ type: "text", sub_type: "message", message: "Spin", message_PT: "Giro" }],
