@@ -41,4 +41,6 @@ module.exports = {
 	"pt": "Manglemire"},	
 	3034: {
 	"pt": "RK-9 Kennel (Difícil)"},
+	3041: {
+	"pt": "Damned Citadel"},
 };
