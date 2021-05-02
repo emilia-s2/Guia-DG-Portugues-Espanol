@@ -43,4 +43,6 @@ module.exports = {
 	"pt": "Rampaging RK-9 Kennel"},
 	3041: {
 	"pt": "Damned Citadel"},
+	3030: {
+	"pt": "Commander's Residence - BETA"},
 };
