@@ -44,5 +44,5 @@ module.exports = {
 	3041: {
 	"pt": "Damned Citadel"},
 	3030: {
-	"pt": "Commander's Residence - BETA"},
+	"pt": "Commander's Residence"},
 };
