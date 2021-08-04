@@ -23,9 +23,6 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-3030-1000-112-0": [{ type: "text", sub_type: "message", message_PT: "Salto", message_RU: "não sei russo :c" }],
 		"s-3030-1000-105-0": [{ type: "text", sub_type: "message", message_PT: "Fogo Frontal", message_RU: "não sei russo :c" }],
 		"am-3030-1000-99000580": [{ type: "text", sub_type: "message", message_PT: "Hit Espinhos ", message_RU: "não sei russo :c" }],
-		//"s-3030-1000-203-0": [{ type: "text", sub_type: "message", message_PT: "AOE", message_RU: "não sei russo :c" }],
-		//"s-3030-1000-108-0": [{ type: "text", sub_type: "message", message_PT: "AOE", message_RU: "não sei russo :c" }],
-
 
 		// 2 LB-1
 		"nd-3030-2000": [
