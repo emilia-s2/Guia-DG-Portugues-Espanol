@@ -4,33 +4,78 @@
 module.exports = {
 
 	9044: {
-	"pt": "Bahaar's Sanctum"},
+		"pt": "Bahaar's Sanctum",
+		"es": "Bahaar's Sanctum",
+		"en": "Bahaar's Sanctum"
+	},
 	3023: {
-	"pt": "Akalath Quarantine"},
+		"pt": "Akalath Quarantine",
+		"es": "Akalath Quarantine",
+		"en": "Akalath Quarantine"
+	},
 	3102: {
-	"pt": "Draakon Arena"},
+		"pt": "Draakon Arena",
+		"es": "Draakon Arena",
+		"en": "Draakon Arena"
+	},
 	7011: {
-	"pt": "Guardian Blightwood"},
+		"pt": "Guardian Blightwood",
+		"es": "Guardian Blightwood",
+		"en": "Guardian Blightwood"
+	},
 	7015: {
-	"pt": "Guardian Balder's Refuge"},
+		"pt": "Guardian Balder's Refuge",
+		"es": "Guardian Balder's Refuge",
+		"en": "Guardian Balder's Refuge"
+	},
 	3037: {
-	"pt": "Bahaar's (Treino)"},
+		"pt": "Bahaar's (Treino)",
+		"es": "Bahaar's (Training)",
+		"en": "Bahaar's (Training)"
+	},
 	3041: {
-	"pt": "Damned Citadel"},
+		"pt": "Damned Citadel",
+		"es": "Damned Citadel",
+		"en": "Damned Citadel"
+	},	
 	3030: {
-	"pt": "Commander's Residence"},
+		"pt": "Commander's Residence",
+		"es": "Commander's Residence",
+		"en": "Commander's Residence"
+	},
 	3042: {
-	"pt": "Gardan's Trial"},
+		"pt": "Gardan's Trial",
+		"es": "Gardan's Trial",
+		"en": "Gardan's Trial"
+	},
 	3043: {
-	"pt": "Harnovog's Trial"},
+		"pt": "Harnovog's Trial",
+		"es": "Harnovog's Trial",
+		"en": "Harnovog's Trial"
+	},
 	3040: {
-	"pt": "Lumikan's Trial"},
+		"pt": "Lumikan's Trial",
+		"es": "Lumikan's Trial",
+		"en": "Lumikan's Trial"
+	},
 	3044: {
-	"pt": "Stormed Citadel"},
+		"pt": "Stormed Citadel",
+		"es": "Stormed Citadel",
+		"en": "Stormed Citadel"
+	},
 	3105: {
-	"pt": "Fusion Laboratory"},
+		"pt": "Fusion LaboratoryFusion Laboratory",
+		"es": "Fusion LaboratoryFusion Laboratory",
+		"en": "Fusion LaboratoryFusion Laboratory"
+	},
 	3205: {
-	"pt": "Cursed Fusion Laboratory"},
+		"pt": "Cursed Fusion Laboratory",
+		"es": "Cursed Fusion Laboratory",
+		"en": "Cursed Fusion Laboratory"
+	},
 	9982: {
-	"pt": "Grotto of Lost Souls (Difícil)"},
+		"pt": "Grotto of Lost Souls (Difícil)",
+		"es": "Grotto of Lost Souls (Dificil)",
+		"en": "Grotto of Lost Souls (Hard)"
+	}
 };

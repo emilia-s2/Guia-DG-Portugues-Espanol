@@ -9,7 +9,7 @@
         "settingsVersion": 1.22
     },
     "author": "HSDN / ZC / Kasea / Emilia",
-    "description": "Guia de DG para TERA totalmente em Português",
+    "description": "Guia de DG para TERA em Português e Español",
     "servers": ["https://raw.githubusercontent.com/emilia-s2/Guia-DG-Portugues/master/"],
     "supportUrl": "https://github.com/emilia-s2/Guia-DG-Portugues/issues",
     "dependencies": {
