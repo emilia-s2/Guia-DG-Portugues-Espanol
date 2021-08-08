@@ -22,7 +22,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 
 		"s-3205-1000-101-0": [{ type: "text", sub_type: "message", message: "Front Swing", message_ES: "Golpe Frontal", message_PT: "Balanço Frontal" }],
 		"s-3205-1000-102-0": [
-			{ type: "text", sub_type: "message", message: "Disc Throw", message_ES: "Lanzar Disco", message_PT: "Lançar Disco" }
+			{ type: "text", sub_type: "message", message: "Disc Throw", message_ES: "Lanzar Disco", message_PT: "Lançar Disco" },
 			{ type: "spawn", func: "vector", args: [553, 0, 0, 180, 190, 2000, 2000] },
 			{ type: "spawn", func: "vector", args: [553, 0, 0, 10, 350, 2000, 2000] },
 			{ type: "spawn", func: "vector", args: [553, 270, 170, 10, 350, 2000, 2000] },
@@ -104,6 +104,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"qb-3205-1000-32051005": [{ type: "text", sub_type: "message", message: "Bait", message_ES: "Bait", message_PT: "Bait" }], // get stun
 		"qb-3205-1000-32051006": [{ type: "text", sub_type: "message", message: "Bait", message_ES: "Bait", message_PT: "Bait" }], // cast ress
 		"qb-3205-1000-32051007": [{ type: "text", sub_type: "message", message: "Puddles", message_ES: "Charcos", message_PT: "Poços" }], // <45%
+		"qb-3205-1000-32051008": [{ type: "text", sub_type: "message", message: "Puddles", message_ES: "Charcos", message_PT: "Poços" }], // 
 
 		// Core mech <40%
 		"qb-3205-1000-32051010": [
@@ -123,7 +124,6 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-3205-1000-121-0": [{ type: "text", sub_type: "message", message: "AoE", message_ES: "AoE", message_PT: "АоЕ" }], // red
 		"s-3205-1000-122-0": [{ type: "text", sub_type: "message", message: "AoE", message_ES: "AoE", message_PT: "АоЕ" }], // blue
-AoE
 		// Lasers <80%
 		"qb-3205-1001-32051011": [
 			{ type: "event", check_func: () => print_lasers, args: [

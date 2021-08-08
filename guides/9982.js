@@ -41,13 +41,13 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			if (Level == 4) {
 				handlers.text({
 					sub_type: "message",
-					message "Fully charged!",
+					message: "Fully charged!",
 					message_PT: "(4)",
 					message_ES: "(4)"
 				});
 				handlers.text({
 					sub_type: "alert",
-					message "Fully charged!",
+					message: "Fully charged!",
 					message_PT: "Carga Completa!",
 					message_ES: "Carga Completa!"
 				});
@@ -55,13 +55,13 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			} else if (Level == 2 && steptwo) {
 				handlers.text({
 					sub_type: "message",
-					message "Fully charged!",
+					message: "Fully charged!",
 					message_PT: "(2)",
 					message_ES: "(2)"
 				});
 				handlers.text({
 					sub_type: "alert",
-					message "Полностью заряжен!",
+					message: "Fully charged!",
 					message_PT: "Carga Completa!!",
 					message_ES: "Carga Completa!!"
 				});
@@ -71,7 +71,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 				if (!steptwo && Level !== 4) {
 					handlers.text({
 						sub_type: "message",
-						message powerMsg,
+						message: powerMsg,
 						message_PT: powerMsg,
 						message_ES: powerMsg
 					});
@@ -80,7 +80,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 				if (steptwo && Level !== 2) {
 					handlers.text({
 						sub_type: "message",
-						message powerMsg,
+						message: powerMsg,
 						message_PT: powerMsg,
 						message_ES: powerMsg
 					});
