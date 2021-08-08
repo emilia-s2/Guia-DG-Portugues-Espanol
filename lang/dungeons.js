@@ -64,9 +64,9 @@ module.exports = {
 		"en": "Stormed Citadel"
 	},
 	3105: {
-		"pt": "Fusion LaboratoryFusion Laboratory",
-		"es": "Fusion LaboratoryFusion Laboratory",
-		"en": "Fusion LaboratoryFusion Laboratory"
+		"pt": "Fusion Laboratory",
+		"es": "Fusion Laboratory",
+		"en": "Fusion Laboratory"
 	},
 	3205: {
 		"pt": "Cursed Fusion Laboratory",
