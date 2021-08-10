@@ -81,7 +81,7 @@ module.exports = {
 		"pt": "Sky Cruiser (Difícil)",
 		"es": "Sky Cruiser (Dificil)",
 		"en": "Sky Cruiser (Hard)"
-	3036: {
+	3104: {
 		"pt": "Catalepticon (Normal)",
 		"es": "Catalepticon (Normal)",
 		"en": "Catalepticon (Normal)"
