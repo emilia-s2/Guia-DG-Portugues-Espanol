@@ -30,8 +30,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			handlers.text({
 				sub_type: "alert",
 				message: "Explosion soon",
-				message_PT: "Скоро взрыв",
-				message_ES: "Скоро взрыв"
+				message_PT: "Explosão em Breve",
+				message_ES: "Explosión Pronto"
 			});
 		}
 	}
