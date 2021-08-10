@@ -1,95 +1,39 @@
 // Grotto of Lost Souls (Hard)
 //
-// made by michengs
+// made by michengs / HSDN
 
 module.exports = (dispatch, handlers, guide, lang) => {
-	let power = true;
-	let Level = 0;
-	let powerMsg = null;
-	let notice = true;
-	let steptwo = false;
 
-	function start_boss() {
-		power = false;
-		Level = 0;
-		notice = true;
-		powerMsg = null;
-		steptwo = false;
-	}
+	let color = 0;
+	let debuff = 0;
+	let print_wave = true;
+	let awakening_one = false;
+	let awakening_two = false;
+	let stack_level = 0;
 
-	function skilld_event(skillid) {
-		if (!notice) return;
+	function stacks_level_event() { // 118, 143, 145, 146, 144, 147, 148, 154, 155, 161, 162, 213, 215  -> 98200399
+		if (!awakening_one) return;
 
-		if (notice && [118, 139, 141, 150, 152].includes(skillid)) {
-			notice = false;
-			dispatch.setTimeout(() => notice = true, 4000);
+		stack_level++;
+
+		if ((!awakening_two && stack_level > 0) || (awakening_two && stack_level > 2)) {
+			handlers.text({
+				sub_type: "notification",
+				message: `Stack ${stack_level}`,
+				message_PT: `Стак ${stack_level}`,
+				message_ES: `Стак ${stack_level}`,
+				speech: false
+			});
 		}
 
-		if (skillid === 300) {
-			power = true;
-			Level = 0;
-			powerMsg = null;
+		if (stack_level === 4) {
+			handlers.text({
+				sub_type: "alert",
+				message: "Explosion soon",
+				message_PT: "Скоро взрыв",
+				message_ES: "Скоро взрыв"
+			});
 		}
-
-		if (skillid === 360 || skillid === 399)
-			Level = 0;
-
-		if (power && [118, 143, 145, 146, 144, 147, 148, 154, 155, 161, 162, 213, 215].includes(skillid)) {
-			Level++;
-			powerMsg = `(${Level})`;
-
-			if (Level == 4) {
-				handlers.text({
-					sub_type: "message",
-					message: "Fully charged!",
-					message_PT: "(4)",
-					message_ES: "(4)"
-				});
-				handlers.text({
-					sub_type: "alert",
-					message: "Fully charged!",
-					message_PT: "Carga Completa!",
-					message_ES: "Carga Completa!"
-				});
-
-			} else if (Level == 2 && steptwo) {
-				handlers.text({
-					sub_type: "message",
-					message: "Fully charged!",
-					message_PT: "(2)",
-					message_ES: "(2)"
-				});
-				handlers.text({
-					sub_type: "alert",
-					message: "Fully charged!",
-					message_PT: "Carga Completa!!",
-					message_ES: "Carga Completa!!"
-				});
-			}
-
-			if (powerMsg !== null && skillid !== 399) {
-				if (!steptwo && Level !== 4) {
-					handlers.text({
-						sub_type: "message",
-						message: powerMsg,
-						message_PT: powerMsg,
-						message_ES: powerMsg
-					});
-				}
-
-				if (steptwo && Level !== 2) {
-					handlers.text({
-						sub_type: "message",
-						message: powerMsg,
-						message_PT: powerMsg,
-						message_ES: powerMsg
-					});
-				}
-			}
-		}
-
-		if (skillid === 399)
-			steptwo = true;
 	}
 
 	return {
@@ -98,199 +42,226 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "stop_timers" },
 			{ type: "despawn_all" }
 		],
-		"s-982-1000-106-0": [{ type: "text", class_position: "tank", sub_type: "message", message_PT: "Golpe pesado", message_ES: "Golpe pesado", message: "Heavy" }],
+		"s-982-1000-106-0": [{ type: "text", class_position: "tank", sub_type: "message", message: "Heavy", message_ES: "Golpe pesado", message_PT: "Golpe pesado" }],
 		"s-982-1000-107-0": [
-			{ type: "text", class_position: "dps", sub_type: "message", message_PT: "Repelir Atras", message_ES: "Empujar Atrás", message: "Pushback" },
-			{ type: "text", class_position: "heal", sub_type: "message", message_PT: "Repelir Atras (Kaia)", message_ES: "Empujar Atrás (Kaia)", message: "Bait (Flying)" }
+			{ type: "text", class_position: "dps", sub_type: "message", message: "Pushback", message_ES: "Empujar Atrás", message_PT: "Repelir Atras" },
+			{ type: "text", class_position: "heal", sub_type: "message", message: "Pushback (Kaia)", message_ES: "Empujar Atrás (Kaia)", message_PT: "Repelir Atras (Kaia)" },
+			{ type: "spawn", func: "vector", args: [553, 90, 30, 140, 600, 1000, 2000] },
+			{ type: "spawn", func: "vector", args: [553, 270, 30, -140, 600, 1000, 2000] }
 		],
-		"s-982-1000-108-0": [{ type: "text", sub_type: "message", message_PT: "Espinhos no Chao", message_ES: "Espinas al Suelo", message: "Bait (Flying)" }],
-		"s-982-1000-109-0": [{ type: "text", sub_type: "message", message_PT: "Rochas (pequenas)", message_ES: "Rocks (pequenas)", message: "Rocks (Small)" }],
-		"s-982-1000-110-0": [{ type: "text", sub_type: "message", message_PT: "Rochas (Grandes)", message_ES: "Rocks (Grande)", message: "Rocks (Large)" }],
-		"s-982-1000-301-0": [{ type: "text", sub_type: "message", message_PT: "Flor Canibal (Stun)", message_ES: "Flor Canibal (Stun)", message: "Flower Stuns" }],
-		"s-982-1000-307-0": [{ type: "text", sub_type: "message", message_PT: "Gaiola (proibida)", message_ES: "Jaula Proibhida", message: "Cage" }],
-		"s-982-1000-309-0": [{ type: "text", sub_type: "message", message_PT: "1 FLOR", message_ES: "1 FLOR", message: "1 Flower" }],
-		"s-982-1000-310-0": [{ type: "text", sub_type: "message", message_PT: "2 FLORES", message_ES: "2 FLORES", message: "2 Flower" }],
-		"s-982-1000-116-0": [{ type: "text", sub_type: "message", message_PT: "Ataque em Tela Cheia!!", message_ES: "Ataque en Pantalla Llena!!", message: "Big AoE Attack!!!" }],
-		"s-982-1000-312-0": [{ type: "text", sub_type: "message", message_PT: "Flor Dourada!", message_ES: "Flor Dorada!", message: "Golden Flower!" }],
+		"s-982-1000-108-0": [
+			{ type: "text", sub_type: "message", message: "Bait Front (Flying)", message_ES: "Espinas al Suelo (Bait)", message_PT: "Espinhos no Chao (Bait)" },
+			{ type: "spawn", func: "vector", args: [553, 90, 140, 5, 620, 500, 1500] },
+			{ type: "spawn", func: "vector", args: [553, 270, 140, 355, 620, 500, 1500] }
+		],
+		"s-982-1000-109-0": [{ type: "text", sub_type: "message", message: "Rocks (Small)", message_ES: "Rocks (pequenas)", message_PT: "Rochas (pequenas)" }],
+		"s-982-1000-110-0": [{ type: "text", sub_type: "message", message: "Rocks (Large)", message_ES: "Rocks (Grande)", message_PT: "Rochas (Grandes)" }],
+		"s-982-1000-111-0": [{ type: "text", sub_type: "message", message: "Stun (Dodge)", message_ES: "Flor Canibal (Stun)", message_PT: "Flor Canibal (Stun)", delay: 1500 }],
+		"s-982-1000-113-0": [{ type: "text", sub_type: "message", message: "Thorns (Bleed)", message_ES: "Espinas (Sangrar)", message_PT: "Espinhos (Sangrar)" }],
+		"s-982-1000-116-0": [
+			{ type: "text", sub_type: "message", message: "AoE", message_ES: "Ataque Full", message_PT: "Ataque Full" },
+			{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Esquiva", message_PT: "Esquiva", delay: 2000 }
+		],
+		"s-982-1000-301-0": [{ type: "text", sub_type: "message", message: "Flower Stuns (Dodge)", message_ES: "Flor Canibal (Stun)", message_PT: "Flor Canibal (Stun)" }],
+		"s-982-1000-307-0": [{ type: "text", sub_type: "message", message: "Cage (Don't move)", message_ES: "Jaula (Não se Mova)", message_PT: "Jaula (No Move)" }],
+		// Flowers mech
+		"ab-982-1003-98200161": [
+			{ type: "text", sub_type: "message", message: "Green", message_ES: "Verde", message_PT: "Verde" },
+			{ type: "func", func: () => color = 1 }
+		],
+		"ab-982-1003-98200162": [
+			{ type: "text", sub_type: "message", message: "Violet", message_ES: "Roxo", message_PT: "Morado" },
+			{ type: "func", func: () => color = 2 }
+		],
+		"ae-0-0-98200148": [{ type: "func", func: () => debuff = 1 }], // green
+		"ae-0-0-98200149": [{ type: "func", func: () => debuff = 2 }], // violet
+		"s-982-1000-201-0": [{ type: "text", sub_type: "alert", message: "Change Debuff", message_ES: "Cambiar Debuff", message_PT: "Mudar Debuff", check_func: () => debuff !== 0 && color !== debuff, delay: 5000 }],
+		"s-982-1000-309-0": [
+			{ type: "text", sub_type: "message", message: "One Flower", message_ES: "1 FLOR", message_PT: "1 FLOR" },
+			{ type: "text", sub_type: "alert", message: "Dodge the flower!", message_ES: "Esquiva la Flor", message_PT: "Esquiva da Flor!", check_func: () => color === debuff, delay: 1500 }
+		],
+		"s-982-1000-310-0": [
+			{ type: "text", sub_type: "message", message: "Two Flowers", message_ES: "2 FLORES", message_PT: "2FLORES" },
+			{ type: "text", sub_type: "alert", message: "Dodge ONE flower!", message_ES: "¡Esquiva 1 Flor!", message_PT: "Esquiva 1 Flor!", check_func: () => color !== debuff, delay: 1500 }
+		],
+		"s-982-1000-312-0": [
+			{ type: "text", sub_type: "message", message: "Flower Golden", message_ES: "Flor Dorada", message_PT: "Flor Dourada" },
+			{ type: "text", sub_type: "alert", message: "Break Flower!", message_ES: "Golpea la Flor", message_PT: "Bata na Flor", check_func: () => color !== debuff, delay: 1500 },
+			{ type: "text", sub_type: "alert", message: "Dodge Flower!", message_ES: "Esquiva", message_PT: "Esquiva", check_func: () => color === debuff, delay: 4000 }
+		],
+		"s-982-1000-308-0": [
+			{ type: "func", func: () => color = 0 },
+			{ type: "func", func: () => debuff = 0 }
+		],
 
 		// 2 BOSS
 		"nd-982-2000": [
 			{ type: "stop_timers" },
 			{ type: "despawn_all" }
 		],
-		"s-982-2000-105-0": [{ type: "text", sub_type: "message", message_PT: "GIRAR Atras", message_ES: "GIRAR Atrás", message: "Spin Back" }],
+		"s-982-2000-105-0": [{ type: "text", sub_type: "message", message: "Spin", message_ES: "GIRO Atrás", message_PT: "GIRAR Atrás" }],
+		"s-982-2000-108-0": [{ type: "text", sub_type: "message", message: "Shot Forward", message_ES: "Disparo Delantero", message_PT: "Disparo na Frente" }],
+		"s-982-2000-109-0": [{ type: "text", sub_type: "message", message: "Wave Forward", message_ES: "Ola Delantera", message_PT: "Onda Frente" }],
+		"s-982-2000-112-0": [{ type: "text", sub_type: "message", message: "Kick Forward", message_ES: "Patada Frente", message_PT: "Patada Frente" }],
 		"s-982-2000-113-0": [
-		    { type: "text", sub_type: "message", message_PT: "Maos Stun", message_ES: "Manos Stun", message: "Stun Inc" },
-		    { type: "spawn", func: "circle", args: [false, 913, 0, 0, 10, 310, 0,2800] }  //Adicionado
-        ],			
+			{ type: "text", sub_type: "message", message: "Stun (AoE)", message_ES: "Stun (AoE)", message_PT: "Stun (AoE)" },
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, null, 320, 0, 3000] }
+		],
 		"s-982-2000-114-0": [
-			{ type: "text", sub_type: "message", message_PT: "ENTRAR", message_ES: "ENTRAR", message: "Get In" },
-			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 15, 260, 0, 3000] }
+			{ type: "text", sub_type: "message", message: "Get In", message_ES: "ENTRAR", message_PT: "ENTRAR" },
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, null, 260, 0, 5000] },
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, null, 600, 0, 5000] }
 		],
 		"s-982-2000-116-0": [
-			{ type: "text", sub_type: "message", message_PT: "Frente e Atras", message_ES: "Frente e Atrás", message: "Front then Back" },
+			{ type: "text", sub_type: "message", message: "Front | Back", message_ES: "Frente | Atrás", message_PT: "Frente | Atrás" },
 			{ type: "spawn", func: "vector", args: [553, 0, 0, 270, 500, 0, 5000] },
 			{ type: "spawn", func: "vector", args: [553, 180, 0, 90, 500, 0, 5000] }
 		],
 		"s-982-2000-301-0": [
-			{ type: "text", sub_type: "message", message_PT: "SAIR + ESQUIVAR", message_ES: "SALIR + ESQUIVAR", message: "Get Out + Dodge" },
-			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 15, 260, 0, 3000] }
+			{ type: "text", sub_type: "message", message: "Get Out | Dodge", message_ES: "SALIR + ESQUIVAR", message_PT: "SAIR + ESQUIVAR" },
+			{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Esquiva", message_PT: "Esquiva", delay: 3700  },
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, null, 260, 0, 3000] },
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, null, 650, 0, 3000] }
 		],
 		"s-982-2000-302-0": [
-			{ type: "text", sub_type: "message", message_PT: "ENTRAR + ESQUIVAR", message_ES: "ENTRAR + ESQUIVAR", message: "Get In + Dodge" },
-			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 15, 260, 0, 3000] }
+			{ type: "text", sub_type: "message", message: "Get In | Dodge", message_ES: "ENTRAR + ESQUIVAR", message_PT: "ENTRAR + ESQUIVAR" },
+			{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Esquiva", message_PT: "Esquiva", delay: 3700  },
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, null, 260, 0, 3000] },
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, null, 650, 0, 3000] }
 		],
+		"s-982-2000-307-0": [{ type: "text", sub_type: "message", message: "Target", message_ES: "Objetivo", message_PT: "Alvo" }],
+		"s-982-2000-307-2": [{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Esquiva", message_PT: "Esquiva" }],
 
-		// 3 БОСС
+		// 3 BOSS
 		"nd-982-3000": [
 			{ type: "stop_timers" },
 			{ type: "despawn_all" }
 		],
-		"h-982-3000-99": [{ type: "func", func: start_boss }],
-		"h-982-3000-30": [{ type: "text", sub_type: "message", message_PT: "30%", message_ES: "30%", message: "30%" }],
-		"s-982-3000-118-0": [
-			{ type: "text", sub_type: "message", message_PT: "Frente Triplo ataque", message_ES: "Frente Triplo ataque", message: "Front Triple" },
-			{ type: "func", func: skilld_event, args: [118] }
+		"h-982-3000-99": [
+			{ type: "func", func: () => print_wave = true },
+			{ type: "func", func: () => awakening_one = false },
+			{ type: "func", func: () => awakening_two = false },
+			{ type: "func", func: () => stack_level = 0 }
 		],
+		"h-982-3000-80": [{ type: "text", sub_type: "message", message: "80%", message_ES: "80%", message_PT: "80%" }],
+		"h-982-3000-30": [{ type: "text", sub_type: "message", message: "30%", message_ES: "30%%", message_PT: "30%" }],
+		"s-982-3000-109-0": [{ type: "text", sub_type: "message", message: "Front Throw", message_ES: "Ataque Frontal", message_PT: "Ataque Frontal" }],
+		"s-982-3000-118-0": [{ type: "text", sub_type: "message", message: "Front Triple", message_ES: "Ataque Frontal Triplo", message_PT: "Ataque Frontal Triplo" }],
 		"s-982-3000-143-0": [
-			{ type: "text", sub_type: "message", message_PT: "ESQUERDA Atras ataque", message_ES: "IZQUIERDA Atrás ataque", message: "Left Rear" },
-			{ type: "func", func: skilld_event, args: [143] }
+			{ type: "text", sub_type: "message", message: "Left Rear", message_ES: "IZQUIERDA Atrás ataque", message_PT: "ESQUERDA Atrás ataque" },
+			{ type: "spawn", func: "circle", args: [true, 553, 200, 330, null, 280, 0, 3000] }
 		],
-		"s-982-3000-145-0": [
-			{ type: "text", sub_type: "message", message_PT: "ESQUERDA Atras ataque", message_ES: "IZQUIERDA Atrás ataque", message: "Left Rear" },
-			{ type: "func", func: skilld_event, args: [145] }
+		"s-982-3000-145-0": "s-982-3000-143-0",
+		"s-982-3000-144-0": [
+			{ type: "text", sub_type: "message", message: "Right Rear", message_ES: "DIREITA Atrás ataque", message_PT: "DIREITA Atrás ataque" },
+			{ type: "spawn", func: "circle", args: [true, 553, 160, 330, null, 280, 0, 3000] }
 		],
+		"s-982-3000-147-0": "s-982-3000-144-0",
 		"s-982-3000-146-0": [
-			{ type: "text", sub_type: "message", message_PT: "ESQUERDA Atras (Pulsos)", message_ES: "IZQUIERDA Atrás (Pulsos)", message: "Left Rear (Pulses)" },
-			{ type: "spawn", func: "marker", args: [false, 215, 370, 0, 4500, true, null] },
-			{ type: "spawn", func: "circle", args: [false, 553, 215, 370, 15, 160, 2500, 4500] },
-//			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 12, 320, 2500, 8000] },
-//			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 10, 480, 2500, 8000] },
-//			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 8, 640, 2500, 8000] },
-//			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 6, 800, 2500, 8000] },
-			{ type: "func", func: skilld_event, args: [146] }
+			{ type: "text", sub_type: "message", message: "Pulses Left", message_ES: "IZQUIERDA Atrás (Pulsos)", message_PT: "ESQUERDA Atrás (Pulsos)" },
+			{ type: "spawn", func: "circle", args: [true, 553, 200, 350, null, 280, 500, 2000] },
+			{ type: "spawn", func: "marker", args: [false, 215, 370, 5300, 3000, true, null] }, // 1
+			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 15, 160, 2000, 6000] },
+			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 12, 320, 2000, 6000] },
+			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 10, 480, 2000, 6000] },
+			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 8, 640, 2000, 6000] },
+			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 6, 800, 2000, 6000] }
 		],
 		"s-982-3000-154-0": [
-			{ type: "text", sub_type: "message", message_PT: "ESQUERDA Atras (Pulsos)", message_ES: "IZQUIERDA Atrás (Pulsos)", message: "Left Rear (Pulses)" },
-			{ type: "spawn", func: "marker", args: [false, 215, 370, 0, 4500, true, null] },
-			{ type: "spawn", func: "circle", args: [false, 553, 215, 370, 15, 160, 2500, 4500] },
-//			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 12, 320, 2500, 8000] },
-//			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 10, 480, 2500, 8000] },
-//			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 8, 640, 2500, 8000] },
-//			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 6, 800, 2500, 8000] },
-//			{ type: "func", func: skilld_event, args: [154] }
-		],
-		"s-982-3000-144-0": [
-			{ type: "text", sub_type: "message", message_PT: "DIREITA Atras ataque", message_ES: "DERECHA Atrás ataque", message: "Right Rear" },
-			{ type: "func", func: skilld_event, args: [144] }
-		],
-		"s-982-3000-147-0": [
-			{ type: "text", sub_type: "message", message_PT: "DIREITA Atras ataque", message_ES: "DERECHA Atrás ataque", message: "Right Rear" },
-			{ type: "func", func: skilld_event, args: [147] }
+			{ type: "text", sub_type: "message", message: "Pulses Left", message_ES: "IZQUIERDA Atrás (Pulsos)", message_PT: "ESQUERDA Atrás (Pulsos)" },
+			{ type: "spawn", func: "circle", args: [true, 553, 200, 350, null, 280, 500, 2000] },
+			{ type: "spawn", func: "marker", args: [false, 215, 370, 4200, 4000, true, null] }, // 2
+			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 15, 160, 2000, 6000] },
+			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 12, 320, 2000, 6000] },
+			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 10, 480, 2000, 6000] },
+			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 8, 640, 2000, 6000] },
+			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 6, 800, 2000, 6000] }
 		],
 		"s-982-3000-148-0": [
-			{ type: "text", sub_type: "message", message_PT: "DIREITA Atras (Pulsos)", message_ES: "DERECHA Atrás (Pulsos)", message: "Right Rear (Pulses)" },
-			{ type: "spawn", func: "marker", args: [false, 155, 388, 0, 4500, true, null] },
-			{ type: "spawn", func: "circle", args: [false, 553, 155, 388, 15, 160, 2500, 4500] },
-//			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 12, 320, 2500, 8000] },
-//			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 10, 480, 2500, 8000] },
-//			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 8, 640, 2500, 8000] },
-//			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 6, 800, 2500, 8000] },
-			{ type: "func", func: skilld_event, args: [148] }
+			{ type: "text", sub_type: "message", message: "Pulses Right", message_ES: "DERECHA Atrás (Pulsos)", message_PT: "DIREITA Atrás (Pulsos)" },
+			{ type: "spawn", func: "circle", args: [true, 553, 160, 350, null, 280, 500, 2000] },
+			{ type: "spawn", func: "marker", args: [false, 155, 388, 5300, 3000, true, null] }, // 1
+			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 15, 160, 2000, 6000] },
+			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 12, 320, 2000, 6000] },
+			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 10, 480, 2000, 6000] },
+			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 8, 640, 2000, 6000] },
+			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 6, 800, 2000, 6000] }
 		],
 		"s-982-3000-155-0": [
-			{ type: "text", sub_type: "message", message_PT: "DIREITA Atras (Pulsos)", message_ES: "DERECHA Atrás (Pulsos)", message: "Right Rear (Pulses)" },
-			{ type: "spawn", func: "marker", args: [false, 155, 388, 0, 4500, true, null] },
-			{ type: "spawn", func: "circle", args: [false, 553, 155, 388, 15, 160, 2500, 4500] },
-//			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 12, 320, 2500, 8000] },
-//			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 10, 480, 2500, 8000] },
-//			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 8, 640, 2500, 8000] },
-//			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 6, 800, 2500, 8000] },
-//			{ type: "func", func: skilld_event, args: [155] }
+			{ type: "text", sub_type: "message", message: "Pulses Right", message_ES: "DERECHA Atrás (Pulsos)", message_PT: "DIREITA Atrás (Pulsos)" },
+			{ type: "spawn", func: "circle", args: [true, 553, 160, 350, null, 280, 500, 2000] },
+			{ type: "spawn", func: "marker", args: [false, 155, 388, 4200, 4000, true, null] }, // 2
+			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 15, 160, 2000, 6000] },
+			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 12, 320, 2000, 6000] },
+			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 10, 480, 2000, 6000] },
+			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 8, 640, 2000, 6000] },
+			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 6, 800, 2000, 6000] }
 		],
 		"s-982-3000-161-0": [
-			{ type: "text", sub_type: "message", message_PT: "Frente | Atras ataque", message_ES: "Frente | Atrás ataque", message: "Back then Front" },
-			{ type: "func", func: skilld_event, args: [161] }
+			{ type: "text", sub_type: "message", message: "Front | Back", message_ES: "Frente | Atrás ataque", message_PT: "Frente | Atrás ataque" },
+			{ type: "spawn", func: "circle", args: [true, 553, 180, 310, null, 290, 3000, 2500] }
 		],
 		"s-982-3000-162-0": [
-			{ type: "text", sub_type: "message", message_PT: "Frente | Atras ataque", message_ES: "Frente | Atrás ataque", message: "Back then Front" },
-			{ type: "func", func: skilld_event, args: [162] }
+			{ type: "text", sub_type: "message", message: "Front | Back", message_ES: "Frente | Atrás ataque", message_PT: "Frente | Atrás ataque" },
+			{ type: "spawn", func: "circle", args: [true, 553, 180, 310, null, 290, 3000, 2500] }
 		],
-		"s-982-3000-213-0": [
-			{ type: "text", sub_type: "message", message_PT: "Cauda", message_ES: "Cola", message: "Tail!" },
-			{ type: "func", func: skilld_event, args: [213] }
-		],
+		"s-982-3000-213-0": [{ type: "text", sub_type: "message", message: "Tail", message_ES: "Cola", message_PT: "Cauda" }],
 		"s-982-3000-215-0": [
-			{ type: "text", sub_type: "message", message_PT: "Cauda!", message_ES: "Cola", message: "Tail!" },
-			{ type: "func", func: skilld_event, args: [215] }
+			{ type: "text", sub_type: "message", message: "Tail", message_ES: "Cola", message_PT: "Cauda" },
+			{ type: "spawn", func: "circle", args: [true, 553, 180, 340, null, 280, 0, 2000] }
 		],
 		"s-982-3000-139-0": [
-			{ type: "text", sub_type: "message", message_PT: "Esquerdo Seguro", message_ES: "Izquierda Seguro", message: "Left Safe" },
-			{ type: "spawn", func: "vector", args: [912, 90, 0, 0, 500, 0, 5000] },
-			{ type: "spawn", func: "vector", args: [912, 270, 0, 180, 500, 0, 5000] },
-			{ type: "spawn", func: "marker", args: [false, 270, 200, 0, 8000, true, null] },
-			{ type: "func", func: skilld_event, args: [139] }
+			{ type: "text", sub_type: "message", message: "Wave + Wing (Left Safe)", message_ES: "Ola (IZQUIERDA Segura)", message_PT: "Onda (ESQUERDA Seguro)", check_func: () => print_wave },
+			{ type: "despawn_all", tag: "wave" },
+			{ type: "spawn", func: "vector", args: [912, 90, 0, 0, 600, 100, 3000], tag: "wave" },
+			{ type: "spawn", func: "vector", args: [912, 270, 0, 180, 600, 100, 3000], tag: "wave" },
+			{ type: "spawn", func: "marker", args: [false, 270, 200, 100, 4000, true, null], tag: "wave" },
+			{ type: "func", func: () => print_wave = false },
+			{ type: "func", func: () => print_wave = true, delay: 8000 }
 		],
-			"s-982-3000-139-1": [{ type: "spawn", func: "vector", args: [912, 90, 0, 0, 500, 0, 4000] },    //Adicionado
-			                     { type: "spawn", func: "vector", args: [912, 270, 0, 180, 500, 0, 4000] }],//Adicionado
-			"s-982-3000-139-2": [{ type: "spawn", func: "vector", args: [912, 90, 0, 0, 500, 0, 3000] },    //Adicionado
-			                     { type: "spawn", func: "vector", args: [912, 270, 0, 180, 500, 0, 3000] }  //Adicionado
-			//"s-982-3011-352-0": [{ type: "spawn", func: "vector", args: [912, 90, 0, 0, 500, 0, 200] },   //Adicionado
-			                     //{ type: "spawn", func: "vector", args: [912, 270, 0, 180, 500, 0, 2000] }//Adicionado
-		],
-		"s-982-3000-150-0": [
-			{ type: "text", sub_type: "message", message_PT: "Direito Seguro", message_ES: "Derecha Seguro", message: "Right Safe" },
-			{ type: "spawn", func: "vector", args: [912, 90, 0, 0, 500, 0, 5000] },
-			{ type: "spawn", func: "vector", args: [912, 270, 0, 180, 500, 0, 5000] },
-			{ type: "spawn", func: "marker", args: [false, 270, 200, 0, 8000, true, null] },
-			{ type: "func", func: skilld_event, args: [150] }
-		],
-		    "s-982-3000-150-1": [{ type: "spawn", func: "vector", args: [912, 90, 0, 0, 500, 0, 4000] },    //Adicionado
-			                     { type: "spawn", func: "vector", args: [912, 270, 0, 180, 500, 0, 4000] }],//Adicionado
-		    "s-982-3000-150-2": [{ type: "spawn", func: "vector", args: [912, 90, 0, 0, 500, 0, 3000] },    //Adicionado
-			                     { type: "spawn", func: "vector", args: [912, 270, 0, 180, 500, 0, 3000] }  //Adicionado
-		   // "s-982-3000-352-0": [{ type: "spawn", func: "vector", args: [912, 90, 0, 0, 500, 0, 2000] },  //Adicionado
-			                     //{ type: "spawn", func: "vector", args: [912, 270, 0, 180, 500, 0, 2000] }//Adicionado
-		],		
+		"s-982-3000-139-1": "s-982-3000-139-0",
+		"s-982-3000-139-2": "s-982-3000-139-0",
+		"s-982-3000-150-0": "s-982-3000-139-0", //
+		"s-982-3000-150-1": "s-982-3000-139-0",
+		"s-982-3000-150-2": "s-982-3000-139-0",
 		"s-982-3000-141-0": [
-			{ type: "text", sub_type: "message", message_PT: "Esquerdo Seguro", message_ES: "Izquierda Seguro", message: "Left Safe" },
-			{ type: "spawn", func: "vector", args: [912, 90, 0, 0, 500, 0, 5000] },
-			{ type: "spawn", func: "vector", args: [912, 270, 0, 180, 500, 0, 5000] },
-			{ type: "spawn", func: "marker", args: [false, 90, 200, 0, 8000, true, null] },
-			{ type: "func", func: skilld_event, args: [141] }
+			{ type: "text", sub_type: "message", message: "Wave + Wing (Right Safe)", message_ES: "Ola (DERECHA Segura)", message_PT: "Onda (DIREITA Seguro)", check_func: () => print_wave },
+			{ type: "despawn_all", tag: "wave" },
+			{ type: "spawn", func: "vector", args: [912, 90, 0, 0, 600, 100, 3000], tag: "wave" },
+			{ type: "spawn", func: "vector", args: [912, 270, 0, 180, 600, 100, 3000], tag: "wave" },
+			{ type: "spawn", func: "marker", args: [false, 90, 200, 100, 4000, true, null], tag: "wave" },
+			{ type: "func", func: () => print_wave = false },
+			{ type: "func", func: () => print_wave = true, delay: 8000 }
 		],
-			"s-982-3000-141-1": [{ type: "spawn", func: "vector", args: [912, 90, 0, 0, 500, 0, 4000] },    //Adicionado
-			                     { type: "spawn", func: "vector", args: [912, 270, 0, 180, 500, 0, 4000] }],//Adicionado
-			"s-982-3000-141-2": [{ type: "spawn", func: "vector", args: [912, 90, 0, 0, 500, 0, 3000] },    //Adicionado
-			                     { type: "spawn", func: "vector", args: [912, 270, 0, 180, 500, 0, 3000] }  //Adicionado  
-			//"s-982-3011-352-0": [{ type: "spawn", func: "vector", args: [912, 90, 0, 0, 500, 0, 2000] },  //Adicionado
-			                     //{ type: "spawn", func: "vector", args: [912, 270, 0, 180, 500, 0, 2000] }//Adicionado
-		],		
-		"s-982-3000-152-0": [
-			{ type: "text", sub_type: "message", message_PT: "Direito Seguro", message_ES: "Derecha Seguro", message: "Right Safe" },
-			{ type: "spawn", func: "vector", args: [912, 90, 0, 0, 500, 0, 5000] },
-			{ type: "spawn", func: "vector", args: [912, 270, 0, 180, 500, 0, 5000] },
-			{ type: "spawn", func: "marker", args: [false, 90, 200, 0, 8000, true, null] },
-			{ type: "func", func: skilld_event, args: [152] }
-		],
-			"s-982-3000-152-1": [{ type: "spawn", func: "vector", args: [912, 90, 0, 0, 500, 0, 4000] },    //Adicionado
-			                     { type: "spawn", func: "vector", args: [912, 270, 0, 180, 500, 0, 4000] }],//Adicionado 
-			"s-982-3000-152-2": [{ type: "spawn", func: "vector", args: [912, 90, 0, 0, 500, 0, 3000] },    //Adicionado
-			                     { type: "spawn", func: "vector", args: [912, 270, 0, 180, 500, 0, 3000] }  //Adicionado
-			//"s-982-3000-352-0": [{ type: "spawn", func: "vector", args: [912, 90, 0, 0, 500, 0, 2000] },  //Adicionado
-		                         //{ type: "spawn", func: "vector", args: [912, 270, 0, 180, 500, 0, 2000] }//Adicionado
-		],		
+		"s-982-3000-141-1": "s-982-3000-141-0",
+		"s-982-3000-141-2": "s-982-3000-141-0",
+		"s-982-3000-152-0": "s-982-3000-141-0", //
+		"s-982-3000-152-1": "s-982-3000-141-0",
+		"s-982-3000-152-2": "s-982-3000-141-0",
 		"s-982-3000-300-0": [
-			{ type: "text", sub_type: "message", message_PT: "DESPERTAR (Iframe)", message_ES: "DESPIERTAR (Iframe)", message: "Dodge! (Awakening 1)" },
-			{ type: "func", func: skilld_event, args: [300] }
+			{ type: "text", sub_type: "message", message: "Dodge! (Awakening 1)", message_ES: "ESPIERTAR 1 (Iframe)", message_PT: "DESPERTAR 1 (Iframe)", delay: 400 }, // <80%
+			{ type: "func", func: () => awakening_one = true },
+			{ type: "func", func: () => stack_level = 0 }
 		],
 		"s-982-3000-399-0": [
-			{ type: "text", sub_type: "message", message_PT: "Despertar Secundario (Iframe)", message_ES: "Despiertar Secundario (Iframe)", message: "Dodge! (Awakening 2)" },
-			{ type: "func", func: skilld_event, args: [399] }
+			{ type: "text", sub_type: "message", message: "Dodge! (Awakening 2)", message_ES: "ESPIERTAR 2 (Iframe)", message_PT: "DESPERTAR 2 (Iframe)", delay: 1400  }, // <30%
+			{ type: "func", func: () => awakening_two = true },
+			{ type: "func", func: () => stack_level = 0 }
 		],
 		"s-982-3000-360-0": [
-			{ type: "text", sub_type: "alert", message_PT: "EXPLOSAO - EXPLOSAO!!!", message_ES: "EXPLOSIÓN - EXPLOSIÓN!!!", message: "Explosion!" },
-			{ type: "func", func: skilld_event, args: [360] }
-		]
+			{ type: "text", sub_type: "message", message: "Explosion (Dodge)", message_ES: "EXPLOSIÓN (Iframe)", message_PT: "EXPLOSÃO (Iframe)" },
+			{ type: "func", func: () => stack_level = 0 }
+		],
+		"ab-982-3000-98200399": [{ type: "func", func: stacks_level_event }],
+		"s-982-3000-351-0": [
+			{ type: "text", sub_type: "message", message: "Stones (Dodge)", message_ES: "Piedras ( Esquiva)", message_PT: "Pedras (Esquiva)" },
+			{ type: "text", sub_type: "message", message: "Line up to the plate", message_ES: "Alinear hasta la Placa", message_PT: "Alinhar até a Placa", delay: 4000 },
+			{ type: "text", sub_type: "message", message: "Kaia!", message_ES: "Kaia!", message_PT: "Kaia!", delay: 9500 }
+		],
+		"s-982-3011-352-0": [
+			{ type: "text", sub_type: "message", message: "Break Sphere", message_ES: "Romper la Esfera", message_PT: "Quebrar a Esfera", check_func: () => !awakening_two },
+			{ type: "text", sub_type: "message", message: "Break Three Spheres", message_ES: "Romper 3 Esferas", message_PT: "Quebrar 3 Esferas", check_func: () => awakening_two }
+		],
+		"s-982-3012-353-0": [{ type: "text", sub_type: "message", message: "Break Two Spheres", message_ES: "Romper 2 Esferas", message_PT: "Quebrar 3 Esferas" }]
 	};
 };

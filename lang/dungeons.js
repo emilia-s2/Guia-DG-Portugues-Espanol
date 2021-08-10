@@ -77,5 +77,13 @@ module.exports = {
 		"pt": "Grotto of Lost Souls (Difícil)",
 		"es": "Grotto of Lost Souls (Dificil)",
 		"en": "Grotto of Lost Souls (Hard)"
+	3036: {
+		"pt": "Sky Cruiser (Difícil)",
+		"es": "Sky Cruiser (Dificil)",
+		"en": "Sky Cruiser (Hard)"
+	3036: {
+		"pt": "Catalepticon (Normal)",
+		"es": "Catalepticon (Normal)",
+		"en": "Catalepticon (Normal)"
 	}
 };
