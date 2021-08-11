@@ -145,7 +145,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"h-982-3000-80": [{ type: "text", sub_type: "message", message: "80%", message_ES: "80%", message_PT: "80%" }],
 		"h-982-3000-30": [{ type: "text", sub_type: "message", message: "30%", message_ES: "30%%", message_PT: "30%" }],
-		"s-982-3000-109-0": [{ type: "text", sub_type: "message", message: "Front Throw", message_ES: "Ataque Frontal", message_PT: "Ataque Frontal" }],
+		"s-982-3000-109-0": [{ type: "text", sub_type: "message", message: "Front Throw (Target)", message_ES: "Ataque Frontal (Objetivo)", message_PT: "Ataque Frontal (Alvo)" }],
+		"s-982-3000-134-0": [{ type: "text", sub_type: "message", message: "Front Throw (Target)", message_ES: "Ataque Frontal (Objetivo)", message_PT: "Ataque Frontal (Alvo)" }],
 		"s-982-3000-118-0": [{ type: "text", sub_type: "message", message: "Front Triple", message_ES: "Ataque Frontal Triplo", message_PT: "Ataque Frontal Triplo" }],
 		"s-982-3000-143-0": [
 			{ type: "text", sub_type: "message", message: "Left Rear", message_ES: "IZQUIERDA Atrás ataque", message_PT: "ESQUERDA Atrás ataque" },
@@ -239,7 +240,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-982-3000-152-1": "s-982-3000-141-0",
 		"s-982-3000-152-2": "s-982-3000-141-0",
 		"s-982-3000-300-0": [
-			{ type: "text", sub_type: "message", message: "Dodge! (Awakening 1)", message_ES: "ESPIERTAR 1 (Iframe)", message_PT: "DESPERTAR 1 (Iframe)", delay: 400 }, // <80%
+			{ type: "text", sub_type: "message", message: "Dodge! (Awakening 1)", message_ES: "ESPIERTAR 1 (Iframe)", message_PT: "DESPERTAR 1 (Iframe)", delay: 800 }, // <80%
 			{ type: "func", func: () => awakening_one = true },
 			{ type: "func", func: () => stack_level = 0 }
 		],
