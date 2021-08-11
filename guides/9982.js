@@ -82,12 +82,11 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-982-1000-310-0": [
 			{ type: "text", sub_type: "message", message: "Two Flowers", message_ES: "2 FLORES", message_PT: "2FLORES" },
-			{ type: "text", sub_type: "alert", message: "Dodge ONE flower!", message_ES: "¡Esquiva 1 Flor!", message_PT: "Esquiva 1 Flor!", check_func: () => color !== debuff, delay: 1500 }
+			{ type: "text", sub_type: "alert", message: "Dodge ONE flower!", message_ES: "Esquiva 1 Flor!", message_PT: "Esquiva 1 Flor!", check_func: () => color !== debuff, delay: 1500 }
 		],
 		"s-982-1000-312-0": [
-			{ type: "text", sub_type: "message", message: "Flower Golden", message_ES: "Flor Dorada", message_PT: "Flor Dourada" },
-			{ type: "text", sub_type: "alert", message: "Break Flower!", message_ES: "Golpea la Flor", message_PT: "Bata na Flor", check_func: () => color !== debuff, delay: 1500 },
-			{ type: "text", sub_type: "alert", message: "Dodge Flower!", message_ES: "Esquiva", message_PT: "Esquiva", check_func: () => color === debuff, delay: 4000 }
+			{ type: "text", sub_type: "message", message: "Flower Golden (Break)", message_ES: "Flor Dorada (Romper)", message_PT: "Flor Dourada (Quebrar)" },
+			{ type: "text", sub_type: "alert", message: "Dodge Flower!", message_ES: "Esquiva", message_PT: "Esquiva", check_func: () => color === debuff, delay: 1500 }
 		],
 		"s-982-1000-308-0": [
 			{ type: "func", func: () => color = 0 },
@@ -105,7 +104,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-982-2000-112-0": [{ type: "text", sub_type: "message", message: "Kick Forward", message_ES: "Patada Frente", message_PT: "Patada Frente" }],
 		"s-982-2000-113-0": [
 			{ type: "text", sub_type: "message", message: "Stun (AoE)", message_ES: "Stun (AoE)", message_PT: "Stun (AoE)" },
-			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, null, 320, 0, 3000] }
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, null, 310, 0, 3000] }
 		],
 		"s-982-2000-114-0": [
 			{ type: "text", sub_type: "message", message: "Get In", message_ES: "ENTRAR", message_PT: "ENTRAR" },
