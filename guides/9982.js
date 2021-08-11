@@ -44,7 +44,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-982-1000-106-0": [{ type: "text", class_position: "tank", sub_type: "message", message: "Heavy", message_ES: "Golpe pesado", message_PT: "Golpe pesado" }],
 		"s-982-1000-107-0": [
-			{ type: "text", class_position: "dps", sub_type: "message", message: "Pushback", message_ES: "Empujar Atrás", message_PT: "Repelir Atras" },
+			{ type: "text", class_position: "dps", sub_type: "message", message: "Pushback", message_ES: "Empujar Atrás", message_PT: "Repelir Atrás" },
 			{ type: "text", class_position: "heal", sub_type: "message", message: "Pushback (Kaia)", message_ES: "Empujar Atrás (Kaia)", message_PT: "Repelir Atras (Kaia)" },
 			{ type: "spawn", func: "vector", args: [553, 90, 30, 140, 600, 1000, 2000] },
 			{ type: "spawn", func: "vector", args: [553, 270, 30, -140, 600, 1000, 2000] }
@@ -63,14 +63,14 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Esquiva", message_PT: "Esquiva", delay: 2000 }
 		],
 		"s-982-1000-301-0": [{ type: "text", sub_type: "message", message: "Flower Stuns (Dodge)", message_ES: "Flor Canibal (Stun)", message_PT: "Flor Canibal (Stun)" }],
-		"s-982-1000-307-0": [{ type: "text", sub_type: "message", message: "Cage (Don't move)", message_ES: "Jaula (Não se Mova)", message_PT: "Jaula (No Move)" }],
+		"s-982-1000-307-0": [{ type: "text", sub_type: "message", message: "Cage (Don't move)", message_ES: "Jaula (no Move)", message_PT: "Jaula (Não se Mova)" }],
 		// Flowers mech
 		"ab-982-1003-98200161": [
 			{ type: "text", sub_type: "message", message: "Green", message_ES: "Verde", message_PT: "Verde" },
 			{ type: "func", func: () => color = 1 }
 		],
 		"ab-982-1003-98200162": [
-			{ type: "text", sub_type: "message", message: "Violet", message_ES: "Roxo", message_PT: "Morado" },
+			{ type: "text", sub_type: "message", message: "Violet", message_ES: "Morado", message_PT: "Roxo" },
 			{ type: "func", func: () => color = 2 }
 		],
 		"ae-0-0-98200148": [{ type: "func", func: () => debuff = 1 }], // green
