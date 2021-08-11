@@ -19,6 +19,8 @@ ID | Nome das Dungeons | Idioma | Idioma
 9982 | Grotto of Lost Souls (Difícil) | Português | Español
 3105 | Fusion Laboratory | Português | Español
 3205 | Cursed Fusion Laboratory | Português | Español
+3104 | Catalepticon | Português | Español
+3036 | Sky Cruiser (Difícil) | Português | Español
 
 ----
 
@@ -62,7 +64,9 @@ proxy(/8) | Comando descrição | Descripción de comando
  
  ATENÇÃO | Ao digitar o comando **lNotice** o *(I) de INotice* não  é um *(I)* maiúsculo, e sim um *(L)* minúsculo
 ---- | ----
+
  ATENCIÓN | Al escribir el comando **lNotice** la *(I) de INotice* no es una *(I)* mayúscula, es una *(L)* minúscula
+---- | ----
 
 
 
