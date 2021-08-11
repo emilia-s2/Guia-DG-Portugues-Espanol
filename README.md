@@ -2,7 +2,7 @@ Guide-DG
 ======
 
 ##  Dungeons Suportadas
-ID | Nome das Dungeons | idioma | Idioma
+ID | Nome das Dungeons | Idioma | Idioma
 --- | --- | --- | ---
 7011 | Guardian Blightwood | Português | Español
 7015 | Guardian Balder's Refuge | Português | Español
@@ -35,7 +35,7 @@ ID | Nome das Dungeons | idioma | Idioma
 ---
 ## Dependencies
 
-###  São instalados automaticamente pelo toolbox / Son instalados automáticamente por el toolbox
+####  São instalados automaticamente pelo toolbox / Son instalados automáticamente por el toolbox
 
 - **[tera-guide-core](https://github.com/hsdn/tera-guide-core)**
 
