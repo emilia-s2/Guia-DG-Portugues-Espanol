@@ -110,7 +110,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "vector", args: [553, 335, 500, 180, 1000, 3000, 2000] },
 			{ type: "spawn", func: "vector", args: [553, 5, 500, 180, 1000, 3000, 2000] }
 		],
-		"s-3044-2000-147-0": [ // fast
+		"s-3044-2000-154-0": [ // fast
 			{ type: "text", sub_type: "message", message: "Right Swipe", message_ES: "Deslizar Izquierda", message_PT: "Deslizar a Direita" },
 			{ type: "spawn", func: "vector", args: [553, 355, 500, 180, 1000, 0, 2000] },
 			{ type: "spawn", func: "vector", args: [553, 25, 500, 180, 1000, 0, 2000] },
@@ -133,14 +133,14 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-3044-2000-301-0": [{ type: "text", sub_type: "message", message: "Circles (Target)", message_ES: "Círculos (Objetivo)", message_PT: "Círculos (Alvo)" }], // normal
 		"s-3044-2000-302-0": [{ type: "text", sub_type: "message", message: "Circles (Target)", message_ES: "Círculos (Objetivo)", message_PT: "Círculos (Alvo)" }], // fast
 		"s-3044-2000-303-0": [
-			{ type: "text", sub_type: "message", message: "Semicircle (Left Safe)", message_ES: "Izquierdo Seguro", message_PT: "Direito Seguro" },
-			{ type: "spawn", func: "marker", args: [false, 250, 300, 0, 3000, true, null] },
-			{ type: "spawn", func: "marker", args: [false, 70, 300, 0, 3000, true, null] }
+			{ type: "text", sub_type: "message", message: "Right Safe", message_ES: "Derecha Seguro", message_PT: "Direito Seguro" },
+			{ type: "spawn", func: "marker", args: [false, 120, 250, 0, 4000, true, null] },
+			{ type: "spawn", func: "marker", args: [false, 300, 250, 0, 4000, true, null] }
 		],
 		"s-3044-2000-306-0": [
-			{ type: "text", sub_type: "message", message: "Semicircle (Right Safe)", message_ES: "Izquierdo Seguro", message_PT: "Direito Seguro" },
-			{ type: "spawn", func: "marker", args: [false, 110, 300, 0, 3000, true, null] },
-			{ type: "spawn", func: "marker", args: [false, 290, 300, 0, 3000, true, null] }
+			{ type: "text", sub_type: "message", message: "Left Safe", message_ES: "Izquierda Seguro", message_PT: "Esquerda Seguro" },
+			{ type: "spawn", func: "marker", args: [false, 240, 250, 0, 4000, true, null] },
+			{ type: "spawn", func: "marker", args: [false, 60, 250, 0, 4000, true, null] }
 		],
 		"s-3044-2000-340-0": [
 			{ type: "text", sub_type: "message", message: "Laser", message_ES: "Laser", message_PT: "Laser" },

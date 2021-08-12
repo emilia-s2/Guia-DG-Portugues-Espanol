@@ -85,5 +85,9 @@ module.exports = {
 		"pt": "Catalepticon (Normal)",
 		"es": "Catalepticon (Normal)",
 		"en": "Catalepticon (Normal)"
+	9780: {
+		"pt": "Velik's Hold (5-Person)",
+		"es": "Velik's Hold (5-Person)",
+		"en": "Velik's Hold (5-Person)"
 	}
 };

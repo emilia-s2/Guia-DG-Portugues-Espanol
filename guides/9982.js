@@ -42,10 +42,10 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "stop_timers" },
 			{ type: "despawn_all" }
 		],
-		"s-982-1000-106-0": [{ type: "text", class_position: "tank", sub_type: "message", message: "Heavy", message_ES: "Golpe pesado", message_PT: "Golpe pesado" }],
+		"s-982-1000-106-0": [{ type: "text", class_position: "tank", sub_type: "message", message: "Heavy", message_ES: "Golpe Pesado", message_PT: "Golpe Pesado" }],
 		"s-982-1000-107-0": [
 			{ type: "text", class_position: "dps", sub_type: "message", message: "Pushback", message_ES: "Empujar Atrás", message_PT: "Repelir Atrás" },
-			{ type: "text", class_position: "heal", sub_type: "message", message: "Pushback (Kaia)", message_ES: "Empujar Atrás (Kaia)", message_PT: "Repelir Atras (Kaia)" },
+			{ type: "text", class_position: "heal", sub_type: "message", message: "Pushback (Kaia)", message_ES: "Empujar Atrás (Kaia)", message_PT: "Repelir Atrás (Kaia)" },
 			{ type: "spawn", func: "vector", args: [553, 90, 30, 140, 600, 1000, 2000] },
 			{ type: "spawn", func: "vector", args: [553, 270, 30, -140, 600, 1000, 2000] }
 		],
@@ -85,8 +85,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "alert", message: "Dodge ONE flower!", message_ES: "Esquiva 1 Flor!", message_PT: "Esquiva 1 Flor!", check_func: () => color !== debuff, delay: 1500 }
 		],
 		"s-982-1000-312-0": [
-			{ type: "text", sub_type: "message", message: "Flower Golden (Break)", message_ES: "Flor Dorada (Romper)", message_PT: "Flor Dourada (Quebrar)" },
-			{ type: "text", sub_type: "alert", message: "Dodge Flower!", message_ES: "Esquiva", message_PT: "Esquiva", check_func: () => color === debuff, delay: 1500 }
+			{ type: "text", sub_type: "message", message: "Break Golden Flower", message_ES: " Romper la Flor Dorada", message_PT: " Quebrar a Flor Dourada" },
+			{ type: "text", sub_type: "alert", message: "Dodge the Flower!!", message_ES: "Esquiva la Flor", message_PT: "Esquiva da Flor", check_func: () => color === debuff, delay: 1500 }
 		],
 		"s-982-1000-308-0": [
 			{ type: "func", func: () => color = 0 },
