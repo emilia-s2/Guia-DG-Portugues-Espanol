@@ -30,9 +30,9 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "stop_timers" },
 			{ type: "despawn_all" }
 		],
-		"s-780-2000-105-0": [{ type: "text", sub_type: "message", message: "Heavy Front Attack (Stun)", message_ES: "Ataque Frontal Fuerte (Stun)", message_PT: "Ataque Frontal Forte (Stun)" }],
+		"s-780-2000-105-0": [{ type: "text", sub_type: "message", message: "Heavy Front Attack", message_ES: "Ataque Frontal Fuerte", message_PT: "Ataque Frontal Forte" }],
 		"s-780-2000-106-0": [{ type: "text", sub_type: "message", message: "Flame Ray (Target)", message_ES: "Rayo de Fuego (Objetivo)", message_PT: "Raio de Fogo (Alvo)" }],
-		"s-780-2000-106-2": [{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Iframe", message_PT: "Iframe", delay: 200 }],
+		"s-780-2000-106-2": [{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Iframe", message_PT: "Iframe" }],
 		"s-780-2000-108-0": [{ type: "text", sub_type: "message", message: "Front Attack (Stun)", message_ES: "Ataque Frontal (Stun)", message_PT: "Ataque Frontal (Stun)" }],
 		"s-780-2000-301-0": [{ type: "text", sub_type: "message", message: "Target", message_ES: "Objetivo", message_PT: "Alvo" }],
 		"s-780-2000-303-0": [{ type: "text", sub_type: "message", message: "Circles", message_ES: "Círculos", message_PT: "Círculos" }],

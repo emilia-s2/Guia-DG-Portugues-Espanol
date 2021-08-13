@@ -76,7 +76,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 				{ type: "spawn", func: "circle", args: [false, 445, 0, 0, 12, 330, 0, 5000], tag: "donuts" },
 				{ type: "spawn", func: "circle", args: [false, 445, 0, 0, 10, 510, 0, 5000], tag: "donuts" }
 			] },
-			{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Esquiva", message_PT: "Esquiva", delay: 4800, check_func: () => print_donuts }
+			{ type: "text", sub_type: "message", message: "Kaia", message_ES: "Kaia", message_PT: "Kaia", delay: 4400, check_func: () => print_donuts }
 		],
 		"e-3205-1000-115": [
 			{ type: "despawn_all", tag: "donuts" },
@@ -90,7 +90,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 				{ type: "spawn", func: "circle", args: [false, 445, 0, 0, 12, 330, 0, 5000], tag: "donuts" },
 				{ type: "spawn", func: "circle", args: [false, 445, 0, 0, 10, 510, 0, 5000], tag: "donuts" }
 			] },
-			{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Esquiva", message_PT: "Esquiva", delay: 4800, check_func: () => print_donuts }
+			{ type: "text", sub_type: "message", message: "Kaia", message_ES: "Kaia", message_PT: "Kaia", delay: 4400, check_func: () => print_donuts }
 		],
 		"e-3205-1000-116": [
 			{ type: "despawn_all", tag: "donuts" },
