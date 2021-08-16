@@ -20,7 +20,7 @@ ID | Nome das Dungeons | Idioma | Idioma
 3105 | Fusion Laboratory | Português | Español
 3205 | Cursed Fusion Laboratory | Português | Español
 3104 | Catalepticon | Português | Español
-9780	| Velik's Hold (5-Person)
+9780	| Velik's Hold (5-Person) | Português | Español
 3036 | Sky Cruiser (Difícil) | Português | Español
 
 ----
