@@ -161,7 +161,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", message: "Pulses Left", message_ES: "IZQUIERDA Atrás (Pulsos)", message_PT: "ESQUERDA Atrás (Pulsos)" },
 			{ type: "spawn", func: "circle", args: [true, 553, 200, 350, null, 280, 500, 2000] },
 			{ type: "spawn", func: "marker", args: [false, 215, 370, 5300, 3000, true, null] }, // 1
-			{ type: "spawn", func: "circle", args: [false, 553, 215, 370, 15, 160, 2000, 6000] }
+			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 15, 160, 2000, 4500] }
 			//{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 12, 320, 2000, 6000] },
 			//{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 10, 480, 2000, 6000] },
 			//{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 8, 640, 2000, 6000] },
@@ -171,7 +171,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", message: "Pulses Left", message_ES: "IZQUIERDA Atrás (Pulsos)", message_PT: "ESQUERDA Atrás (Pulsos)" },
 			{ type: "spawn", func: "circle", args: [true, 553, 200, 350, null, 280, 500, 2000] },
 			{ type: "spawn", func: "marker", args: [false, 215, 370, 4200, 4000, true, null] }, // 2
-			{ type: "spawn", func: "circle", args: [false, 553, 215, 370, 15, 160, 2000, 6000] }
+			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 15, 160, 2000, 4500] }
 			//{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 12, 320, 2000, 6000] },
 			//{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 10, 480, 2000, 6000] },
 			//{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 8, 640, 2000, 6000] },
@@ -181,7 +181,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", message: "Pulses Right", message_ES: "DERECHA Atrás (Pulsos)", message_PT: "DIREITA Atrás (Pulsos)" },
 			{ type: "spawn", func: "circle", args: [true, 553, 160, 350, null, 280, 500, 2000] },
 			{ type: "spawn", func: "marker", args: [false, 155, 388, 5300, 3000, true, null] }, // 1
-			{ type: "spawn", func: "circle", args: [false, 553, 155, 388, 15, 160, 2000, 6000] }
+			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 15, 160, 2000, 4500] }
 			//{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 12, 320, 2000, 6000] },
 			//{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 10, 480, 2000, 6000] },
 			//{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 8, 640, 2000, 6000] },
@@ -191,7 +191,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", message: "Pulses Right", message_ES: "DERECHA Atrás (Pulsos)", message_PT: "DIREITA Atrás (Pulsos)" },
 			{ type: "spawn", func: "circle", args: [true, 553, 160, 350, null, 280, 500, 2000] },
 			{ type: "spawn", func: "marker", args: [false, 155, 388, 4200, 4000, true, null] }, // 2
-			{ type: "spawn", func: "circle", args: [false, 553, 155, 388, 15, 160, 2000, 6000] }
+			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 15, 160, 2000, 4500] }
 			//{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 12, 320, 2000, 6000] },
 			//{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 10, 480, 2000, 6000] },
 			//{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 8, 640, 2000, 6000] },
