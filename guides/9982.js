@@ -19,9 +19,9 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		if ((!awakening_two && stack_level > 0) || (awakening_two && stack_level > 2)) {
 			handlers.text({
 				sub_type: "notification",
-				message: `Stack ${stack_level}`,
-				message_PT: `Стак ${stack_level}`,
-				message_ES: `Стак ${stack_level}`,
+				message: `stack ${stack_level}`,
+				message_PT: `Carga ${stack_level}`,
+				message_ES: `Carga ${stack_level}`,
 				speech: false
 			});
 		}
@@ -56,10 +56,10 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-982-1000-109-0": [{ type: "text", sub_type: "message", message: "Rocks (Small)", message_ES: "Rocks (pequenas)", message_PT: "Rochas (pequenas)" }],
 		"s-982-1000-110-0": [{ type: "text", sub_type: "message", message: "Rocks (Large)", message_ES: "Rocks (Grande)", message_PT: "Rochas (Grandes)" }],
-		"s-982-1000-111-0": [{ type: "text", sub_type: "message", message: "Stun (Dodge)", message_ES: "Flor Canibal (Stun)", message_PT: "Flor Canibal (Stun)", delay: 1500 }],
+		"s-982-1000-111-0": [{ type: "text", sub_type: "message", message: "Stun (Dodge)", message_ES: "Stun (Esquiva)", message_PT: "Stun (Esquiva)", delay: 1500 }],
 		"s-982-1000-113-0": [{ type: "text", sub_type: "message", message: "Thorns (Bleed)", message_ES: "Espinas (Sangrar)", message_PT: "Espinhos (Sangrar)" }],
 		"s-982-1000-116-0": [
-			{ type: "text", sub_type: "message", message: "AoE", message_ES: "Ataque Full", message_PT: "Ataque Full" },
+			{ type: "text", sub_type: "message", message: "AoE", message_ES: "AoE", message_PT: "AoE" },
 			{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Esquiva", message_PT: "Esquiva", delay: 2000 }
 		],
 		"s-982-1000-301-0": [{ type: "text", sub_type: "message", message: "Flower Stuns (Dodge)", message_ES: "Flor Canibal (Stun)", message_PT: "Flor Canibal (Stun)" }],
@@ -161,41 +161,41 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", message: "Pulses Left", message_ES: "IZQUIERDA Atrás (Pulsos)", message_PT: "ESQUERDA Atrás (Pulsos)" },
 			{ type: "spawn", func: "circle", args: [true, 553, 200, 350, null, 280, 500, 2000] },
 			{ type: "spawn", func: "marker", args: [false, 215, 370, 5300, 3000, true, null] }, // 1
-			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 15, 160, 2000, 6000] },
-			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 12, 320, 2000, 6000] },
-			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 10, 480, 2000, 6000] },
-			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 8, 640, 2000, 6000] },
-			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 6, 800, 2000, 6000] }
+			{ type: "spawn", func: "circle", args: [false, 553, 215, 370, 15, 160, 2000, 6000] }
+			//{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 12, 320, 2000, 6000] },
+			//{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 10, 480, 2000, 6000] },
+			//{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 8, 640, 2000, 6000] },
+			//{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 6, 800, 2000, 6000] }
 		],
 		"s-982-3000-154-0": [
 			{ type: "text", sub_type: "message", message: "Pulses Left", message_ES: "IZQUIERDA Atrás (Pulsos)", message_PT: "ESQUERDA Atrás (Pulsos)" },
 			{ type: "spawn", func: "circle", args: [true, 553, 200, 350, null, 280, 500, 2000] },
 			{ type: "spawn", func: "marker", args: [false, 215, 370, 4200, 4000, true, null] }, // 2
-			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 15, 160, 2000, 6000] },
-			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 12, 320, 2000, 6000] },
-			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 10, 480, 2000, 6000] },
-			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 8, 640, 2000, 6000] },
-			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 6, 800, 2000, 6000] }
+			{ type: "spawn", func: "circle", args: [false, 553, 215, 370, 15, 160, 2000, 6000] }
+			//{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 12, 320, 2000, 6000] },
+			//{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 10, 480, 2000, 6000] },
+			//{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 8, 640, 2000, 6000] },
+			//{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 6, 800, 2000, 6000] }
 		],
 		"s-982-3000-148-0": [
 			{ type: "text", sub_type: "message", message: "Pulses Right", message_ES: "DERECHA Atrás (Pulsos)", message_PT: "DIREITA Atrás (Pulsos)" },
 			{ type: "spawn", func: "circle", args: [true, 553, 160, 350, null, 280, 500, 2000] },
 			{ type: "spawn", func: "marker", args: [false, 155, 388, 5300, 3000, true, null] }, // 1
-			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 15, 160, 2000, 6000] },
-			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 12, 320, 2000, 6000] },
-			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 10, 480, 2000, 6000] },
-			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 8, 640, 2000, 6000] },
-			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 6, 800, 2000, 6000] }
+			{ type: "spawn", func: "circle", args: [false, 553, 155, 388, 15, 160, 2000, 6000] }
+			//{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 12, 320, 2000, 6000] },
+			//{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 10, 480, 2000, 6000] },
+			//{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 8, 640, 2000, 6000] },
+			//{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 6, 800, 2000, 6000] }
 		],
 		"s-982-3000-155-0": [
 			{ type: "text", sub_type: "message", message: "Pulses Right", message_ES: "DERECHA Atrás (Pulsos)", message_PT: "DIREITA Atrás (Pulsos)" },
 			{ type: "spawn", func: "circle", args: [true, 553, 160, 350, null, 280, 500, 2000] },
 			{ type: "spawn", func: "marker", args: [false, 155, 388, 4200, 4000, true, null] }, // 2
-			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 15, 160, 2000, 6000] },
-			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 12, 320, 2000, 6000] },
-			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 10, 480, 2000, 6000] },
-			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 8, 640, 2000, 6000] },
-			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 6, 800, 2000, 6000] }
+			{ type: "spawn", func: "circle", args: [false, 553, 155, 388, 15, 160, 2000, 6000] }
+			//{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 12, 320, 2000, 6000] },
+			//{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 10, 480, 2000, 6000] },
+			//{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 8, 640, 2000, 6000] },
+			//{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 6, 800, 2000, 6000] }
 		],
 		"s-982-3000-161-0": [
 			{ type: "text", sub_type: "message", message: "Front | Back", message_ES: "Frente | Atrás ataque", message_PT: "Frente | Atrás ataque" },

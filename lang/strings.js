@@ -6,7 +6,7 @@ module.exports.general = {
 	// Português
 	pt: {
 		unknowncommand: "Comando desconhecido, Para ver todos os comandos tente (guia help)",
-		helpheader: "Use o comando <font color='#ffff00'>!guia help </font><font color='#00ff00'>para mais informações</font><font color='#00a6ff'>\nGuia em Idioma </font><font color='#ff77ff'>PORTUGUÊS, <font color='#00a6ff'>Também diponível para Español \nUse o Comando: </font><font color='#ffff00'>!guia es </font><font color='#00ffff'>Para Español",
+		helpheader: "Use o comando <font color='#ffff00'>!guia help </font><font color='#00ff00'>para mais informações</font><font color='#00a6ff'>\nGuia em Idioma </font><font color='#ff77ff'>PORTUGUÊS, <font color='#00a6ff'>Também disponível para Español \nUse o Comando: </font><font color='#ffff00'>!guia es </font><font color='#00ffff'>Para Español",
 		helpbody: [
 			["guia cr, Mensagem Cor VERMELHO", "CRMSG"],
 			["guia co, Mensagem Cor LARANJA", "COMSG"],
