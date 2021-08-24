@@ -11,7 +11,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	let awakening_two = false;
 	let stack_level = 0;
 
-	function stacks_level_event() { // 118, 143, 145, 146, 144, 147, 148, 154, 155, 161, 162, 213, 215  -> 98200399
+	function stacks_level_event() {
 		if (!awakening_one) return;
 
 		stack_level++;
@@ -51,18 +51,26 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-982-1000-108-0": [
 			{ type: "text", sub_type: "message", message: "Bait Front (Flying)", message_ES: "Espinas al Suelo (Bait)", message_PT: "Espinhos no Chao (Bait)" },
-			{ type: "spawn", func: "vector", args: [553, 90, 140, 5, 620, 500, 1500] },
-			{ type: "spawn", func: "vector", args: [553, 270, 140, 355, 620, 500, 1500] }
+		],
+		"s-982-1000-108-1": [
+			{ type: "spawn", func: "vector", args: [553, 90, 140, 5, 620, 0, 1500] },
+			{ type: "spawn", func: "vector", args: [553, 270, 140, 355, 620, 0, 1500] }
 		],
 		"s-982-1000-109-0": [{ type: "text", sub_type: "message", message: "Rocks (Small)", message_ES: "Rocks (pequenas)", message_PT: "Rochas (pequenas)" }],
 		"s-982-1000-110-0": [{ type: "text", sub_type: "message", message: "Rocks (Large)", message_ES: "Rocks (Grande)", message_PT: "Rochas (Grandes)" }],
-		"s-982-1000-111-0": [{ type: "text", sub_type: "message", message: "Stun (Dodge)", message_ES: "Stun (Esquiva)", message_PT: "Stun (Esquiva)", delay: 1500 }],
+		"s-982-1000-111-0": [
+			{ type: "text", sub_type: "message", message: "Stun (Dodge)", message_ES: "Stun (Esquiva)", message_PT: "Stun (Esquiva)", delay: 1500 },
+			{ type: "spawn", func: "circle", args: [true, 553, 180, 50, null, 350, 1500, 2000] }
+		],
 		"s-982-1000-113-0": [{ type: "text", sub_type: "message", message: "Thorns (Bleed)", message_ES: "Espinas (Sangrar)", message_PT: "Espinhos (Sangrar)" }],
 		"s-982-1000-116-0": [
 			{ type: "text", sub_type: "message", message: "AoE", message_ES: "AoE", message_PT: "AoE" },
 			{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Esquiva", message_PT: "Esquiva", delay: 2000 }
 		],
-		"s-982-1000-301-0": [{ type: "text", sub_type: "message", message: "Flower Stuns (Dodge)", message_ES: "Flor Canibal (Stun)", message_PT: "Flor Canibal (Stun)" }],
+		"s-982-1000-301-0": [
+			{ type: "text", sub_type: "message", message: "Flower Stuns ", message_ES: "Flor Canibal (Stun)", message_PT: "Flor Canibal (Stun)" },
+			{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Esquiva", message_PT: "Esquiva", delay: 2000 }
+		],
 		"s-982-1000-307-0": [{ type: "text", sub_type: "message", message: "Cage (Don't move)", message_ES: "Jaula (no Move)", message_PT: "Jaula (Não se Mova)" }],
 		// Flowers mech
 		"ab-982-1003-98200161": [
@@ -116,6 +124,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "vector", args: [553, 0, 0, 270, 500, 0, 5000] },
 			{ type: "spawn", func: "vector", args: [553, 180, 0, 90, 500, 0, 5000] }
 		],
+		"s-982-2000-117-0": "s-982-2000-116-0",
 		"s-982-2000-301-0": [
 			{ type: "text", sub_type: "message", message: "Get Out | Dodge", message_ES: "SALIR + ESQUIVAR", message_PT: "SAIR + ESQUIVAR" },
 			{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Esquiva", message_PT: "Esquiva", delay: 3700  },
@@ -206,10 +215,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "circle", args: [true, 553, 180, 310, null, 290, 3000, 2500] }
 		],
 		"s-982-3000-213-0": [{ type: "text", sub_type: "message", message: "Tail", message_ES: "Cola", message_PT: "Cauda" }],
-		"s-982-3000-215-0": [
-			{ type: "text", sub_type: "message", message: "Tail", message_ES: "Cola", message_PT: "Cauda" },
-			{ type: "spawn", func: "circle", args: [true, 553, 180, 340, null, 280, 0, 2000] }
-		],
+		"s-982-3000-215-0": [{ type: "text", sub_type: "message", message: "Tail (Combo)", message_ES: "Cola (Combo)", message_PT: "Cauda (Combo)" }],
 		"s-982-3000-139-0": [
 			{ type: "text", sub_type: "message", message: "Wave + Wing (Left Safe)", message_ES: "Ola (IZQUIERDA Segura)", message_PT: "Onda (ESQUERDA Seguro)", check_func: () => print_wave },
 			{ type: "despawn_all", tag: "wave" },
@@ -254,7 +260,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"ab-982-3000-98200399": [{ type: "func", func: stacks_level_event }],
 		"s-982-3000-351-0": [
-			{ type: "text", sub_type: "message", message: "Stones (Dodge)", message_ES: "Piedras ( Esquiva)", message_PT: "Pedras (Esquiva)" },
+			{ type: "text", sub_type: "message", message: "Stones", message_ES: "Piedras", message_PT: "Pedras" },
+			{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Esquiva", message_PT: "Esquiva", delay: 2000 },
 			{ type: "text", sub_type: "message", message: "Line up to the plate", message_ES: "Alinear hasta la Placa", message_PT: "Alinhar até a Placa", delay: 4000 },
 			{ type: "text", sub_type: "message", message: "Kaia!", message_ES: "Kaia!", message_PT: "Kaia!", delay: 9500 }
 		],
@@ -262,6 +269,6 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", message: "Break Sphere", message_ES: "Romper la Esfera", message_PT: "Quebrar a Esfera", check_func: () => !awakening_two },
 			{ type: "text", sub_type: "message", message: "Break Three Spheres", message_ES: "Romper 3 Esferas", message_PT: "Quebrar 3 Esferas", check_func: () => awakening_two }
 		],
-		"s-982-3012-353-0": [{ type: "text", sub_type: "message", message: "Break Two Spheres", message_ES: "Romper 2 Esferas", message_PT: "Quebrar 3 Esferas" }]
+		"s-982-3012-353-0": "s-982-3011-352-0"
 	};
 };
