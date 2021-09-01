@@ -58,6 +58,11 @@ module.exports = {
 		"es": "Lumikan's Trial",
 		"en": "Lumikan's Trial"
 	},
+	3046: {
+		"pt": "Rogash's Trial",
+		"es": "Rogash's Trial",
+		"en": "Rogash's Trial"
+	},
 	3044: {
 		"pt": "Stormed Citadel",
 		"es": "Stormed Citadel",
