@@ -48,6 +48,7 @@ ID | Nome das Dungeons | Idioma | Idioma
 proxy(/8) | Comando descrição | Descripción de comando
 --- | --- | ---
 **guia**<br>(padrão/defecto: on) | Module on/off | Module on/off
+**guide&nbsp;`auto`/`pt`/`es`**<br>(padrão/defecto:<br>pt português) | Selecionar um idioma do guía | Establecer idioma de la guía
 **guia&nbsp;gui** | Mostrar Janela de personalização GUI | mostrar una ventana de personalización GUI
 **guia&nbsp;help** | Lista de todos os comandos suportados | Lista de todos los comandos soportados
 **guia&nbsp;stream**<br>(padrão/defecto: off) | Mensagens apenas no chat, <br>e todos os objetos de marcações <br>serão destivados ON/OFF | Mensajes apenas en chat, <br>y todos los marcadores serán desactivados ON/OFF
