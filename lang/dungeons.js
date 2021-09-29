@@ -93,6 +93,11 @@ module.exports = {
 		"es": "Catalepticon (Normal)",
 		"en": "Catalepticon (Normal)"
 	},
+	3107: {
+		"pt": "Desolarus Testing Grounds",
+		"es": "Desolarus Testing Grounds",
+		"en": "Desolarus Testing Grounds"
+	},
 	9780: {
 		"pt": "Velik's Hold (5-Person)",
 		"es": "Velik's Hold (5-Person)",
