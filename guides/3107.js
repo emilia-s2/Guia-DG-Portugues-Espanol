@@ -30,9 +30,9 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-3107-1000-337-0": [{ type: "text", sub_type: "message", message: "180 (Right)", message_ES: "180 (Derecha)", message_PT: "180 (Direita)" }],
 		"s-3107-1000-338-0": [{ type: "text", sub_type: "message", message: "180 (Back)", message_ES: "180 (Atrás)", message_PT: "180 (Atrás)" }],
 		"s-3107-1000-339-0": [{ type: "text", sub_type: "message", message: "180 (Left)", message_ES: "180 (Izquierda)", message_PT: "180 (Esquerda)" }],
-		"s-3107-1000-370-0": [{ type: "text", sub_type: "message", message: "Cross (Target)", message_ES: "Cruz (Adjetivo)", message_PT: "Cruz (Alvo)" }],
+		"s-3107-1000-370-0": [{ type: "text", sub_type: "message", message: "Cross (Target)", message_ES: "Cruz (Objetivo)", message_PT: "Cruz (Alvo)" }],
 
-		"qb-3107-1000-31070003": [{ type: "text", sub_type: "message", message: "Circles (Target) | Dodge", message_ES: "Círculos (Adjetivo) | Iframe", message_PT: "Círculos (Alvo) | Iframe" }],
+		"qb-3107-1000-31070003": [{ type: "text", sub_type: "message", message: "Circles (Target) | Dodge", message_ES: "Círculos (Objetivo) | Iframe", message_PT: "Círculos (Alvo) | Iframe" }],
 		"qb-3107-1000-31070010": [{ type: "text", sub_type: "message", message: "Pizza (Pushback)", message_ES: "Pizza (Empujar Atrás)", message_PT: "Pizza (Empurrar Atrás)" }] // 324 - 335
 	};
 };
