@@ -98,6 +98,11 @@ module.exports = {
 		"es": "Desolarus Testing Grounds",
 		"en": "Desolarus Testing Grounds"
 	},
+	3126: {
+		"pt": "Corrupted Skynest (Difícil)",
+		"es": "Corrupted Skynest (Difícil)",
+		"en": "Corrupted Skynest (Hard)"
+	},
 	9780: {
 		"pt": "Velik's Hold (5-Person)",
 		"es": "Velik's Hold (5-Person)",
