@@ -22,6 +22,9 @@ ID | Nome das Dungeons | Idioma | Idioma
 3104 | Catalepticon | Português | Español
 9780	| Velik's Hold (5-Person) | Português | Español
 3036 | Sky Cruiser (Difícil) | Português | Español
+3107 | Desolarus Testing Grounds | Português | Español
+3126 | Corrupted Skynest (Difícil) | Português | Español
+
 
 ----
 
