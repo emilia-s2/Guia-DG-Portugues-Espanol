@@ -50,7 +50,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 				{ type: "spawn", func: "vector", args: [445, 90, -offsets[decal - 1] - 15, 180, 2000, 0, 15000], tag: "puzzle" },
 				{ type: "spawn", sub_type: "item", id: 110684, pos: marker_pos, sub_delay: 15000, tag: "puzzle" },
 				{ type: "text", sub_type: "notification", message: `${puzzle_decal} - ${decal}`, speech: false },
-				{ type: "despawn_all", tag: "puzzle", delay: 7000 }
+				{ type: "despawn_all", tag: "puzzle", delay: 6000 }
 			], entity);
 
 			puzzle_decal = null;
@@ -112,7 +112,6 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"qb-3107-1000-31070010": [{ type: "text", sub_type: "message", message: "Pizza (Pushback)", message_ES: "Pizza (Empujar Atrás)", message_PT: "Pizza (Empurrar Atrás)" }],
 
 		// Paper puzzle mech
-		// stage 0
 		"s-3107-5000-331-0": [{ type: "func", func: puzzle_mech_event, args: [1, 0] }], // Y
 		"s-3107-5000-332-0": [{ type: "func", func: puzzle_mech_event, args: [2, 0] }],
 		"s-3107-5000-333-0": [{ type: "func", func: puzzle_mech_event, args: [3, 0] }],
@@ -125,7 +124,6 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-3107-5001-334-0": [{ type: "func", func: puzzle_mech_event, args: [4, 1] }],
 		"s-3107-5001-335-0": [{ type: "func", func: puzzle_mech_event, args: [5, 1] }],
 		"s-3107-5001-336-0": [{ type: "func", func: puzzle_mech_event, args: [6, 1] }],
-		// stage 1
 		"s-3107-5002-331-0": "s-3107-5000-331-0", // Y
 		"s-3107-5002-332-0": "s-3107-5000-332-0",
 		"s-3107-5002-333-0": "s-3107-5000-333-0",
