@@ -14,7 +14,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "vector", args: [553, 270, 50, 0, 500, 0, 6000] },
 			{ type: "spawn", func: "vector", args: [553, 90, 50, 180, 500, 0, 6000] },
 			{ type: "spawn", func: "vector", args: [553, 270, 50, 180, 500, 0, 6000] },
-			{ type: "spawn", func: "circle", args: [false, 445, 0, 0, 6, 400, 0, 6000] },
+//			{ type: "spawn", func: "circle", args: [false, 445, 0, 0, 6, 400, 0, 6000] },
 			{ type: "text", sub_type: "alert", delay: 60000, message: "Waves soon...", message_ES: "Olas Pronto", message_PT: "Ondas em Breve..." }
 		]);
 	}
@@ -31,7 +31,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "circle", args: [false, 553, 356, 400, 8, 350, 100, 3000] }
 		],
 		"s-444-1000-1108-0": [
-			{ type: "text", sub_type: "message", message: "Back Throw", message_ES: "Martillo Atras (Stun)", message_PT: "Martelo Atrás (Stun)" },
+			{ type: "text", sub_type: "message", message: "Back Throw", message_ES: "Martillo Atrás (Stun)", message_PT: "Martelo Atrás (Stun)" },
 			{ type: "spawn", func: "circle", args: [false, 553, 180, 250, 12, 300, 100, 3000] }
 		],
 		"s-444-1000-1111-0": [
@@ -57,9 +57,9 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-444-1000-1118-1": [{ type: "spawn", func: "circle", args: [false, 553, 0, 400, 12, 300, 100, 2000] }],
 		"s-444-1000-1121-0": [
 			{ type: "text", sub_type: "message", message: "Waves (Left)", message_ES: "Olas (IZQUIERDA)", message_PT: "Ondas (ESQUERDA)" },
-			{ type: "func", func: waves_event }
-//			{ type: "spawn", func: "marker", args: [false, 37, 125, 0, 2533, false, ["safe", "safe"]] },
-//			{ type: "spawn", func: "marker", args: [false, 143, 125, 0, 2533, false, ["safe", "safe"]] }
+			{ type: "func", func: waves_event },
+			{ type: "spawn", func: "marker", args: [false, 37, 125, 0, 2533, false, ["safe", "safe"]] },
+			{ type: "spawn", func: "marker", args: [false, 143, 125, 0, 2533, false, ["safe", "safe"]] }
 		],
 		"s-444-1000-1131-0": [
 			{ type: "text", sub_type: "message", message: "Front | Left Scratch", message_ES: "Frente | Izquierda Rasguno", message_PT: "Frente | Esquerda Arranhão" },
@@ -84,9 +84,9 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-444-1000-1140-0": [
 			{ type: "text", sub_type: "message", message: "Waves (Right)", message_ES: "Olas (DERECHA)", message_PT: "Ondas (DIREITA)" },
-			{ type: "func", func: waves_event }
-//			{ type: "spawn", func: "marker", args: [false, 323, 125, 0, 2533, false, ["safe", "safe"]] },
-//			{ type: "spawn", func: "marker", args: [false, 217, 125, 0, 2533, false, ["safe", "safe"]] }
+			{ type: "func", func: waves_event },
+			{ type: "spawn", func: "marker", args: [false, 323, 125, 0, 2533, false, ["safe", "safe"]] },
+			{ type: "spawn", func: "marker", args: [false, 217, 125, 0, 2533, false, ["safe", "safe"]] }
 		],
 		// Enraged
 		"s-444-1000-2103-0": "s-444-1000-1103-0",
@@ -176,21 +176,21 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-444-2000-1121-0": [
 			{ type: "text", sub_type: "message", message: "Waves (Left)", message_ES: "Olas (IZQUIERDA)", message_PT: "Ondas (ESQUERDA)" },
-			{ type: "func", func: waves_event }
-//			{ type: "spawn", func: "marker", args: [false, 37, 125, 0, 2533, false, ["safe", "safe"]] },
-//			{ type: "spawn", func: "marker", args: [false, 143, 125, 0, 2533, false, ["safe", "safe"]] }
+			{ type: "func", func: waves_event },
+			{ type: "spawn", func: "marker", args: [false, 37, 125, 0, 2533, false, ["safe", "safe"]] },
+			{ type: "spawn", func: "marker", args: [false, 143, 125, 0, 2533, false, ["safe", "safe"]] }
 		],
 		"s-444-2000-1122-0": [
 			{ type: "text", sub_type: "message", message: "Waves (Left) 3nd fast", message_ES: "Olas (IZQUIERDA) 3nd Rapido", message_PT: "Ondas (ESQUERDA) 3nd Rapido" },
-			{ type: "func", func: waves_event }
-//			{ type: "spawn", func: "marker", args: [false, 37, 125, 0, 2533, false, ["safe", "safe"]] },
-//			{ type: "spawn", func: "marker", args: [false, 143, 125, 0, 2533, false, ["safe", "safe"]] }
+			{ type: "func", func: waves_event },
+			{ type: "spawn", func: "marker", args: [false, 37, 125, 0, 2533, false, ["safe", "safe"]] },
+			{ type: "spawn", func: "marker", args: [false, 143, 125, 0, 2533, false, ["safe", "safe"]] }
 		],
 		"s-444-2000-1123-0": [
 			{ type: "text", sub_type: "message", message: "Waves (Left) 2nd fast", message_ES: "Olas (IZQUIERDA) 2nd Rapido", message_PT: "Ondas (ESQUERDA) 2nd Rapido" },
-			{ type: "func", func: waves_event }
-//			{ type: "spawn", func: "marker", args: [false, 37, 125, 0, 2500, false, ["safe", "safe"]] },
-//			{ type: "spawn", func: "marker", args: [false, 143, 125, 0, 2500, false, ["safe", "safe"]] }
+			{ type: "func", func: waves_event },
+			{ type: "spawn", func: "marker", args: [false, 37, 125, 0, 2500, false, ["safe", "safe"]] },
+			{ type: "spawn", func: "marker", args: [false, 143, 125, 0, 2500, false, ["safe", "safe"]] }
 		],
 		"s-444-2000-1125-0": [
 			{ type: "text", sub_type: "message", message: "Front | Right Scratch", message_ES: "Frente | Derecha Rasguno", message_PT: "Frente | Direita Arranhão" },
@@ -223,21 +223,21 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-444-2000-1139-0": [{ type: "text", sub_type: "message", message: "Dodge!", message_ES: "Iframe", message_PT: "Iframe!" }],
 		"s-444-2000-1140-0": [
 			{ type: "text", sub_type: "message", message: "Waves (Right)", message_ES: "Olas (DERECHA)", message_PT: "Ondas (DIREITA)" },
-			{ type: "func", func: waves_event }
-//			{ type: "spawn", func: "marker", args: [false, 323, 125, 0, 2533, false, ["safe", "safe"]] },
-//			{ type: "spawn", func: "marker", args: [false, 217, 125, 0, 2533, false, ["safe", "safe"]] }
+			{ type: "func", func: waves_event },
+			{ type: "spawn", func: "marker", args: [false, 323, 125, 0, 2533, false, ["safe", "safe"]] },
+			{ type: "spawn", func: "marker", args: [false, 217, 125, 0, 2533, false, ["safe", "safe"]] }
 		],
 		"s-444-2000-1141-0": [
 			{ type: "text", sub_type: "message", message: "Waves (Right) 3nd fast", message_ES: "Olas (DERECHA) 3nd Rapido", message_PT: "Ondas (DIREITA) 3nd Rapido" },
-			{ type: "func", func: waves_event }
-//			{ type: "spawn", func: "marker", args: [false, 323, 125, 0, 2533, false, ["safe", "safe"]] },
-//			{ type: "spawn", func: "marker", args: [false, 217, 125, 0, 2533, false, ["safe", "safe"]] }
+			{ type: "func", func: waves_event },
+			{ type: "spawn", func: "marker", args: [false, 323, 125, 0, 2533, false, ["safe", "safe"]] },
+			{ type: "spawn", func: "marker", args: [false, 217, 125, 0, 2533, false, ["safe", "safe"]] }
 		],
 		"s-444-2000-1142-0": [
 			{ type: "text", sub_type: "message", message: "Waves (Right) 2nd fast", message_ES: "Olas (DERECHA) 2nd Rapido", message_PT: "Ondas (DIREITA) 2nd Rapido" },
-			{ type: "func", func: waves_event }
-//			{ type: "spawn", func: "marker", args: [false, 323, 125, 0, 2500, false, ["safe", "safe"]] },
-//			{ type: "spawn", func: "marker", args: [false, 217, 125, 0, 2500, false, ["safe", "safe"]] }
+			{ type: "func", func: waves_event },
+			{ type: "spawn", func: "marker", args: [false, 323, 125, 0, 2500, false, ["safe", "safe"]] },
+			{ type: "spawn", func: "marker", args: [false, 217, 125, 0, 2500, false, ["safe", "safe"]] }
 		],
 		"s-444-2000-1307-0": [
 			{ type: "text", sub_type: "message", message: "!", message_ES: "!", message_PT: "!" },
