@@ -311,7 +311,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"ab-444-2000-90442303": [{ type: "text", sub_type: "message", message: "Plague/Regress", message_ES: "Plague/Regress", message_PT: "Plague/Regress" }],
 		"ab-444-2000-90442304": [
 			{ type: "text", sub_type: "notification", message: "Stun", message_ES: "Stun", message_PT: "Stun" },
-			{ type: "text", sub_type: "message", message: "Stun", message_ES: "Stun", message_PT: "Stun" }
+			{ type: "text", sub_type: "message", message: "Stun", message_ES: "Stun", message_PT: "Stun", speech: false }
 		]
 	};
 };

@@ -70,7 +70,7 @@ module.exports = {
 	},
 	3105: {
 		"pt": "Fusion Laboratory",
-		"es": "Fusion Laboratory",
+		"es": "Fusion Laboratory", 
 		"en": "Fusion Laboratory"
 	},
 	3205: {
@@ -97,6 +97,11 @@ module.exports = {
 		"pt": "Desolarus Testing Grounds",
 		"es": "Desolarus Testing Grounds",
 		"en": "Desolarus Testing Grounds"
+	},
+	3108: {
+		"pt": "Cursed Antaroth's Abyss",
+		"es": "Cursed Antaroth's Abyss",
+		"en": "Cursed Antaroth's Abyss"
 	},
 	3126: {
 		"pt": "Corrupted Skynest (Difícil)",
