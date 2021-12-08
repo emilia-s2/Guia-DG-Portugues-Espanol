@@ -70,7 +70,7 @@ module.exports = {
 	},
 	3105: {
 		"pt": "Fusion Laboratory",
-		"es": "Fusion Laboratory", 
+		"es": "Fusion Laboratory",
 		"en": "Fusion Laboratory"
 	},
 	3205: {

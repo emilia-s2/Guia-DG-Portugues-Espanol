@@ -22,7 +22,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	}
 
 	function cage_colour_event() {
-		const format = `%s: ${stack_red} | %s: ${stack_red} | %s: ${stack_red}`;
+		const format = `%s: ${stack_red} | %s: ${stack_blue} | %s: ${stack_yellow}`;
 		const format_cc = `  [c=#ff7777]%s: ${stack_red}[/c]    [c=#7777ff]%s: ${stack_blue}[/c]    [c=#ffff77]%s: ${stack_yellow}[/c]`;
 
 		handlers.event([
