@@ -24,6 +24,7 @@ ID | Nome das Dungeons | Idioma | Idioma
 3036 | Sky Cruiser (Difícil) | Português | Español
 3107 | Desolarus Testing Grounds | Português | Español
 3126 | Corrupted Skynest (Difícil) | Português | Español
+3108 | Cursed Antaroth's Abyss | Português | Español
 
 
 ----
