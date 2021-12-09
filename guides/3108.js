@@ -10,6 +10,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	let stack_red = 0;
 	let stack_blue = 0;
 	let stack_yellow = 0;
+	let buff_merciless = false;
 
 	function two_slash_event() {
 		const now_time = new Date();
@@ -46,24 +47,32 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	}
 
 	return {
-		"nd-3108-1000-0": [
+		"nd-3108-1000": [
 			{ type: "stop_timers" },
 			{ type: "despawn_all" }
 		],
 		"h-3108-1000-64": [{ type: "text", sub_type: "message", message: "64%", message_ES: "64%", message_PT: "64%" }],
-		"h-3105-1000-40": [{ type: "text", sub_type: "message", message: "40%", message_ES: "64%", message_PT: "40%" }],
+		"h-3108-1000-40": [{ type: "text", sub_type: "message", message: "40%", message_ES: "40%", message_PT: "40%" }],
+
+		"ab-3108-1000-40004011": [{ type: "func", func: () => buff_merciless = true }], // resonance 31+ effect
 
 		"s-3108-1000-105-0": [{ type: "text", sub_type: "message", message: "Target Cage", message_ES: "Jaula (Objetivo)", message_PT: "Prisão (Alvo)" }],
-		"s-3108-1000-107-0": [{ type: "text", sub_type: "message", message: "Random Jump", message_ES: "Salto Aleatorio (Stun)", message_PT: "Alto Aleatório(Stun)" }],
+		"s-3108-1000-107-0": [
+			{ type: "text", sub_type: "message", message: "Random Jump", message_ES: "Salto Aleatorio (Stun)", message_PT: "Salto Aleatório (Stun)" },
+			{ type: "text", sub_type: "message", message: "Spin soon", message_ES: "Giro Pronto", message_PT: "Giro Embreve", check_func: () => buff_merciless, delay: 1000 }
+		],
+		"s-3108-1000-107-1": [{ type: "spawn", func: "circle", args: [false, 553, 0, 85, 12, 250, 0, 2000] }],
 		"s-3108-1000-113-0": [
 			{ type: "text", sub_type: "message", message: "Front | Back Stun", message_ES: "Ataque Frontal | Atrás Stun", message_PT: "Ataque Frontal | Atrás Stun" },
 			{ type: "spawn", func: "circle", args: [true, 553, 0, 325, 12, 325, 0, 2000] },
-			{ type: "spawn", func: "circle", args: [true, 553, 0, -325, 12, 325, 500, 2000] }
+			{ type: "spawn", func: "circle", args: [true, 553, 0, -325, 12, 325, 500, 2000] },
+			{ type: "text", sub_type: "message", message: "Spin soon", message_ES: "Giro Pronto", message_PT: "Giro Embreve", check_func: () => buff_merciless, delay: 500 }
 		],
-		"s-3108-1000-115-0": [{ type: "text", sub_type: "message", message: "Spinning Attack", message_ES: "Ataque Giratorio", message_PT: "Ataque Giratorio" }],
+		"s-3108-1000-115-0": [{ type: "text", sub_type: "message", message: "Spin Attack", message_ES: "Ataque Giratorio", message_PT: "Ataque Giratorio" }],
 		"s-3108-1000-131-0": [{ type: "text", sub_type: "message", message: "Front Knockup", message_ES: "Lanzar hacia adelante", message_PT: "Lançar para Frente" }],
-		"s-3108-1000-120-0": [{ type: "text", sub_type: "message", message: "Energy Beam", message_ES: "Rayo de Energia", message_PT: "Raio de Energia" }],
-		"s-3108-1000-204-0": [{ type: "text", sub_type: "message", message: "Energy Beam", message_ES: "Rayo de Energia", message_PT: "Raio de Energia" }],
+		"s-3108-1000-120-0": [{ type: "text", sub_type: "message", message: "Energy Beam (Slow)", message_ES: "Rayo de Energia (Lento)", message_PT: "Raio de Energia (Lento)" }],
+		"s-3108-1000-122-0": [{ type: "text", sub_type: "message", message: "Energy Beam (Slow)", message_ES: "Rayo de Energia (Lento)", message_PT: "Raio de Energia (Lento)" }],
+		"s-3108-1000-204-0": [{ type: "text", sub_type: "message", message: "Energy Beam (Fast)", message_ES: "Rayo de Energia (Rápido)", message_PT: "Raio de Energia (Rápido)" }],
 		"s-3108-1000-309-0": [{ type: "text", sub_type: "message", message: "AoE", message_ES: "АоЕ", message_PT: "АоЕ" }],
 		"s-3108-1000-310-0": [{ type: "text", sub_type: "message", message: "Puddles", message_ES: "Charcos (Olas)", message_PT: "Poças (Ondas)" }],
 		"s-3108-1000-311-0": "s-3108-1000-310-0",
@@ -76,7 +85,10 @@ module.exports = (dispatch, handlers, guide, lang) => {
 
 		// Back stun mech
 		"s-3108-1000-104-0": [{ type: "func", func: two_slash_event }],
-		"s-3108-1000-119-0": [{ type: "spawn", func: "circle", args: [true, 553, 0, -325, 12, 325, 0, 2000] }],
+		"s-3108-1000-119-0": [
+			{ type: "spawn", func: "circle", args: [true, 553, 0, -325, 12, 325, 0, 2000] },
+			{ type: "text", sub_type: "message", message: "Spin soon", message_ES: "Giro Pronto", message_PT: "Giro Embreve", check_func: () => buff_merciless, delay: 500 }
+		],
 
 		// Waves mech
 		"s-3108-1000-201-0": [{ type: "func", func: () => blue_sword = false }],
