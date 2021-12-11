@@ -1,4 +1,4 @@
-Guide-DG
+Guide-DG (Português & Español)
 ======
 
 ##  Dungeons Suportadas
