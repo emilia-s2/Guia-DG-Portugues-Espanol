@@ -9,22 +9,14 @@ ID | Nome das Dungeons | Idioma | Idioma
 3042 | Gardan's Trial | Português | Español
 3043 | Harnovog's Trial | Português | Español
 3040 | Lumikan's Trial | Português | Español
-3030 | Commander's Residence | Português | Español
-3023 | Akalath Quarantine  | Português | Español
-3102 | Draakon Arena | Português | Español
-3037	| Bahaar's Sanctum (Training) | Português | Español
-3041 | Damned Citadel | Português | Español
-3044	| Stormed Citadel | Português | Español
-9044 | Bahaar's Sanctum | Português | Español
-9982 | Grotto of Lost Souls (Difícil) | Português | Español
-3105 | Fusion Laboratory | Português | Español
-3205 | Cursed Fusion Laboratory | Português | Español
-3104 | Catalepticon | Português | Español
-9780	| Velik's Hold (5-Person) | Português | Español
+3046 | Rogash's Trial | Português | Español
+3027 | Forbidden Arena [Hagufna] | Português | Español
 3036 | Sky Cruiser (Difícil) | Português | Español
-3107 | Desolarus Testing Grounds | Português | Español
-3126 | Corrupted Skynest (Difícil) | Português | Español
+3105 | Fusion Laboratory | Português | Español
 3108 | Cursed Antaroth's Abyss | Português | Español
+3126 | Corrupted Skynest (Difícil) | Português | Español
+9068 | Shadow Sanguinary (Difícil) | Português | Español
+9920 | Antaroth's Abyss (Difícil) | Português | Español
 
 
 ----
