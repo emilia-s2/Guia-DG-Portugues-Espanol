@@ -18,6 +18,11 @@ module.exports = {
 		"es": "Forbidden Arena [Hagufna]",
 		"en": "Forbidden Arena [Hagufna]"
 	},
+	3036: {
+		"pt": "Sky Cruiser (Difícil)",
+		"es": "Sky Cruiser (Dificil)",
+		"en": "Sky Cruiser (Hard)"
+	},
 	3040: {
 		"pt": "Lumikan's Trial",
 		"es": "Lumikan's Trial",
@@ -43,15 +48,15 @@ module.exports = {
 		"es": "Fusion Laboratory",
 		"en": "Fusion Laboratory"
 	},
-	3036: {
-		"pt": "Sky Cruiser (Difícil)",
-		"es": "Sky Cruiser (Dificil)",
-		"en": "Sky Cruiser (Hard)"
-	},
 	3108: {
 		"pt": "Cursed Antaroth's Abyss",
 		"es": "Cursed Antaroth's Abyss",
 		"en": "Cursed Antaroth's Abyss"
+	},
+	3109: {
+		"pt": "Ice Throne <font color='#ffff00'>(BETA) </font>",
+		"es": "Ice Throne <font color='#ffff00'>(BETA) </font>",
+		"en": "Ice Throne <font color='#ffff00'>(BETA) </font>"
 	},
 	3126: {
 		"pt": "Corrupted Skynest (Difícil)",
