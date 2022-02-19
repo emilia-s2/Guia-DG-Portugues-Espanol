@@ -100,7 +100,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	}
 
 	function boss_mech_eventP2(skillid) {
-		//enrage = new Date() - enrage_time >= 35100 ? 0 : 1;
+		enrage = new Date() - enrage_time >= 35100 ? 0 : 1;
 		mech_total = triple_attack ? (is_hp_79 ? 4 : 3) : 2;
 
 		if (mech_counter == 0) {
