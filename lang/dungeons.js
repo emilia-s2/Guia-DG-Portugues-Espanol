@@ -54,14 +54,19 @@ module.exports = {
 		"en": "Cursed Antaroth's Abyss"
 	},
 	3109: {
-		"pt": "Ice Throne <font color='#ffff00'>(BETA) </font>",
-		"es": "Ice Throne <font color='#ffff00'>(BETA) </font>",
-		"en": "Ice Throne <font color='#ffff00'>(BETA) </font>"
+		"pt": "Ice Throne",
+		"es": "Ice Throne",
+		"en": "Ice Throne"
 	},
 	3126: {
 		"pt": "Corrupted Skynest (Difícil)",
 		"es": "Corrupted Skynest (Difícil)",
 		"en": "Corrupted Skynest (Hard)"
+	},
+	3209: {
+		"pt": "Choas Ice Throne",
+		"es": "Choas Ice Throne",
+		"en": "Choas Ice Throne"
 	},
 	9068: {
 		"pt": "Shadow Sanguinary (Difícil)",
