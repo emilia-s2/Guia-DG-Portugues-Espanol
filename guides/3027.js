@@ -94,7 +94,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-3027-1000-116-1": [
 			{ type: "text", sub_type: "message", message_PT: "Iframe", message_ES: "Iframe", message: "Dodge" },
-			{ type: "spawn", func: "circle", args: [false, 912, 0, 180, 8, 480, 0, 3000] }
+			{ type: "spawn", func: "circle", args: [true, 912, 0, 180, 8, 480, 0, 3000] }
 		],
 
 		// 3 оборота -> прыжок (145 -> 139 -> 140)
@@ -105,7 +105,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-3027-1000-140-0": [
 			{ type: "text", sub_type: "message", message_PT: "Iframe", message_ES: "Iframe", message: "Iframe" },
-			{ type: "spawn", func: "circle", args: [false, 912, 0, 180, 8, 480, 0, 3000] }
+			{ type: "spawn", func: "circle", args: [false, 912, 0, 110, 8, 480, 0, 3000] }
 		],
 
 		// 109 -> 402 -> 130

@@ -22,10 +22,10 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-3046-1000-101-0": [{ type: "text", sub_type: "message", message: "Front Swing", message_ES: "Golpe Frontal", message_PT: "Balanço Frontal" }],
 		"s-3046-1000-102-0": [
 			{ type: "text", sub_type: "message", message: "Disc Throw", message_ES: "Lanzar Disco", message_PT: "Lançar Disco" },
-			{ type: "spawn", func: "vector", args: [553, 0, 0, 180, 190, 2000, 2000] },
-			{ type: "spawn", func: "vector", args: [553, 0, 0, 10, 350, 2000, 2000] },
-			{ type: "spawn", func: "vector", args: [553, 270, 170, 10, 350, 2000, 2000] },
-			{ type: "spawn", func: "vector", args: [553, 270, 170, 200, 190, 2000, 2000] }
+			{ type: "spawn", func: "vector", args: [553, 270, -27, 187, 210, 2000, 2000] },
+			{ type: "spawn", func: "vector", args: [553, 270, -27, 8, 350, 2000, 2000] },
+			{ type: "spawn", func: "vector", args: [553, 270, 140, 10, 350, 2000, 2000] },
+			{ type: "spawn", func: "vector", args: [553, 270, 140, 190, 210, 2000, 2000] }
 		],
 		"s-3046-1000-104-0": [
 			{ type: "text", sub_type: "message", message: "Stun (AOE)", message_ES: "Stun (АОЕ)", message_PT: "Stun (AOE)" },
