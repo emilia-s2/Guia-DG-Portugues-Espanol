@@ -15,6 +15,8 @@ ID | Nome das Dungeons | Idioma | Idioma
 3105 | Fusion Laboratory | Português | Español
 3108 | Cursed Antaroth's Abyss | Português | Español
 3126 | Corrupted Skynest (Difícil) | Português | Español
+3109 | Ice Throne  (Difícil) | Português | Español
+3209 | Chaos Ice Throne  (Difícil) | Português | Español
 9068 | Shadow Sanguinary (Difícil) | Português | Español
 9920 | Antaroth's Abyss (Difícil) | Português | Español
 
@@ -30,6 +32,7 @@ ID | Nome das Dungeons | Idioma | Idioma
 
 #### Outras Traduçôes / Otras traducciones
 - **[Inglês (English) by HSDN](https://github.com/hsdn/tera-guide)**
+- **[Spanish (Español) by Loliconera](https://github.com/Loliconera/tera-guide-spanish)**
 
 ---
 ## Dependencies
@@ -105,4 +108,5 @@ Cuando el **lNotice** se encuentra *Activado*, los avisos serán mostrados en la
 - **[Kuroine](https://github.com/Kuroine)** - Autor do código base para o guia DA
 - **[ZC](https://github.com/tera-mod)** - Coordenadas fornecidas para renderização de áreas de ataque e mecânica
 - **[Owyn](https://github.com/Owyn)** - Autor do guia RR e também fazendo alterações na tradução para o inglês
-- **[ITunk](https://github.com/GrafNikola)** Autor da tradução inicial para o russo
+- **[ITunk](https://github.com/GrafNikola)** - Autor da tradução inicial para o russo
+- **[Loliconera](https://github.com/Loliconera)** - Author of Spanish translation
