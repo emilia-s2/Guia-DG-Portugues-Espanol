@@ -64,9 +64,9 @@ module.exports = {
 		"en": "Corrupted Skynest (Hard)"
 	},
 	3209: {
-		"pt": "Choas Ice Throne",
-		"es": "Choas Ice Throne",
-		"en": "Choas Ice Throne"
+		"pt": "Chaos Ice Throne",
+		"es": "Chaos Ice Throne",
+		"en": "Chaos Ice Throne"
 	},
 	9068: {
 		"pt": "Shadow Sanguinary (Difícil)",
