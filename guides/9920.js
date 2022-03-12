@@ -23,6 +23,22 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	function thirdboss_cage_event(clockwise, ent) {
 		const colour_order = clockwise ? ["red", "yellow", "blue"] : ["blue", "yellow", "red"];
 		const colour_offsets = { "red": 0, "yellow": 120, "blue": 240 };
+		
+		const colour_messages = {
+			"red": { message: "Red", message_ES: "Rojo", message_PT: "Vermelho" },
+			"yellow": { message: "Yellow", message_ES: "Amarillo", message_PT: "Amarelo" },
+			"blue": { message: "Blue", message_ES: "Azul", message_PT: "Azul" }
+		};
+
+		if (thirdboss_colour_to_use) {
+			handlers.text({
+				sub_type: "message",
+				message: colour_messages[thirdboss_colour_to_use].message,
+				message_ES: colour_messages[thirdboss_colour_to_use].message_ES,
+				message_PT: colour_messages[thirdboss_colour_to_use].message_PT
+			});
+		}
+
 
 		for (let i = 0; i < 3; i++) {
 			const current_colour = colour_order[(colour_order.indexOf(thirdboss_colour_to_use) + i) % 3];
@@ -173,17 +189,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-920-3000-2202-0": "s-920-3000-1202-0",
 		"s-920-3000-2206-0": "s-920-3000-1206-0",
 		"s-920-3000-1410-0": [{ type: "text", sub_type: "message", message: "Cage", message_ES: "Jaula", message_PT: "Prisão" }],
-		"ae-0-0-9203037": [
-			{ type: "text", sub_type: "message", message: "Red", message_ES: "Rojo", message_PT: "Vermelho" },
-			{ type: "func", func: () => thirdboss_colour_to_use = "red" }
-		],
-		"ae-0-0-9203038": [
-			{ type: "text", sub_type: "message", message: "Yellow", message_ES: "Amarillo", message_PT: "Amarelo" },
-			{ type: "func", func: () => thirdboss_colour_to_use = "yellow" }
-		],
-		"ae-0-0-9203039": [
-			{ type: "text", sub_type: "message", message: "Blue", message_ES: "Azul", message_PT: "Azul" },
-			{ type: "func", func: () => thirdboss_colour_to_use = "blue" }
-		]
+		"ae-0-0-9203037": [{ type: "func", func: () => thirdboss_colour_to_use = "red" }],
+		"ae-0-0-9203038": [{ type: "func", func: () => thirdboss_colour_to_use = "yellow" }],
+		"ae-0-0-9203039": [{ type: "func", func: () => thirdboss_colour_to_use = "blue" }]
 	};
 };
