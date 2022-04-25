@@ -1,8 +1,29 @@
 Guide-DG (Português & Español)
 ======
 
+### :information_source: Sobre o suporte ao patch v92.04 Menma's TERA
+O módulo Tera-Guía e [tera-guide-core](https://github.com/hsdn/tera-guide-core) já são compatíveis com este patch de Menma's TERA.   
+Para que os guias funcionem, você precisa obter versões compatíveis de **library** e **tera-guide-core**:
+1. Baixe **library**  **[aqui](https://git.dev.hsdn.org/tera-v92/library/archive/master.zip)** e coloque-o na pasta **mods**.
+2. Baixe **tera-guide-core**  **[aqui](https://github.com/hsdn/tera-guide-core/archive/refs/heads/master.zip)** e coloque-o na pasta **mods** o mesmo deve ter o nome de **"tera-guide-core"**, e não "tera-guide-core-master".
+
+### :information_source: Acerca de la compatibilidad con el parche v92.04 Menma's TERA
+El módulo Tera-Guía y [tera-guide-core](https://github.com/hsdn/tera-guide-core) ya son compatibles con este parche de Menma's TERA.  
+Para que las guías funcionen, necesita obtener versiones compatibles de **library** y **tera-guide-core**:
+1. Descargue **library** desde **[aquí](https://git.dev.hsdn.org/tera-v92/library/archive/master.zip)** y colócala en la carpeta **mods**.
+2. Descargue **tera-guide-core** desde **[aquí](https://github.com/hsdn/tera-guide-core/archive/refs/heads/master.zip)** y colóquelo en la carpeta **mods** y debe llamarse **"tera-guide-core"**, y no "tera-guide-core-master".
+
+---
+
+
+## Dependencies
+* **library** - https://git.dev.hsdn.org/tera-v92/library (v115.02 / v92.04)
+* **tera-guide-core** - https://github.com/hsdn/tera-guide-core (v115.02 / v92.04)
+
+---
+
 ##  Dungeons Suportadas
-ID | Nome das Dungeons | Idioma | Idioma
+ID | Nome Dungeons | Idioma | Idioma
 --- | --- | --- | ---
 7011 | Guardian Blightwood | Português | Español
 7015 | Guardian Balder's Refuge | Português | Español
@@ -20,6 +41,22 @@ ID | Nome das Dungeons | Idioma | Idioma
 9068 | Shadow Sanguinary (Difícil) | Português | Español
 9920 | Antaroth's Abyss (Difícil) | Português | Español
 
+### Patch v92.04 / Menma's TERA
+ID | Nome Dungeons | Idioma | Idioma
+--- | --- | --- | ---
+7011 | Shadow of the Gutrends (Guardian) | Português | Español
+7015 | Escape from Balder's Refuge (Guardian | Português | Español
+9981 | Velik's Sanctuary (Difícil) | Português | Español
+9044 | Bahaar's Sanctum | Português | Español
+9056 | Timescape (Difícil) | Português | Español
+9759 | Forsaken Island (Difícil) | Português | Español
+3201 | Gossamer Vault (Difícil) | Português | Español
+9920 | Antaroth's Abyss (Difícil) | Português | Español
+9982 | Grotto of Lost Souls (Hard) | Português | Español
+9735 | RK-9 Kennel | Português | Español
+3739 | Red Refuge | Português | Español
+9780 | Velik's Hold (5-Person) | Português | Español
+9781 | Velik's Sanctuary | Português | Español
 
 ----
 
@@ -27,19 +64,11 @@ ID | Nome das Dungeons | Idioma | Idioma
 * O módulo Dungeons Guide mostra notificações em voz, mensagens na tela, marcadores de área de ataque e mecânica dos boses. Disponível em idioma *Português*.
 * El módulo Guía de Dungeons cuenta con notificaciones de voz, mensajes en pantalla y marcadores de área de ataques y mecánicas de los bosses. Disponible  en idioma *Español*. 
 
-----
-
+---
 
 #### Outras Traduçôes / Otras traducciones
 - **[Inglês (English) by HSDN](https://github.com/hsdn/tera-guide)**
 - **[Spanish (Español) by Loliconera](https://github.com/Loliconera/tera-guide-spanish)**
-
----
-## Dependencies
-
-####  São instalados automaticamente pelo toolbox / Son instalados automáticamente por el toolbox
-
-- **[tera-guide-core](https://github.com/hsdn/tera-guide-core)**
 
 ------
 
