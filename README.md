@@ -15,6 +15,13 @@ Para que las guías funcionen, necesita obtener versiones compatibles de **libra
 
 ---
 
+### Proxy Menma's TERA
+**Atenção:** Até o momento presente o proxy do Menma's TERA não suporta atualizações automáticas dos mods. Sempre que possível venha aqui para verificar atualizações importantes e baixa-las manualmente
+
+**Atención:** Por ahora  el proxy de Menma's TERA no soporta actualizaciones automáticas de mods. Siempre que sea posible, acceda aquí para buscar actualizaciones importantes y descargarlas manualmente.
+
+---
+
 
 ## Dependencies
 * **library** - https://git.dev.hsdn.org/tera-v92/library (v115.02 / v92.04)
