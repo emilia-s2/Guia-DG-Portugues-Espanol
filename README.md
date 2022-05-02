@@ -1,6 +1,14 @@
 Guide-DG (Português & Español)
 ======
 
+## Parche v92.04 Menma's TERA
+
+### Disponível o TERA Toolbox para o parche 92
+Totalmente compatível com [versión não oficia] (https://github.com/tera-private-toolbox/tera-toolbox) do Tera Toolbox para o patch 92. atualizações automáticas.
+
+### Disponible en TERA Toolbox para el parche 92
+Totalmente compatible con [versión no oficia] (https://github.com/tera-private-toolbox/tera-toolbox) de Tera Toolbox para el parche 92. actualizaciones automáticas.
+
 ### :information_source: Sobre o suporte ao patch v92.04 Menma's TERA
 O módulo Tera-Guía e [tera-guide-core](https://github.com/hsdn/tera-guide-core) já são compatíveis com este patch de Menma's TERA.   
 Para que os guias funcionem, você precisa obter versões compatíveis de **library** e **tera-guide-core**:
@@ -16,15 +24,17 @@ Para que las guías funcionen, necesita obtener versiones compatibles de **libra
 ---
 
 ### Proxy Menma's TERA
-**Atenção:** Até o momento presente o proxy do Menma's TERA não suporta atualizações automáticas dos mods. Sempre que possível venha aqui para verificar atualizações importantes e baixa-las manualmente
 
-**Atención:** Por ahora  el proxy de Menma's TERA no soporta actualizaciones automáticas de mods. Siempre que sea posible, acceda aquí para buscar actualizaciones importantes y descargarlas manualmente.
+**Atenção:** Se ainda usa o proxy oficial  Menma's TERA, até o momento presente ele não suporta atualizações automáticas dos mods. Sempre que possível venha aqui para verificar atualizações importantes e baixa-las manualmente.
+Ou baixe aqui a versão com suporte a atualizações (https://github.com/tera-private-toolbox/tera-toolbox)
+
+**Atención:** Se aún usas el proxy oficial  Menma's TERA,  Por ahora  no soporta actualizaciones automáticas de mods. Siempre que sea posible, acceda aquí para buscar actualizaciones importantes y descargarlas manualmente.
+Or descarga Aquí la versión con soporte a actualizaciones (https://github.com/tera-private-toolbox/tera-toolbox)
 
 ---
 
-
 ## Dependencies
-* **library** - https://git.dev.hsdn.org/tera-v92/library (v115.02 / v92.04)
+* **library** - https://github.com/tera-private-toolbox/library (v115.02 / v92.04)
 * **tera-guide-core** - https://github.com/hsdn/tera-guide-core (v115.02 / v92.04)
 
 ---
