@@ -3,7 +3,7 @@
     "name": "Tera-Guide-Português-Español",
     "options": {
         "niceName": "Guide-DG",
-        "guiName": "(Tera-Guide-PT-ES",
+        "guiName": "Tera-Guide-PT-ES",
         "settingsFile": "config.json",
         "settingsMigrator": "settings_migrator.js",
         "settingsVersion": 1.23

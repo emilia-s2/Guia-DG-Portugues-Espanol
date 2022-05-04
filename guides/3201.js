@@ -138,7 +138,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-3201-2000-150-0": [{ type: "text", sub_type: "message", message_PT: "Fantasma", message_ES: "Fantasma", message: "Phantom" }],
 		"s-3201-2000-228-0": [
 			{ type: "text", sub_type: "message", message_PT: "Juntar Time", message_ES: "Juntar Time", message: "Team Up!!!" },
-			{ type: "text", sub_type: "message", delay: 4000, message_PT: "Iframe", message_ES: "Iframe", message: "Iframe" }
+			{ type: "text", sub_type: "alert", delay: 4000, message_PT: "Iframe", message_ES: "Iframe", message: "Iframe" }
 		],
 		"s-3201-2000-230-0": [{ type: "text", sub_type: "message", message_PT: "AOE", message_ES: "AOE!!", message: "AOE!!" }],
 
