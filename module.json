@@ -13,7 +13,6 @@
     "servers": ["https://raw.githubusercontent.com/emilia-s2/Guia-DG-Portugues/master/"],
     "supportUrl": "https://github.com/emilia-s2/Guia-DG-Portugues/issues",
     "dependencies": {
-        "library": "https://raw.githubusercontent.com/tera-toolbox-mods/library/master/module.json",
         "tera-guide-core": "https://raw.githubusercontent.com/hsdn/tera-guide-core/master/module.json"
     },
     "version": "GF V114.2"
