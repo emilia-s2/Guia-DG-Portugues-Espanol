@@ -140,8 +140,9 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", message_PT: "Juntar Time", message_ES: "Juntar Time", message: "Team Up!!!" },
 			{ type: "text", sub_type: "alert", delay: 4000, message_PT: "Iframe", message_ES: "Iframe", message: "Iframe" }
 		],
-		"s-3201-2000-230-0": [{ type: "text", sub_type: "message", message_PT: "AOE", message_ES: "AOE!!", message: "AOE!!" }],
-
+		"s-3201-2000-230-0": [{ type: "text", sub_type: "message", message_PT: "AOE", message_ES: "AOE!!", message: "AOE!!" },
+			{ type: "text", sub_type: "alert", delay: 1190, message_PT: "Iframe", message_ES: "Iframe", message: "Iframe" }
+		],
 		"s-3201-2000-231-0": [
 			{ type: "text", sub_type: "message", message_PT: "SAIR", message_ES: "SALIR", message: "Out Safe" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 300, 0, 3000] }
