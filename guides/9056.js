@@ -12,7 +12,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "warning", message: "(1)", speech: false, delay: 300 },
 			{ type: "text", sub_type: "warning", message: "(2)", speech: false, delay: 800 },
 			{ type: "text", sub_type: "warning", message: "(3)", speech: false, delay: 1300 },
-			{ type: "text", sub_type: "message", message: "(4) Dodge!", message_ES: "(4) Iframe!", message_PT: "(4) Iframe!", delay: 1800  }
+			{ type: "text", sub_type: "message", message: "(4) Dodge!", message_ES: "(4) Iframe!", message_PT: "(4) Iframe!", delay: 2300  }
 		],
 		"s-456-1001-107-0": [{ type: "text", sub_type: "alert", message: "Shot", message_ES: "Disparo", message_PT: "Tiro", speech: false }],
 
@@ -22,7 +22,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "warning", message: "(1)", speech: false, delay: 550 },
 			{ type: "text", sub_type: "warning", message: "(2)", speech: false, delay: 1300 },
 			{ type: "text", sub_type: "warning", message: "(3)", speech: false, delay: 2050 },
-			{ type: "text", sub_type: "message", message: "(4) Dodge!", message_ES: "(4) Iframe!", message_PT: "(4) Iframe!", delay: 2800 }
+			{ type: "text", sub_type: "message", message: "(4) Dodge!", message_ES: "(4) Iframe!", message_PT: "(4) Iframe!", delay: 3200 }
 		],
 		"s-456-414-104-0": "s-456-413-104-0",
 		"s-456-415-104-0": "s-456-413-104-0",
