@@ -6,6 +6,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	guide.type = SP;
 
 	let thirdboss_fifty = false;
+	let print_test = true;
 
 	function thirdboss_message_event(skillid) {
 		switch (skillid) {
@@ -72,6 +73,10 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "stop_timers" },
 			{ type: "despawn_all" }
 		],
+		"h-981-1000-99": [{ type: "func", func: () => print_test = true }],
+		"h-981-1000-50": [
+			{ type: "text", sub_type: "notification", message: "50%", message_PT: "50%", message_ES: "50%" },
+		],
 		"s-981-1000-1401-0": [
 			{ type: "text", sub_type: "message", message: "Right", message_PT: "Direita", message_ES: "Derecha" },
 			{ type: "spawn", func: "vector", args: [553, 360, 400, 180, 800, 0, 2000] },
@@ -85,6 +90,9 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "marker", args: [false, 130, 100, 0, 2000, true, null] }
 		],
 		"s-981-1000-1303-0": [{ type: "text", sub_type: "message", message: "Spin", message_PT: "Girar", message_ES: "Girar" }],
+		"s-981-1000-1301-0": [{ type: "text", sub_type: "message", message: "Poison (Silence)", message_PT: "Veneno (Silêncio)", message_ES: "Veneno (Silencio)" },
+			{ type: "text", sub_type: "message", message_PT: "Iframe", message_ES: "Iframe", message: "Iframe!", delay: 900 }
+		],
 		"s-981-1000-1304-0": [
 			{ type: "text", sub_type: "message", message: "Flying", message_PT: "Voar", message_ES: "Volar" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 300, 0, 6000] }
@@ -92,6 +100,12 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-981-1000-1308-0": [{ type: "text", sub_type: "message", message: "OUT", message_PT: "SAIR", message_ES: "SALIR" }],
 		"s-981-1000-1309-0": [{ type: "text", sub_type: "message", message: "IN", message_PT: "ENTRAR", message_ES: "ENTRAR" }],
 		"s-981-1000-1113-0": [{ type: "text", sub_type: "message", message: "Front + AoEs", message_PT: "Ataque Frontal | AOE", message_ES: "Ataque frontal | AOE" }],
+		"qb-981-1000-98103": [{ type: "text", sub_type: "message", message: "Destroy Crystals (Laser)", message_PT: "Destruir Cristais (Laser)", message_ES: "Romper Cristales (Laser)" }],
+		"qb-981-1000-98106": [{ type: "text", sub_type: "message", message: "Destroy Crystals (Greater)", message_PT: "Destruir Cristais (Greater)", message_ES: "Romper Cristales (Greater)" }],		
+		"s-981-1000-1111-0": [{ type: "text", sub_type: "message", message: "Back (360)", message_PT: "Atrás (360)", message_ES: "Atrás (360)", check_func: () => print_test},
+			{ type: "func", func: () => print_test = false },
+			{ type: "func", func: () => print_test = true, delay: 5000 }
+		],
 		"s-981-1000-2401-0": "s-981-1000-1401-0",
 		"s-981-1000-2402-0": "s-981-1000-1402-0",
 		"s-981-1000-2303-0": "s-981-1000-1303-0",
@@ -99,6 +113,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-981-1000-2308-0": "s-981-1000-1308-0",
 		"s-981-1000-2309-0": "s-981-1000-1309-0",
 		"s-981-1000-2113-0": "s-981-1000-1113-0",
+		"s-981-1000-2111-0": "s-981-1000-1111-0",
 
 		// 2 BOSS
 		"nd-981-2000": [
@@ -119,7 +134,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-981-2000-1108-0": [{ type: "text", sub_type: "message", message: "Front", message_PT: "Ataque Frontal", message_ES: "Ataque frontal" }],
 		"s-981-2000-1111-0": [{ type: "text", sub_type: "message", message: "360 attack", message_PT: "Ataque 360", message_ES: "Ataque Circular" }],
 		"s-981-2000-1134-0": [
-			{ type: "text", sub_type: "message", message: "Combo Attack (Dodge)", message_PT: "Ataque Combo (Iframe)", message_ES: "Ataque Combo (Iframe)" },
+			{ type: "text", sub_type: "message", message: "Combo Attack", message_PT: "Ataque Combo", message_ES: "Ataque Combo" },
+			{ type: "text", sub_type: "message", message_PT: "Iframe", message_ES: "Iframe", message: "Iframe!", delay: 1750},
 			{ type: "spawn", func: "circle", args: [true, 553, 0, 80, 8, 390, 0, 2000] }
 		],
 		"s-981-2000-1134-1": [
@@ -137,7 +153,13 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "marker", args: [false, 300, 100, 0, 2000, true, null] },
 			{ type: "spawn", func: "marker", args: [false, 230, 100, 0, 2000, true, null] }
 		],
-		"s-981-2000-1302-0": [{ type: "text", sub_type: "message", message: "Bait", message_PT: "Bait", message_ES: "Ataque -> (al jugador)" }],
+		"s-981-2000-1302-0": [{ type: "text", sub_type: "message", message: "Bait", message_PT: "Bait", message_ES: "Bait" },
+			{ type: "text", sub_type: "message", delay: 3080, message_PT: "Iframe", message_ES: "Iframe", message: "Iframe!" }
+		],
+		"s-981-2000-1502-0": [{ type: "text", sub_type: "message", message: "Combo AOE", message_PT: "Combo AOE", message_ES: "Combo AOE" },
+			{ type: "spawn", func: "circle", args: [true, 553, 0, 10, 8, 370, 0, 4000] },
+			{ type: "spawn", func: "circle", args: [true, 553, 0, 70, 8, 370, 4100, 3000] }
+		],
 		"s-981-2000-2501-0": "s-981-2000-1501-0",
 		"s-981-2000-2106-0": "s-981-2000-1106-0",
 		"s-981-2000-2108-0": "s-981-2000-1108-0",
@@ -164,10 +186,10 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-981-3000-1404-0": [{ type: "text", sub_type: "message", message: "(Debuffs) Closest", message_PT: "Debuff (Juntar)", message_ES: "Debuff (Más cercano)" }],
 		"s-981-3000-1405-0": [{ type: "text", sub_type: "message", message: "(Debuffs) Farthest", message_PT: "Debuff (Afastar)", message_ES: "Debuff (Más lejano)" }],
 		"s-981-3000-1301-0": [{ type: "text", sub_type: "message", message: "(Bombas) Gather + Cleanse", message_PT: "Bombas Juntar + Cleanse", message_ES: "Bombas (Reunirse) + Cleanse" }],
-		"s-981-3000-1302-0": [{ type: "text", sub_type: "message", message: "(Bombas) Gather + No cleanse", message_PT: "Bombas Juntar + No Cleanse", message_ES: "Bombas (Reunirse) + No Cleanse" }],
+		"s-981-3000-1302-0": [{ type: "text", sub_type: "message", message: "(Bombas) Gather + [c=#ff0004]No[/c]  cleanse", message_PT: "Bombas Juntar + [c=#ff0004]No[/c] Cleanse", message_ES: "Bombas (Reunirse) + [c=#ff0004]No[/c]	 Cleanse" }],
 		"s-981-3000-3103-0": [{ type: "text", sub_type: "message", message: "(Círculos) Spread", message_PT: "Círculos (Afastar)", message_ES: "Círculos (Separarse)" }],
 		"s-981-3000-3105-0": [{ type: "text", sub_type: "message", message: "(Círculos) Gather", message_PT: "Círculos (Juntar)", message_ES: "Círculos (Reunirse)" }],
-		"s-981-3000-1136-0": [{ type: "text", sub_type: "message", message: "Claw", message_PT: "Garra", message_ES: "Garra" }],
+		"s-981-3000-1136-0": [{ type: "text", sub_type: "message", message: "Claw", message_PT: "Garra", message_ES: "Garra"}],
 		"s-981-3000-1144-0": [{ type: "text", sub_type: "message", message: "OUT", message_PT: "SAIR", message_ES: "SALIR" }],
 		"s-981-3000-1145-0": [{ type: "text", sub_type: "message", message: "IN", message_PT: "ENTRAR", message_ES: "ENTRAR" }],
 		"s-981-3000-1240-0": [
@@ -176,15 +198,21 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-981-3000-1401-0": [{ type: "text", sub_type: "message", message: "Plague/Regress", message_PT: "Plague/Regress", message_ES: "Plague/Regress" }],
 		"s-981-3000-1402-0": [{ type: "text", sub_type: "message", message: "Sleep", message_PT: "Dormir", message_ES: "¡¡Dormir!!" }],
-		"s-981-3000-1701-0": [{ type: "text", sub_type: "message", message: "Back + Front", message_PT: "Atras + Frente Ataque", message_ES: "Ataque atrás + Ataque frontal" }],
+		"s-981-3000-1701-0": [{ type: "text", sub_type: "message", message: "Back + Front", message_PT: "Atras + Frente Ataque", message_ES: "Ataque Atrás + Ataque Frontal" }],
 		//
-		"s-981-3000-1113-0": [{ type: "text", sub_type: "message", message: "Bait", message_PT: "Bait", message_ES: "Ataque -> (al jugador)" }],
-		"s-981-3000-1151-0": [{ type: "text", sub_type: "message", message: "Attention Stun", message_PT: "Atenção Stun", message_ES: "Stun" }],
-		"s-981-3000-1152-0": [{ type: "text", sub_type: "message", message: "Stun + Back", message_PT: "Stun + Atrás Ataque", message_ES: "Stun + Ataque atrás" }],
+		"s-981-3000-1113-0": [{ type: "text", sub_type: "message", message: "Bait", message_PT: "Bait", message_ES: "Bait" }],
+		"s-981-3000-1116-0": [{ type: "text", sub_type: "message", message: "Front Shield + Donut (Flying)", message_PT: "Escudo Frontal + Donut (Voando)", message_ES: "Escudo Frontal Donut (Volando)" }],
+		"s-981-3000-1151-0": [{ type: "text", sub_type: "message", message: "Attention Stun", message_PT: "Atenção Stun", message_ES: "Stun" },
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 100, 15, 210, 0, 2000] }
+		],		
+		"s-981-3000-1152-0": [{ type: "text", sub_type: "message", message: "Stun + Back", message_PT: "Stun Frontal + Atrás Ataque", message_ES: "Stun + Ataque atrás" },
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 100, 15, 210, 0, 3000] }
+		],
 		"s-981-3000-1138-0": [{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 250, 0, 6000] }],
 		"s-981-3000-2113-0": "s-981-3000-1113-0",
 		"s-981-3000-2151-0": "s-981-3000-1151-0",
 		"s-981-3000-2152-0": "s-981-3000-1152-0",
-		"s-981-3000-2138-0": "s-981-3000-1138-0"
+		"s-981-3000-2138-0": "s-981-3000-1138-0",
+		"s-981-3000-2116-0": "s-981-3000-1116-0"
 	};
 };

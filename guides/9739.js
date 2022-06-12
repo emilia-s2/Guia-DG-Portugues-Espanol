@@ -49,8 +49,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "despawn_all" }
 		],		
 		"s-739-3001-201-0": [
-		    { type: "text", sub_type: "message", message_PT: "Rugido Forte (Stun)", message_ES: "Rugido Fuerte (Stun)", message: "Strong Roar (Stun)" },
-		    { type: "text", sub_type: "message", delay: 3700, message_PT: "Iframe", message_ES: "Iframe", message: "Iframe!" }  
+			{ type: "text", sub_type: "message", message_PT: "Rugido Forte (Stun)", message_ES: "Rugido Fuerte (Stun)", message: "Strong Roar (Stun)" },
+			{ type: "text", sub_type: "message", delay: 3700, message_PT: "Iframe", message_ES: "Iframe", message: "Iframe!" }	
 		],	
 		"s-739-3001-107-0": [{ type: "text", sub_type: "message", message_PT: "Muitos Hits (Garras)", message_ES: "Muchos Hits (Garras)", message: "Many Hits" }],
 		"s-739-3001-115-0": [

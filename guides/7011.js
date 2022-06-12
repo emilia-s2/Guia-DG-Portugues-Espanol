@@ -21,7 +21,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", message_PT: "Mao Direita (Ataque)", message_ES: "Mano Derecha (Ataque)", message: "Right Hand", class_position: "heal" },
 			{ type: "text", sub_type: "message", message_PT: "Mao Direita (Ataque)", message_ES: "Mano Derecha (Ataque)", message: "Right Hand", class_position: "dps" }
 		],
-		"s-622-1000-107-0": [{ type: "text", sub_type: "message", message_PT: "Stun Frontal", message_ES: "tun Frontal", message: "Stun Frontal" },
+		"s-622-1000-107-0": [{ type: "text", sub_type: "message", message_PT: "Stun Frontal", message_ES: "Stun Frontal", message: "Stun Frontal" },
 			{ type: "spawn", func: "semicircle", args: [320, 404, 553, 0, 0, 7, 405, 0, 3500] },
 			{ type: "spawn", func: "vector", args: [553, 0, 10, 406, 400, 0, 3500] },
 			{ type: "spawn", func: "vector", args: [553, 0, 10, -406, 400, 0, 3500] }

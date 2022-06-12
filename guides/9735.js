@@ -43,8 +43,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "vector", args: [553, 0, 0, 240, 380, 0, 2000] },
 			{ type: "spawn", func: "vector", args: [553, 0, 0, 120, 380, 0, 2000] }
 		],
-		"s-735-2000-301-0": [{ type: "text", sub_type: "message", message_PT: "Jogar bombas", message_ES: "Jugar Bombas", message: "Throwing Orb" },
-		    { type: "spawn", func: "circle", args: [false, 553, 0, 0, 12, 200, 100, 6000] } // Adicionado
+		"s-735-2000-301-0": [{ type: "text", sub_type: "message", message_PT: "Disparar Bombas", message_ES: "Lanzar Bombas", message: "Throwing Orb" },
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 12, 200, 100, 6000] } // Adicionado
 		],	
 		"s-735-2000-304-0": [
 			{ type: "text", sub_type: "message", message_PT: "SAIR (Explosão)", message_ES: "SALIR (Explosión)", message: "Get Out" },
@@ -136,14 +136,14 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "vector", args: [553, 180, 40, 240, 900, 2000, 3000] }
 		],
 		"s-735-3000-129-0": [{ type: "text", class_position: "tank", sub_type: "message", message_PT: "Iframe", message_ES: "Iframe", message: "Iframe" }],
-	    "s-735-3000-321-0": [
+		"s-735-3000-321-0": [
 			{ type: "text", sub_type: "message", message_PT: "ESCUDO!", message_ES: "ESCUDO!", message: "Shield!" },
 			{ type: "text", sub_type: "message", delay: 105000, message_PT: "ESCUDO em 10 segundos!", message_ES: "ESCUDO en 10 segundos!", message: "SHIELD in 10 seconds!" }
 		],
 		"s-735-3000-305-0": [{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 300, 0, 7000] }],
 		"s-735-3000-324-0": [
 			{ type: "text", sub_type: "message", message_PT: "SAIR", message_ES: "SALIR", message: "GO OUT" },
-		    { type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 285, 0, 3000] }
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 285, 0, 3000] }
 		],	
 		"s-735-3000-325-0": [
 			{ type: "text", sub_type: "message", message_PT: "ENTRAR", message_ES: "ENTRAR", message: "IN" },

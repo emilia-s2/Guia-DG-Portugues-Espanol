@@ -15,7 +15,9 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "circle", args: [false, 553, 180, 376, 12, 232, 0, 5000] }
 		],
 		"s-620-1000-120-0": [{ type: "text", sub_type: "message", message_PT: "Onda de Fogo", message_ES: "Ola de Fuego", message: "Fire Wave" }],
-		"s-620-1000-121-0": [{ type: "text", sub_type: "message", message_PT: "Repelir (iframe)", message_ES: "Repeler (iframe)", message: "Repel (Dodge)" }],
+		"s-620-1000-121-0": [{ type: "text", sub_type: "message", message_PT: "Repelir", message_ES: "Repeler", message: "Repel" },
+			{ type: "text", sub_type: "message", message_PT: "Iframe", message_ES: "Iframe", message: "Iframe!", delay: 1300 }
+		],
 		"s-620-1000-119-0": [{ type: "text", sub_type: "message", message_PT: "Explosão | Entrar", message_ES: "Explosión | Entrar", message: "Explosion | In" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 8, 14, 216, 100, 6000] }	 
 		],

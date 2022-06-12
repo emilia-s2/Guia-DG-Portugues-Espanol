@@ -19,9 +19,9 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		if ((!awakening_two && stack_level > 0) || (awakening_two && stack_level > 2)) {
 			handlers.text({
 				sub_type: "notification",
-				message: `stack ${stack_level}`,
-				message_PT: `Carga ${stack_level}`,
-				message_ES: `Carga ${stack_level}`,
+				message: `stack [c=#ff0004]${stack_level}[/c]`,
+				message_PT: `Carga [c=#ff0004]${stack_level}[/c]`,
+				message_ES: `Carga [c=#ff0004]${stack_level}[/c]`,
 				speech: false
 			});
 		}
@@ -108,7 +108,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-982-2000-105-0": [{ type: "text", sub_type: "message", message: "Spin", message_ES: "GIRO Atrás", message_PT: "GIRAR Atrás" }],
 		"s-982-2000-108-0": [{ type: "text", sub_type: "message", message: "Shot Forward", message_ES: "Disparo Delantero", message_PT: "Disparo na Frente" }],
-		"s-982-2000-109-0": [{ type: "text", sub_type: "message", message: "Wave Forward", message_ES: "Ola Delantera", message_PT: "Onda Frente" }],
+		"s-982-2000-109-0": [{ type: "text", sub_type: "message", message: "Wave Forward", message_ES: "Vómito Frente", message_PT: "Vómito Frente" }],
 		"s-982-2000-112-0": [{ type: "text", sub_type: "message", message: "Kick Forward", message_ES: "Patada Frente", message_PT: "Patada Frente" }],
 		"s-982-2000-113-0": [
 			{ type: "text", sub_type: "message", message: "Stun (AoE)", message_ES: "Stun (AoE)", message_PT: "Stun (AoE)" },

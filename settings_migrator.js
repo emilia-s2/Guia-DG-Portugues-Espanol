@@ -13,7 +13,7 @@ const DefaultSettings = {
 		"gender": "female"
 	},
 	"cc": [
-		"</font><font color=\"#8eff05\">"
+		"</font><font color=\"#b8ff05\">"
 	],
 	"language": "pt",
 	"dungeons": {},
