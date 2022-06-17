@@ -78,6 +78,11 @@ module.exports = {
 		"es": "Chaos Ice Throne",
 		"en": "Chaos Ice Throne"
 	},
+	9027: {
+		"pt": "Manaya's Core (Difícil) <font color='#ffc800'>BETA</font>",
+		"es": "Manaya's Core (Difícil) <font color='#ffc800'>BETA</font>",
+		"en": "Manaya's Core (Hard) <font color='#ffc800'>BETA</font>"
+	},	
 	9044: {
 		"pt": "Bahaar's Sanctum",
 		"es": "Bahaar's Sanctum",
