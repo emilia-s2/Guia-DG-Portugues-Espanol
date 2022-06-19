@@ -5,8 +5,8 @@ module.exports.general = {
 
 	// Português
 	pt: {
-		unknowncommand: "Comando desconhecido, Para ver todos os comandos tente (guia help)",
-		helpheader: "Use o comando <font color='#ffff00'>!guia help </font><font color='#00ff00'>para mais informações</font><font color='#00a6ff'>\nGuia em Idioma </font><font color='#ff77ff'>PORTUGUÊS, <font color='#00a6ff'>Também disponível para Español \nUse o Comando: </font><font color='#ffff00'>!guia es </font><font color='#00ffff'>Para Español",
+		unknowncommand: "Comando desconhecido, Para ver todos os comandos tente <font color='#ffff00'>!guia help</font>",
+		helpheader: "Use o comando <font color='#ffff00'>!guia gui </font><font color='#00ff00'>e </font><font color='#00c5f6'>P</font><font color='#00d8f4'>e</font><font color='#00e0eb'>r</font><font color='#00e8dd'>s</font><font color='#00eeca'>o</font><font color='#00f4b4'>n</font><font color='#00f99a'>a</font><font color='#60fc7e'>l</font><font color='#8fff5f'>i</font><font color='#b9ff3d'>z</font><font color='#e2fd00'>e </font><font color='#00ff00'>o seu Guia </font><font color='#00a6ff'>\nGuia em Idioma </font><font color='#ff77ff'>PORTUGUÊS, </font><font color='#00a6ff'>Também disponível para Español \nComando: </font><font color='#ffff00'>!guia es </font><font color='#00ffff'>Para Español</font>",
 		helpbody: [
 			["guia cr, Mensagem Cor VERMELHO", "CRMSG"],
 			["guia co, Mensagem Cor LARANJA", "COMSG"],
@@ -69,8 +69,8 @@ module.exports.general = {
 	},
 		// Español
 	es: {
-		 unknowncommand: "Comando desconocido, Para ver todos los comandos proba (guia help)",
-		 helpheader: "Use el comando <font color='#ffff00'>!guia help </font><font color='#00ff00'>para más informaciones</font><font color='#00a6ff'>\nGuía en Idioma </font><font color='#ff77ff'>\ESPAÑOL, <font color='#00a6ff'>También disponible en Português \nUse el Comando: </font><font color='#ffff00'>!guia pt </font><font color='#00ffff'>Para Português",
+		 unknowncommand: "Comando desconocido, Para ver todos los comandos proba <font color='#ffff00'>!guia help</font>",
+		 helpheader: "Usa el comando <font color='#ffff00'>!guia gui </font><font color='#00ff00'>y </font><font color='#00c5f6'>P</font><font color='#00d8f4'>e</font><font color='#00e0eb'>r</font><font color='#00e8dd'>s</font><font color='#00eeca'>o</font><font color='#00f4b4'>n</font><font color='#00f99a'>a</font><font color='#60fc7e'>l</font><font color='#8fff5f'>i</font><font color='#b9ff3d'>z</font><font color='#e2fd00'>a </font><font color='#00ff00'>tu Guia </font><font color='#00a6ff'>\nGuía en Idioma </font><font color='#ff77ff'>\ESPAÑOL, <font color='#00a6ff'>También disponible en Português \nUse el Comando: </font><font color='#ffff00'>!guia pt </font><font color='#00ffff'>Para Português</font>",
 		 helpbody: [
 			["guia cr, Mensaje Color ROJO", "CRMSG"],
 			["guia co, Mensaje Color NARANJA", "COMSG"],
@@ -132,10 +132,10 @@ module.exports.general = {
 		},
 		
 		//English
-	"en": {
-		"unknowncommand": "Unknown command, type \"guide help\"",
-		"helpheader": "Use the command <font color='#ffff00'>!guia help </font><font color='#00ff00'>for more information</font><font color='#ff77ff'>\nENGLISH </font><font color='#00a6ff'>language Guide, Also available in PORTUGUÉS and SPANISH \nUse the command: </font><font color='#ffff00'>!guia pt </font><font color='#00ffff'>For Português </font><font color='#00a6ff'>or</font><font color='#ffff00'> !guia es </font><font color='#00ffff'>For Spanish",
-		"helpbody": [
+	en: {
+		unknowncommand: "Unknown command, type <font color='#ffff00'>!guia help</font>",
+		helpheader: "Use the command <font color='#ffff00'>!guia gui</font><font color='#00ff00'>and </font><font color='#00c5f6'>P</font><font color='#00d8f4'>e</font><font color='#00e0eb'>r</font><font color='#00e8dd'>s</font><font color='#00eeca'>o</font><font color='#00f4b4'>n</font><font color='#00f99a'>a</font><font color='#60fc7e'>l</font><font color='#8fff5f'>i</font><font color='#b9ff3d'>z</font><font color='#e2fd00'>e </font><font color='#00ff00'>your Guide </font><font color='#ff77ff'>\nENGLISH </font><font color='#00a6ff'>language Guide, Also available in PORTUGUÉS and SPANISH \nUse the command: </font><font color='#ffff00'>!guia pt </font><font color='#00ffff'>For Português </font><font color='#00a6ff'>or</font><font color='#ffff00'> !guia es </font><font color='#00ffff'>For Spanish</font>",
+		helpbody: [
 			["guide, module on/off", "PRMSG"],
 			["guide gui, show module GUI", "PRMSG"],
 			["guide voice, text-to-speech (TTS) messages on/off", "PRMSG"],
@@ -161,34 +161,34 @@ module.exports.general = {
 			["guide clb, message color is LIGHT BLUE", "CLBMSG"],
 			["guide cbl, message color is BLACK", "CBLMSG"],
 			["guide cgr, message color is GRAY", "CGRMSG"],
-			["guide cw, message color is WHITE", "CWMSG"],
+			["guide cw, message color is WHITE", "CWMSG"]
 		],
-		"red": "Red",
-		"green": "Green",
-		"settings": "Settings",
-		"spawnObject": "Spawn marker objects",
-		"speaks": "Voice messages (TTS)",
-		"lNotice": "Chat notices instead of screen messages",
-		"gNotice": "Party chat messages",
-		"stream": "Streamer Mode (hiding messages and objects)",
-		"language": "Set language",
-		"voice": "Speech voice",
-		"rate": "Speech rate",
-		"color": "Change color",
-		"dungeons": "Dungeon settings",
-		"verbose": "Messages",
-		"objects": "Objects",
-		"test": "Test",
-		"module": "TERA-Guide module",
-		"enabled": "On",
-		"disabled": "Off",
-		"male": "Male",
-		"female": "Female",
-		"voicetest": "[Voice speech rate test]",
-		"colorchanged": "Message notification color is changed",
-		"dgnotfound": "Dungeon not found.",
-		"dgnotspecified": "Dungeon id not specified.",
-		"enterdg": "Enter Dungeon",
-		"fordungeon": "for dungeon",
+		red: "Red",
+		green: "Green",
+		settings: "Settings",
+		spawnObject: "Spawn marker objects",
+		speaks: "Voice messages (TTS)",
+		lNotice: "Chat notices instead of screen messages",
+		gNotice: "Party chat messages",
+		stream: "Streamer Mode (hiding messages and objects)",
+		language: "Set language",
+		voice: "Speech voice",
+		rate: "Speech rate",
+		color: "Change color",
+		dungeons: "Dungeon settings",
+		verbose: "Messages",
+		objects: "Objects",
+		test: "Test",
+		module: "TERA-Guide module",
+		enabled: "On",
+		disabled: "Off",
+		male: "Male",
+		female: "Female",
+		voicetest: "[Voice speech rate test]",
+		colorchanged: "Message notification color is changed",
+		dgnotfound: "Dungeon not found.",
+		dgnotspecified: "Dungeon id not specified.",
+		enterdg: "Enter Dungeon",
+		fordungeon: "for dungeon"
 	}
 };

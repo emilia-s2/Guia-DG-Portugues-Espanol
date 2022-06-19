@@ -79,9 +79,9 @@ module.exports = {
 		"en": "Chaos Ice Throne"
 	},
 	9027: {
-		"pt": "Manaya's Core (Difícil) <font color='#ffc800'>BETA</font>",
-		"es": "Manaya's Core (Difícil) <font color='#ffc800'>BETA</font>",
-		"en": "Manaya's Core (Hard) <font color='#ffc800'>BETA</font>"
+		"pt": "Manaya's Core (Difícil)",
+		"es": "Manaya's Core (Difícil)",
+		"en": "Manaya's Core (Hard)"
 	},	
 	9044: {
 		"pt": "Bahaar's Sanctum",
