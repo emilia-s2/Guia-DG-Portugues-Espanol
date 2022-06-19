@@ -53,7 +53,6 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		// 3 BOSS
 		// Fase 1
 		"s-427-2001-1101-0": [{ type: "text", sub_type: "message", message_PT: "Flechas AoE (+)", message_ES: "Flechas AoE (+)", message: "Arrows AoE (+)" },
-		{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 490, 0, 3000] },
 			{ type: "spawn", func: "vector", args: [553, 120, 100, 176, 400, 0, 5000] },
 			{ type: "spawn", func: "vector", args: [553, 240, 100, -176, 400, 0, 5000] },
 			{ type: "spawn", func: "vector", args: [553, 60, 100, 4, 400, 0, 5000] },
