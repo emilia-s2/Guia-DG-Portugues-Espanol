@@ -40,9 +40,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-427-42702-1118-0": [{ type: "text", sub_type: "message", message_PT: "Stun + Onda", message_ES: "Stun + Onda", message: "Stun + Wave" }],
 		"s-427-42702-1112-0": [{ type: "text", sub_type: "message", message_PT: "Salto Atrás", message_ES: "Salto Atrás", message: "Jump Backwards" }],
 		
-		"qb-427-42702-427030": [{ type: "text", sub_type: "notification", message_PT: "Matar Minions [c=#05a0fa]Azuis[/c]", message_ES: "Matar Minions [c=#05a0fa]Azules[/c]", message: "Kill [c=#05a0fa]Blue[/c] Minions" }],//69%
-		"dm-0-0-9027004": [{ type: "text", sub_type: "notification", message_PT: "Matar Minions [c=#05a0fa]Azuis[/c]", message_ES: "Matar Minions [c=#05a0fa]Azules[/c]", message: "Kill [c=#05a0fa]Blue[/c] Minions" }],	//18%
-		"dm-0-0-9027005": [{ type: "text", sub_type: "notification", message_PT: "Matar Minions [c=#e82331]Vermelhos[/c]", message_ES: "Matar Minions [c=#e82331]Rojos[/c]", message: "Kill [c=#e82331]Red[/c] Minions" }],	//18%
+		"dm-0-0-9027004": [{ type: "text", sub_type: "notification", message_PT: "Matar Minions [c=#05a0fa]Azuis[/c]", message_ES: "Matar Minions [c=#05a0fa]Azules[/c]", message: "Kill [c=#05a0fa]Blue[/c] Minions" }],
+		"dm-0-0-9027005": [{ type: "text", sub_type: "notification", message_PT: "Matar Minions [c=#e82331]Vermelhos[/c]", message_ES: "Matar Minions [c=#e82331]Rojos[/c]", message: "Kill [c=#e82331]Red[/c] Minions" }],
 		"s-427-42702-2104-0": "s-427-42702-1104-0",
 		"s-427-42702-2109-0": "s-427-42702-1109-0",
 		"s-427-42702-2106-0": "s-427-42702-1106-0",
