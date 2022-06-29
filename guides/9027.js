@@ -108,9 +108,9 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-427-2007-1111-0": [{ type: "text", sub_type: "message", message_PT: "Cauda Frontal Ataque", message_ES: "Ataque de Cola Frontal", message: "Frontal Tail Attack" }],	
 		"s-427-2007-1109-0": [{ type: "text", sub_type: "message", message_PT: "AoE (Alvo)", message_ES: "AoE Objetivo", message: "AoE Target" }],
 		"s-427-2007-1107-0": [{ type: "text", sub_type: "message", message_PT: "Laser Ataque", message_ES: "Ataque Láser", message: "Laser Attack" },
-			{ type: "spawn", func: "vector", args: [912, 360, 975, 180, 950, 0, 2500] },
-			{ type: "spawn", func: "vector", args: [912, 370, 995, 180, 950, 0, 2500] },
-			{ type: "spawn", func: "vector", args: [912, 350, 995, 180, 950, 0, 2500] }
+			{ type: "spawn", func: "vector", args: [912, 360, 985, 180, 950, 0, 2500] },
+			{ type: "spawn", func: "vector", args: [912, 369, 995, 180, 950, 0, 2500] },
+			{ type: "spawn", func: "vector", args: [912, 351, 995, 180, 950, 0, 2500] }
 		],
 		"s-427-2007-1106-0": [{ type: "text", sub_type: "message", message_PT: "Bomba Alvo", message_ES: "Bomba Objetivo", message: "Target Bomb" }],
 		"s-427-2007-1204-0": [{ type: "text", sub_type: "message", message_PT: "AoE Grande (Sair)", message_ES: "AoE Grande (Salir)", message: "Big AoE (Run)" }],
