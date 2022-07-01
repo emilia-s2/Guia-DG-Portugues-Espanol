@@ -1,21 +1,21 @@
 Guide-DG (Português & Español)
 ======
 
-## Parche v92.04 Menma's TERA
+## Patch v92.04 / 100.02 (x64)
 
-### Disponível o TERA Toolbox para o parche 92
-Totalmente compatível com [versión não oficia] (https://github.com/tera-private-toolbox/tera-toolbox) do Tera Toolbox para o patch 92. atualizações automáticas.
+### :star: Compatível com o TERA Toolbox patch: 92.04 e 100.02 (x64)
+Totalmente compatível com **[versão não oficial](https://github.com/tera-private-toolbox/tera-toolbox)** do Tera Toolbox para o patch 92 e 100.02 (x64) atualizações automáticas.
 
-### Disponible en TERA Toolbox para el parche 92
-Totalmente compatible con [versión no oficia] (https://github.com/tera-private-toolbox/tera-toolbox) de Tera Toolbox para el parche 92. actualizaciones automáticas.
+### :star: Compatible con el TERA Toolbox parch: 92.04 y 100.02 (x64)
+Totalmente compatible con **[versión no oficial](https://github.com/tera-private-toolbox/tera-toolbox)** de Tera Toolbox para el parche 92 e 100.02 (x64) actualizaciones automáticas.
 
-### :information_source: Sobre o suporte ao patch v92.04 Menma's TERA
+### :information_source: Instalação manual
 O módulo Tera-Guía e [tera-guide-core](https://github.com/hsdn/tera-guide-core) já são compatíveis com este patch de Menma's TERA.   
 Para que os guias funcionem, você precisa obter versões compatíveis de **library** e **tera-guide-core**:
 1. Baixe **library**  **[aqui](https://git.dev.hsdn.org/tera-v92/library/archive/master.zip)** e coloque-o na pasta **mods**.
 2. Baixe **tera-guide-core**  **[aqui](https://github.com/hsdn/tera-guide-core/archive/refs/heads/master.zip)** e coloque-o na pasta **mods** o mesmo deve ter o nome de **"tera-guide-core"**, e não "tera-guide-core-master".
 
-### :information_source: Acerca de la compatibilidad con el parche v92.04 Menma's TERA
+### :information_source: Instalación manual
 El módulo Tera-Guía y [tera-guide-core](https://github.com/hsdn/tera-guide-core) ya son compatibles con este parche de Menma's TERA.  
 Para que las guías funcionen, necesita obtener versiones compatibles de **library** y **tera-guide-core**:
 1. Descargue **library** desde **[aquí](https://git.dev.hsdn.org/tera-v92/library/archive/master.zip)** y colócala en la carpeta **mods**.
@@ -25,11 +25,11 @@ Para que las guías funcionen, necesita obtener versiones compatibles de **libra
 
 ### Proxy Menma's TERA
 
-**Atenção:** Se ainda usa o proxy oficial  Menma's TERA, até o momento presente ele não suporta atualizações automáticas dos mods. Sempre que possível venha aqui para verificar atualizações importantes e baixa-las manualmente.
-Ou baixe aqui a versão com suporte a atualizações (https://github.com/tera-private-toolbox/tera-toolbox)
+**Atenção:** Se ainda usa o proxy oficial  Menma's TERA, até o momento presente ele não suporta atualizações automáticas dos mods. Sempre que possível venha aqui para verificar atualizações importantes e baixa-las manualmente.<br>
+Ou baixe aqui a versão com suporte a atualizações automáticas (https://github.com/tera-private-toolbox/tera-toolbox)
 
-**Atención:** Se aún usas el proxy oficial  Menma's TERA,  Por ahora  no soporta actualizaciones automáticas de mods. Siempre que sea posible, acceda aquí para buscar actualizaciones importantes y descargarlas manualmente.
-Or descarga Aquí la versión con soporte a actualizaciones (https://github.com/tera-private-toolbox/tera-toolbox)
+**Atención:** Por ahora el proxy oficial Menma's TERA no soporta actualizaciones automáticas de los mods. Siempre que sea posible, entra aquí para buscar y descargar las actualizaciones importantes manualmente.<br>
+Or descarga Aquí la versión con soporte a actualizaciones automáticas (https://github.com/tera-private-toolbox/tera-toolbox)
 
 ---
 
@@ -40,29 +40,16 @@ Or descarga Aquí la versión con soporte a actualizaciones (https://github.com/
 ---
 
 ##  Dungeons Suportadas
+
+### Patch v92.04 / v100.2 Menma's TERA
 ID | Nome Dungeons | Idioma | Idioma
 --- | --- | --- | ---
 7011 | Guardian Blightwood | Português | Español
 7015 | Guardian Balder's Refuge | Português | Español
-3042 | Gardan's Trial | Português | Español
-3043 | Harnovog's Trial | Português | Español
-3040 | Lumikan's Trial | Português | Español
-3046 | Rogash's Trial | Português | Español
 3027 | Forbidden Arena [Hagufna] | Português | Español
 3036 | Sky Cruiser (Difícil) | Português | Español
-3105 | Fusion Laboratory | Português | Español
-3108 | Cursed Antaroth's Abyss | Português | Español
 3126 | Corrupted Skynest (Difícil) | Português | Español
-3109 | Ice Throne  (Difícil) | Português | Español
-3209 | Chaos Ice Throne  (Difícil) | Português | Español
-9068 | Shadow Sanguinary (Difícil) | Português | Español
-9920 | Antaroth's Abyss (Difícil) | Português | Español
-
-### Patch v92.04 / Menma's TERA
-ID | Nome Dungeons | Idioma | Idioma
---- | --- | --- | ---
-7011 | Guardian Blightwood | Português | Español
-7015 | Guardian Balder's Refuge | Português | Español
+3739 | Red Refuge | Português | Español
 9981 | Velik's Sanctuary (Difícil) | Português | Español
 9027 | Manaya's Core  (Difícil) | Português | Español
 9044 | Bahaar's Sanctum | Português | Español
@@ -72,7 +59,6 @@ ID | Nome Dungeons | Idioma | Idioma
 9920 | Antaroth's Abyss (Difícil) | Português | Español
 9982 | Grotto of Lost Souls (Hard) | Português | Español
 9735 | RK-9 Kennel | Português | Español
-3739 | Red Refuge | Português | Español
 9780 | Velik's Hold (5-Person) | Português | Español
 9781 | Velik's Sanctuary | Português | Español
 
