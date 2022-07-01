@@ -13,6 +13,16 @@ module.exports = {
 		"es": "Guardian Balder's Refuge",
 		"en": "Guardian Balder's Refuge"
 	},
+	3020: {
+		"pt": "Sea of Honor",
+		"es": "Sea of Honor",
+		"en": "Sea of Honor"
+	},
+	3026: {
+		"pt": "Corrupted Skynest Normal",
+		"es": "Corrupted Skynest Normal",
+		"en": "Corrupted Skynest Normal"
+	},
 	3027: {
 		"pt": "Forbidden Arena [Hagufna]",
 		"es": "Forbidden Arena [Hagufna]",
@@ -113,6 +123,11 @@ module.exports = {
 		"es": "Forsaken Island (Difícil)",
 		"en": "Forsaken Island (Hard)"
 	},
+	9770: {
+		"pt": "Ruinous Manor Normal",
+		"es": "Ruinous Manor Normal",
+		"en": "Ruinous Manor Normal"
+	},
 	9780: {
 		"pt": "Velik's Hold (5-Pessoas)",
 		"es": "Velik's Hold (5-Personas)",
@@ -132,6 +147,11 @@ module.exports = {
 		"pt": "Antaroth's Abyss (Difícil)",
 		"es": "Antaroth's Abyss (Difícil)",
 		"en": "Antaroth's Abyss (Hard)"
+	},
+	9970: {
+		"pt": "Ruinous Manor (Difícil)",
+		"es": "Ruinous Manor (Difícil)",
+		"en": "Ruinous Manor (Hard)"
 	},
 	9981: {
 		"pt": "Velik's Sanctuary (Difícil)",

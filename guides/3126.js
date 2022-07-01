@@ -311,7 +311,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 
 		// AOE лед (большой)
 		"104-0": [
-			{ type: "text", sub_type: "message", message: "Ice Storm DOTs", message_ES: "Magia de HIELO (GRANDE)", message_PT: "Magia de GELO (GRANDE)" },
+			{ type: "text", sub_type: "message", message: "Ice Storm DOTs", message_ES: "Tormenta de Hielo (Grande)", message_PT: "Tempestade de GELO (Grande)" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 500, 0, 5000] }
 		],
 		// AOE огонь (большой)
@@ -326,18 +326,18 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "circle", args: [false, 553, 180, 500, 10, 270, 0, 4750] }
 		],
 		// AOE лед (малый)
-		"154-0": [{ type: "text", sub_type: "message", message: "Ice Storm", message_ES: "Magia de HIELO (Pequeno)", message_PT: "Magia de GELO (Pequeno)" }, 
+		"154-0": [{ type: "text", sub_type: "message", message: "Ice Storm", message_ES: "Tormenta de Hielo", message_PT: "Tempestade de GELO" }, 
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 500, 0, 6000] }],
 		// AOE огонь (малый)
-		"155-0": [{ type: "text", sub_type: "message", message: "Fire (Knockdown)", message_ES: "AOE de FUEGO (Tumbar)", message_PT: "AOE de FOGO (Derrubar)" },
+		"155-0": [{ type: "text", sub_type: "message", message: "Fire (Knockdown)", message_ES: "AoE de FUEGO (Tumbar)", message_PT: "AoE de FOGO (Derrubar)" },
 			{ type: "text", sub_type: "message", delay: 1200, message: "Dodge", message_ES: "Iframe", message_PT: "Iframe" }
 		],
 
 		"206-0": [{ type: "text", sub_type: "message", message: "Jump Back", message_ES: "Salto Atrás", message_PT: "Salto Atrás" }],
 		"164-0": [{ type: "text", sub_type: "message", message_ES: "R.I.P xD e.e (100%)", message_RU: "R.I.P xD e.e (100%)" }],
 		"165-0": [{ type: "text", sub_type: "message", message_ES: "R.I.P xD e.e (0%)", message_RU: "R.I.P xD e.e (0%)" }],
-		"137-0": [{ type: "text", sub_type: "message", message: "Knockdown", message_ES: "Tumbar + Explosion Ampla (50metros)", message_PT: "Derrubar + Explosão Ampla (50metros)" }],
-		"138-0": [{ type: "text", sub_type: "message", message: "AOE", message_ES: "AOE", message_PT: "AOE", delay: 1720 }],
+		"137-0": [{ type: "text", sub_type: "message", message: "Knockdown", message_ES: "Tumbar + Explosión Ampla (50metros)", message_PT: "Derrubar + Explosão Ampla (50metros)" }],
+		"138-0": [{ type: "text", sub_type: "message", message: "AoE", message_ES: "AoE", message_PT: "AoE", delay: 1720 }],
 		"139-0": [
 			{ type: "text", sub_type: "message", message: "60 degrees (Fire to all)", message_ES: "60° (Todos Fuego)", message_PT: "60° (Todos Fogo)" },
 			{ type: "text", sub_type: "message", delay: 4000, message: "Lower the temp", message_ES: "Abaja la Temperatura", message_PT: "Abaixe a Temperatura" }
