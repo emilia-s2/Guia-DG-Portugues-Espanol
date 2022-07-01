@@ -33,46 +33,6 @@ module.exports = {
 		"es": "Sky Cruiser (Dificil)",
 		"en": "Sky Cruiser (Hard)"
 	},
-	3040: {
-		"pt": "Lumikan's Trial",
-		"es": "Lumikan's Trial",
-		"en": "Lumikan's Trial"
-	},
-	3042: {
-		"pt": "Gardan's Trial",
-		"es": "Gardan's Trial",
-		"en": "Gardan's Trial"
-	},
-	3043: {
-		"pt": "Harnovog's Trial",
-		"es": "Harnovog's Trial",
-		"en": "Harnovog's Trial"
-	},
-	3046: {
-		"pt": "Rogash's Trial",
-		"es": "Rogash's Trial",
-		"en": "Rogash's Trial"
-	},
-	3047: {
-		"pt": "Hall of the Argon Queen (Difícil)",
-		"es": "Hall of the Argon Queen (Difícil)",
-		"en": "Hall of the Argon Queen (Hard)"
-	},
-	3105: {
-		"pt": "Fusion Laboratory",
-		"es": "Fusion Laboratory",
-		"en": "Fusion Laboratory"
-	},
-	3108: {
-		"pt": "Cursed Antaroth's Abyss",
-		"es": "Cursed Antaroth's Abyss",
-		"en": "Cursed Antaroth's Abyss"
-	},
-	3109: {
-		"pt": "Ice Throne",
-		"es": "Ice Throne",
-		"en": "Ice Throne"
-	},
 	3126: {
 		"pt": "Corrupted Skynest (Difícil)",
 		"es": "Corrupted Skynest (Difícil)",
@@ -82,11 +42,6 @@ module.exports = {
 		"pt": "Gossamer Vault (Difícil)",
 		"es": "Gossamer Vault (Difícil)",
 		"en": "Gossamer Vault (Hard)"
-	},
-	3209: {
-		"pt": "Chaos Ice Throne",
-		"es": "Chaos Ice Throne",
-		"en": "Chaos Ice Throne"
 	},
 	9027: {
 		"pt": "Manaya's Core (Difícil)",
@@ -102,11 +57,6 @@ module.exports = {
 		"pt": "Timescape (Difícil)",
 		"es": "Timescape (Difícil)",
 		"en": "Timescape (Hard)"
-	},
-	9068: {
-		"pt": "Shadow Sanguinary (Difícil)",
-		"es": "Shadow Sanguinary (Difícil)",
-		"en": "Shadow Sanguinary (Hard)"
 	},
 	9735: {
 		"pt": "RK-9 Kennel Normal",
