@@ -46,10 +46,12 @@ ID | Nome Dungeons | Idioma | Idioma
 --- | --- | --- | ---
 7011 | Guardian Blightwood | Português | Español
 7015 | Guardian Balder's Refuge | Português | Español
+3020 | Sea of Honor | Português | Español
 3027 | Forbidden Arena [Hagufna] | Português | Español
 3036 | Sky Cruiser (Difícil) | Português | Español
+3026 | Corrupted Skynest (Normal) | Português | Español
 3126 | Corrupted Skynest (Difícil) | Português | Español
-3739 | Red Refuge | Português | Español
+9739 | Red Refuge | Português | Español
 9981 | Velik's Sanctuary (Difícil) | Português | Español
 9027 | Manaya's Core  (Difícil) | Português | Español
 9044 | Bahaar's Sanctum | Português | Español
@@ -59,6 +61,8 @@ ID | Nome Dungeons | Idioma | Idioma
 9920 | Antaroth's Abyss (Difícil) | Português | Español
 9982 | Grotto of Lost Souls (Hard) | Português | Español
 9735 | RK-9 Kennel | Português | Español
+9770 | Ruinous Manor (Normal) | Português | Español
+9970 | Ruinous Manor (Difícil) | Português | Español
 9780 | Velik's Hold (5-Person) | Português | Español
 9781 | Velik's Sanctuary | Português | Español
 
