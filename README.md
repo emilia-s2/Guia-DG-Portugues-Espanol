@@ -1,5 +1,8 @@
+[![license](https://i.imgur.com/JbHE8IP.png)](https://github.com/emilia-s2/Guia-DG-Portugues-Espanol/archive/refs/heads/master.zip)
+
 Guide-DG (Português & Español)
 ======
+
 
 ## Patch v92.04 / 100.02 (x64)
 
@@ -30,6 +33,7 @@ Ou baixe aqui a versão com suporte a atualizações automáticas (https://githu
 
 **Atención:** Por ahora el proxy oficial Menma's TERA no soporta actualizaciones automáticas de los mods. Siempre que sea posible, entra aquí para buscar y descargar las actualizaciones importantes manualmente.<br>
 Or descarga Aquí la versión con soporte a actualizaciones automáticas (https://github.com/tera-private-toolbox/tera-toolbox)
+
 
 ---
 
