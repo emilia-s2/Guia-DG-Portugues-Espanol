@@ -1,4 +1,5 @@
-[![license](https://i.imgur.com/JbHE8IP.png)](https://github.com/emilia-s2/Guia-DG-Portugues-Espanol/archive/refs/heads/master.zip)
+[![Download Guia](https://i.imgur.com/VwlsOWg.png)](https://github.com/emilia-s2/Guia-DG-Portugues-Espanol/archive/refs/heads/master.zip "Download Guia")
+
 
 Guide-DG (Português & Español)
 ======
