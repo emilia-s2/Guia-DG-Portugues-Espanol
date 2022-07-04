@@ -1,4 +1,4 @@
-[![Download Guia](https://i.imgur.com/VwlsOWg.png)](https://github.com/emilia-s2/Guia-DG-Portugues-Espanol/archive/refs/heads/master.zip "Download Guia")
+<a href="https://github.com/emilia-s2/Guia-DG-Portugues-Espanol/archive/refs/heads/master.zip" target="_blank"><button><SPAN title="Download Guia" /><img src="https://i.imgur.com/S0VtTd1.png" width="110" /></button></a>
 
 
 Guide-DG (Português & Español)
