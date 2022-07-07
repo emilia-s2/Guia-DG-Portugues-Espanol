@@ -10,7 +10,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-427-42701-1106-0": [{ type: "text", sub_type: "message", message_PT: "Vento Frontal", message_ES: "Viento Frontal", message: "Frontal Wind" }],
 		"s-427-42701-1102-0": [{ type: "text", sub_type: "message", message_PT: "Corte Frontal", message_ES: "Corte Frontal", message: "Frontal Cut" }],
 		"s-427-42701-1104-0": [{ type: "text", sub_type: "message", message_PT: "Golpe Frontal", message_ES: "Golpe Frontal", message: "Frontal Hit" }],
-		"s-427-42701-1105-0": [{ type: "text", sub_type: "message", message_PT: "AoE", message_ES: "AoE", message: "Wave" }],
+		"s-427-42701-1105-0": [{ type: "text", sub_type: "message", message_PT: "AoE", message_ES: "AoE", message: "AoE" }],
 		"s-427-42701-1110-0": [{ type: "text", sub_type: "message", message_PT: "Salto + AoE", message_ES: "Salto + AoE", message: "Jump + AoE" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 400, 0, 3000] }
 		],
@@ -20,7 +20,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-427-42701-1112-0": [{ type: "text", sub_type: "message", message_PT: "AoE Frontal (Grande)", message_ES: "AoE Frontal (Grande)", message: "Frontal AoE (Big)" }],
 		"s-427-42701-1215-0": [{ type: "text", sub_type: "message", message_PT: "AoE", message_ES: "AoE", message: "AoE" }],
 		"s-427-42701-1214-0": [{ type: "text", sub_type: "message", message_PT: "Corte Frontal + AoE", message_ES: "Corte Frontal + AoE", message: "Frontal Cut + AoE" }],
-		"s-427-42701-1204-0": [{ type: "text", sub_type: "message", message_PT: "Alvo", message_ES: "Alvo", message: "Target" }],
+		"s-427-42701-1204-0": [{ type: "text", sub_type: "message", message_PT: "Alvo", message_ES: "Objetivo", message: "Target" }],
 		"s-427-42701-1121-0": [{ type: "text", sub_type: "message", message_PT: "Salto + Corte Frontal", message_ES: "Salto + Corte Frontal", message: "Jump + Frontal Cut" }],
 		"s-427-42701-2106-0": "s-427-42701-1106-0",
 		"s-427-42701-2102-0": "s-427-42701-1102-0",
@@ -39,7 +39,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-427-42702-1109-0": [{ type: "text", sub_type: "message", message_PT: "Escudo Atrás (Esquerdo)", message_ES: "Escudo Atrás", message: "Back Shield Hit" }],
 		"s-427-42702-1106-0": [{ type: "text", sub_type: "message", message_PT: "Bomba (Alvo)", message_ES: "Bomba (Objetivo)", message: "Bomb (Target)" }],
 		"s-427-42702-1117-0": [{ type: "text", sub_type: "message", message_PT: "Stun + AoE", message_ES: "Stun + AoE", message: "Stun + AoE" }],
-		"s-427-42702-1118-0": [{ type: "text", sub_type: "message", message_PT: "Stun + Onda", message_ES: "Stun + Onda", message: "Stun + Wave" },
+		"s-427-42702-1118-0": [{ type: "text", sub_type: "message", message_PT: "Stun + Onda", message_ES: "Stun + Ola", message: "Stun + Wave" },
 			{ type: "text", sub_type: "message", delay: 4600, message_PT: "Iframe", message_ES: "Iframe", message: "Iframe!"},
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 400, 3000, 3000] },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 16, 240, 3000, 3000] }
@@ -102,7 +102,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 330, 0, 12000] },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 16, 185, 0, 9000] }
 		],
-		"s-427-2007-1108-0": [{ type: "text", sub_type: "message", message_PT: "Ataque (Alvo) ", message_ES: "Attack (Alvo)", message: "Target Attack" }],
+		"s-427-2007-1108-0": [{ type: "text", sub_type: "message", message_PT: "Ataque (Alvo) ", message_ES: "Attack (Objetivo)", message: "Target Attack" }],
 		"s-427-2007-1114-0": [{ type: "text", sub_type: "message", message_PT: "Atrás Ataque", message_ES: "Atrás Ataque", message: "Back Attack" }],	
 		"s-427-2007-1115-0": [{ type: "text", sub_type: "message", message_PT: "Cauda Ataque", message_ES: "Ataque de Cola", message: "Tail Attack" }],	
 		"s-427-2007-1111-0": [{ type: "text", sub_type: "message", message_PT: "Cauda Frontal Ataque", message_ES: "Ataque de Cola Frontal", message: "Frontal Tail Attack" }],	

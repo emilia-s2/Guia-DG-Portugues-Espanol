@@ -126,7 +126,7 @@ module.exports = function MigrateSettings(from_ver, to_ver, settings) {
 					"guides/3105.js",
 					"guides/3108.js",
 					"guides/3109.js",
-					"guides/3209.js",				
+					"guides/3209.js",
 					"guides/9068.js"
 					
 				]);
