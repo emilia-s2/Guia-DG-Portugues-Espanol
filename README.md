@@ -70,6 +70,8 @@ ID | Nome Dungeons | Idioma | Idioma
 9970 | Ruinous Manor (Difícil) | Português | Español
 9780 | Velik's Hold (5-Person) | Português | Español
 9781 | Velik's Sanctuary | Português | Español
+9754 | Bathysmal Rise (Normal) | Português | Español
+9054 | Bathysmal Rise (Difícil) | Português | Español
 
 ----
 
