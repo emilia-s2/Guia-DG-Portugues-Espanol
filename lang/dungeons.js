@@ -53,6 +53,11 @@ module.exports = {
 		"es": "Bahaar's Sanctum",
 		"en": "Bahaar's Sanctum"
 	},
+	9054: {
+		"pt": "Bathysmal Rise (Difícil)",
+		"es": "Bathysmal Rise (Difícil)",
+		"en": "Bathysmal Rise (Hard)"
+	},
 	9056: {
 		"pt": "Timescape (Difícil)",
 		"es": "Timescape (Difícil)",
@@ -68,6 +73,11 @@ module.exports = {
 		"es": "Red Refuge Normal",
 		"en": "Red Refuge Normal"
 	},
+	9754: {
+		"pt": "Bathysmal Rise Normal",
+		"es": "Bathysmal Rise Normal",
+		"en": "Bathysmal Rise Normal"
+	},	
 	9759: {
 		"pt": "Forsaken Island (Difícil)",
 		"es": "Forsaken Island (Difícil)",
