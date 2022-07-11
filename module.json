@@ -3,7 +3,7 @@
     "name": "Tera-Guide-Português-Español",
     "options": {
         "niceName": "Guide-DG",
-        "guiName": "Tera-Guide-PT-ES",
+        "guiName": "<font color='#033dff'>DG-Guide-PT-ESﾠ</font>",
         "settingsFile": "config.json",
         "settingsMigrator": "settings_migrator.js",
         "settingsVersion": 1.24
@@ -15,5 +15,5 @@
     "dependencies": {
         "tera-guide-core": "https://raw.githubusercontent.com/hsdn/tera-guide-core/master/module.json"
     },
-    "version": "MT V92.04 / V100.2 (x64)"
+    "version": "V100.02 x64"
 }

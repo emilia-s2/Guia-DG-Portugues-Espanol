@@ -6,6 +6,44 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	guide.type = SP;
 
 	return {
+		// 1 BOSS
+		"nd-970-1000": [
+			{ type: "stop_timers" },
+			{ type: "despawn_all" }
+		],
+		"s-970-1000-1206-0": [{ type: "text", sub_type: "message", message_PT: "Pular Atrás", message_ES: "Salto Atrás", message: "Jump Back" }],
+		"s-970-1000-2206-0": [{ type: "text", sub_type: "message", message_PT: "Pular Atrás", message_ES: "Salto Atrás", message: "Jump Back" }],
+		"s-970-1000-1106-0": [{ type: "text", sub_type: "message", message_PT: "Salto Frente Stun (Iframe)", message_ES: "Salto Frente Stun (Iframe)", message: "Stun Frontal (Dodge)" }],
+		"s-970-1000-2106-0": [{ type: "text", sub_type: "message", message_PT: "Salto Frente Stun (Iframe)", message_ES: "Salto Frente Stun (Iframe)", message: "Stun Frontal (Dodge)" }],
+		"s-970-1000-1107-0": [{ type: "text", sub_type: "message", message_PT: "Frente Empurrar", message_ES: "Frente Empujar", message: "Front Push" },
+			{ type: "spawn", func: "semicircle", args: [320, 404, 553, 0, 0, 7, 405, 0, 3500] },
+			{ type: "spawn", func: "vector", args: [553, 0, 10, 406, 400, 0, 3500] },
+			{ type: "spawn", func: "vector", args: [553, 0, 10, -406, 400, 0, 3500] }
+		],
+		"s-970-1000-2107-0": [{ type: "text", sub_type: "message", message_PT: "Frente Empurrar", message_ES: "Frente Empujar", message: "Front Push" },
+			{ type: "spawn", func: "semicircle", args: [320, 404, 553, 0, 0, 7, 405, 0, 3500] },
+			{ type: "spawn", func: "vector", args: [553, 0, 10, 406, 400, 0, 3500] },
+			{ type: "spawn", func: "vector", args: [553, 0, 10, -406, 400, 0, 3500] }
+		],
+		// 2 BOSS
+		"nd-970-2000": [
+			{ type: "stop_timers" },
+			{ type: "despawn_all" }
+		],
+		"s-970-2000-1103-0": [{ type: "text", sub_type: "message", message_PT: "Ataque Frontal", message_ES: "Ataque Frontal", message: "Frontal Attack" }],
+		"s-970-2000-2103-0": [{ type: "text", sub_type: "message", message_PT: "Ataque Frontal", message_ES: "Ataque Frontal", message: "Frontal Attack" }],
+		"s-970-2000-1105-0": [{ type: "text", sub_type: "message", message_PT: "Alvo Aleatório", message_ES: "Objetivo Aleatorio", message: "Random Target" }],
+		"s-970-2000-2105-0": [{ type: "text", sub_type: "message", message_PT: "Alvo Aleatório", message_ES: "Objetivo Aleatorio", message: "Random Target" }],		
+		"s-970-2000-1106-0": [{ type: "text", sub_type: "message", message_PT: "Stun (Iframe)", message_ES: "Stun (Iframe)", message: "Stun (Iframe)" },
+			{ type: "spawn", func: "circle", args: [false, 553,0, 40, 13, 180, 0, 2000] }
+		],	
+		"s-970-2000-2106-0": [{ type: "text", sub_type: "message", message_PT: "Stun (Iframe)", message_ES: "Stun (Iframe)", message: "Stun (Iframe)" },
+			{ type: "spawn", func: "circle", args: [false, 553,0, 40, 13, 180, 0, 2000] }
+		],
+		
+		"s-970-2000-1111-0": [{ type: "text", sub_type: "message", message_PT: "Muitos Golpes (Alvo)", message_ES: "Salto Atrás", message: "Many Hits(Target)" }],
+		"s-970-2000-2111-0": [{ type: "text", sub_type: "message", message_PT: "Muitos Golpes (Alvo)", message_ES: "Salto Atrás", message: "Many Hits(Target)" }],
+		
 		// 3 BOSS
 		"nd-970-3000": [
 			{ type: "stop_timers" },
@@ -25,6 +63,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "vector", args: [553, 77, 127, 180, 500, 0, 1400] },
 			{ type: "spawn", func: "vector", args: [553, 165, 488, 270, 200, 0, 1400] }
 		],
+		
 		"s-970-3000-1301-0": [{ type: "text", sub_type: "message", message_PT: "Círculos Explosivos", message_ES: "Círculos Explosivos", message: "Circles AoE" }],
 		"s-970-3000-2301-0": [{ type: "text", sub_type: "message", message_PT: "Círculos Explosivos", message_ES: "Círculos Explosivos", message: "Circles AoE" }],
 		"s-970-3000-1106-0": [{ type: "text", sub_type: "message", message_PT: "Deslize Frontal", message_ES: "Barrido Frontal", message: "Front Swipe" }],
@@ -41,26 +80,23 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-970-3000-1304-0": [{ type: "text", sub_type: "message", message_PT: "Prepare-se! (Dentro e Fora)", message_ES: "Prepararse! (Dentro y Fuera)", message: "Get Ready!" }],
 		"s-970-3000-1303-0": [{ type: "text", sub_type: "message", message_PT: "Prepare-se! (Dentro e Fora)", message_ES: "Prepararse! (Dentro y Fuera)", message: "Get Ready!" }],
-		"s-970-3000-1113-0": [
-			{ type: "text", sub_type: "message", message_PT: "SAIR", message_ES: "SALIR", message: "OUT" },
-			{ type: "text", sub_type: "message", message_PT: "ENTRAR", message_ES: "ENTRAR", message: "IN", delay: 1300 },
-			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 14, 300, 0, 5000] }
-		],		
-		"s-970-3000-2113-0": [
-			{ type: "text", sub_type: "message", message_PT: "SAIR", message_ES: "SALIR", message: "OUT" }, 
-			{ type: "text", sub_type: "message", message_PT: "ENTRAR", message_ES: "ENTRAR", message: "IN", delay: 1300 },
-			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 14, 300, 0, 5000] }
+		"s-970-3000-1113-0": [{ type: "text", sub_type: "message", message_PT: "SAIR", message_ES: "SALIR", message: "Out" },
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 15, 300, 0, 5000] }
 		],
-		"s-970-3000-1116-0": [
-			{ type: "text", sub_type: "message", message_PT: "ENTRAR", message_ES: "ENTRAR", message: "IN" },
-			{ type: "text", sub_type: "message", message_PT: " SAIR", message_ES: "SALIR", message: "OUT", delay: 1300 },
-			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 14, 300, 0, 5000] }
+		"s-970-3000-1114-0": [{ type: "text", sub_type: "message", message_PT: "ENTRAR", message_ES: "ENTRAR", message: "In" },
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 15, 300, 0, 5000] }
 		],		
-		"s-970-3000-2116-0": [
-			{ type: "text", sub_type: "message", message_PT: "ENTRAR", message_ES: "ENTRAR", message: "IN" }, 
-			{ type: "text", sub_type: "message", message_PT: "SAIR", message_ES: "SALIR", message: "OUT", delay: 1300 },
-			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 14, 300, 0, 5000] }
+		"s-970-3000-1116-0": [{ type: "text", sub_type: "message", message_PT: "ENTRAR", message_ES: "ENTRAR", message: "In" },
+			{ type: "spawn", func: "circle", args: [false, 553,0, 0, 15, 300, 0, 5000] }
 		],
+		"s-970-3000-1117-0": [{ type: "text", sub_type: "message", message_PT: "SAIR", message_ES: "SALIR", message: "Out" },
+			{ type: "spawn", func: "circle", args: [false, 553,0, 0, 15, 300, 0, 5000] }
+		],
+		"s-970-3000-2113-0": "s-970-3000-1113-0",
+		"s-970-3000-2114-0": "s-970-3000-1114-0",
+		"s-970-3000-2116-0": "s-970-3000-1116-0",
+		"s-970-3000-2117-0": "s-970-3000-1117-0",
+		
 		"s-970-3000-1108-0": [{ type: "text", sub_type: "message", message_PT: "Cauda Golpe", message_ES: "Cola Golpe", message: "Tail Slam" },
 			{ type: "spawn", func: "circle", args: [false, 553, -7, 280, 20, 155, 0, 2000] }
 		],

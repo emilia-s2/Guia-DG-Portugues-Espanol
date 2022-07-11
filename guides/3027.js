@@ -118,8 +118,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 
 		// 134 -> 147
 		"s-3027-1000-134-0": [{ type: "text", sub_type: "message", message_PT: "Cuidado (Ataque Atras)", message_ES: "Cuidado (Ataque Atras)", message: "Turn around | Back" }],
-//		"s-3027-1000-134-1": [{ type: "text", sub_type: "message", message_PT: "Back", message_ES: "Back", message: "Back" }],
-//		"s-3027-1000-147-0": [{ type: "text", sub_type: "message", message_PT: "Strike", message_ES: "Strike", message: "Strike" }],
+		"s-3027-1000-134-1": [{ type: "text", sub_type: "message", message_PT: "Atrás", message_ES: "Atrás", message: "Back" }],
+		"s-3027-1000-147-0": [{ type: "text", sub_type: "message", message_PT: "Strike", message_ES: "Strike", message: "Strike" }],
 
 		// 142 -> 143 114 130
 		"s-3027-1000-142-0": [{ type: "text", sub_type: "message", message_PT: "2x360 (Giro) | Espadada Frontal", message_ES: "2x360 (Giro) | Espadada Frontal", message: "2x360 | Strike" }],
@@ -151,18 +151,18 @@ module.exports = (dispatch, handlers, guide, lang) => {
 
 		//"s-3027-1000-114-0": [{ type: "text", sub_type: "message", message_PT: "Eviscerate (slow)", message_ES: "Eviscerate (slow)", message: "Eviscerate (slow)" }],
 		//"s-3027-1000-130-0": [{ type: "text", sub_type: "message", message_PT: "Target", message_ES: "Target", message: "Target" }],
-//		"s-3027-1000-151-0": [{ type: "text", sub_type: "message", message_PT: "Back teleport | Strike", message_ES: "Back teleport | Strike", message: "Back teleport | Strike" }], // 151 149 148 -> 130
-//		"s-3027-1000-149-1": [{ type: "text", sub_type: "message", message_PT: "Back teleport (Target)", message_ES: "Back teleport | Strike", message: "Back teleport (Target)" }],
+		"s-3027-1000-151-0": [{ type: "text", sub_type: "message", message_PT: "Atrás Teleporte | Strike", message_ES: "Atrás Teleport | Strike", message: "Back teleport | Strike" }], // 151 149 148 -> 130
+		"s-3027-1000-149-1": [{ type: "text", sub_type: "message", message_PT: "Atrás Teleport (Target)", message_ES: "Atrás Teleport | Strike", message: "Back teleport (Target)" }],
 		"s-3027-1000-117-0": [{ type: "text", sub_type: "message", message_PT: "FLASH (Bait)", message_ES: "FLASH (Bait)", message: "Teleport (Target)" }],         //         117 -> 130
 		"s-3027-1000-356-0": [{ type: "text", sub_type: "message", message_PT: "FLASH (Bait)", message_ES: "FLASH (Bait)", message: "Teleport (Target)" }],         //         356 -> 147
-//		"s-3027-1000-148-1": [{ type: "text", sub_type: "message", message_PT: "Teleport (Target)", message_ES: "Teleport (Target)", message: "Teleport (Target)" }],
+		"s-3027-1000-148-1": [{ type: "text", sub_type: "message", message_PT: "Teleporte (Alvo)", message_ES: "Teleport (Objetivo)", message: "Teleport (Target)" }],
 
 		"s-3027-1000-351-0": [
 			{ type: "text", sub_type: "message", message_PT: "ESCUDO!", message_ES: "ESCUDO!", message: "Shield!" },
 			{ type: "func", func: shield_event }
 		],
 		"s-3027-1000-401-0": [
-			{ type: "text", sub_type: "message", message_PT: "30% AOE!", message_ES: "30% AOE!", message: "30% AOE!" },
+			{ type: "text", sub_type: "message", message_PT: "AOE Full", message_ES: "AOE Full", message: "Full AOE" },
 			{ type: "text", sub_type: "message", delay: 1600, message_PT: "Iframe!", message_ES: "Iframe", message: "Dodge!" }
 		]
 	};
