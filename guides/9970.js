@@ -41,8 +41,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "circle", args: [false, 553,0, 40, 13, 180, 0, 2000] }
 		],
 		
-		"s-970-2000-1111-0": [{ type: "text", sub_type: "message", message_PT: "Muitos Golpes (Alvo)", message_ES: "Salto Atrás", message: "Many Hits(Target)" }],
-		"s-970-2000-2111-0": [{ type: "text", sub_type: "message", message_PT: "Muitos Golpes (Alvo)", message_ES: "Salto Atrás", message: "Many Hits(Target)" }],
+		"s-970-2000-1111-0": [{ type: "text", sub_type: "message", message_PT: "Muitos Golpes (Alvo)", message_ES: "Muchos Golpes (Objetivo)", message: "Many Hits(Target)" }],
+		"s-970-2000-2111-0": [{ type: "text", sub_type: "message", message_PT: "Muitos Golpes (Alvo)", message_ES: "Muchos Golpes (Objetivo)", message: "Many Hits(Target)" }],
 		
 		// 3 BOSS
 		"nd-970-3000": [
