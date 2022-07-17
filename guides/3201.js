@@ -61,8 +61,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", delay: 0, message_PT: "Salto (Rápido)", message_ES: "Salto (Rapido)", message: "Jump (Fast)" },
 			{ type: "text", sub_type: "message", delay: 900, message_PT: "Iframe", message_ES: "Iframe", message: "Iframe!" }
 		],
-		"s-3201-1000-138-0": [{ type: "text", sub_type: "message", delay: 0, message_PT: "Salto (Rapido)", message_ES: "Espanol", message: "Jump P (Fast)" },
-			{ type: "text", sub_type: "message", delay: 900, message_PT: "Iframe", message_ES: "Espanol", message: "Iframe!" }
+		"s-3201-1000-138-0": [{ type: "text", sub_type: "message", delay: 0, message_PT: "Salto (Rapido)", message_ES: "Salto (Rapido)", message: "Jump P (Fast)" },
+			{ type: "text", sub_type: "message", delay: 900, message_PT: "Iframe", message_ES: "Iframe", message: "Iframe!" }
 		],
 		"s-3201-1000-139-0": [{ type: "text", sub_type: "message", message_PT: "Spray FRENTE e ATRÁS (Rápido)", message_ES: "Spray FRENTE e ATRÁS (Rapido)", message: "Back + Front (Fast)" },
 			{ type: "spawn", func: "vector", args: [553, 2, 0, 70, 800, 0, 2500] },	 //Adicionado

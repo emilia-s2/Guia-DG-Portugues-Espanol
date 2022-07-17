@@ -63,6 +63,11 @@ module.exports = {
 		"es": "Timescape (Difícil)",
 		"en": "Timescape (Hard)"
 	},
+	9057: {
+		"pt": "Akeron's Inferno (Difícil)",
+		"es": "Akeron's Inferno (Difícil)",
+		"en": "Akeron's Inferno (Hard)"
+	},
 	9735: {
 		"pt": "RK-9 Kennel Normal",
 		"es": "RK-9 Kennel Normal",
@@ -78,6 +83,11 @@ module.exports = {
 		"es": "Bathysmal Rise Normal",
 		"en": "Bathysmal Rise Normal"
 	},	
+	9757: {
+		"pt": "Akeron's Inferno Normal",
+		"es": "Akeron's Inferno Normal",
+		"en": "Akeron's Inferno Normal"
+	},
 	9759: {
 		"pt": "Forsaken Island (Difícil)",
 		"es": "Forsaken Island (Difícil)",
