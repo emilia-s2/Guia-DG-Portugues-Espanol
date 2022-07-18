@@ -72,6 +72,8 @@ ID | Nome Dungeons | Idioma | Idioma
 9781 | Velik's Sanctuary | Português | Español
 9754 | Bathysmal Rise (Normal) | Português | Español
 9054 | Bathysmal Rise (Difícil) | Português | Español
+9757 | Akeron's Inferno (Normal) | Português | Español
+9057 | Akeron's Inferno (Difícil) | Português | Español
 
 ----
 
