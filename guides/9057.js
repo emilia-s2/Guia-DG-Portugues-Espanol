@@ -38,11 +38,11 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-457-1002-1109-0": [{ type: "text", sub_type: "message", message_PT: "Nadar + AoE Atrás", message_ES: "Nadar + AoE Atrás", message: "Swim + Back AoE" }],
 		"s-457-1002-1206-0": [{ type: "text", sub_type: "message", message_PT: "Salto + Ataque Aleatório", message_ES: "Salto + Ataque Aleatorio", message: "Jump + Random Target" }],
 		"s-457-1002-1204-0": [{ type: "text", sub_type: "message", message_PT: "AoE Amplo", message_ES: "AoE Amplio", message: "Large AoE", delay: 3000 },
-			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 6, 650, 3000, 4000] }
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 6, 630, 3000, 4000] }
 		],
 		"s-457-1002-1107-0": [{ type: "text", sub_type: "message", message_PT: "Giro", message_ES: "Giro", message: "Spin" }],
 		"s-457-1002-1106-1": [{ type: "text", sub_type: "message", message_PT: "AoE + Chamas", message_ES: "AoE + Llamas", message: "AoE + Side Flames", delay: 4000 },
-			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 450, 4000, 4000] }
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 550, 4000, 4000] }
 		],
 		"s-457-1002-1112-0": [{ type: "text", sub_type: "message", message_PT: "Alvo Bolas de Fogo", message_ES: "Objetivo Bolas de Fuego", message: "Target Fireball" }],
 		"s-457-1002-2105-0": "s-457-1002-1105-0",
@@ -76,7 +76,6 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-457-1004-1105-0": [{ type: "text", sub_type: "message", message_PT: "Golpe Frontal", message_ES: "Golpe Frontal", message: "Frontal Hit" }],
 		"s-457-1004-1106-0": [{ type: "text", sub_type: "message", message_PT: "Disparo Aleatório", message_ES: "Disparo Aleatorio", message: "Random Shot" }],
 		"s-457-1004-1107-0": [{ type: "text", sub_type: "message", message_PT: "Chicote Aleatório", message_ES: "Latigo Aleatorio", message: "Random Whip" }],
-		"s-457-1004-1109-0": [{ type: "text", sub_type: "message", message_PT: "Círculos Seguro", message_ES: "Círculos Seguro", message: "Safe Circles" }],
 		"s-457-1004-1108-0": [{ type: "text", sub_type: "message", message_PT: "Linha Terra", message_ES: "Línea de Tierra", message: "Earth Line" }],
 		"s-457-1004-1111-0": [{ type: "text", sub_type: "message", message_PT: "Combo de Pisadas", message_ES: "Combo de Pisadas", message: "Stomp Combo" }],
 		"s-457-1004-3108-0": [{ type: "text", sub_type: "message", message_PT: "Iframe", message_ES: "Iframe", message: "Iframe" }],
@@ -84,14 +83,15 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-457-1004-3106-0": [{ type: "text", sub_type: "message", message_PT: "Donut AoE", message_ES: "Dona AoE", message: "Donut AoE" }],
 		"s-457-1004-3103-0": [{ type: "text", sub_type: "message", message_PT: "Pisada AoE", message_ES: "Pisada AoE", message: "AoE Stomp" }],
 		"s-457-1004-4201-0": [{ type: "text", sub_type: "message", message_PT: "Lava", message_ES: "Lava", message: "Lava" },
-			{ type: "spawn", sub_type: "item", id: 88704, sub_delay: 6000, pos: { x: -83453, y: 100168, z: 3389} },
-			{ type: "spawn", sub_type: "build_object", id: 1, sub_delay: 6000, pos: { x: -83453, y: 100168, z: 3389}, ownerName: "SEGURO" },
-			{ type: "spawn", sub_type: "item", id: 88704, sub_delay: 6000, pos: { x: -83463, y: 99177, z: 3389} },
-			{ type: "spawn", sub_type: "build_object", id: 1, sub_delay: 6000, pos: { x: -83463, y: 99177, z: 3389}, ownerName: "SEGURO" },
-			{ type: "spawn", sub_type: "item", id: 88704, sub_delay: 6000, pos: { x: -84461, y: 99186, z: 3389} },
-			{ type: "spawn", sub_type: "build_object", id: 1, sub_delay: 6000, pos: { x: -84461, y: 99186, z: 3389}, ownerName: "SEGURO" },
-			{ type: "spawn", sub_type: "item", id: 88704, sub_delay: 6000, pos: { x: -84452, y: 100173, z: 3389} },
-			{ type: "spawn", sub_type: "build_object", id: 1, sub_delay: 6000, pos: { x: -84452, y: 100173, z: 3389}, ownerName: "SEGURO" }
+			{ type: "text", sub_type: "message", message_PT: "Círculos Seguro", message_ES: "Círculos Seguro", message: "Safe Circles", delay: 1500 },
+			{ type: "spawn", sub_type: "item", id: 88704, sub_delay: 9000, pos: { x: -83453, y: 100168, z: 3389} },
+			{ type: "spawn", sub_type: "build_object", id: 1, sub_delay: 9000, pos: { x: -83453, y: 100168, z: 3389, w: -2.36}, ownerName: "Seguro", message: "SEGURO" },
+			{ type: "spawn", sub_type: "item", id: 88704, sub_delay: 9000, pos: { x: -83463, y: 99177, z: 3389} },
+			{ type: "spawn", sub_type: "build_object", id: 1, sub_delay: 9000, pos: { x: -83463, y: 99177, z: 3389, w: 2.38}, ownerName: "Seguro", message: "SEGURO" },
+			{ type: "spawn", sub_type: "item", id: 88704, sub_delay: 9000, pos: { x: -84461, y: 99186, z: 3389} },
+			{ type: "spawn", sub_type: "build_object", id: 1, sub_delay: 9000, pos: { x: -84461, y: 99186, z: 3389, w: 0.80}, ownerName: "Seguro", message: "SEGURO" },
+			{ type: "spawn", sub_type: "item", id: 88704, sub_delay: 9000, pos: { x: -84452, y: 100173, z: 3389} },
+			{ type: "spawn", sub_type: "build_object", id: 1, sub_delay: 9000, pos: { x: -84452, y: 100173, z: 3389, w: -0.79}, ownerName: "Seguro", message: "SEGURO" }
 		],
 		"qb-457-405-457016": [{ type: "text", sub_type: "message", message_PT: "ESCUDO", message_ES: "ESCUDO", message: "SHIELD" }],
 		"s-457-1004-2105-0": "s-457-1004-1105-0",
