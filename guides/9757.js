@@ -4,6 +4,7 @@
 
 module.exports = (dispatch, handlers, guide, lang) => {
 	guide.type = SP;
+	let mech_enable = true;
 	
 	return {
 		// 1 BOSS
@@ -35,14 +36,14 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-757-1002-1105-0": [{ type: "text", sub_type: "message", message_PT: "Chamas Alvo", message_ES: "Aliento de Fuego", message: "Fire Breath" }],
 		"s-757-1002-1108-0": [{ type: "text", sub_type: "message", message_PT: "Bombas de Fogo", message_ES: "Bombas de Fuego", message: "Fire Bombs" }],
-		"s-757-1002-1109-0": [{ type: "text", sub_type: "message", message_PT: "Nadar + AoE Atrás", message_ES: "Nadar + AoE Atrás", message: "Swim + Back AoE" }],
+		"s-757-1002-1109-0": [{ type: "text", sub_type: "message", message_PT: "Nadar + Ataque Atrás", message_ES: "Nadar + Ataque Atrás", message: "Swim + Back Attack" }],
 		"s-757-1002-1206-0": [{ type: "text", sub_type: "message", message_PT: "Salto + Ataque Aleatório", message_ES: "Salto + Ataque Aleatorio", message: "Jump + Random Target" }],
 		"s-757-1002-1204-0": [{ type: "text", sub_type: "message", message_PT: "AoE Amplo", message_ES: "AoE Amplio", message: "Large AoE", delay: 3000 },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 6, 630, 3000, 4000] }
 		],
 		"s-757-1002-1107-0": [{ type: "text", sub_type: "message", message_PT: "Giro", message_ES: "Giro", message: "Spin" }],
-		"s-757-1002-1106-1": [{ type: "text", sub_type: "message", message_PT: "AoE + Chamas", message_ES: "AoE + Llamas", message: "AoE + Side Flames", delay: 4000 },
-			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 550, 4000, 4000] }
+		"s-757-1002-1106-1": [{ type: "text", sub_type: "message", message_PT: "AoE + Chamas", message_ES: "AoE + Llamas", message: "AoE + Side Flames", delay: 3000 },
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 550, 3000, 4000] }
 		],
 		"s-757-1002-1112-0": [{ type: "text", sub_type: "message", message_PT: "Alvo Bolas de Fogo", message_ES: "Objetivo Bolas de Fuego", message: "Target Fireball" }],
 		"s-757-1002-2105-0": "s-757-1002-1105-0",
@@ -87,7 +88,6 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-757-1004-2105-0": "s-757-1004-1105-0",
 		"s-757-1004-2106-0": "s-757-1004-1106-0",
 		"s-757-1004-2107-0": "s-757-1004-1107-0",
-		"s-757-1004-2109-0": "s-757-1004-1109-0",
 		"s-757-1004-2108-0": "s-757-1004-1108-0",
 		"s-757-1004-2111-0": "s-757-1004-1111-0"
 	};
