@@ -4,7 +4,6 @@
 
 module.exports = (dispatch, handlers, guide, lang) => {
 	guide.type = SP;
-	let mech_enable = true;
 	
 	return {
 		// 1 BOSS
