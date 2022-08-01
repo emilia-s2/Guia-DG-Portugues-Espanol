@@ -74,6 +74,8 @@ ID | Nome Dungeons | Idioma | Idioma
 9054 | Bathysmal Rise (Difícil) | Português | Español
 9757 | Akeron's Inferno (Normal) | Português | Español
 9057 | Akeron's Inferno (Difícil) | Português | Español
+9716 | Sky Cruiser Endeavor (Normal) | Português | Español
+9916 | Sky Cruiser Endeavor (Difícil) | Português | Español
 
 ----
 
