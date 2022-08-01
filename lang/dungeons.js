@@ -68,6 +68,11 @@ module.exports = {
 		"es": "Akeron's Inferno (Difícil)",
 		"en": "Akeron's Inferno (Hard)"
 	},
+	9716: {
+		"pt": "Sky Cruiser Endeavor (Difícil) <font color='#ffc800'>BETA</font>",
+		"es": "Sky Cruiser Endeavor (Difícil) <font color='#ffc800'>BETA</font>",
+		"en": "Sky Cruiser Endeavor (Hard) <font color='#ffc800'>BETA</font>"
+	},	
 	9735: {
 		"pt": "RK-9 Kennel Normal",
 		"es": "RK-9 Kennel Normal",
@@ -112,6 +117,11 @@ module.exports = {
 		"pt": "Thaumetal Refinery Normal",
 		"es": "Thaumetal Refinery Normal",
 		"en": "Thaumetal Refinery Normal"
+	},
+	9916: {
+		"pt": "Sky Cruiser Endeavor (Difícil) <font color='#ffc800'>BETA</font>",
+		"es": "Sky Cruiser Endeavor (Difícil) <font color='#ffc800'>BETA</font>",
+		"en": "Sky Cruiser Endeavor (Hard <font color='#ffc800'>BETA</font>"
 	},
 	9920: {
 		"pt": "Antaroth's Abyss (Difícil)",
