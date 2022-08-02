@@ -53,7 +53,7 @@ ID | Nome Dungeons | Idioma | Idioma
 7015 | Guardian Balder's Refuge | Português | Español
 3020 | Sea of Honor | Português | Español
 3027 | Forbidden Arena [Hagufna] | Português | Español
-3036 | Sky Cruiser (Difícil) | Português | Español
+3036 | Sky Cruiser (Extreme) | Português | Español
 3026 | Corrupted Skynest (Normal) | Português | Español
 3126 | Corrupted Skynest (Difícil) | Português | Español
 9739 | Red Refuge | Português | Español
