@@ -95,8 +95,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", sub_type: "item", id: 88704, sub_delay: 99999999, pos: { x: 59087, y: 128907, z: 2370, w: -2.75} }//4 esquerda frente	
 		],
 		"s-916-91606-1304-0": [{ type: "text", sub_type: "message", message_PT: "Laser Aleatório", message_ES: "Laser Aleatorio", message: "Random Laser " },
-			{ type: "text", sub_type: "notification", message_PT: "Laser Aleatório em Breve...", message_ES: "Laser Aleatorio Pronto...", message: "Random Laser soon...", delay: 55000 },				
-        ],
+			{ type: "text", sub_type: "notification", message_PT: "Laser Aleatório em Breve...", message_ES: "Laser Aleatorio Pronto...", message: "Random Laser soon...", delay: 55000 }
+		],
 		"s-916-91606-1102-0": [{ type: "text", sub_type: "message", message_PT: "Giro", message_ES: "Giro", message: "Spin" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, -15, 15, 280, 0, 2500] }
 		],
@@ -105,6 +105,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "circle", args: [false, 553, -10, 230, 15, 210, 2000, 2000] },
 			{ type: "spawn", func: "circle", args: [false, 413, 50, 50, 15, 160, 2000, 2000] }
 		],
+		"s-916-91606-1105-0": [{ type: "text", sub_type: "message", message_PT: "Salto (Iframe)", message_ES: "Salto (Iframe)", message: "Jump (Dodge)" }],
 		"s-916-91606-1107-0": [{ type: "text", sub_type: "message", message_PT: "Muitos Golpes (alvo)", message_ES: "Muchos Golpes (Objetivo)", message: "Many Hits (Target)" }],
 		"s-916-91606-1302-0": [{ type: "text", sub_type: "message", message_PT: "Laser (PROTEGER)", message_ES: "Laser (PROTEGER)", message: "Laser (PROTECT)" },
 			{ type: "spawn", func: "vector", args: [912, 360, 50, 0, 900, 0, 4000] }
@@ -129,7 +130,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "semicircle", args: [338, 385, 553, 0, 0, 5, 600, 0, 2000] },
 			{ type: "spawn", func: "vector", args: [553, 459, 60, 20, 550, 0, 2000] },
 			{ type: "spawn", func: "vector", args: [553, 251, 55, -21, 550, 0, 2000] }
-		],		
+		],
 		"qb-916-91606-916007": [{ type: "text", sub_type: "message", message_PT: "(JUNTAR)", message_ES: "JUNTARSE", message: "GATHER" }],
 
 		// Boss 3
