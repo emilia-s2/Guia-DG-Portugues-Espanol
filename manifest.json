@@ -2,11 +2,14 @@
     "files": {
         "LICENSE": "7fbe35da1c4792b039cd14af60048ea6813b743bd6e05ecef7a68023b50f5a43",
         "guides/3020.js": "9a5515cb945bc55aabe428ef0d2ce059e196d78d1b19769d094a9f185422b1f9",
+        "guides/3023.js": "36c3a64cd01bfe5be5307d59a245bd9561ce8f08356a6484859e2401b61a4a6e",
         "guides/3026.js": "d2bfe54dc2125cbac74018bd1db927acd17a1f513c7142e98f090209e9fb4f50",
         "guides/3027.js": "9b53f5e34fc15a75b546aeb4eceac83e5573f6414f50fd5f26ae231fb0e92529",
         "guides/3036.js": "ce1147128132e87cbf16f5c50a08cf22a459da27768edebe0bc7ef8c5d7605e9",
+        "guides/3102.js": "89651d223479f59cbae5ddaac56142e55cc2a9b0e1d7e5fac869d307b36cbf0c",
         "guides/3126.js": "cb3ee9d204cb3b71acc0f00f7b9ab3aa6895d6f632704cfa64848b742e7b9eb2",
         "guides/3201.js": "5dc7fe22573f4faafc145066f2f95b50136c95a99f18d1d7f20f235a0c10b05a",
+        "guides/3202.js": "5b92548b879899d99723727a936e9482993b223b932873dacf614aadae770272",
         "guides/7011.js": "be74cf611c4fbc6ef1bc6310abd8b929e06a4c431078896c9e6973875de38f31",
         "guides/7015.js": "1b205581b80bed99c1b32f7e26d566cfba7d49de5c33973d795e3d7dd4442e94",
         "guides/9027.js": "181c450931893c63ad2cad3266874510d38da3b51b7c412a37479d6c75babeeb",
@@ -30,10 +33,10 @@
         "guides/9981.js": "a129acfb0463eb4cb9e964f5ff1244e95d5dd8fa570a0d0b6ef7cb6fd8001ee3",
         "guides/9982.js": "a1ac834b1c33710ce159729fe10d9b53ee901bd3dd98ec8255e79d5b9305bfe5",
         "index.js": "40ca408d8f0834359b7bb2e87e2220759ece7d148a013bc41d907ea0c6abdd43",
-        "lang/dungeons.js": "0f10e404fd2eec94c187cafbbfedc89301771197dad554adfa55f6285a57f27e",
+        "lang/dungeons.js": "e7338a7ae9c5df72a7cb9eea172b4e5d6772c4e35b96b48e26f4db133cec7587",
         "lang/strings.js": "3bf773952b09c62d077b39ac2cda8672afd64342687c58a085137cfde9b988ce",
         "module.json": "e2d0e7f795d8dbd7ba7a3ab68c81a5a17f17ac3a80fbcffff7f2b787be6e7001",
-        "settings_migrator.js": "c118a455f22368cd325e627fc5077229e16ff010ec509f3fecf68d28091b258d"
+        "settings_migrator.js": "83bbdda7aec1c37547c2af082a1127a7a56085e6797815cf574f3ccf14de834d"
     },
     "defs": {
         "S_ABNORMALITY_BEGIN": [4,5],

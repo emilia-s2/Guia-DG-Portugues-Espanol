@@ -18,6 +18,11 @@ module.exports = {
 		"es": "Sea of Honor",
 		"en": "Sea of Honor"
 	},
+	3023: {
+		"pt": " Akalath Quarantine",
+		"es": " Akalath Quarantine",
+		"en": " Akalath Quarantine"
+	},	
 	3026: {
 		"pt": "Corrupted Skynest Normal",
 		"es": "Corrupted Skynest Normal",
@@ -29,10 +34,15 @@ module.exports = {
 		"en": "Forbidden Arena [Hagufna]"
 	},
 	3036: {
-		"pt": "Sky Cruiser (Difícil)",
-		"es": "Sky Cruiser (Dificil)",
-		"en": "Sky Cruiser (Hard)"
+		"pt": "Sky Cruiser (Extremo)",
+		"es": "Sky Cruiser (Extremo)",
+		"en": "Sky Cruiser (Extreme)"
 	},
+	3102: {
+		"pt": "Draakon Arena Normal",
+		"es": "Draakon Arena Normal",
+		"en": "Draakon Arena Normal"
+	},	
 	3126: {
 		"pt": "Corrupted Skynest (Difícil)",
 		"es": "Corrupted Skynest (Difícil)",
@@ -43,6 +53,11 @@ module.exports = {
 		"es": "Gossamer Vault (Difícil)",
 		"en": "Gossamer Vault (Hard)"
 	},
+	3202: {
+		"pt": "Draakon Arena (Difícil)",
+		"es": "Draakon Arena (Difícil)",
+		"en": "Draakon Arena (Hard)"
+	},	
 	9027: {
 		"pt": "Manaya's Core (Difícil)",
 		"es": "Manaya's Core (Difícil)",
