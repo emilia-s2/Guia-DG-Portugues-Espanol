@@ -89,22 +89,15 @@ module.exports = function MigrateSettings(from_ver, to_ver, settings) {
 				case 1.22:
 				remove([
 					"guides/3034.js",
-					"guides/3203.js",
-					"guides/9053.js",
 					"guides/3034.js",
-					"guides/3101.js",
-					"guides/3103.js",
 					"guides/3106.js",
-					"guides/3204.js",
-					"guides/9070.js"
+					"guides/3204.js"
 				]);
 				break;
 				
 			case 1.18: // p114
 			case 1.23:
 				remove([
-					"guides/3030.js",
-					"guides/3037.js",
 					"guides/3041.js",
 					"guides/3044.js",
 					"guides/3104.js",
@@ -123,8 +116,7 @@ module.exports = function MigrateSettings(from_ver, to_ver, settings) {
 					"guides/3105.js",
 					"guides/3108.js",
 					"guides/3109.js",
-					"guides/3209.js",
-					"guides/9068.js"
+					"guides/3209.js"
 					
 				]);
 				break;
