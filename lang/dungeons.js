@@ -118,10 +118,15 @@ module.exports = {
 		"es": "Akeron's Inferno (Difícil)",
 		"en": "Akeron's Inferno (Hard)"
 	},
-	9067: {
+	9066: {
 		"pt": "Demokron Factory (Difícil)",
 		"es": "Demokron Factory (Difícil)",
 		"en": "Demokron Factory (Hard)"
+	},	
+	9067: {
+		"pt": "DDemon's Wheel",
+		"es": "Demon's Wheel",
+		"en": "Demon's Wheel"
 	},
 	9068: {
 		"pt": "Shadow Sanguinary (Difícil)",
