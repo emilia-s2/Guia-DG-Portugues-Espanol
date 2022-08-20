@@ -27,8 +27,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			handlers.text({
 				sub_type: "notification",
 				message: `${circlecount} - ${circlecount & 1 ? "Odd - Red" : "Even - Blue"}`,
-				message_ES: `${circlecount} - ${circlecount & 1 ? "Odd - Red" : "Even - Blue"}`
-				message_PT: `${circlecount} - ${circlecount & 1 ? "Odd - Red" : "Even - Blue"}`,
+				message_ES: `${circlecount} - ${circlecount & 1 ? "Odd - Red" : "Even - Blue"}`,
+				message_PT: `${circlecount} - ${circlecount & 1 ? "Odd - Red" : "Even - Blue"}`
 			});
 		}
 
@@ -39,8 +39,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			handlers.text({
 				sub_type: "notification",
 				message: `${circlecount} - ${circlecount & 1 ? "Odd - Red" : "Even - Blue"}`,
-				message_ES: `${circlecount} - ${circlecount & 1 ? "Нечетный - Красный" : "Четный - Синий"}`
-				message_PT: `${circlecount} - ${circlecount & 1 ? "Odd - Red" : "Even - Blue"}`,
+				message_ES: `${circlecount} - ${circlecount & 1 ? "Нечетный - Красный" : "Четный - Синий"}`,
+				message_PT: `${circlecount} - ${circlecount & 1 ? "Odd - Red" : "Even - Blue"}`
 			});
 		}
 
