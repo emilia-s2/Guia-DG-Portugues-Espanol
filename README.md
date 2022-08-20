@@ -90,6 +90,7 @@ ID | Nome Dungeons | Idioma | Idioma
 9068 | Shadow Sanguinary (Dificil) | Português | Español
 9070 | Manglemire | Português | Español
 9983 | Dark Reach Citadel (Dificil) | Português | Español
+9066 | Demon's Wheel | Português | Español
 
 ----
 
