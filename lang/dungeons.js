@@ -43,6 +43,11 @@ module.exports = {
 		"es": "Akalath Quarantine (Entreño)",
 		"en": "Akalath Quarantine (Training)"
 	},
+	3034: {
+		"pt": "Rampaging RK-9 Kennel",
+		"es": "Rampaging RK-9 Kennel",
+		"en": "Rampaging RK-9 Kennel"
+	},
 	3036: {
 		"pt": "Sky Cruiser (Extremo)",
 		"es": "Sky Cruiser (Extremo)",

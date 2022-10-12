@@ -7,14 +7,15 @@
         "guides/3027.js": "9b53f5e34fc15a75b546aeb4eceac83e5573f6414f50fd5f26ae231fb0e92529",
         "guides/3030.js": "68e5eb3b295167318cf91523bbe91aff0683dc4a5247b1b6ada749d293e3614b",
         "guides/3032.js": "67ca6bf2fe6cd1e8cccd90774ad80b7f07d306dedec05b65838c0aab15d011be",
+        "guides/3034.js": "cb33ffdb1c3f897c88ec295b8b382b5e0162da2a7778e6d6a891782d48e10f71",
         "guides/3036.js": "ce1147128132e87cbf16f5c50a08cf22a459da27768edebe0bc7ef8c5d7605e9",
         "guides/3037.js": "a6773083c8c987d9c9ab1489ac50c7460de8c885696891ce06f8153246c8d004",
         "guides/3101.js": "02fd5c252a857398bfdd7334824fd5ea022f79fcd4898a689ea8d11ddad924bc",
         "guides/3102.js": "89651d223479f59cbae5ddaac56142e55cc2a9b0e1d7e5fac869d307b36cbf0c",
         "guides/3103.js": "516958d58f68b5bde40bf84111bea9053e811781fe2aa984024586c8af42d036",
-        "guides/3126.js": "cb3ee9d204cb3b71acc0f00f7b9ab3aa6895d6f632704cfa64848b742e7b9eb2",
+        "guides/3126.js": "885abe467dc40a8cd1b6d31f5c91508120077fbdbcbe49119f16366192425dba",
         "guides/3201.js": "669ed47c4bad02aef27232dcef4584f97b49d9923252adeea0ff43936c50d74c",
-        "guides/3202.js": "5b92548b879899d99723727a936e9482993b223b932873dacf614aadae770272",
+        "guides/3202.js": "8a6187983a156aeed49c5c444a84621d55f2280273e15ea6fd945db7763886e0",
         "guides/3203.js": "a0748249d6a302e36e0531cabf6d42ecbd55be857387184e56b7540c742508ea",
         "guides/7011.js": "be74cf611c4fbc6ef1bc6310abd8b929e06a4c431078896c9e6973875de38f31",
         "guides/7015.js": "1b205581b80bed99c1b32f7e26d566cfba7d49de5c33973d795e3d7dd4442e94",
@@ -48,13 +49,13 @@
         "guides/9982.js": "a1ac834b1c33710ce159729fe10d9b53ee901bd3dd98ec8255e79d5b9305bfe5",
         "guides/9983.js": "549f110adb7ba0c5e841afcf1bef8d7425ea0e8f5e5d73c5a04978cf02ab5879",
         "index.js": "40ca408d8f0834359b7bb2e87e2220759ece7d148a013bc41d907ea0c6abdd43",
-        "lang/dungeons.js": "5670d5b58fa86df7db77751048ca4c8b595788500887aa2b38601e6a3bd86f63",
+        "lang/dungeons.js": "1ab21bba3ed088b0e5827003ecbe4b0fd2b8034e51bdf75fa89c0db41d146c5c",
         "lang/strings.js": "3bf773952b09c62d077b39ac2cda8672afd64342687c58a085137cfde9b988ce",
         "module.json": "e2d0e7f795d8dbd7ba7a3ab68c81a5a17f17ac3a80fbcffff7f2b787be6e7001",
         "settings_migrator.js": "c52763eb444e1e7ce3bdaa16084368a27dd830cfdd54efd8f3c4a85e8e1fcbec"
     },
     "defs": {
-        "S_ABNORMALITY_BEGIN": [4,5],
+        "S_ABNORMALITY_BEGIN": 4,
         "S_ABNORMALITY_END": 1,
         "S_DUNGEON_EVENT_GAGE": 1
     }
