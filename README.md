@@ -46,7 +46,7 @@ Or descarga Aquí la versión con soporte a actualizaciones automáticas (https:
 
 ##  Dungeons Suportadas
 
-### Patch v92.04 / v100.2 Menma's TERA
+### Patch v92.04 / v100.02
 ID | Nome Dungeons | Idioma | Idioma
 --- | --- | --- | ---
 7011 | Guardian Blightwood | Português | Español
