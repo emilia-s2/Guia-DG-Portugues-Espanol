@@ -1,7 +1,7 @@
 <a href="https://github.com/emilia-s2/Guia-DG-Portugues-Espanol/archive/refs/heads/master.zip" target="_blank"><button><SPAN title="Download Guia" /><img src="https://i.imgur.com/S0VtTd1.png" width="120" /></button></a>
 
 
-Guide-DG (Português & Español)
+Guide-DG (Português & Español and English)
 ======
 
 
@@ -46,7 +46,7 @@ Or descarga Aquí la versión con soporte a actualizaciones automáticas (https:
 
 ##  Dungeons Suportadas
 
-### Patch v92.04 / v100.2 Menma's TERA
+### Patch v92.04 / v100.02
 ID | Nome Dungeons | Idioma | Idioma
 --- | --- | --- | ---
 7011 | Guardian Blightwood | Português | Español
@@ -71,6 +71,7 @@ ID | Nome Dungeons | Idioma | Idioma
 9982 | Grotto of Lost Souls (Difícil) | Português | Español
 9735 | RK-9 Kennel (Normal) | Português | Español
 9935 | RK-9 Kennel (Dificil) | Português | Español
+3034 | Rampaging RK-9 Kennel | Português | Español
 9770 | Ruinous Manor (Normal) | Português | Español
 9970 | Ruinous Manor (Difícil) | Português | Español
 9780 | Velik's Hold (5-Person) | Português | Español
@@ -85,6 +86,8 @@ ID | Nome Dungeons | Idioma | Idioma
 3027 | Forbidden Arena [Hagufna] | Português | Español
 3103 | Forbidden Arena [Undying Warlord] | Português | Español
 3203 | Forbidden Arena [Nightmare Undying Warlord] | Português | Español
+3101 | Draakon Arena | Português | Español
+3202 | Draakon Arena (Difícil) | Português | Español
 9053 | Kezzel's Gorge | Português | Español
 9067 | Demokron Factory (Dificil) | Português | Español
 9068 | Shadow Sanguinary (Dificil) | Português | Español
