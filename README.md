@@ -22,7 +22,7 @@ Para que os guias funcionem, você precisa obter versões compatíveis de **libr
 ### :information_source: Instalación manual
 El módulo Tera-Guía y [tera-guide-core](https://github.com/hsdn/tera-guide-core) ya son compatibles con este parche de Menma's TERA.  
 Para que las guías funcionen, necesita obtener versiones compatibles de **library** y **tera-guide-core**:
-1. Descargue **library** desde **[aquí](https://git.dev.hsdn.org/tera-v92/library/archive/master.zip)** y colócala en la carpeta **mods**.
+1. Descargue **library** desde **[aquí](https://github.com/tera-private-toolbox/library/archive/refs/heads/master.zip)** y colócala en la carpeta **mods**.
 2. Descargue **tera-guide-core** desde **[aquí](https://github.com/hsdn/tera-guide-core/archive/refs/heads/master.zip)** y colóquelo en la carpeta **mods** y debe llamarse **"tera-guide-core"**, y no "tera-guide-core-master".
 
 ---
@@ -86,7 +86,7 @@ ID | Nome Dungeons | Idioma | Idioma
 3027 | Forbidden Arena [Hagufna] | Português | Español
 3103 | Forbidden Arena [Undying Warlord] | Português | Español
 3203 | Forbidden Arena [Nightmare Undying Warlord] | Português | Español
-3101 | Draakon Arena | Português | Español
+3102 | Draakon Arena | Português | Español
 3202 | Draakon Arena (Difícil) | Português | Español
 9053 | Kezzel's Gorge | Português | Español
 9067 | Demokron Factory (Dificil) | Português | Español
