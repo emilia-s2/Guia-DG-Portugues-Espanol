@@ -28,7 +28,8 @@
         "guides/9066.js": "7535c3ed2f8b42fd07bdcf206cc2977787e835ea8e126ebf6728ca020de57779",
         "guides/9067.js": "3deccb5117b1ef4a5d990452b4188b84c415f320db95db9a521d22847e47eede",
         "guides/9068.js": "59c742467f2ce22da2357727c99d17033ac69bf07aadf15b9edad708dcc7049f",
-        "guides/9070.js": "9b22c2cb308dd8cdb8af6bc62b23264785e149c91048749d35d1e28b4ac75a18",
+        "guides/9070.js": "d24536aa6ef90251b2873ae35ae07502077fd81392d01c2a52dcc3e61978ed4e",
+        "guides/9710.js": "6790daa1cc9dd1c5b89f16d40461c531374852e5f54472c3000b8d05b7062301",
         "guides/9716.js": "949824e12b36fdc986a8a52602877eebb7744b36b794ef3440261c346431f5bf",
         "guides/9720.js": "563ebb82211775cf722006dee450e868bbc08f5207c888c598df844f00ff4f76",
         "guides/9735.js": "3eeff33a7aad5336df3159cbc54460582bc85f199eed0eecb1a77cbf6cbb9e4e",
@@ -44,12 +45,12 @@
         "guides/9916.js": "dca1990fc5fc40abe68349025b677ff3cad980d3e9a4f3da012e11c523ccdae9",
         "guides/9920.js": "2948012fa8e421cac51de88b45c10ec6245d2fa87b93bec488ba8465ed2926b3",
         "guides/9935.js": "2d3fb897e8d89cba64682bae6b75d600db9affb91c79fc92b0220c80b01c1dc8",
-        "guides/9970.js": "9ed286f6900f67bc6f02d6b0346a49bb9f50d5e83401dbb438837b31656e44c3",
+        "guides/9970.js": "fe07a348b3ec4b28ef458c600d94561d582581e47d36faf04a8cfcc046dd67e4",
         "guides/9981.js": "a129acfb0463eb4cb9e964f5ff1244e95d5dd8fa570a0d0b6ef7cb6fd8001ee3",
         "guides/9982.js": "a1ac834b1c33710ce159729fe10d9b53ee901bd3dd98ec8255e79d5b9305bfe5",
         "guides/9983.js": "549f110adb7ba0c5e841afcf1bef8d7425ea0e8f5e5d73c5a04978cf02ab5879",
         "index.js": "40ca408d8f0834359b7bb2e87e2220759ece7d148a013bc41d907ea0c6abdd43",
-        "lang/dungeons.js": "1ab21bba3ed088b0e5827003ecbe4b0fd2b8034e51bdf75fa89c0db41d146c5c",
+        "lang/dungeons.js": "6cfbae370f4e140e42befefbff0e3745ea4bbdcc069c0de6a8fe60bdf262b4cc",
         "lang/strings.js": "3bf773952b09c62d077b39ac2cda8672afd64342687c58a085137cfde9b988ce",
         "module.json": "e2d0e7f795d8dbd7ba7a3ab68c81a5a17f17ac3a80fbcffff7f2b787be6e7001",
         "settings_migrator.js": "c52763eb444e1e7ce3bdaa16084368a27dd830cfdd54efd8f3c4a85e8e1fcbec"
@@ -57,6 +58,6 @@
     "defs": {
         "S_ABNORMALITY_BEGIN": 4,
         "S_ABNORMALITY_END": 1,
-        "S_DUNGEON_EVENT_GAGE": 1
+        "S_DUNGEON_EVENT_GAGE": 2
     }
 }

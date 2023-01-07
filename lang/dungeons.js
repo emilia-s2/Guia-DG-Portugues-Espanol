@@ -143,10 +143,15 @@ module.exports = {
 		"es": "Manglemire",
 		"en": "Manglemire"
 	},
+	9710 {
+		"pt": "Broken Prison",
+		"es": "Broken Prison",
+		"en": "Broken Prison"
+	},
 	9716: {
-		"pt": "Sky Cruiser Endeavor (Difícil) <font color='#ffc800'>BETA</font>",
-		"es": "Sky Cruiser Endeavor (Difícil) <font color='#ffc800'>BETA</font>",
-		"en": "Sky Cruiser Endeavor (Hard) <font color='#ffc800'>BETA</font>"
+		"pt": "Sky Cruiser Endeavor Normal",
+		"es": "Sky Cruiser Endeavor Normal",
+		"en": "Sky Cruiser Endeavor Normal"
 	},
 	9720: {
 		"pt": "Antaroth's Abyss Normal",
@@ -204,9 +209,9 @@ module.exports = {
 		"en": "Thaumetal Refinery Normal"
 	},
 	9916: {
-		"pt": "Sky Cruiser Endeavor (Difícil) <font color='#ffc800'>BETA</font>",
-		"es": "Sky Cruiser Endeavor (Difícil) <font color='#ffc800'>BETA</font>",
-		"en": "Sky Cruiser Endeavor (Hard <font color='#ffc800'>BETA</font>"
+		"pt": "Sky Cruiser Endeavor (Difícil)",
+		"es": "Sky Cruiser Endeavor (Difícil)",
+		"en": "Sky Cruiser Endeavor (Hard)"
 	},
 	9920: {
 		"pt": "Antaroth's Abyss (Difícil)",

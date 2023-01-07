@@ -4,15 +4,17 @@
 
 module.exports = (dispatch, handlers, guide, lang) => {
 	guide.type = SP;
+
 	let debuff = null; // default debuff
+	let skullDebuff = false;
 
 	return {
 		// 1 BOSS
+		"die": [{ type: "func", func: () => { debuff = null; } }],
 		"nd-970-1000": [
 			{ type: "stop_timers" },
 			{ type: "despawn_all" }
 		],
-		"die": [{ type: "func", func: () => { debuff = null; } }],
 		"ae-0-0-97000042": [{ type: "func", func: () => debuff = 1 }], // AoE (red)
 		"ae-0-0-97000043": [{ type: "func", func: () => debuff = 2 }], // AoE (blue)
 		"am-970-1000-97000042": [{ type: "func", func: () => debuff = 1 }], // Red
@@ -118,10 +120,11 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-970-3000-2108-0": [{ type: "text", sub_type: "message", message_PT: "Cauda Golpe", message_ES: "Cola Golpe", message: "Tail Slam" },
 			{ type: "spawn", func: "circle", args: [false, 553, -7, 280, 20, 155, 0, 2000] }
+		],	
+		"s-970-3000-1317-0": [
+			{ type: "text", sub_type: "message", message_PT: "Pegue a Cabeça Vermelha", message_ES: "Toma el Cráneo Rojo!", message: "Get Red Skull!", check_func: () => !skullDebuff },
+			{ type: "text", sub_type: "message", message_PT: "Pegue a Cabeça Amarela", message_ES: "Toma el Cráneo Amarillo!", message: "Get Yellow Skull!", check_func: () => skullDebuff }
 		],		
-		"s-970-3000-1318-0": [{ type: "text", sub_type: "message", message_PT: "Cabeças Vermelhas!", message_ES: "Cráneos Rojos", message: "Red Skulls" }],
-		"s-970-3000-1317-0": [{ type: "text", sub_type: "message", message_PT: "Cabeças Vermelhas!", message_ES: "Cráneos Rojos", message: "Red Skulls" }],
-		"s-970-3000-1319-0": [{ type: "text", sub_type: "message", message_PT: "Cabeças Vermelhas!", message_ES: "Cráneos Rojos", message: "Red Skulls" }],
 		"s-970-3000-1322-0": [{ type: "text", sub_type: "message", message_PT: "Esquiva dos Padrões", message_ES: "Esquiva los PATTERNS!", message: "Pattern Dodge " },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 14, 230, 0, 5000] },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 12, 430, 0, 5000] },

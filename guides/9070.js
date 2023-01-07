@@ -24,8 +24,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	guide.type = SP;
 
 	let bossBuffs = [];
-	let count = -1;
-	let shining = true;
+	let count = 0;
 
 	const debuffs_hand = {
 		470046: 3,
@@ -35,8 +34,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 
 	function start_boss_event() {
 		bossBuffs = [];
-		count = -1;
-		shining = true;
+		count = 0;
 	}
 
 	function is_telling_truth() {
@@ -66,22 +64,21 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		}
 	};
 
-	addOpcodeAndDefinition(dispatch._mod, "S_DUNGEON_EVENT_GAGE");
+	addOpcodeAndDefinition(dispatch._mod, "S_DUNGEON_EVENT_GAGE", 2, [
+		["name", "refString"],
+		["message", "refString"],
+		["unk", "int32"],
+		["type", "int32"],
+		["value", "int32"],
+		["name", "string"],
+		["message", "string"]
+	]);
 
 	dispatch.hook("S_ABNORMALITY_BEGIN", 4, abnormality_change.bind(null, true));
 	dispatch.hook("S_ABNORMALITY_END", 1, abnormality_change.bind(null, false));
 
-	dispatch.hook("S_DUNGEON_EVENT_GAGE", 1, (event) => {
-		if (shining) {
-			if (count === 100) {
-				count = -1;
-			}
-
-			count++;
-			shining = false;
-
-			dispatch.setTimeout(() => shining = true, 500);
-		}
+	dispatch.hook("S_DUNGEON_EVENT_GAGE", 2, event => {
+		count = event.value;
 	});
 
 	return {
