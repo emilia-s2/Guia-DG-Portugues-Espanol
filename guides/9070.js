@@ -4,10 +4,10 @@
 
 const OPCODES = {
 	"S_DUNGEON_EVENT_GAGE": {
-		"366226": 39917,
-		"367078": 47028,
-		"367081": 39359,
-		"376012": 47078
+		366226: 39917,
+		367078: 47028,
+		367081: 39359,
+		376012: 47078
 	}
 };
 
@@ -23,47 +23,6 @@ function addOpcodeAndDefinition(mod, name, version = null, definition = null) {
 module.exports = (dispatch, handlers, guide, lang) => {
 	guide.type = SP;
 
-	let bossBuffs = [];
-	let count = 0;
-
-	const debuffs_hand = {
-		470046: 3,
-		470047: 6,
-		470048: 9
-	};
-
-	function start_boss_event() {
-		bossBuffs = [];
-		count = 0;
-	}
-
-	function is_telling_truth() {
-		const ones = count % 10;
-		const tens = Math.floor((count % 100) / 10);
-
-		if (bossBuffs.includes(ones) || bossBuffs.includes(tens)) {
-			return false;
-		}
-
-		return true;
-	}
-
-	const abnormality_change = (added, event) => {
-		if (debuffs_hand[event.id]) {
-			if (added) {
-				if (!bossBuffs.includes(debuffs_hand[event.id])) {
-					bossBuffs.push(debuffs_hand[event.id]);
-				}
-			} else {
-				const index = bossBuffs.indexOf(debuffs_hand[event.id]);
-
-				if (index > -1) {
-					bossBuffs.splice(index, 1);
-				}
-			}
-		}
-	};
-
 	addOpcodeAndDefinition(dispatch._mod, "S_DUNGEON_EVENT_GAGE", 2, [
 		["name", "refString"],
 		["message", "refString"],
@@ -74,16 +33,43 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		["message", "string"]
 	]);
 
-	dispatch.hook("S_ABNORMALITY_BEGIN", 4, abnormality_change.bind(null, true));
-	dispatch.hook("S_ABNORMALITY_END", 1, abnormality_change.bind(null, false));
+	const numbers = { 470046: 3, 470047: 6, 470048: 9 };
+	const boss_numbers = new Set();
+	let event_gage = 0;
 
-	dispatch.hook("S_DUNGEON_EVENT_GAGE", 2, event => {
-		count = event.value;
+	dispatch.hook("S_ABNORMALITY_BEGIN", 4, event => {
+		if (numbers[event.id] !== undefined) {
+			boss_numbers.add(numbers[event.id]);
+		}
 	});
 
-	return {
-		"ns-470-1000": [{ type: "func", func: start_boss_event }],
+	dispatch.hook("S_ABNORMALITY_END", 1, event => {
+		if (numbers[event.id] !== undefined) {
+			boss_numbers.delete(numbers[event.id]);
+		}
+	});
 
+	dispatch.hook("S_DUNGEON_EVENT_GAGE", 2, event => {
+		event_gage = event.value;
+	});
+
+	function is_telling_truth() {
+		const ones = event_gage % 10;
+		const tens = Math.floor((event_gage % 100) / 10);
+
+		return !boss_numbers.has(ones) && !boss_numbers.has(tens);
+	}
+
+	return {
+		"nd-470-1000": [
+			{ type: "stop_timers" },
+			{ type: "despawn_all" },
+			{ type: "func", func: () => {
+				boss_numbers.clear();
+				event_gage = 0;
+			} }
+		],
+		
 		"s-470-1000-1105-0": [{ type: "text", sub_type: "message", message: "Jump", message_ES: "Salto", message_PT: "Salto" }],
 		"s-470-1000-1106-0": [{ type: "text", sub_type: "message", message: "Smash", message_ES: "Aplastar", message_PT: "Esmagar" }],
 		"s-470-1000-1120-0": [{ type: "text", sub_type: "message", message: "Pull", message_ES: "Jalar", message_PT: "Puxar" }],

@@ -1,8 +1,7 @@
-'use strict';
+"use strict";
 
-// Dungeon names
+// Available names for additional languages
 module.exports = {
-
 	7011: {
 		"pt": "Guardian Blightwood",
 		"es": "Guardian Blightwood",
@@ -94,9 +93,9 @@ module.exports = {
 		"en": "Forbidden Arena [Nightmare Undying Warlord]"
 	},
 	9027: {
-		"pt": "Manaya's Core (Difícil)",
-		"es": "Manaya's Core (Difícil)",
-		"en": "Manaya's Core (Hard)"
+		"pt": "The Plexus (Difícil)",
+		"es": "The Plexus (Difícil)",
+		"en": "The Plexus (Hard)"
 	},	
 	9044: {
 		"pt": "Bahaar's Sanctum",
@@ -143,7 +142,7 @@ module.exports = {
 		"es": "Manglemire",
 		"en": "Manglemire"
 	},
-	9710 {
+	9710: {
 		"pt": "Broken Prison",
 		"es": "Broken Prison",
 		"en": "Broken Prison"
@@ -172,7 +171,7 @@ module.exports = {
 		"pt": "Bathysmal Rise Normal",
 		"es": "Bathysmal Rise Normal",
 		"en": "Bathysmal Rise Normal"
-	},	
+	},
 	9757: {
 		"pt": "Akeron's Inferno Normal",
 		"es": "Akeron's Inferno Normal",

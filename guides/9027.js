@@ -4,9 +4,60 @@
 
 module.exports = (dispatch, handlers, guide, lang) => {
 	guide.type = SP;
-	
-	return {		
+
+	let next_debuff = 0;
+	function debuff_event(send_msg, debuff, ent) {
+		if (next_debuff === 0) {
+			next_debuff = debuff;
+		}
+
+		if (send_msg) {
+			const debuff_messages = {
+				0: { message: "Debuff", message_ES: "Debuff", message_PT: "Debuff" },
+				1: { message: "Debuff 1", message_ES: "Debuff 1", message_PT: "Debuff 1" },
+				2: { message: "Debuff 2", message_ES: "Debuff 2", message_PT: "Debuff 2" },
+				3: { message: "Debuff 3", message_ES: "Debuff 3", message_PT: "Debuff 3" }
+			};
+
+			handlers.text({
+				sub_type: "notification",
+				message: debuff_messages[next_debuff].message,
+				message_ES: debuff_messages[next_debuff].message_ES,
+				message_PT: debuff_messages[next_debuff].message_PT,
+				speech: true
+			});
+
+			if (next_debuff !== 0) {
+				next_debuff++;
+			}
+
+			if (next_debuff > 3) {
+				next_debuff = 1;
+			}
+		}
+	}
+
+
+	function debuff_removed() {
+		if (next_debuff != 0) {
+			handlers.text({
+				sub_type: "notification",
+				message: `next debuff: ${next_debuff}`,
+				message_ES: `Siguiente Debuff: ${next_debuff}`,
+				message_PT: `Próximo Debuff: ${next_debuff}`,
+				speech: false
+			});
+		}
+
+		next_debuff = 0;
+	}
+
+	return {
 		// 1 BOSS
+		"nd-427-42701": [
+			{ type: "stop_timers" },
+			{ type: "despawn_all" }
+		],
 		"s-427-42701-1106-0": [{ type: "text", sub_type: "message", message_PT: "Vento Frontal", message_ES: "Viento Frontal", message: "Frontal Wind" }],
 		"s-427-42701-1102-0": [{ type: "text", sub_type: "message", message_PT: "Corte Frontal", message_ES: "Corte Frontal", message: "Frontal Cut" }],
 		"s-427-42701-1104-0": [{ type: "text", sub_type: "message", message_PT: "Golpe Frontal", message_ES: "Golpe Frontal", message: "Frontal Hit" }],
@@ -35,6 +86,10 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-427-42701-2204-0": "s-427-42701-1204-0",
 
 		// 2 BOSS
+		"nd-427-42702": [
+			{ type: "stop_timers" },
+			{ type: "despawn_all" }
+		],		
 		"s-427-42702-1104-0": [{ type: "text", sub_type: "message", message_PT: "Laser", message_ES: "Láser", message: "Laser" }],
 		"s-427-42702-1109-0": [{ type: "text", sub_type: "message", message_PT: "Escudo Atrás (Esquerdo)", message_ES: "Escudo Atrás", message: "Back Shield Hit" }],
 		"s-427-42702-1106-0": [{ type: "text", sub_type: "message", message_PT: "Bomba (Alvo)", message_ES: "Bomba (Objetivo)", message: "Bomb (Target)" }],
@@ -93,12 +148,18 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-427-2001-2109-0": "s-427-2001-1109-0",
 		
 		// Fase 2
+		"nd-427-2007": [
+			{ type: "stop_timers" },
+			{ type: "despawn_all" }
+		],
+		"die": [{ type: "func", func: debuff_removed }],
+		"h-427-2007-99": [{ type: "func", func: () => next_debuff = 0 }],		
 		"s-427-2007-1103-0": [{ type: "text", sub_type: "message", message_PT: "Ataque Frontal", message_ES: "Ataque Frontal", message: "Frontal Attack" }],
 		"s-427-2007-1205-0": [{ type: "text", sub_type: "message", message_PT: "Teleporte", message_ES: "Teletransportación", message: "Teleport" }],
 		"s-427-2007-1102-0": [{ type: "text", sub_type: "message", message_PT: "Helicóptero", message_ES: "Helicóptero", message: "Helicopter" }],
 		"s-427-2007-1113-0": [{ type: "text", sub_type: "message", message_PT: "Mão Esquerda Ataque", message_ES: "Mano Izquierda Ataque ", message: "Left Hand Attack" }],	
 		"s-427-2007-1105-0": [{ type: "text", sub_type: "message", message_PT: "Mão Direita Ataque", message_ES: "Mano Derecha Ataque ", message: "Right Hand Attack" }],
-		"s-427-2007-1112-0": [{ type: "text", sub_type: "message", message_PT: "Dount Debuff", message_ES: "Debuff Dona", message: "Donut Debuff" },
+		"s-427-2007-1112-0": [{ type: "func", func: debuff_event, args: [true, 0] },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 330, 0, 12000] },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 16, 185, 0, 9000] }
 		],
@@ -107,6 +168,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-427-2007-1115-0": [{ type: "text", sub_type: "message", message_PT: "Cauda Ataque", message_ES: "Ataque de Cola", message: "Tail Attack" }],	
 		"s-427-2007-1111-0": [{ type: "text", sub_type: "message", message_PT: "Cauda Frontal Ataque", message_ES: "Ataque de Cola Frontal", message: "Frontal Tail Attack" }],	
 		"s-427-2007-1109-0": [{ type: "text", sub_type: "message", message_PT: "AoE (Alvo)", message_ES: "AoE Objetivo", message: "AoE Target" }],
+		"s-427-2007-1104-0": [{ type: "text", sub_type: "message", message_PT: "Pisar", message_ES: "Pisar Fuerte", message: "Stomp" }],
 		"s-427-2007-1107-0": [{ type: "text", sub_type: "message", message_PT: "Laser Ataque", message_ES: "Ataque Láser", message: "Laser Attack" },
 			{ type: "spawn", func: "vector", args: [912, 360, 985, 180, 950, 0, 2500] },
 			{ type: "spawn", func: "vector", args: [912, 369, 995, 180, 950, 0, 2500] },
@@ -131,6 +193,10 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-427-2007-2204-0": "s-427-2007-1204-0",
 		"s-427-2007-2103-0": "s-427-2007-1103-0",
 		"s-427-2007-2114-0": "s-427-2007-1114-0",
-		"s-427-2007-2108-0": "s-427-2007-1108-0"
+		"s-427-2007-2108-0": "s-427-2007-1108-0",
+		"s-427-2007-2104-0": "s-427-2007-1104-0",
+		"am-427-2007-47702900": [{ type: "func", func: debuff_event, args: [false, 2] }], // greedy thought #1
+		"am-427-2007-47703000": [{ type: "func", func: debuff_event, args: [false, 3] }], // hateful thought #2
+		"am-427-2007-47703100": [{ type: "func", func: debuff_event, args: [false, 1] }] // desperate thought #3
 	};
 };

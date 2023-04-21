@@ -4,30 +4,15 @@
 
 module.exports = (dispatch, handlers, guide, lang) => {
 	guide.type = SP;
+
 	let back_print = false;
 	let back_time = 0;
 	let end_back_time = 0;
 	let is_one_back = false;
-	let is_hp_49 = false;
 	let counter = 0;
-	let enrage = 0;
-	let timer2 = null;
-	
-	function boss_backcombo_event() {
-		dispatch.clearTimeout(timer2);
-		counter++;
-
-		if (counter >= 2) {
-			handlers.text({
-				sub_type: "message",
-				message_PT: "Atrás Combo 2x360"	,		
-				message_ES: "Atrás Combo 2x360",
-				message: "Back Combo 2x360"
-			});
-		}
-
-		timer2 = dispatch.setTimeout(() => counter = 0, enrage == 1 ? 2000 : 3000);
-	}	
+	let counter1_date = null;
+	let prev_back_attack = 0;
+	let prev_date = 0;
 
 	function boss_backattack_event() {
 		end_back_time = new Date() - back_time;
@@ -36,17 +21,71 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			back_print = true;
 			is_one_back = end_back_time > 0 && end_back_time < 1500;
 
-			handlers.text({
-				sub_type: "message",
-				message_PT: is_one_back ? "Atrás 360" : "!!!",
-				message_ES: is_one_back ? "Atrás 360" : "!!!",
-				message: is_one_back ? "Back 360" : "!!!"
-			});
+			if (is_one_back) {
+				handlers.text({
+					sub_type: "message",
+					message_PT: "360",
+					message_ES: "360",
+					message: "360",
+				});
+			}
 		}
 		dispatch.setTimeout(() => back_print = false, 3500);
 	}
 
-		return {
+
+	function boss_backattack_event_new(curr, ent) {
+		let start = new Date();
+		let tmp = prev_date;
+		prev_date = start;
+
+		let time_diff = start - tmp;
+
+		let prev = prev_back_attack;
+		prev_back_attack = curr;
+
+		let back_combo_time_diff = 5000;
+		if (counter1_date != null) {
+			back_combo_time_diff = start - counter1_date;
+		}
+
+		if (prev == 1106 && curr == 1103 && time_diff < 1000) {
+			handlers.text({
+				sub_type: "message",
+				message_PT: "360",
+				message_ES: "360",
+				message: "360"
+			});
+		} else if (prev === 1103 && curr === 1105 && time_diff < 1000) {
+			counter = 1;
+			counter1_date = new Date();
+		} else if (prev === 1105 && curr === 1106 && counter === 1 && time_diff < 1500 && back_combo_time_diff < 1500) {
+			counter = 2;
+		} else if (prev === 1106 && curr === 1108 && counter == 2 && time_diff < 1000 && back_combo_time_diff < 2000) {
+			handlers.text({
+				sub_type: "message",
+				message_PT: "2x360",
+				message_ES: "2x360",
+				message: "2x360"
+			});
+		} else {
+			counter = 0;
+			counter1_date = null;
+		}
+	}
+
+	function reset_backevent() {
+		back_print = false;
+		back_time = 0;
+		end_back_time = 0;
+		is_one_back = false;
+		counter = 0;
+		counter1_date = null;
+		prev_back_attack = 0;
+		prev_date = 0;
+	}
+
+	return {		
 		// Mini BOSS 1
 		"qb-916-91660-916045": [{ type: "text", sub_type: "message", message_PT: "Disparo Aleatório", message_ES: "Disparo Aleatorio", message: "Random Shot" }],
 		"s-916-91660-1304-0": [
@@ -136,16 +175,18 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		// Boss 3
 		"nd-916-1000": [
 			{ type: "stop_timers" },
-			{ type: "despawn_all" }
+			{ type: "despawn_all" },
+			{type: "func", func: reset_backevent}
 		],
-		"h-916-1000-100": [{ type: "func", func: () => is_hp_49 = false }],
 		"h-916-1000-94": [{ type: "text", sub_type: "message", message: "94%" }],
-		"h-916-1000-49": [{ type: "text", sub_type: "message", message: "49%" }, { type: "func", func: () => is_hp_49 = true }],
-		"s-916-1000-1101-0": [{ type: "func", func: boss_backattack_event }],
-		"s-916-1000-1102-0": [{ type: "func", func: () => back_time = new Date() }],
+		"h-916-1000-49": [{ type: "text", sub_type: "message", message: "49%" }],
 		"s-916-1000-1112-0": [{ type: "text", sub_type: "message", message_PT: "Movimento Atrás", message_ES: "Movimiento Atrás", message: "Back Move" }],
-		"s-916-1000-1103-0": [{ type: "func", func: boss_backcombo_event }],
-		"s-916-1000-1108-0": [{ type: "func", func: boss_backcombo_event }],
+		"s-916-1000-1102-0": [{ type: "func", func: () => back_time = new Date() }],
+		"s-916-1000-1101-0": [{ type: "func", func: boss_backattack_event }],
+		"s-916-1000-1106-0": [{ type: "func", func: boss_backattack_event_new, args: [1106] }],
+		"s-916-1000-1105-0": [{ type: "func", func: boss_backattack_event_new, args: [1105] }],
+		"s-916-1000-1103-0": [{ type: "func", func: boss_backattack_event_new, args: [1103] }],
+		"s-916-1000-1108-0": [{ type: "func", func: boss_backattack_event_new, args: [1108] }],
 		"s-916-1000-1114-0": [
 			{ type: "text", sub_type: "message", message_PT: "Ataque Alvo", message_ES: "Ataque Objetivo", message: "Target Attack" },
 			{ type: "spawn", func: "vector", args: [553, 90, 150, 0, 1300, 0, 2500] },
@@ -179,6 +220,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-916-1000-2101-0": "s-916-1000-1101-0",
 		"s-916-1000-2102-0": "s-916-1000-1102-0",
 		"s-916-1000-2103-0": "s-916-1000-1103-0",
+		"s-916-1000-2105-0": "s-916-1000-1105-0",
+		"s-916-1000-2106-0": "s-916-1000-1106-0",
 		"s-916-1000-2108-0": "s-916-1000-1108-0",
 		"s-916-1000-2112-0": "s-916-1000-1112-0",
 		"s-916-1000-1303-0": [{ type: "text", sub_type: "message", message_PT: "Ataque Giratorio", message_ES: "Ataque Giratorio", message: "Spin Attack" }],
@@ -199,6 +242,9 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "vector", args: [553, 358, 0, 180, 1100, 100, 1500] },
 			{ type: "spawn", func: "vector", args: [553, 358, 0, 0, 1100, 100, 1500] }
 		],
+		"s-916-1000-1301-0":  [{ type: "text", sub_type: "message", message_PT: "Gritar", message_ES: "Gritar", message: "Scream" }],
+		"s-916-1000-1311-0":  [{ type: "text", sub_type: "message", message_PT: "Interno", message_ES: "Interno", message: "Inner" }],
+		"s-916-1000-1308-0":  [{ type: "text", sub_type: "message", message_PT: "Interno", message_ES: "Interno", message: "Inner" }],
 		"s-916-1000-2114-0": "s-916-1000-1114-0",
 		"s-916-1000-2115-0": "s-916-1000-1115-0",
 		"s-916-1000-2117-0": "s-916-1000-1117-0",
