@@ -59,8 +59,10 @@ ID | Nome Dungeons | Idioma | Idioma
 3026 | Corrupted Skynest (Normal) | Português | Español
 3126 | Corrupted Skynest (Difícil) | Português | Español
 9739 | Red Refuge | Português | Español
+9939 | Red Refuge (Difícil) | Português | Español
 9027 | Manaya's Core (Difícil) | Português | Español
 9044 | Bahaar's Sanctum | Português | Español
+9756 | Timescape (Normal) | Português | Español
 9056 | Timescape (Difícil) | Português | Español
 9759 | Forsaken Island (Difícil) | Português | Español
 3101 | Gossamer Vault (Normal) | Português | Español
@@ -79,6 +81,7 @@ ID | Nome Dungeons | Idioma | Idioma
 9981 | Velik's Sanctuary (Difícil) | Português | Español
 9754 | Bathysmal Rise (Normal) | Português | Español
 9054 | Bathysmal Rise (Difícil) | Português | Español
+9768 | Shadow Sanguinary  (Normal) | Português | Español
 9757 | Akeron's Inferno (Normal) | Português | Español
 9057 | Akeron's Inferno (Difícil) | Português | Español
 9716 | Sky Cruiser Endeavor (Normal) | Português | Español
@@ -92,6 +95,7 @@ ID | Nome Dungeons | Idioma | Idioma
 9067 | Demokron Factory (Dificil) | Português | Español
 9068 | Shadow Sanguinary (Dificil) | Português | Español
 9070 | Manglemire | Português | Español
+9783 | Dark Reach Citadel (Normal) | Português | Español
 9983 | Dark Reach Citadel (Dificil) | Português | Español
 9066 | Demon's Wheel | Português | Español
 
