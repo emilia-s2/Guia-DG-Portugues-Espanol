@@ -172,6 +172,11 @@ module.exports = {
 		"es": "Bathysmal Rise Normal",
 		"en": "Bathysmal Rise Normal"
 	},
+	9756: {
+		"pt": "Timescape Normal",
+		"es": "Timescape Normal",
+		"en": "Timescape Normal"
+	},	
 	9757: {
 		"pt": "Akeron's Inferno Normal",
 		"es": "Akeron's Inferno Normal",
@@ -182,6 +187,11 @@ module.exports = {
 		"es": "Forsaken Island (Difícil)",
 		"en": "Forsaken Island (Hard)"
 	},
+	9768: {
+		"pt": "Shadow Sanguinary Normal",
+		"es": "Shadow Sanguinary Normal",
+		"en": "Shadow Sanguinary Normal"
+	},	
 	9770: {
 		"pt": "Ruinous Manor Normal",
 		"es": "Ruinous Manor Normal",
@@ -201,6 +211,11 @@ module.exports = {
 		"pt": "Grotto of Lost Souls Normal",
 		"es": "Grotto of Lost Souls Normal",
 		"en": "Grotto of Lost Souls Normal"
+	},
+	9783: {
+		"pt": "Dark Reach Citadel Normal",
+		"es": "Dark Reach Citadel Normal",
+		"en": "Dark Reach Citadel Normal"
 	},
 	9794: {
 		"pt": "Thaumetal Refinery Normal",
@@ -222,6 +237,11 @@ module.exports = {
 		"es": "RK-9 Kennel (Difícil)",
 		"en": "RK-9 Kennel (Hard)"
 	},
+	9939: {
+		"pt": "Red Refuge (Difícil)",
+		"es": "Red Refuge (Difícil)",
+		"en": "Red Refuge (Hard)"
+	},	
 	9970: {
 		"pt": "Ruinous Manor (Difícil)",
 		"es": "Ruinous Manor (Difícil)",
