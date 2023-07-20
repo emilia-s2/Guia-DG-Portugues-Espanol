@@ -6,11 +6,20 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	guide.type = SP;
 
 	let thirdboss_fifty = false;
-	let print_test = true;
+
+	function secondboss_floor_event(one, two) {
+		if (one && two) {
+			handlers.event([
+				{ type: "text", sub_type: "message", message: "Pizza", message_RU: "Пицца" },
+				{ type: "spawn", func: "marker", args: [false, one * 45 + 70, 500, 0, 5000, true, null] },
+				{ type: "spawn", func: "marker", args: [false, two * 45 + 70, 300, 7000, 5000, true, null] }
+			]);
+		}
+	}
 
 	function thirdboss_message_event(skillid) {
 		switch (skillid) {
-			// Lakan te ha notado.
+			// Lakan has noticed you.
 			case 1043:
 				if (!thirdboss_fifty) {
 					handlers.text({
@@ -73,6 +82,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "stop_timers" },
 			{ type: "despawn_all" }
 		],
+		"s-981-1000-1111-0": [{ type: "text", sub_type: "message", message: "Back 360", message_PT: "Atrás 360", message_ES: "Atrás 360" }],
 		"h-981-1000-99": [{ type: "func", func: () => print_test = true }],
 		"h-981-1000-50": [
 			{ type: "text", sub_type: "notification", message: "50%", message_PT: "50%", message_ES: "50%" },
@@ -81,14 +91,23 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", message: "Right", message_PT: "Direita", message_ES: "Derecha" },
 			{ type: "spawn", func: "vector", args: [553, 360, 400, 180, 800, 0, 2000] },
 			{ type: "spawn", func: "marker", args: [false, 300, 100, 0, 2000, true, null] },
-			{ type: "spawn", func: "marker", args: [false, 230, 100, 0, 2000, true, null] }
+			{ type: "spawn", func: "marker", args: [false, 230, 100, 0, 2000, true, null] },
+			{ type: "spawn", func: "semicircle", args: [0, 180, 912, 0, 0, 20, 160, 0, 1500] },
+			{ type: "spawn", func: "semicircle", args: [0, 180, 912, 0, 0, 12, 220, 0, 1500] },
+			{ type: "spawn", func: "semicircle", args: [0, 180, 912, 0, 0, 10, 300, 0, 1500] },
+			{ type: "spawn", func: "semicircle", args: [0, 180, 912, 0, 0, 8, 360, 0, 1500] }
 		],
 		"s-981-1000-1402-0": [
 			{ type: "text", sub_type: "message", message: "Left", message_PT: "Esquerda", message_ES: "Izquierda" },
 			{ type: "spawn", func: "vector", args: [553, 360, 400, 180, 800, 0, 2000] },
 			{ type: "spawn", func: "marker", args: [false, 60, 100, 0, 2000, true, null] },
-			{ type: "spawn", func: "marker", args: [false, 130, 100, 0, 2000, true, null] }
+			{ type: "spawn", func: "marker", args: [false, 130, 100, 0, 2000, true, null] },
+			{ type: "spawn", func: "semicircle", args: [180, 360, 912, 0, 0, 20, 160, 0, 1500] },
+			{ type: "spawn", func: "semicircle", args: [180, 360, 912, 0, 0, 12, 220, 0, 1500] },
+			{ type: "spawn", func: "semicircle", args: [180, 360, 912, 0, 0, 10, 300, 0, 1500] },
+			{ type: "spawn", func: "semicircle", args: [180, 360, 912, 0, 0, 8, 360, 0, 1500] }
 		],
+		"s-981-1000-1301-0": [{ type: "text", sub_type: "message", message: "AOE (Go to the safe)", message_PT: "AOE (Vas para el Seguro)", message_ES: "AOE (Va para o Seguro)" }],
 		"s-981-1000-1303-0": [{ type: "text", sub_type: "message", message: "Spin", message_PT: "Girar", message_ES: "Girar" }],
 		"s-981-1000-1301-0": [{ type: "text", sub_type: "message", message: "Poison (Silence)", message_PT: "Veneno (Silêncio)", message_ES: "Veneno (Silencio)" },
 			{ type: "text", sub_type: "message", message_PT: "Iframe", message_ES: "Iframe", message: "Iframe!", delay: 900 }
@@ -106,6 +125,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "func", func: () => print_test = false },
 			{ type: "func", func: () => print_test = true, delay: 5000 }
 		],
+		"s-981-1000-2111-0": "s-981-1000-1111-0",
+		"s-981-1000-2301-0": "s-981-1000-1301-0",
 		"s-981-1000-2401-0": "s-981-1000-1401-0",
 		"s-981-1000-2402-0": "s-981-1000-1402-0",
 		"s-981-1000-2303-0": "s-981-1000-1303-0",
@@ -114,6 +135,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-981-1000-2309-0": "s-981-1000-1309-0",
 		"s-981-1000-2113-0": "s-981-1000-1113-0",
 		"s-981-1000-2111-0": "s-981-1000-1111-0",
+		//"qb-981-1000-98103": [{ type: "text", sub_type: "message", message: "Lead circle to the stone", message_PT: "Conduce el círculo hasta la pedra", message_ES: "Conduza o círculo até a pedra" }],
+		//"qb-981-1000-78107": [{ type: "text", sub_type: "message", message: "Lead circles to the stone", message_PT: "Conduce el círculo hasta la pedra", message_ES: "Conduza o círculo até a pedra" }],
 
 		// 2 BOSS
 		"nd-981-2000": [
@@ -126,7 +149,99 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", delay: 1000, message: "3" },
 			{ type: "text", sub_type: "message", delay: 2000, message: "2" },
 			{ type: "text", sub_type: "message", delay: 3000, message: "1" }
+		],	
+		"s-981-2000-1138-0": [
+			{ type: "event", delay: 7000, args: [
+				// x6 normal + in circle
+				{ type: "spawn", func: "marker", args: [false, 15, 270, 0, 3500, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 75, 270, 0, 3500, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 135, 270, 0, 3500, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 195, 270, 0, 3500, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 255, 270, 0, 3500, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 315, 270, 0, 3500, true, null] },
+				// out circle + x6 reverse
+				{ type: "spawn", func: "marker", args: [false, 45, 170, 3500, 2000, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 105, 170, 3500, 2000, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 165, 170, 3500, 2000, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 225, 170, 3500, 2000, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 285, 170, 3500, 2000, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 345, 170, 3500, 2000, true, null] },
+				// x4 normal
+				{ type: "spawn", func: "marker", args: [false, 75, 170, 5500, 2000, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 165, 170, 5500, 2000, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 255, 170, 5500, 2000, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 345, 170, 5500, 2000, true, null] }
+			] }
 		],
+		"s-981-2000-1139-0": [
+			{ type: "event", delay: 7000, args: [
+				// x6 reverse
+				{ type: "spawn", func: "marker", args: [false, 45, 270, 1000, 2000, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 105, 270, 1000, 2000, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 165, 270, 1000, 2000, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 225, 270, 1000, 2000, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 285, 270, 1000, 2000, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 345, 270, 1000, 2000, true, null] },
+				// x6 normal + out circle
+				{ type: "spawn", func: "marker", args: [false, 15, 170, 3000, 3000, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 75, 170, 3000, 3000, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 135, 170, 3000, 3000, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 195, 170, 3000, 3000, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 255, 170, 3000, 3000, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 315, 170, 3000, 3000, true, null] },
+				// in circle + x4
+				{ type: "spawn", func: "marker", args: [false, 75, 270, 6000, 3500, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 165, 270, 6000, 3500, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 255, 270, 6000, 3500, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 345, 270, 6000, 3500, true, null] }
+			] }
+		],
+		"s-981-2000-1140-0": [
+			{ type: "event", delay: 7000, args: [
+				// in circle + x6 reverse
+				{ type: "spawn", func: "marker", args: [false, 45, 270, 0, 3500, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 105, 270, 0, 3500, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 165, 270, 0, 3500, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 225, 270, 0, 3500, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 285, 270, 0, 3500, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 345, 270, 0, 3500, true, null] },
+				// x6 normal + out circle
+				{ type: "spawn", func: "marker", args: [false, 15, 170, 3500, 2000, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 75, 170, 3500, 2000, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 135, 170, 3500, 2000, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 195, 170, 3500, 2000, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 255, 170, 3500, 2000, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 315, 170, 3500, 2000, true, null] },
+				// x4
+				{ type: "spawn", func: "marker", args: [false, 75, 170, 5500, 2000, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 165, 170, 5500, 2000, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 255, 170, 5500, 2000, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 345, 170, 5500, 2000, true, null] }
+			] }
+		],
+		"s-981-2000-1141-0": [
+			{ type: "event", delay: 7000, args: [
+				// x6 normal
+				{ type: "spawn", func: "marker", args: [false, 15, 270, 1000, 2000, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 75, 270, 1000, 2000, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 135, 270, 1000, 2000, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 195, 270, 1000, 2000, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 255, 270, 1000, 2000, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 315, 270, 1000, 2000, true, null] },
+				// x6 reverse + out circle
+				{ type: "spawn", func: "marker", args: [false, 45, 270, 3000, 3000, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 105, 270, 3000, 3000, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 165, 270, 3000, 3000, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 225, 270, 3000, 3000, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 285, 270, 3000, 3000, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 345, 270, 3000, 3000, true, null] },
+				// in circle + x4
+				{ type: "spawn", func: "marker", args: [false, 75, 170, 6000, 3500, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 165, 170, 6000, 3500, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 255, 170, 6000, 3500, true, null] },
+				{ type: "spawn", func: "marker", args: [false, 345, 170, 6000, 3500, true, null] }
+			] }
+		],			
 		"s-981-2000-1106-0": [
 			{ type: "text", sub_type: "message", message: "Back", message_PT: "Ataque Atrás", message_ES: "Ataque Atrás" },
 			{ type: "spawn", func: "circle", args: [false, 553, 180, 340, 14, 270, 0, 2600] }
@@ -145,13 +260,21 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", message: "Left", message_PT: "Esquerda", message_ES: "Izquierda" },
 			{ type: "spawn", func: "vector", args: [553, 360, 400, 180, 800, 0, 2000] },
 			{ type: "spawn", func: "marker", args: [false, 60, 100, 0, 2000, true, null] },
-			{ type: "spawn", func: "marker", args: [false, 130, 100, 0, 2000, true, null] }
+			{ type: "spawn", func: "marker", args: [false, 130, 100, 0, 2000, true, null] },
+			{ type: "spawn", func: "semicircle", args: [180, 360, 912, 0, 0, 20, 160, 0, 1500] },
+			{ type: "spawn", func: "semicircle", args: [180, 360, 912, 0, 0, 12, 220, 0, 1500] },
+			{ type: "spawn", func: "semicircle", args: [180, 360, 912, 0, 0, 10, 300, 0, 1500] },
+			{ type: "spawn", func: "semicircle", args: [180, 360, 912, 0, 0, 8, 360, 0, 1500] }
 		],
 		"s-981-2000-1131-0": [
 			{ type: "text", sub_type: "message", message: "Right", message_PT: "Direita", message_ES: "Derecha" },
 			{ type: "spawn", func: "vector", args: [553, 360, 400, 180, 800, 0, 2000] },
 			{ type: "spawn", func: "marker", args: [false, 300, 100, 0, 2000, true, null] },
-			{ type: "spawn", func: "marker", args: [false, 230, 100, 0, 2000, true, null] }
+			{ type: "spawn", func: "marker", args: [false, 230, 100, 0, 2000, true, null] },
+			{ type: "spawn", func: "semicircle", args: [0, 180, 912, 0, 0, 20, 160, 0, 1500] },
+			{ type: "spawn", func: "semicircle", args: [0, 180, 912, 0, 0, 12, 220, 0, 1500] },
+			{ type: "spawn", func: "semicircle", args: [0, 180, 912, 0, 0, 10, 300, 0, 1500] },
+			{ type: "spawn", func: "semicircle", args: [0, 180, 912, 0, 0, 8, 360, 0, 1500] }
 		],
 		"s-981-2000-1302-0": [{ type: "text", sub_type: "message", message: "Bait", message_PT: "Bait", message_ES: "Bait" },
 			{ type: "text", sub_type: "message", delay: 3080, message_PT: "Iframe", message_ES: "Iframe", message: "Iframe!" }
@@ -168,6 +291,19 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-981-2000-2134-1": "s-981-2000-1134-1",
 		"s-981-2000-2130-0": "s-981-2000-1130-0",
 		"s-981-2000-2131-0": "s-981-2000-1131-0",
+		"s-981-2000-2302-0": "s-981-2000-1302-0",
+		"s-981-2000-2502-0": "s-981-2000-1502-0",
+		"qb-981-2000-468036": [{ type: "text", sub_type: "message", message: "Mobs Summon", message_PT: "Sumonar Mobs", message_ES: "Sumonar Mobs" }],
+		// Pizza Mechanic
+		"s-981-927-1301-0": [{ type: "func", func: secondboss_floor_event, args: [4, 7] }],
+		"s-981-927-1302-0": [{ type: "func", func: secondboss_floor_event, args: [2, 6] }],
+		"s-981-927-1303-0": [{ type: "func", func: secondboss_floor_event, args: [7, 3] }],
+		"s-981-927-1310-0": [{ type: "func", func: secondboss_floor_event, args: [4, 7] }],
+		"s-981-927-1311-0": [{ type: "func", func: secondboss_floor_event, args: [2, 6] }],
+		"s-981-927-1312-0": [{ type: "func", func: secondboss_floor_event, args: [7, 3] }],
+		"s-981-927-1313-0": [{ type: "func", func: secondboss_floor_event, args: [4, 7] }],
+		"s-981-927-1314-0": [{ type: "func", func: secondboss_floor_event, args: [2, 6] }],
+		"s-781-927-1315-0": [{ type: "func", func: secondboss_floor_event, args: [7, 3] }],
 		//
 		"qb-981-4000-9981046": [{ type: "text", sub_type: "notification", message: "First: (Debuffs) Closest", message_PT: "Primeiro: Debuff (Juntar)", message_ES: "Primero: Debuff (Más cercano)" }], // Gracias... por esta versión...
 		"qb-981-4000-9981047": [{ type: "text", sub_type: "notification", message: "First: (Círculos) Spread", message_PT: "Primeiro: Círculos (Afastar)", message_ES: "Primero: Círculos (Separarse)" }], // Cuidado con el... rayo rojo...

@@ -44,6 +44,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-720-1000-2116-0": "s-720-1000-1116-0",
 		"s-720-1000-2109-0": "s-720-1000-1109-0",
 		"s-720-1000-2220-0": "s-720-1000-1220-0",
+		"qb-720-1000-7201000": [{ type: "text", sub_type: "message", message: "Flying", message_ES: "Volando", message_PT: "Voando!" }],
 
 		// 2 BOSS
 		"nd-720-2000": [
