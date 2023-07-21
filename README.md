@@ -47,57 +47,62 @@ Or descarga Aquí la versión con soporte a actualizaciones automáticas (https:
 ##  Dungeons Suportadas
 
 ### Patch v92.04 / v100.02
-ID | Nome Dungeons | Idioma | Idioma
---- | --- | --- | ---
-7011 | Guardian Blightwood | Português | Español
-7015 | Guardian Balder's Refuge | Português | Español
-3032 | Akalath Quarantine (Training) | Português | Español
-3037 | Bahaar's Sanctum (Training) | Português | Español
-3030 | Commander's Residence  | Português | Español
-3020 | Sea of Honor | Português | Español
-3036 | Sky Cruiser (Extreme) | Português | Español
-3026 | Corrupted Skynest (Normal) | Português | Español
-3126 | Corrupted Skynest (Difícil) | Português | Español
-9739 | Red Refuge | Português | Español
-9939 | Red Refuge (Difícil) | Português | Español
-9027 | Manaya's Core (Difícil) | Português | Español
-9044 | Bahaar's Sanctum | Português | Español
-9756 | Timescape (Normal) | Português | Español
-9056 | Timescape (Difícil) | Português | Español
-9759 | Forsaken Island (Difícil) | Português | Español
-3101 | Gossamer Vault (Normal) | Português | Español
-3201 | Gossamer Vault (Difícil) | Português | Español
-9720 | Antaroth's Abyss (Normal) | Português | Español
-9920 | Antaroth's Abyss (Difícil) | Português | Español
-9782 | Grotto of Lost Souls (Normal) | Português | Español
-9982 | Grotto of Lost Souls (Difícil) | Português | Español
-9735 | RK-9 Kennel (Normal) | Português | Español
-9935 | RK-9 Kennel (Dificil) | Português | Español
-3034 | Rampaging RK-9 Kennel | Português | Español
-9770 | Ruinous Manor (Normal) | Português | Español
-9970 | Ruinous Manor (Difícil) | Português | Español
-9780 | Velik's Hold (5-Person) | Português | Español
-9781 | Velik's Sanctuary | Português | Español
-9981 | Velik's Sanctuary (Difícil) | Português | Español
-9754 | Bathysmal Rise (Normal) | Português | Español
-9054 | Bathysmal Rise (Difícil) | Português | Español
-9768 | Shadow Sanguinary  (Normal) | Português | Español
-9757 | Akeron's Inferno (Normal) | Português | Español
-9057 | Akeron's Inferno (Difícil) | Português | Español
-9716 | Sky Cruiser Endeavor (Normal) | Português | Español
-9916 | Sky Cruiser Endeavor (Difícil) | Português | Español
-3027 | Forbidden Arena [Hagufna] | Português | Español
-3103 | Forbidden Arena [Undying Warlord] | Português | Español
-3203 | Forbidden Arena [Nightmare Undying Warlord] | Português | Español
-3102 | Draakon Arena | Português | Español
-3202 | Draakon Arena (Difícil) | Português | Español
-9053 | Kezzel's Gorge | Português | Español
-9067 | Demokron Factory (Dificil) | Português | Español
-9068 | Shadow Sanguinary (Dificil) | Português | Español
-9070 | Manglemire | Português | Español
-9783 | Dark Reach Citadel (Normal) | Português | Español
-9983 | Dark Reach Citadel (Dificil) | Português | Español
-9066 | Demon's Wheel | Português | Español
+
+| ㅤㅤㅤㅤ Comando para alternar os Idiomasㅤ ㅤㅤ   |  !guia pt  | !guia es | !guia en
+| --- | --- | --- | ---
+
+ID | Nome Dungeons | Idioma | Idioma |  Idioma 
+--- | --- | --- | --- | ---
+7011 | Guardian Blightwood | Português | Español |  English
+7011 | Guardian Blightwood | Português | Español |  English
+7015 | Guardian Balder's Refuge | Português | Español |  English
+3032 | Akalath Quarantine (Training) | Português | Español |  English
+3037 | Bahaar's Sanctum (Training) | Português | Español |  English
+3030 | Commander's Residence  | Português | Español |  English
+3020 | Sea of Honor | Português | Español |  English
+3036 | Sky Cruiser (Extreme) | Português | Español |  English
+3026 | Corrupted Skynest (Normal) | Português | Español |  English
+3126 | Corrupted Skynest (Difícil) | Português | Español |  English
+9739 | Red Refuge | Português | Español |  English
+9939 | Red Refuge (Difícil) | Português | Español |  English
+9027 | Manaya's Core (Difícil) | Português | Español |  English
+9044 | Bahaar's Sanctum | Português | Español |  English
+9756 | Timescape (Normal) | Português | Español |  English
+9056 | Timescape (Difícil) | Português | Español |  English
+9759 | Forsaken Island (Difícil) | Português | Español |  English
+3101 | Gossamer Vault (Normal) | Português | Español |  English
+3201 | Gossamer Vault (Difícil) | Português | Español |  English
+9720 | Antaroth's Abyss (Normal) | Português | Español |  English
+9920 | Antaroth's Abyss (Difícil) | Português | Español |  English
+9782 | Grotto of Lost Souls (Normal) | Português | Español |  English
+9982 | Grotto of Lost Souls (Difícil) | Português | Español |  English
+9735 | RK-9 Kennel (Normal) | Português | Español |  English
+9935 | RK-9 Kennel (Dificil) | Português | Español |  English
+3034 | Rampaging RK-9 Kennel | Português | Español |  English
+9770 | Ruinous Manor (Normal) | Português | Español |  English
+9970 | Ruinous Manor (Difícil) | Português | Español |  English
+9780 | Velik's Hold (5-Person) | Português | Español |  English
+9781 | Velik's Sanctuary | Português | Español |  English
+9981 | Velik's Sanctuary (Difícil) | Português | Español |  English
+9754 | Bathysmal Rise (Normal) | Português | Español |  English
+9054 | Bathysmal Rise (Difícil) | Português | Español |  English
+9768 | Shadow Sanguinary  (Normal) | Português | Español |  English
+9757 | Akeron's Inferno (Normal) | Português | Español |  English
+9057 | Akeron's Inferno (Difícil) | Português | Español |  English
+9716 | Sky Cruiser Endeavor (Normal) | Português | Español |  English
+9916 | Sky Cruiser Endeavor (Difícil) | Português | Español |  English
+3027 | Forbidden Arena [Hagufna] | Português | Español |  English
+3103 | Forbidden Arena [Undying Warlord] | Português | Español |  English
+3203 | Forbidden Arena [Nightmare Undying Warlord] | Português | Español |  English
+3102 | Draakon Arena | Português | Español |  English
+3202 | Draakon Arena (Difícil) | Português | Español |  English
+9053 | Kezzel's Gorge | Português | Español |  English
+9067 | Demokron Factory (Dificil) | Português | Español |  English
+9068 | Shadow Sanguinary (Dificil) | Português | Español |  English
+9070 | Manglemire | Português | Español |  English
+9783 | Dark Reach Citadel (Normal) | Português | Español |  English
+9983 | Dark Reach Citadel (Dificil) | Português | Español |  English
+9066 | Demon's Wheel | Português | Español |  English
 
 ----
 
