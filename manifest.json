@@ -23,7 +23,7 @@
         "guides/9044.js": "d695f487d683b3ef57e3047ffc9ee4179db06c6e9053fc79f353c4ac23715c60",
         "guides/9053.js": "292efd612d3bf03778f45f05ea5aa67d4eaa254a2b290a5eae2d75f5e9f25fc3",
         "guides/9054.js": "5306ea3cf4111f9bd0c601f2d774414bb09a9f7b50ee2442e9288f8d3b7479b5",
-        "guides/9056.js": "87ad6973ebad0d0ef1fc7bab8fdb5e25648d5b1961b3631af13ce17fbf41401a",
+        "guides/9056.js": "ec53e47d7d98affcff02b2b8bd0612eabad308ba98332c92554a673bbe0e0e9d",
         "guides/9057.js": "46f562050854a690c6dbee2cb6702bb6574a1d1634a44148279981e881814cd0",
         "guides/9066.js": "7535c3ed2f8b42fd07bdcf206cc2977787e835ea8e126ebf6728ca020de57779",
         "guides/9067.js": "3deccb5117b1ef4a5d990452b4188b84c415f320db95db9a521d22847e47eede",
@@ -35,7 +35,7 @@
         "guides/9735.js": "3eeff33a7aad5336df3159cbc54460582bc85f199eed0eecb1a77cbf6cbb9e4e",
         "guides/9739.js": "a2bac9a11664933f08b0e13ac6026635049b614c64cb863250c7ea267d687a2a",
         "guides/9754.js": "2f394b051acf85d158fb6f217c1e5ecba568aaf111d0aef0f1711c0a2ffb8675",
-        "guides/9756.js": "6119bbfa19a6455da3966d99c51df45fb7558888fb3f8695ce6bac808cb19d34",
+        "guides/9756.js": "e117cc49bd91c7cc75fc069c382eea2c0c60836f2ab0fe67c41913cdda2fa56d",
         "guides/9757.js": "0c96d17305df7b4f0735cf54359de4fcaeb995e1163b1407e57758555f3d3a89",
         "guides/9759.js": "cda589fbc344ec738d4ff8d57ed3172c97b68e85027c02fc60665dbdb9a4fd3b",
         "guides/9768.js": "3117db543fc52dc10457ca7d33ba6d97b80806061949f19dfccce8874d232db8",
@@ -62,6 +62,8 @@
     "defs": {
         "S_ABNORMALITY_BEGIN": 4,
         "S_ABNORMALITY_END": 1,
-        "S_DUNGEON_EVENT_GAGE": 2
+        "S_CREATURE_ROTATE": "*",
+        "S_DUNGEON_EVENT_GAGE": 2,
+        "S_SPAWN_NPC": "*"
     }
 }
