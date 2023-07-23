@@ -81,6 +81,7 @@ ID | Nome Dungeons | Idioma | Idioma |  Idioma 
 3034 | Rampaging RK-9 Kennel | Português | Español |  English
 9770 | Ruinous Manor (Normal) | Português | Español |  English
 9970 | Ruinous Manor (Difícil) | Português | Español |  English
+9980 | Velik's Hold (Difícil) | Português | Español |  English
 9780 | Velik's Hold (5-Person) | Português | Español |  English
 9781 | Velik's Sanctuary | Português | Español |  English
 9981 | Velik's Sanctuary (Difícil) | Português | Español |  English
