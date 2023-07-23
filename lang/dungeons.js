@@ -247,6 +247,11 @@ module.exports = {
 		"es": "Ruinous Manor (Difícil)",
 		"en": "Ruinous Manor (Hard)"
 	},
+	9980: {
+		"pt": "Velik's Hold (Difícil)",
+		"es": "Velik's Hold (Difícil)",
+		"en": "Velik's Hold (Hard)"
+	},
 	9981: {
 		"pt": "Velik's Sanctuary (Difícil)",
 		"es": "Velik's Sanctuary (Difícil)",

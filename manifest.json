@@ -50,11 +50,12 @@
         "guides/9935.js": "2d3fb897e8d89cba64682bae6b75d600db9affb91c79fc92b0220c80b01c1dc8",
         "guides/9939.js": "b7293ba5bc0558a9c2465efea00dd5f715f71c01933c293bcf253be3eefb322a",
         "guides/9970.js": "f18771280dfc380b33c86247ad1b0c8bea733d6ce48e41a0212ff12772c92d5a",
+        "guides/9980.js": "f9adbb91530fdcf849f0899b9604e5e48879829d08c8237d9d5f0c939608d669",
         "guides/9981.js": "7ba70cc164c26ff8283fd4c138d825223db2e5ec4abb11bb63ea116e18626496",
         "guides/9982.js": "a1ac834b1c33710ce159729fe10d9b53ee901bd3dd98ec8255e79d5b9305bfe5",
         "guides/9983.js": "549f110adb7ba0c5e841afcf1bef8d7425ea0e8f5e5d73c5a04978cf02ab5879",
         "index.js": "40ca408d8f0834359b7bb2e87e2220759ece7d148a013bc41d907ea0c6abdd43",
-        "lang/dungeons.js": "3bc7918995f97d134b24441957547dbc69ec3e751a4191cff303e6a893f30c80",
+        "lang/dungeons.js": "0d9637c9aafb3c058019a3decfc439ffdbf706981ce042a9a7915f35259cc53c",
         "lang/strings.js": "3bf773952b09c62d077b39ac2cda8672afd64342687c58a085137cfde9b988ce",
         "module.json": "e2d0e7f795d8dbd7ba7a3ab68c81a5a17f17ac3a80fbcffff7f2b787be6e7001",
         "settings_migrator.js": "c52763eb444e1e7ce3bdaa16084368a27dd830cfdd54efd8f3c4a85e8e1fcbec"
