@@ -63,7 +63,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-739-3001-107-0": [{ type: "text", sub_type: "message", message: "Many Hits", message_PT: "Muitos Hits (Garras)", message_ES: "Muchos Hits (Garras)" }],
 		"s-739-3001-115-0": [
 			{ type: "text", sub_type: "message", message: "Roar (Stun)", message_PT: "Rugido (Stun)", message_ES: "Rugido (Stun)"},
-			{ type: "text", sub_type: "message", message: "Iframe!", message_PT: "Iframe", message_ES: "Iframe", Daley: 1800 },
+			{ type: "text", sub_type: "message", message: "Iframe!", message_PT: "Iframe", message_ES: "Iframe", delay: 1800 },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 630, 0, 4000] }
 		],
 		"s-739-3001-118-0": [{ type: "text", sub_type: "message", message: "Scratching", message_PT: "Arranhar", message_ES: "Rasguno"}],
@@ -72,7 +72,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-739-3001-167-0": [{ type: "text", sub_type: "message", message: "Many Hits", message_PT: "Muitos Hits (Garras)", message_ES: "Muchos Hits (Garras)"}],
 		"s-739-3001-175-0": [
 			{ type: "text", sub_type: "message", message: "Roar (Stun)", message_PT: "Rugido (Stun)", message_ES: "Rugido (Stun)" },
-			{ type: "text", sub_type: "message", message: "Iframe!", message_PT: "Iframe", message_ES: "Iframe", Daley: 1800 },
+			{ type: "text", sub_type: "message", message: "Iframe!", message_PT: "Iframe", message_ES: "Iframe", delay: 1800 },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 6, 630, 0, 4000] }
 		],		
 		"s-739-3001-177-0": [{ type: "text", sub_type: "message", message: "Backstab", message_PT: "Ataque nas Costas", message_ES: "Ataque por la Espalda" }],

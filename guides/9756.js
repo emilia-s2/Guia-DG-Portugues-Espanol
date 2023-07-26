@@ -38,7 +38,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			handlers.text({
 				sub_type: "notification",
 				message: "Set",
-				message_RU: "Установлено",
+				message_ES: "Listo (No Mover)",
+				message_PT: "Completado (Não Mover)",
 				speech: false
 			});
 		} else {
