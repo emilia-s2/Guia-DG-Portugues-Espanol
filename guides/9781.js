@@ -127,15 +127,14 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],	
 		"s-781-1000-1115-0": [{ type: "text", sub_type: "message", delay: 3200, message: "Dodge", message_PT: "Iframe", message_ES: "Iframe" }], // dodge circle
 		"s-781-1000-1117-0": [{ type: "text", sub_type: "message", delay: 5200, message: "Dodge", message_PT: "Iframe", message_ES: "Iframe" }], // dodge circles		
-		"s-781-1000-2103-0": "s-781-1000-1103-0",
 		"s-781-1000-2111-0": "s-781-1000-1111-0",
 		"s-781-1000-2112-0": "s-781-1000-1112-0",
 		"s-781-1000-2113-0": "s-781-1000-1113-0",
 		"s-781-1000-2114-0": "s-781-1000-1114-0",
 		"s-781-1000-2115-0": "s-781-1000-1115-0",
 		"s-781-1000-2117-0": "s-781-1000-1117-0",
-		"qb-781-1000-78103": [{ type: "text", sub_type: "message", message: "Lead circle to the stone", message_PT: "Conduce el círculo hasta la pedra", message_ES: "Conduza o círculo até a pedra" }],
-		"qb-781-1000-78107": [{ type: "text", sub_type: "message", message: "Lead circles to the stone", message_PT: "Conduce el círculo hasta la pedra", message_ES: "Conduza o círculo até a pedra" }],
+		"qb-781-1000-78103": [{ type: "text", sub_type: "message", message: "Lead circle to the stone", message_PT: "Conduza o círculo até a pedra", message_ES: "Conduce el círculo hasta la pedra" }],
+		"qb-781-1000-78107": [{ type: "text", sub_type: "message", message: "Lead circles to the stone", message_PT: "Conduza o círculo até a pedra", message_ES: "Conduce el círculo hasta la pedra" }],
 
 		// 2 BOSS
 		"nd-781-2000": [

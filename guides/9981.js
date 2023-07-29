@@ -134,7 +134,6 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		//	{ type: "func", func: () => print_test = false },
 		//	{ type: "func", func: () => print_test = true, delay: 5000 }
 		//],
-		"s-981-1000-2103-0": "s-981-1000-1103-0",
 		"s-981-1000-2111-0": "s-981-1000-1111-0",
 		"s-981-1000-2112-0": "s-981-1000-1112-0",
 		"s-981-1000-2113-0": "s-981-1000-1113-0",
