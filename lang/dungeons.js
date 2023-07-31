@@ -96,7 +96,12 @@ module.exports = {
 		"pt": "The Plexus (Difícil)",
 		"es": "The Plexus (Difícil)",
 		"en": "The Plexus (Hard)"
-	},	
+	},
+	9034: {
+		"pt": "Dreadspire",
+		"es": "Dreadspire",
+		"en": "Dreadspire"
+	},
 	9044: {
 		"pt": "Bahaar's Sanctum",
 		"es": "Bahaar's Sanctum",
