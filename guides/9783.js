@@ -58,7 +58,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-783-1000-109-0": [{ type: "text", sub_type: "message", message: "Push Back", message_ES: "Empujar Atrás", message_PT: "Empurrar Atrás" }],
 		"s-783-1000-119-0": [{ type: "text", sub_type: "message", message: "Dodge (Heavy Attack)", message_ES: "Iframe (Ataque Fuerte)", message_PT: "Iframe (Ataque Forte)", delay: 300 }],
 		"s-783-1000-127-0": [{ type: "text", sub_type: "message", message: "Many Attack", message_ES: "Muichos Golpes", message_PT: "Muitos Golpes" }],
-		"s-783-1000-130-0": [{ type: "text", sub_type: "message", message: "Lazer", message_ES: "Lazer", message_PT: "Lazer" }],
+		"s-783-1000-128-0": [{ type: "text", sub_type: "message", message: "Lazer", message_ES: "Lazer", message_PT: "Lazer" }],
+		"s-783-1000-130-0": "s-783-1000-128-0",
 		"s-783-1000-301-0": [{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Iframe", message_PT: "Iframe", delay: 1900 }],
 		"s-783-1000-304-0": [{ type: "text", sub_type: "message", message: "Pull", message_ES: "Jalar", message_PT: "Puxar" }],
 		"s-783-1000-305-0": [{ type: "text", sub_type: "message", message: "Triple Laser (Together)", message_ES: "Laser Triple (Juntar)", message_PT: "Laser Triplo (Juntar)" }],
@@ -165,20 +166,20 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-783-3000-142-0": [{ type: "text", sub_type: "message", message: "Frontal Combo", message_ES: "Frontal Combo", message_PT: "Frontal Combo" }],
 		"s-783-3000-301-0": [
 			{ type: "text", sub_type: "message", message: "Thorns (Target)", message_ES: "Espinas Objetivo x5", message_PT: "Espinhos Alvo х5" },
-			{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Iframe", message_PT: "Iframe", delay: 1500 }
+			{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Iframe", message_PT: "Iframe", delay: 1200 }
 		],
 		"s-783-3000-303-0": [
 			{ type: "text", sub_type: "message", message: "Right Safe", message_ES: "Derecha Seguro", message_PT: "Direita Seguro" },
 			{ type: "spawn", func: "marker", args: [false, 120, 250, 0, 4000, true, null] },
 			{ type: "spawn", func: "marker", args: [false, 300, 250, 0, 4000, true, null] }
 		],
-		"s-783-3000-304-0": "s-783-3000-303-0",
+		"s-783-3000-304-0": "s-783-3000-306-0",
 		"s-783-3000-306-0": [
 			{ type: "text", sub_type: "message", message: "Left Safe", message_ES: "Izquierda Seguro", message_PT: "Esquerda Seguro" },
 			{ type: "spawn", func: "marker", args: [false, 240, 250, 0, 4000, true, null] },
 			{ type: "spawn", func: "marker", args: [false, 60, 250, 0, 4000, true, null] }
 		],
-		"s-783-3000-307-0": "s-783-3000-306-0",
+		"s-783-3000-307-0": "s-783-3000-303-0",
 		"s-783-3000-309-0": [
 			{ type: "text", sub_type: "message", message: "Debuff!!!", message_ES: "Debuff", message_PT: "Debuff!!!" },
 			{ type: "text", sub_type: "message", message: "Lasers", message_ES: "Lasers", message_PT: "Lasers", delay: 3000 }
