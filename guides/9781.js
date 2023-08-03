@@ -11,9 +11,13 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		if (one && two) {
 			handlers.event([
 				{ type: "text", sub_type: "message", message: "Pizza", message_PT: "Pizza", message_ES: "Pizza" },
-				{ type: "spawn", func: "marker", args: [false, one * 45 + 70, 500, 0, 5000, true, null] },
+				{ type: "spawn", func: "marker", args: [false, one * 45 + 68, 500, 0, 5000, true, null] },
+				{ type: "spawn", func: "vector", args: [553, 0, 0, one * 45 + 45, 750, 0, 5000] },
+				{ type: "spawn", func: "vector", args: [553, 0, 0, one * 45 + 90, 750, 0, 5000] },
 				{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 330, 0, 6000] },
-				{ type: "spawn", func: "marker", args: [false, two * 45 + 70, 300, 7000, 5000, true, null] }
+				{ type: "spawn", func: "marker", args: [false, two * 45 + 68, 300, 7000, 5000, true, null] },
+				{ type: "spawn", func: "vector", args: [553, 0, 0, two * 45 + 45, 750, 7000, 5000] },
+				{ type: "spawn", func: "vector", args: [553, 0, 0, two * 45 + 90, 750, 7000, 5000] }
 			]);
 		}
 	}
@@ -149,7 +153,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", delay: 3000, message: "1" }
 		],
 		"s-781-2000-1138-0": [ // T1
-			{ type: "event", delay: 6900, args: [
+			{ type: "event", delay: 6700, args: [
 				{ type: "text", sub_type: "notification", message: "Out > In > Side > Side", message_PT: "Sair > Entrar > Lado > Lado", message_ES: "Salir > Entrar > Lado > Lado" },
 				// x6 normal + in circle
 				{ type: "spawn", func: "marker", args: [false, 15, 270, 0, 3000, true, null] },
@@ -180,7 +184,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			] }
 		],
 		"s-781-2000-1139-0": [ // T2
-			{ type: "event", delay: 7900, args: [
+			{ type: "event", delay: 7700, args: [
 				{ type: "text", sub_type: "notification", message: "Side > In > Out > Side", message_PT: "Lado > Entrar > Sair > Lado", message_ES: "Lado > Entrar > Salir > Lado" },
 				// x6 reverse
 				{ type: "spawn", func: "marker", args: [false, 45, 270, 0, 1500, true, null] },
@@ -218,7 +222,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			] }
 		],
 		"s-781-2000-1140-0": [ // T1
-			{ type: "event", delay: 6900, args: [
+			{ type: "event", delay: 6700, args: [
 				{ type: "text", sub_type: "notification", message: "Out > In > Side > Side", message_PT: "Sair > Entrar > Lado > Lado", message_ES: "Salir > Entrar > Lado > Lado" },
 				// in circle
 				{ type: "spawn", func: "marker", args: [false, 45, 270, 0, 1500, true, null] },
@@ -249,7 +253,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			] }
 		],
 		"s-781-2000-1141-0": [ // T2
-			{ type: "event", delay: 7900, args: [
+			{ type: "event", delay: 7700, args: [
 				{ type: "text", sub_type: "notification", message: "Out > Side > Side > In", message_PT: "Sair > Lado > Lado > Entrar", message_ES: "Salir > Lado > Lado > Entrar" },
 				// x6 normal
 				{ type: "spawn", func: "marker", args: [false, 15, 270, 0, 1500, true, null] },
@@ -385,7 +389,9 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", message: "Donuts", message_PT: "Donuts", message_ES: "Donuts" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 350, 0, 6000] }
 		],
-		"s-781-3000-1401-0": [{ type: "text", sub_type: "message", message: "Plague/Regress", message_PT: "Plague/Regress", message_ES: "Plague/Regress" }],
+		"s-781-3000-1401-0": [{ type: "text", sub_type: "message", message: "Plague/Regress", message_PT: "Plague/Regress", message_ES: "Plague/Regress" },
+			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 15, 175, 1000, 7000] }
+		],
 		"s-781-3000-1402-0": [{ type: "text", sub_type: "message", message: "Sleep", message_PT: "Dormir", message_ES: "¡¡Dormir!!" }],
 		"s-781-3000-1701-0": [{ type: "text", sub_type: "message", message: "Back + Front", message_PT: "Atráss + Frente Ataque", message_ES: "Ataque Atrás + Ataque frontal" }],
 		//

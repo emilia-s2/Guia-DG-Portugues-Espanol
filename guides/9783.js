@@ -166,24 +166,19 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-783-3000-142-0": [{ type: "text", sub_type: "message", message: "Frontal Combo", message_ES: "Frontal Combo", message_PT: "Frontal Combo" }],
 		"s-783-3000-301-0": [
 			{ type: "text", sub_type: "message", message: "Thorns (Target)", message_ES: "Espinas Objetivo x5", message_PT: "Espinhos Alvo х5" },
-			{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Iframe", message_PT: "Iframe", delay: 1200 }
+			{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Iframe", message_PT: "Iframe", delay: 1700 }
 		],
 		"s-783-3000-303-0": [
 			{ type: "text", sub_type: "message", message: "Right Safe", message_ES: "Derecha Seguro", message_PT: "Direita Seguro" },
 			{ type: "spawn", func: "marker", args: [false, 120, 250, 0, 4000, true, null] },
 			{ type: "spawn", func: "marker", args: [false, 300, 250, 0, 4000, true, null] }
 		],
-		"s-783-3000-304-0": "s-783-3000-306-0",
 		"s-783-3000-306-0": [
 			{ type: "text", sub_type: "message", message: "Left Safe", message_ES: "Izquierda Seguro", message_PT: "Esquerda Seguro" },
 			{ type: "spawn", func: "marker", args: [false, 240, 250, 0, 4000, true, null] },
 			{ type: "spawn", func: "marker", args: [false, 60, 250, 0, 4000, true, null] }
 		],
-		"s-783-3000-307-0": "s-783-3000-303-0",
-		"s-783-3000-309-0": [
-			{ type: "text", sub_type: "message", message: "Debuff!!!", message_ES: "Debuff", message_PT: "Debuff!!!" },
-			{ type: "text", sub_type: "message", message: "Lasers", message_ES: "Lasers", message_PT: "Lasers", delay: 3000 }
-		],
+		"s-783-3000-309-0": [{ type: "text", sub_type: "message", message: "Debuff!!!", message_ES: "Debuff", message_PT: "Debuff!!!" }],
 		"s-783-3000-315-0": [
 			{ type: "text", sub_type: "message", message: "Dodge | Out", message_ES: "Esquiva | Salir", message_PT: "Esquiva | Sair" },
 			{ type: "spawn", func: "circle", args: [false, 553, 180, 0, null, 400, 0, 6000] }

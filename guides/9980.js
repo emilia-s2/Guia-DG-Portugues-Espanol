@@ -23,6 +23,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-980-1000-202-0": [{ type: "text", sub_type: "message", message: "Jump (Stun)", message_ES: "Salto (Stun)", message_PT: "Salto Stun" }],
 		"s-980-1000-108-0": [{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Iframe", message_PT: "Iframe", delay: 2000 }],
 		"s-980-1000-302-0": [{ type: "text", sub_type: "message", message: "Spin", message_ES: "Girar", message_PT: "Girar" }],
+		"s-980-1000-302-1": [{ type: "spawn", func: "vector", args: [912, 0, 0, 0, 1600, 0, 2000] }],
 		"s-980-1001-302-0": [{ type: "spawn", func: "vector", args: [912, 0, 0, 0, 1600, 0, 4000] }],
 
 		// 2 boss
@@ -32,13 +33,13 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-980-2000-105-0": [{ type: "text", sub_type: "message", message: "Heavy Front Attack", message_ES: "Ataque Frontal Fuerte", message_PT: "Ataque Frontal Forte" }],
 		"s-980-2000-106-0": [{ type: "text", sub_type: "message", message: "Flame Ray (Target)", message_ES: "Rayo de Fuego (Objetivo)", message_PT: "Raio de Fogo (Alvo)" }],
-		"s-980-2000-106-2": [{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Iframe", message_PT: "Iframe" }],
+		"s-980-2000-106-1": [{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Iframe", message_PT: "Iframe", delay: 500 }],
 		"s-980-2000-107-0": [{ type: "text", sub_type: "message", message: "Whip", message_ES: "Látigo", message_PT: "Chicote" }],
 		"s-980-2000-107-1": [{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Iframe", message_PT: "Iframe", delay: 1000 }],
 		"s-980-2000-108-0": [{ type: "text", sub_type: "message", message: "Front Attack (Stun)", message_ES: "Ataque Frontal (Stun)", message_PT: "Ataque Frontal (Stun)" }],
-		"s-980-2000-301-0": [{ type: "text", sub_type: "message", message: "Jump (Target)",message_ES: "Salto (Objetivo)", message_PT: "Salto (Alvo)" }],
+		"s-980-2000-301-0": [{ type: "text", sub_type: "message", message: "Jump (Target)", message_ES: "Salto (Objetivo)", message_PT: "Salto (Alvo)" }],
 		"s-980-2000-301-1": [{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Iframe", message_PT: "Iframe", delay: 1000 }],
-		"s-980-2000-302-0": [{ type: "text", sub_type: "message", message: "AOE", message_ES: "AOE", message_PT: "AOE" }],
+		"s-980-2000-302-0": [{ type: "text", sub_type: "message", message: "AOE (Stand behind a stone)", message_ES: "AOE (Párate Detrás de una Piedra)", message_PT: "AOE (Fique Atrás de uma Pedra)" }],
 		"s-980-2000-303-0": [{ type: "text", sub_type: "message", message: "Circles", message_ES: "Círculos", message_PT: "Círculos" }],
 		"s-980-2000-304-0": [{ type: "text", sub_type: "message", message: "Jump", message_ES: "Salto", message_PT: "Salto" }],
 		"s-980-2000-304-1": [{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Iframe", message_PT: "Iframe", delay: 1000 }],
@@ -53,14 +54,11 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-980-3000-105-0": [{ type: "text", sub_type: "message", message: "Push Front", message_ES: "Empujón Frontal", message_PT: "Empurrão Frontal" }],
 		"s-980-3000-109-0": [{ type: "text", sub_type: "message", message: "Double Front Attack", message_ES: "Ataque Frontal Doble", message_PT: "Ataque Frontal Duplo" }],
 		"s-980-3000-111-0": [{ type: "text", sub_type: "message", message: "Spin", message_ES: "Girar", message_PT: "Giro" }],
-		"s-980-3000-112-0": [{ type: "text", sub_type: "message", message: "Target", message_ES: "Objetivo", message_PT: "Alvo" }],
+		"s-980-3000-112-0": [{ type: "text", sub_type: "message", message: "Target (Front | Back)", message_ES: "Objetivo (Frente | Atrás)", message_PT: "Alvo (Frente | Atrás)" }],
 		"s-980-3000-112-2": [{ type: "text", sub_type: "message", message: "Front | Back", message_ES: "Ataque Frontal | Atrás", message_PT: "Frente | Atrás" }],
-		"s-980-3000-113-0": [{ type: "text", sub_type: "message", message: "Left Pushback", message_ES: "Izquierda Empujar", message_PT: "Esquerda Empurrar" }], // left
-		"s-980-3000-114-0": [{ type: "text", sub_type: "message", message: "Right Pushback", message_ES: "Derecha Empujar", message_PT: "Direita Empurrar" }], // right
-		"s-980-3000-115-0": [
-			{ type: "text", sub_type: "message", message: "Charging", message_ES: "Cargando", message_PT: "Carregando" },
-			{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Iframe", message_PT: "Iframe", delay: 13500 }
-		],
+		"s-980-3000-113-0": [{ type: "text", sub_type: "message", message: "Pushback", message_ES: "Empujar", message_PT: "Empurrar" }],
+		"s-980-3000-114-0": "s-780-3000-113-0",
+		"s-980-3000-115-0": [{ type: "text", sub_type: "message", message: "Charging", essage_ES: "Cargando", message_PT: "Carregando" }],
 		"s-980-3000-301-0": [{ type: "text", sub_type: "message", message: "Get Out | Get In", message_ES: "Salir| Entrar", message_PT: "Sair | Entrar" }],
 		"s-980-3000-302-0": [{ type: "text", sub_type: "message", message: "Get In", message_ES: "Entrar", message_PT: "Entrar"}],
 		"s-980-3000-304-0": [{ type: "text", sub_type: "message", message: "Shot (Target)", message_ES: "Disparar (Objetivo)", message_PT: "Tiros (Alvo)" }],
@@ -73,7 +71,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-980-3000-308-0": "s-980-3000-306-0",
 		"s-980-3000-309-0": [
 			{ type: "text", sub_type: "message", message: "Jump", message_ES: "Salto", message_PT: "Salto" },
-			{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Iframe", message_PT: "Iframe", delay: 2300 }
+			{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Iframe", message_PT: "Iframe", delay: 2200 }
 		]
 	};
 };

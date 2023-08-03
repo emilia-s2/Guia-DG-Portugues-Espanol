@@ -14,8 +14,13 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		if (one && two) {
 			handlers.event([
 				{ type: "text", sub_type: "message", message: "Pizza", message_ES: "Pizza", message_PT: "Pizza" },
-				{ type: "spawn", func: "marker", args: [false, one * 45 - 20, 500, 0, 5000, true, null] },
-				{ type: "spawn", func: "marker", args: [false, two * 45 - 20, 300, 8000, 5000, true, null] }
+				{ type: "spawn", func: "marker", args: [false, one * 45 - 22, 500, 0, 5000, true, null] },
+				{ type: "spawn", func: "vector", args: [553, 0, 0, one * 45 - 45, 750, 0, 5000] },
+				{ type: "spawn", func: "vector", args: [553, 0, 0, one * 45, 750, 0, 5000] },
+				{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 330, 0, 7000] },
+				{ type: "spawn", func: "marker", args: [false, two * 45 - 22, 300, 8000, 5000, true, null] },
+				{ type: "spawn", func: "vector", args: [553, 0, 0, two * 45 - 45, 750, 8000, 5000] },
+				{ type: "spawn", func: "vector", args: [553, 0, 0, two * 45, 750, 8000, 5000] }
 			]);
 		}
 	}
