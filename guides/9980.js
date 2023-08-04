@@ -57,7 +57,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-980-3000-112-0": [{ type: "text", sub_type: "message", message: "Target (Front | Back)", message_ES: "Objetivo (Frente | Atrás)", message_PT: "Alvo (Frente | Atrás)" }],
 		"s-980-3000-112-2": [{ type: "text", sub_type: "message", message: "Front | Back", message_ES: "Ataque Frontal | Atrás", message_PT: "Frente | Atrás" }],
 		"s-980-3000-113-0": [{ type: "text", sub_type: "message", message: "Pushback", message_ES: "Empujar", message_PT: "Empurrar" }],
-		"s-980-3000-114-0": "s-780-3000-113-0",
+		"s-980-3000-114-0": "s-980-3000-113-0",
 		"s-980-3000-115-0": [{ type: "text", sub_type: "message", message: "Charging", essage_ES: "Cargando", message_PT: "Carregando" }],
 		"s-980-3000-301-0": [{ type: "text", sub_type: "message", message: "Get Out | Get In", message_ES: "Salir| Entrar", message_PT: "Sair | Entrar" }],
 		"s-980-3000-302-0": [{ type: "text", sub_type: "message", message: "Get In", message_ES: "Entrar", message_PT: "Entrar"}],
