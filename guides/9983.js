@@ -168,21 +168,27 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", message: "Thorns (Target)", message_ES: "Espinas Objetivo x5", message_PT: "Espinhos Alvo х5" },
 			{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Iframe", message_PT: "Iframe", delay: 1200 }
 		],
-		"s-983-3000-303-0": [
+		"s-983-3000-303-0": [// 303 - 304 - 305 - 308 - 305
 			{ type: "text", sub_type: "message", message: "Right Safe", message_ES: "Derecha Seguro", message_PT: "Direita Seguro" },
-			{ type: "spawn", func: "marker", args: [false, 120, 250, 0, 4000, true, null] },
-			{ type: "spawn", func: "marker", args: [false, 300, 250, 0, 4000, true, null] }
+			{ type: "spawn", func: "marker", args: [false, 120, 250, 0, 3000, true, null] },
+			{ type: "spawn", func: "marker", args: [false, 300, 250, 0, 3000, true, null] }
 		],
-		"s-983-3000-304-0": "s-983-3000-306-0",
-		"s-983-3000-306-0": [
+		"s-983-3000-305-0": [
+			{ type: "spawn", func: "marker", args: [false, 120, 250, 0, 1500, true, null] },
+			{ type: "spawn", func: "marker", args: [false, 300, 250, 0, 1500, true, null] }
+		],
+		"s-983-3000-306-0": [ // 306 - 307 - 308 - 305 - 308
 			{ type: "text", sub_type: "message", message: "Left Safe", message_ES: "Izquierda Seguro", message_PT: "Esquerda Seguro" },
-			{ type: "spawn", func: "marker", args: [false, 240, 250, 0, 4000, true, null] },
-			{ type: "spawn", func: "marker", args: [false, 60, 250, 0, 4000, true, null] }
+			{ type: "spawn", func: "marker", args: [false, 240, 250, 0, 3000, true, null] },
+			{ type: "spawn", func: "marker", args: [false, 60, 250, 0, 3000, true, null] }
 		],
-		"s-983-3000-307-0": "s-983-3000-303-0",
+		"s-983-3000-308-0": [
+			{ type: "spawn", func: "marker", args: [false, 240, 250, 0, 1500, true, null] },
+			{ type: "spawn", func: "marker", args: [false, 60, 250, 0, 1500, true, null] }
+		],
 		"s-983-3000-309-0": [
 			{ type: "text", sub_type: "message", message: "Debuff!!!", message_ES: "Debuff", message_PT: "Debuff!!!" },
-			{ type: "text", sub_type: "message", message: "Lasers", message_ES: "Lasers", message_PT: "Lasers", delay: 3000 }
+			{ type: "text", sub_type: "message",  message: "Lasers", message_ES: "Lasers", message_PT: "Lasers", delay: 3000 }
 		],
 		"s-983-3000-315-0": [
 			{ type: "text", sub_type: "message", message: "Dodge | Out", message_ES: "Esquiva | Salir", message_PT: "Esquiva | Sair" },
