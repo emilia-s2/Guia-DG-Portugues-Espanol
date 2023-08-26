@@ -122,7 +122,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	// SIXTH FLOOR
 
 	function sixth_regress() {
-		handlers.text({ sub_type: "notification", message: "Plague/Regress", message_ES: "Plague/Regress", message_PT: "[c=#E904CA]!!!!![/c][c=#E904CA]!!!![/c][c=#39FF33]!!!![/c]!!!!!!![c=#F90531]!!!!!!!!!!![/c] Регресс[c=#39FF33]!![/c][c=#E904CA]!!!!![/c]!!!![c=#0517F9]!!!![/c]!!!!!!![c=#F90531]!!!!!!!!!!![/c]" });
+		handlers.text({ sub_type: "notification", message: "Plague/Regress", message_ES: "Plague/Regress", message_PT: "Plague/Regress" });
 		handlers.text({ sub_type: "warning", message: "Plague/Regress", message_ES: "Plague/Regress", message_PT: "Plague/Regress" });
 		handlers.text({ sub_type: "message", message: "Plague/Regress", message_ES: "Plague/Regress", message_PT: "Plague/Regress" });
 	}

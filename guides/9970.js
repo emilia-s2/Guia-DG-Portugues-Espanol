@@ -81,7 +81,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-970-3000-2102-0": "s-970-3000-1102-0",
 		"s-970-3000-1101-0": [
 			{ type: "text", sub_type: "message", message_PT: "Mão Direita", message_ES: "Mano Derecha", message: "Right Hand", check_func: () => !thirdboss_left_hand },
-			{ type: "text", sub_type: "message", message_PT: "Mão Direita | Cauda Atrás", message_ES: "Mano Derecha | Cola Atrás", message: "Right Hand | Tail Slam", check_func: () => thirdboss_left_hand },
+			{ type: "text", sub_type: "notification", message_PT: "Mão Direita | Cauda Atrás", message_ES: "Mano Derecha | Cola Atrás", message: "Right Hand | Tail Slam", check_func: () => thirdboss_left_hand },
 			{ type: "func", func: () => thirdboss_left_hand = false }
 		],
 		"s-970-3000-2101-0": "s-970-3000-1101-0",

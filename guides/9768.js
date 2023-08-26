@@ -162,7 +162,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"give_bait_combo": [
 			{ type: "event", check_func: () => thirdboss_combo_count >= 3, args: [
-				{ type: "text", sub_type: "message", message: "Give Bait", message_ES: "Dar Bait", message_PT: "ДDê Bait", class_position: "heal" },
+				{ type: "text", sub_type: "message", message: "Give Bait", message_ES: "Dar Bait", message_PT: "Dê Bait", class_position: "heal" },
 				{ type: "func", func: () => thirdboss_combo_count = 0 }
 			] }
 		],

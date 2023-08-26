@@ -39,7 +39,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "vector", args: [553, 0, 10, -406, 400, 0, 3500] }
 		],
 		"s-770-1000-2107-0": "s-770-1000-1107-0",
-		"s-770-1000-1117-0": [{ type: "text", sub_type: "message", mmessage_PT: "Patadas", message_ES: "Aplastar", message: "Crush Front" }],
+		"s-770-1000-1117-0": [{ type: "text", sub_type: "message", message_PT: "Patadas", message_ES: "Aplastar", message: "Crush Front" }],
 		"s-770-1000-2117-0": "s-770-1000-1117-0",
 		// 2 BOSS
 		"nd-770-2000": [
@@ -70,7 +70,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-770-3000-2102-0": "s-770-3000-1102-0",
 		"s-770-3000-1101-0": [
 			{ type: "text", sub_type: "message", message_PT: "Mão Direita", message_ES: "Mano Derecha", message: "Right Hand", check_func: () => !thirdboss_left_hand },
-			{ type: "text", sub_type: "message", message_PT: "Mão Direita | Cauda Atrás", message_ES: "Mano Derecha | Cola Atrás", message: "Right Hand | Tail Slam", check_func: () => thirdboss_left_hand },
+			{ type: "text", sub_type: "notification", message_PT: "Mão Direita | Cauda Atrás", message_ES: "Mano Derecha | Cola Atrás", message: "Right Hand | Tail Slam", check_func: () => thirdboss_left_hand },
 			{ type: "func", func: () => thirdboss_left_hand = false }
 		],
 		"s-770-3000-2101-0": "s-770-3000-1101-0",

@@ -105,7 +105,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-720-3000-1104-0": [{ type: "func", func: thirdboss_backattack_event }],
 		"s-720-3000-1119-0": [{ type: "spawn", func: "circle", args: [true, 553, 0, -325, 12, 325, 0, 2000] }],
-		"s-720-3000-1107-0": [{ type: "text", sub_type: "message", message: "Random Jump", message_ES: "Espanol", message_PT: "Прыжок (стан)" }],
+		"s-720-3000-1107-0": [{ type: "text", sub_type: "message", message: "Random Jump", message_ES: "Salto Random", message_PT: "Salto Aleatório" }],
 		"s-720-3000-1107-1": [{ type: "spawn", func: "circle", args: [false, 553, 0, 85, 12, 250, 0, 2000] }],
 		"s-720-3000-1109-0": [
 			{ type: "text", sub_type: "message", message: "Left", message_ES: "Izquierda", message_PT: "Esqueda" },

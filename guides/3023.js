@@ -117,7 +117,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "stop_timers" },
 			{ type: "despawn_all" }
 		],
-		"s-3023-2000-164-0": [{ type: "text", sub_type: "message", message_PT: "Ataque de sangramento", message_ES: "Ataque de desangramiento", message: "Counter Attack (bleed)" }],
+		"s-3023-2000-164-0": [{ type: "text", sub_type: "message", message_PT: "Ataque de sangramento", message_ES: "Ataque de sangramiento", message: "Counter Attack (bleed)" }],
 		"s-3023-2000-166-0": [{ type: "text", sub_type: "message", message_PT: "Ataque Atras (Vire-se)", message_ES: "Ataque Atrás (dar vuelta)", message: "Turn-back" }],
 		"s-3023-2000-175-0": [
 			{ type: "text", sub_type: "message", message_PT: "Rugido (Stun)", message_ES: "Rugido (Stun)", message: "Incoming Stun" },

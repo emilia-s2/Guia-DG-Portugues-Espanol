@@ -123,7 +123,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"am-3201-320126-32010224": [
 			{ type: "func", func: () => boss = 1 },
-			{ type: "text", delay: 52000, sub_type: "warning", message_PT: "[c=#ff6600]REAL[/c] Debuff em 5 segundos", message_ES: "REAL Debuff en 5 Secundos", message: "True Debuff in 5 seconds" },
+			{ type: "text", delay: 52000, sub_type: "notification", message_PT: "[c=#ff6600]REAL[/c] Debuff em 5 segundos", message_ES: "[c=#ff6600]REAL[/c] Debuff en 5 Secundos", message: "[c=#ff6600]TRUE[/c] Debuff in 5 seconds" },
 			{ type: "event", delay: 80000, args: [
 				{ type: "func", check_func: () => boss === 1, func: () => boss = null },
 				{ type: "text", check_func: () => boss === 1, sub_type: "message", message_PT: "Recarregar Debuff", message_ES: "Cargar Debuff", message: "Debuff reload" }
@@ -131,7 +131,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"am-3201-2000-32010220": [
 			{ type: "func", func: () => { boss = 0; } },
-			{ type: "text", delay: 52000, sub_type: "warning", message_PT: "[c=#ba2a02]FAKE[/c] Debuff em 5 segundos", message_ES: "FAKE Debuff en 5 Secundos", message: "False Debuff in 5 seconds" },
+			{ type: "text", delay: 52000, sub_type: "notification", message_PT: "[c=#ba2a02]FAKE[/c] Debuff em 5 segundos", message_ES: "[c=#ba2a02]FAKE[/c] Debuff en 5 Secundos", message: "[c=#ba2a02]FALSE[/c] Debuff in 5 seconds" },
 			{ type: "event", delay: 80000, args: [
 				{ type: "func", check_func: () => boss === 0, func: () => boss = null },
 				{ type: "text", check_func: () => boss === 0, sub_type: "message", message_PT: "Recarregar Debuff", message_ES: "Cargar Debuff", message: "Debuff reload" }

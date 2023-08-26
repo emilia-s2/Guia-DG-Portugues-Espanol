@@ -238,7 +238,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-3020-2200-123-0": [{ type: "func", func: boss_mech_event, args: [123] }], // "Ощути силу взрыва"
 
 		"s-3020-2200-108-0": [
-			{ type: "text", sub_type: "message", message_PT: "Frente (Stun)", message_ES: "Espanol", message: "Front Stun" },
+			{ type: "text", sub_type: "message", message_PT: "Frente (Stun)", message_ES: "Frente (Stun)", message: "Front Stun" },
 			{ type: "spawn", func: "circle", args: [true, 553, 0, 170, 20, 120, 200, 2000] }
 		],
 		//"s-3020-9101-122-0": [{ type: "text", sub_type: "message", message_PT: "Jump", "message_TW": "强袭" }],

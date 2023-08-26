@@ -8,7 +8,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-467-46704-205-0": [{ type: "text", sub_type: "message", delay:2500, message:  "Pushback", message_ES: "Empujar", message_PT: "Empurrar" }],
 		"s-467-46704-208-0": [
 			{ type: "text", sub_type: "message", message: "Laser", message_ES: "Laser", message_PT: "Laser" },
-			{ type: "text", sub_type: "message", delay: 13000, message: "Pushback", message_ES: "Espanol", message_PT: "Откид" }
+			{ type: "text", sub_type: "message", delay: 13000, message: "Pushback", message_ES: "Empujar", message_PT: "Empurrar" }
 		],
 		"s-467-46704-209-0": [{ type: "text", sub_type: "message", message: "Attack to tank", message_ES: "Empujar", message_PT: "Empurrar" }],
 		"s-467-46704-210-0": [
