@@ -88,13 +88,13 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"h-939-3001-30": [{ type: "text", sub_type: "message", message: "Reveal soon...", message_ES: "Revelar Pronto...", message_PT: "Revelar em Breve..." }],
 		"s-939-3001-201-0": [
-			{ type: "text", sub_type: "message", message: "Strong Roar (Stun)", message_ES: "Rugido Fuerte (Stun)", message_PT: "Rugido Forte (Stun) 1" },
+			{ type: "text", sub_type: "message", message: "Strong Roar (Stun)", message_ES: "Rugido Fuerte (Stun)", message_PT: "Rugido Forte (Stun)" },
 			{ type: "text", sub_type: "message", delay: 3500, message: "Dodge!", message_ES: "Iframe!", message_PT: "Iframe!" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 650, 0, 4000] }
 		],
 		"s-939-3001-107-0": [{ type: "text", sub_type: "message", message: "Many Hits", message_ES: "Muchos Golpes", message_PT: "Muitos Golpes" }],
 		"s-939-3001-115-0": [
-			{ type: "text", sub_type: "message", message: "Strong Roar (Stun)", message_PT: "Rugido Stun)", message_PT: "Rugido (Stun) 3" },
+			{ type: "text", sub_type: "message", message: "Strong Roar (Stun)", message_PT: "Rugido Stun)", message_PT: "Rugido (Stun)" },
 			{ type: "text", sub_type: "message", delay: 1050, message: "Dodge!", message_ES: "Iframe", message_PT: "Iframe!" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 650, 0, 4000] }
 		],
@@ -104,7 +104,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-939-3001-167-0": [{ type: "text", sub_type: "message", message: "Many Hits", message_ES: "Muchos Golpes", message_PT: "Muitos Golpes" }],
 		"s-939-3001-172-0": [{ type: "text", sub_type: "message", message: "Target", message_ES: "Objetivo", message_PT: "Alvo" }],
 		"s-939-3001-175-0": [
-			{ type: "text", sub_type: "message", message: "Strong Roar (Stun)", message_PT: "Rugido Stun)", message_PT: "Rugido (Stun) 2" },
+			{ type: "text", sub_type: "message", message: "Strong Roar (Stun)", message_PT: "Rugido Stun)", message_PT: "Rugido (Stun)" },
 			{ type: "text", sub_type: "message", delay: 1050, message: "Dodge!", message_ES: "Iframe!", message_PT: "Iframe!" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 650, 0, 4000] }
 		],

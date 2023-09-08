@@ -35,7 +35,16 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-768-1000-301-0": [{ type: "text", sub_type: "message", message: "Wave Front", message_ES: "Ola Frontal", message_PT: "Onda Frente" }],
 		"s-768-1000-304-0": [{ type: "text", sub_type: "message", message: "Strike (Target)", message_ES: "Strike (Objetivo)", message_PT: "Strike (Alvo)" }],
 		"s-768-1000-304-1": [{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Iframe", message_PT: "Iframe", delay: 700 }],
-		"s-768-1000-305-0": [{ type: "text", sub_type: "message", message: "8 explosions", message_ES: "8 Explosiones", message_PT: "8 Explosões" }],
+		"s-768-1000-305-0": [{ type: "text", sub_type: "message", message: "8 explosions", message_ES: "8 Explosiones", message_PT: "8 Explosões" },
+			{ type: "spawn", func: "circle", args: [false, 912, 0, 210, 22, 140, 0, 5000] },//1 front 
+			{ type: "spawn", func: "circle", args: [false, 445, 0, -230, 22, 140, 0, 5000] },//2 back
+			{ type: "spawn", func: "circle", args: [false, 476, 90, -230, 22, 140, 0, 3000] },//3 left
+			{ type: "spawn", func: "circle", args: [false, 553, 270, -230, 22, 140, 0, 3000] },//4 right
+			{ type: "spawn", func: "circle", args: [false, 912, 315, 360, 14, 220, 1000, 5000] },//1 front left big
+			{ type: "spawn", func: "circle", args: [false, 553, 135, 360, 14, 220, 1000, 5000] },//2 back right big
+			{ type: "spawn", func: "circle", args: [false, 445, 45, 360, 14, 220, 1000, 4000] },//3 front right big
+			{ type: "spawn", func: "circle", args: [false, 476, 225, 360, 14, 220, 1000, 3500] }//4 back left big
+		],	
 		"s-768-1000-306-0": [{ type: "text", sub_type: "message", message: "Stones", message_ES: "Piedras", message_PT: "Pedras" }], // 306 -> 307
 
 		// 2 BOSS
