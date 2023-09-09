@@ -55,11 +55,11 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-939-2000-105-0": [
 			{ type: "text", sub_type: "message", message: "360", message_ES: "360", message_PT: "360" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 300, 0, 2500] },
-			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 10, 342, 0, 2500] },
-			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 10, 384, 0, 2500] },
-			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 10, 426, 0, 2500] },
-			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 10, 468, 0, 2500] },
-			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 510, 0, 2500] }
+			//{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 10, 342, 0, 2500] },
+			//{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 10, 384, 0, 2500] },
+			//{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 10, 426, 0, 2500] },
+			//{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 10, 468, 0, 2500] },
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 530, 0, 2500] }
 		],
 		"s-939-2000-113-0": [{ type: "text", sub_type: "message", message: "Stun", message_ES: "Stun", message_PT: "Stun" }],
 		"s-939-2000-108-0": [
