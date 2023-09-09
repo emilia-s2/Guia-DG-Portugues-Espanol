@@ -104,7 +104,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-939-3001-167-0": [{ type: "text", sub_type: "message", message: "Many Hits", message_ES: "Muchos Golpes", message_PT: "Muitos Golpes" }],
 		"s-939-3001-172-0": [{ type: "text", sub_type: "message", message: "Target", message_ES: "Objetivo", message_PT: "Alvo" }],
 		"s-939-3001-175-0": [
-			{ type: "text", sub_type: "message", message: "Strong Roar (Stun)", message_PT: "Rugido Stun)", message_PT: "Rugido (Stun)" },
+			{ type: "text", sub_type: "message", message: "Strong Roar (Stun)", message_PT: "Rugido (Stun)", message_PT: "Rugido (Stun)" },
 			{ type: "text", sub_type: "message", delay: 1050, message: "Dodge!", message_ES: "Iframe!", message_PT: "Iframe!" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 650, 0, 4000] }
 		],
