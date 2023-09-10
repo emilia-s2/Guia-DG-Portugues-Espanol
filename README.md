@@ -63,6 +63,7 @@ ID | Nome Dungeons | Idioma | Idioma |  Idioma 
 3036 | Sky Cruiser (Extreme) | Português | Español |  English
 3026 | Corrupted Skynest (Normal) | Português | Español |  English
 3126 | Corrupted Skynest (Difícil) | Português | Español |  English
+9034 |	Dreadspire | Português | Español |  English
 9739 | Red Refuge | Português | Español |  English
 9939 | Red Refuge (Difícil) | Português | Español |  English
 9027 | Manaya's Core (Difícil) | Português | Español |  English
