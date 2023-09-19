@@ -25,7 +25,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "func", func: () => combo_count = 0 }
 		],
 		"h-3104-1000-35": [{ type: "text", sub_type: "message", message: "35%", message_ES: "35%", message_PT: "35%" }],
-		"qb-3104-1000-32041000": [{ type: "text", sub_type: "alert", message: "combo Pizza em Breve", message_ES: "Combo Pizza en Breve", message_PT: "Combo Pizza em Breve" }],
+		//"qb-3104-1000-32041000": [{ type: "text", sub_type: "alert", message: "Combo Pizza Soon", message_ES: "Combo Pizza Pronto", message_PT: "Combo Pizza em Breve" }],
 
 		"s-3104-1000-104-0": [
 			{ type: "text", sub_type: "message", message: "Stun (AOE)", message_ES: "Stun (AOE)", message_PT: "Stun (AOE)" },
