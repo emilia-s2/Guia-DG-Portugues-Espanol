@@ -78,7 +78,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-980-3000-308-0": "s-980-3000-306-0",
 		"s-980-3000-309-0": [
 			{ type: "text", sub_type: "message", message: "Jump", message_ES: "Salto", message_PT: "Salto" },
-			{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Iframe", message_PT: "Iframe", delay: 1800 }
+			{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Iframe", message_PT: "Iframe", delay: 2000 }
 		]
 	};
 };

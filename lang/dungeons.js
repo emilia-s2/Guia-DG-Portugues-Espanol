@@ -72,6 +72,11 @@ module.exports = {
 		"es": "Forbidden Arena [Undying Warlord]",
 		"en": "Forbidden Arena [Undying Warlord]"
 	},
+	3104: {
+		"pt": "Lumikan's Dream Normal",
+		"es": "Lumikan's Dream Normal",
+		"en": "Lumikan's Dream Normal"
+	},
 	3126: {
 		"pt": "Corrupted Skynest (Difícil)",
 		"es": "Corrupted Skynest (Difícil)",
@@ -91,6 +96,11 @@ module.exports = {
 		"pt": "Forbidden Arena [Nightmare Undying Warlord]",
 		"es": "Forbidden Arena [Nightmare Undying Warlord]",
 		"en": "Forbidden Arena [Nightmare Undying Warlord]"
+	},
+	3204: {
+		"pt": "Lumikan's Dream (Difícil)",
+		"es": "Lumikan's Dream (Difícil)",
+		"en": "Lumikan's Dream (Hard)"
 	},
 	9027: {
 		"pt": "The Plexus (Difícil)",

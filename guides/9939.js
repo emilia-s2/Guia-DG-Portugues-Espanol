@@ -42,7 +42,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-939-1000-119-0": [{ type: "text", sub_type: "message", message: "Many Hits", message_ES: "Muchos Golpes", message_PT: "Muchos Golpes" }],
 		"s-939-1000-306-0": [
-			{ type: "text", sub_type: "message", message: "Out > In", message_ES: "Salir > Entrar", message_PT: "Salir > Entrar" },
+			{ type: "text", sub_type: "message", message: "Out > In", message_ES: "Salir > Entrar", message_PT: "Sair > Entrar" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 300, 0, 6500] }
 		],
 		"s-939-1000-306-1": [{ type: "text", sub_type: "message", message: "In", message_ES: "Entrar", message_PT: "Entrar" }],
