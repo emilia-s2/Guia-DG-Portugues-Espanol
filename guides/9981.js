@@ -152,46 +152,40 @@ module.exports = (dispatch, handlers, guide, lang) => {
 
 	let last_donut_msg = null;
 	function first_fly_mech(skillid) {
-		let delay = first_fifty ? 6 : 6;
 		let PizzaUnEnragedMarkers = [
-			{ type: "spawn", func: "vector", args: [553, 0, 0, 4 * 45 + 45, 750, 0, 1000 * delay] },
-			{ type: "spawn", func: "vector", args: [553, 0, 0, 195, 750, 0, 1000 * delay] },
-
-			{ type: "spawn", func: "vector", args: [553, 0, 0, 7 * 45 + 90, 750, 0, 1000 * delay] },
-			{ type: "spawn", func: "vector", args: [553, 0, 0, (7 * 45 + 90) - 30, 750, 0, 1000 * delay] },
-
-			{ type: "spawn", func: "vector", args: [912, 0, 0, 45 + 90, 750, 0, 1000 * delay] },
-			{ type: "spawn", func: "vector", args: [912, 0, 0, (45 + 90) + 30, 750, 0, 1000 * delay] },
-
-			{ type: "spawn", func: "vector", args: [445, 0, 0, (45 + 90) - 30, 750, 0, 1000 * delay] },
-			{ type: "spawn", func: "vector", args: [445, 0, 0, (45 + 90) - 60, 750, 0, 1000 * delay] },
-
-			{ type: "spawn", func: "vector", args: [413, 0, 0, 6 * 45 + 45, 750, 0, 1000 * delay] },
-			{ type: "spawn", func: "vector", args: [413, 0, 0, (6 * 45 + 45) + 30, 750, 0, 1000 * delay] },
-
-			{ type: "spawn", func: "vector", args: [537, 0, 0, (6 * 45 + 45) - 30, 750, 0, 1000 * delay] },
-			{ type: "spawn", func: "vector", args: [537, 0, 0, (6 * 45 + 45) - 60, 750, 0, 1000 * delay] },
+			// 476 Azure Shard Blue
+			{ type: "spawn", func: "vector", args: [476, 0, 0, 45 + 90, 750, 0, 6000] },
+			{ type: "spawn", func: "vector", args: [476, 0, 0, (45 + 90) + 30, 750, 0, 6000] },
+			{ type: "spawn", func: "vector", args: [476, 0, 0, 6 * 45 + 45, 750, 0, 6000] },
+			{ type: "spawn", func: "vector", args: [476, 0, 0, (6 * 45 + 45) + 30, 750, 0, 6000] },
+			// 474 Crimson Shard Red
+			{ type: "spawn", func: "vector", args: [474, 0, 0, 4 * 45 + 45, 750, 0, 6000] },
+			{ type: "spawn", func: "vector", args: [474, 0, 0, 195, 750, 0, 6000] },
+			{ type: "spawn", func: "vector", args: [474, 0, 0, 7 * 45 + 90, 750, 0, 6000] },
+			{ type: "spawn", func: "vector", args: [474, 0, 0, (7 * 45 + 90) - 30, 750, 0, 6000] },
+			// 477 Aetherduct Green
+			{ type: "spawn", func: "vector", args: [477, 0, 0, (45 + 90) - 30, 750, 0, 6000] },
+			{ type: "spawn", func: "vector", args: [477, 0, 0, (45 + 90) - 60, 750, 0, 6000] },
+			{ type: "spawn", func: "vector", args: [477, 0, 0, (6 * 45 + 45) - 30, 750, 0, 6000] },
+			{ type: "spawn", func: "vector", args: [477, 0, 0, (6 * 45 + 45) - 60, 750, 0, 6000] },
 		];
 
 		let PizzaEnragedMarkers = [
-			{ type: "spawn", func: "vector", args: [537, 0, 0, (45 + 90) + 30, 750, 0, 1000 * delay] }, // 537 Mutated Mushroom 
-			{ type: "spawn", func: "vector", args: [537, 0, 0, 195, 750, 0, 1000 * delay] },		// 537 Mutated Mushroom
-
-			{ type: "spawn", func: "vector", args: [553, 0, 0, 4 * 45 + 45, 750, 0, 1000 * delay] },
-			{ type: "spawn", func: "vector", args: [553, 0, 0, (6 * 45 + 45) - 60, 750, 0, 1000 * delay] },
-
-			{ type: "spawn", func: "vector", args: [912, 0, 0, 45 + 90, 750, 0, 1000 * delay] }, // egg 912
-			{ type: "spawn", func: "vector", args: [912, 0, 0, (45 + 90) - 30, 750, 0, 1000 * delay] },  // egg 912
-
-			{ type: "spawn", func: "vector", args: [553, 0, 0, (45 + 90) - 60, 750, 0, 1000 * delay] },
-			{ type: "spawn", func: "vector", args: [553, 0, 0, 7 * 45 + 90, 750, 0, 1000 * delay] },
-
-
-			{ type: "spawn", func: "vector", args: [443, 0, 0, (6 * 45 + 45) + 30, 750, 0, 1000 * delay] }, // skull  443
-			{ type: "spawn", func: "vector", args: [443, 0, 0, (7 * 45 + 90) - 30, 750, 0, 1000 * delay] }, // skull  443
-
-			{ type: "spawn", func: "vector", args: [537, 0, 0, 6 * 45 + 45, 750, 0, 1000 * delay] },
-			{ type: "spawn", func: "vector", args: [537, 0, 0, (6 * 45 + 45) - 30, 750, 0, 1000 * delay] },
+			// 476 Azure Shard Blue
+			{ type: "spawn", func: "vector", args: [476, 0, 0, (45 + 90) + 30, 750, 0, 6000] },
+			{ type: "spawn", func: "vector", args: [476, 0, 0, 195, 750, 0, 6000] },
+			{ type: "spawn", func: "vector", args: [476, 0, 0, (6 * 45 + 45) + 30, 750, 0, 6000] },
+			{ type: "spawn", func: "vector", args: [476, 0, 0, (7 * 45 + 90) - 30, 750, 0, 6000] },
+			// 474 Crimson Shard Red
+			{ type: "spawn", func: "vector", args: [474, 0, 0, 4 * 45 + 45, 750, 0, 6000] },
+			{ type: "spawn", func: "vector", args: [474, 0, 0, (6 * 45 + 45) - 60, 750, 0, 6000] },
+			{ type: "spawn", func: "vector", args: [474, 0, 0, (45 + 90) - 60, 750, 0, 6000] },
+			{ type: "spawn", func: "vector", args: [474, 0, 0, 7 * 45 + 90, 750, 0, 6000] },
+			// 477 Aetherduct Green
+			{ type: "spawn", func: "vector", args: [477, 0, 0, 45 + 90, 750, 0, 6000] },
+			{ type: "spawn", func: "vector", args: [477, 0, 0, (45 + 90) - 30, 750, 0, 6000] },
+			{ type: "spawn", func: "vector", args: [477, 0, 0, 6 * 45 + 45, 750, 0, 6000] },
+			{ type: "spawn", func: "vector", args: [477, 0, 0, (6 * 45 + 45) - 30, 750, 0, 6000] },
 		];
 
 		if (!first_fifty) {
@@ -242,7 +236,6 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		first_fifty = false;
 		prev_attack = 0;
 	}
-
 
 	let second_swipes_remaining = 0;
 	let second_fifty = false;
@@ -534,6 +527,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "func", func: () => second_swipes_remaining = 0 },
 			{ type: "func", func: () => second_fifty = false },
 			{ type: "func", func: () => second_swipe_counter = 0 },
+			{ type: "func", func: () => second_new_swipe = false },
 		],
 		"h-981-2000-49": [
 			{ type: "text", sub_type: "message", message: "49%" },
@@ -567,18 +561,18 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-981-2000-1115-1": [{ type: "text", sub_type: "message", message: "Dodge", message_PT: "Iframe", message_ES: "Iframe", delay: 150 }],
 		"s-981-2000-1117-0": [{ type: "text", sub_type: "message", message: "Jump", message_PT: "Salto", message_ES: "Salto" }],
 		"s-981-2000-1106-0": [
-			{ type: "func", func: () => second_swipes_remaining--, check_func: second_swipes_remaining > 0 },
-			{ type: "text", sub_type: "message", message: "Back", message_ES: "Atrás", message_PT: "Atrás", check_func: !first_fifty || second_swipes_remaining > 1 },
-			{ type: "text", sub_type: "message", message: "Back - Front", message_ES: "Atrás - Frente", message_PT: "Atrás - Frente", check_func: first_fifty && second_swipes_remaining === 1 },
+			{ type: "func", func: () => second_swipes_remaining--, check_func: () => second_swipes_remaining > 0 },
+			{ type: "text", sub_type: "message", message: "Back", message_ES: "Atrás", message_PT: "Atrás", check_func: () => !second_fifty || second_swipes_remaining !== 1 },
+			{ type: "text", sub_type: "message", message: "Back - Front", message_ES: "Atrás - Frente", message_PT: "Atrás - Frente", check_func: () => second_fifty && second_swipes_remaining === 1 },
 			{ type: "spawn", func: "circle", args: [false, 553, 180, 340, 14, 270, 0, 2600] },
 		],
 		"s-981-2000-1108-0": [
-			{ type: "func", func: () => second_swipes_remaining--, check_func: second_swipes_remaining > 0 },
-			{ type: "text", sub_type: "message", message: "Front", message_ES: "Frente", message_PT: "Frente", check_func: !first_fifty || second_swipes_remaining > 1 },
-			{ type: "text", sub_type: "message", message: "Front - Back", message_ES: "Frente - Atrás", message_PT: "Frente - Atrás", check_func: first_fifty && second_swipes_remaining === 1 },
+			{ type: "func", func: () => second_swipes_remaining--, check_func: () => second_swipes_remaining > 0 },
+			{ type: "text", sub_type: "message", message: "Front", message_ES: "Frente", message_PT: "Frente", check_func: () => !second_fifty || second_swipes_remaining !== 1 },
+			{ type: "text", sub_type: "message", message: "Front - Back", message_ES: "Frente - Atrás", message_PT: "Frente - Atrás", check_func: () => second_fifty && second_swipes_remaining === 1 },
 		],
 		"s-981-2000-1130-0": [
-			{ type: "func", func: () => second_swipes_remaining--, check_func: second_swipes_remaining > 0 },
+			{ type: "func", func: () => second_swipes_remaining--, check_func: () => second_swipes_remaining > 0 },
 			{ type: "text", sub_type: "message", message: "Right", message_ES: "Derecha", message_PT: "Direita" },
 			{ type: "spawn", func: "vector", args: [553, 360, 400, 180, 800, 0, 2000] },
 			{ type: "spawn", func: "marker", args: [false, 60, 100, 0, 2000, true, null] },
@@ -589,7 +583,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "semicircle", args: [180, 360, 912, 0, 0, 8, 360, 0, 1500] }
 		],
 		"s-981-2000-1131-0": [
-			{ type: "func", func: () => second_swipes_remaining--, check_func: second_swipes_remaining > 0 },
+			{ type: "func", func: () => second_swipes_remaining--, check_func: () => second_swipes_remaining > 0 },
 			{ type: "text", sub_type: "message", message: "Left", message_ES: "Izquierda", message_PT: "Esquerda" },
 			{ type: "spawn", func: "vector", args: [553, 360, 400, 180, 800, 0, 2000] },
 			{ type: "spawn", func: "marker", args: [false, 300, 100, 0, 2000, true, null] },
