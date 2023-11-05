@@ -15,7 +15,7 @@ const DefaultSettings = {
 	"cc": [
 		"</font><font color=\"#b8ff05\">"
 	],
-	"language": "pt",
+	"language": "auto",
 	"dungeons": {},
 	"debug": {
 		"chat": true,

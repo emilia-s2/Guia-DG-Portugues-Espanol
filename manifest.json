@@ -61,7 +61,7 @@
         "lang/dungeons.js": "1520f5522240a00834b8fffbc8111a3c73b3c358b76bd2630c2995f5bb92e04d",
         "lang/strings.js": "3bf773952b09c62d077b39ac2cda8672afd64342687c58a085137cfde9b988ce",
         "module.json": "e2d0e7f795d8dbd7ba7a3ab68c81a5a17f17ac3a80fbcffff7f2b787be6e7001",
-        "settings_migrator.js": "c52763eb444e1e7ce3bdaa16084368a27dd830cfdd54efd8f3c4a85e8e1fcbec"
+        "settings_migrator.js": "734e48a7c4f124f4e873e669bd6aac64d53fe4ca7fbcca55883e4fcc50b74437"
     },
     "defs": {
         "S_ABNORMALITY_BEGIN": 4,
