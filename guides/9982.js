@@ -1,6 +1,6 @@
-// Grotto of Lost Souls (Hard)
+// Grotto of Lost Souls (Difícil)
 //
-// made by michengs / HSDN
+// made by michengs / HSDN / Calvary
 
 module.exports = (dispatch, handlers, guide, lang) => {
 
@@ -10,6 +10,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	let awakening_one = false;
 	let awakening_two = false;
 	let stack_level = 0;
+	
+	const is_mt = dispatch._mod.connection.metadata.serverList[dispatch._mod.serverId].name.includes("MT");
 
 	function stacks_level_event() {
 		if (!awakening_one) return;
@@ -65,13 +67,17 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-982-1000-113-0": [{ type: "text", sub_type: "message", message: "Thorns (Bleed)", message_ES: "Espinas (Sangrar)", message_PT: "Espinhos (Sangrar)" }],
 		"s-982-1000-116-0": [
 			{ type: "text", sub_type: "message", message: "AoE", message_ES: "AoE", message_PT: "AoE" },
-			{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Esquiva", message_PT: "Esquiva", delay: 2000 }
+			{ type: "text", sub_type: "message", message: "3" },
+			{ type: "text", sub_type: "message", delay: 500, message: "2" },
+			{ type: "text", sub_type: "message", delay: 1000, message: "1" },
+			{ type: "text", sub_type: "message", delay: 1500, message: "Dodge", message_ES: "Esquiva", message_PT: "Esquiva" }
 		],
 		"s-982-1000-301-0": [
 			{ type: "text", sub_type: "message", message: "Flower Stuns ", message_ES: "Flor Canibal (Stun)", message_PT: "Flor Canibal (Stun)" },
 			{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Esquiva", message_PT: "Esquiva", delay: 2000 }
 		],
 		"s-982-1000-307-0": [{ type: "text", sub_type: "message", message: "Cage (Don't move)", message_ES: "Jaula (no Move)", message_PT: "Jaula (Não se Mova)" }],
+		"s-982-1032-349-0": [{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Esquiva", message_PT: "Esquiva" }],
 		// Flowers mech
 		"ab-982-1003-98200161": [
 			{ type: "text", sub_type: "message", message: "Green", message_ES: "Verde", message_PT: "Verde" },
@@ -107,7 +113,9 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "despawn_all" }
 		],
 		"s-982-2000-105-0": [{ type: "text", sub_type: "message", message: "Spin", message_ES: "GIRO Atrás", message_PT: "GIRAR Atrás" }],
-		"s-982-2000-108-0": [{ type: "text", sub_type: "message", message: "Shot Forward", message_ES: "Disparo Delantero", message_PT: "Disparo na Frente" }],
+		"s-982-2000-108-0": [{ type: "text", sub_type: "message", message: "Shot Forward", message_ES: "Disparo Delantero", message_PT: "Disparo na Frente" },
+			{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Esquiva", message_PT: "Esquiva", delay: 500 }
+		],
 		"s-982-2000-109-0": [{ type: "text", sub_type: "message", message: "Wave Forward", message_ES: "Vómito Frente", message_PT: "Vómito Frente" }],
 		"s-982-2000-112-0": [{ type: "text", sub_type: "message", message: "Kick Forward", message_ES: "Patada Frente", message_PT: "Patada Frente" }],
 		"s-982-2000-113-0": [
@@ -127,16 +135,17 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-982-2000-117-0": "s-982-2000-116-0",
 		"s-982-2000-301-0": [
 			{ type: "text", sub_type: "message", message: "Get Out | Dodge", message_ES: "SALIR + ESQUIVAR", message_PT: "SAIR + ESQUIVAR" },
-			{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Esquiva", message_PT: "Esquiva", delay: 3700  },
+			{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Esquiva", message_PT: "Esquiva", delay: 3700 },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, null, 260, 0, 3000] },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, null, 650, 0, 3000] }
 		],
 		"s-982-2000-302-0": [
 			{ type: "text", sub_type: "message", message: "Get In | Dodge", message_ES: "ENTRAR + ESQUIVAR", message_PT: "ENTRAR + ESQUIVAR" },
-			{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Esquiva", message_PT: "Esquiva", delay: 3700  },
+			{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Esquiva", message_PT: "Esquiva", delay: 3700 },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, null, 260, 0, 3000] },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, null, 650, 0, 3000] }
 		],
+		"s-982-2000-303-0": [{ type: "text", sub_type: "message", message: "Waves", message_ES: "Olas", message_PT: "Ondas" }],
 		"s-982-2000-307-0": [{ type: "text", sub_type: "message", message: "Target", message_ES: "Objetivo", message_PT: "Alvo" }],
 		"s-982-2000-307-2": [{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Esquiva", message_PT: "Esquiva" }],
 
@@ -169,7 +178,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-982-3000-146-0": [
 			{ type: "text", sub_type: "message", message: "Pulses Left", message_ES: "IZQUIERDA Atrás (Pulsos)", message_PT: "ESQUERDA Atrás (Pulsos)" },
 			{ type: "spawn", func: "circle", args: [true, 553, 200, 350, null, 280, 500, 2000] },
-			{ type: "spawn", func: "marker", args: [false, 215, 370, 5300, 3000, true, null] }, // 1
+			{ type: "spawn", func: "marker", args: [false, 215, 370, is_mt ? 4200 : 5300, 3000, true, null] }, // 1
 			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 15, 160, 2000, 4500] }
 			//{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 12, 320, 2000, 6000] },
 			//{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 10, 480, 2000, 6000] },
@@ -189,7 +198,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-982-3000-148-0": [
 			{ type: "text", sub_type: "message", message: "Pulses Right", message_ES: "DERECHA Atrás (Pulsos)", message_PT: "DIREITA Atrás (Pulsos)" },
 			{ type: "spawn", func: "circle", args: [true, 553, 160, 350, null, 280, 500, 2000] },
-			{ type: "spawn", func: "marker", args: [false, 155, 388, 5300, 3000, true, null] }, // 1
+			{ type: "spawn", func: "marker", args: [false, 155, 388, is_mt ? 4200 : 5300, 3000, true, null] }, // 1
 			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 15, 160, 2000, 4500] }
 			//{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 12, 320, 2000, 6000] },
 			//{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 10, 480, 2000, 6000] },
@@ -245,12 +254,18 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-982-3000-152-1": "s-982-3000-141-0",
 		"s-982-3000-152-2": "s-982-3000-141-0",
 		"s-982-3000-300-0": [
-			{ type: "text", sub_type: "message", message: "Dodge! (Awakening 1)", message_ES: "ESPIERTAR 1 (Iframe)", message_PT: "DESPERTAR 1 (Iframe)", delay: 800 }, // <80%
+			{ type: "text", sub_type: "message", message: "3" },
+			{ type: "text", sub_type: "message", delay: 300, message: "2" },
+			{ type: "text", sub_type: "message", delay: 550, message: "1" },		
+			{ type: "text", sub_type: "message", message: "Dodge! (Awakening 1)", message_ES: "ESPIERTAR 1 (Iframe)", message_PT: "DESPERTAR 1 (Iframe)", delay: 800 }, // <80%			
 			{ type: "func", func: () => awakening_one = true },
 			{ type: "func", func: () => stack_level = 0 }
 		],
 		"s-982-3000-399-0": [
-			{ type: "text", sub_type: "message", message: "Dodge! (Awakening 2)", message_ES: "ESPIERTAR 2 (Iframe)", message_PT: "DESPERTAR 2 (Iframe)", delay: 1400  }, // <30%
+			{ type: "text", sub_type: "message", message: "3" },
+			{ type: "text", sub_type: "message", delay: 450, message: "2" },
+			{ type: "text", sub_type: "message", delay: 950, message: "1" },		
+			{ type: "text", sub_type: "message", message: "Dodge! (Awakening 2)", message_ES: "ESPIERTAR 2 (Iframe)", message_PT: "DESPERTAR 2 (Iframe)", delay: 1400  }, // <30%	
 			{ type: "func", func: () => awakening_two = true },
 			{ type: "func", func: () => stack_level = 0 }
 		],

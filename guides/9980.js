@@ -59,12 +59,16 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-980-3000-109-0": [{ type: "text", sub_type: "message", message: "Double Front Attack", message_ES: "Ataque Frontal Doble", message_PT: "Ataque Frontal Duplo" }],
 		"s-980-3000-111-0": [{ type: "text", sub_type: "message", message: "Spin", message_ES: "Girar", message_PT: "Giro" }],
 		"s-980-3000-112-0": [{ type: "text", sub_type: "message", message: "Target (Front | Back)", message_ES: "Objetivo (Frente | Atrás)", message_PT: "Alvo (Frente | Atrás)" }],
-		"s-980-3000-112-2": [{ type: "text", sub_type: "message", message: "Front | Back", message_ES: "Ataque Frontal | Atrás", message_PT: "Frente | Atrás" }],
+		"s-980-3000-112-2": [
+			{ type: "text", sub_type: "message", message: "Side", message_ES: "Lado", message_PT: "Lado" },
+			{ type: "spawn", func: "vector", args: [553, 0, 0, 75, 800, 0, 2000] },
+			{ type: "spawn", func: "vector", args: [553, 0, 0, 105, 800, 0, 2000] },
+			{ type: "spawn", func: "vector", args: [553, 0, 0, 255, 800, 0, 2000] },
+			{ type: "spawn", func: "vector", args: [553, 0, 0, 285, 800, 0, 2000] }
+		],
 		"s-980-3000-113-0": [{ type: "text", sub_type: "message", message: "Pushback", message_ES: "Empujar", message_PT: "Empurrar" }],
 		"s-980-3000-114-0": "s-980-3000-113-0",
 		"s-980-3000-115-0": [{ type: "text", sub_type: "message", message: "Charging", essage_ES: "Cargando", message_PT: "Carregando" },
-			{ type: "text", sub_type: "message", message: "Plague of Exhaustion", message_ES: "Plague of Exhaustion", message_PT: "Plague of Exhaustion", class_position: "priest" },
-			{ type: "text", sub_type: "message", message: "Regression", message_ES: "Regression", message_PT: "Regression", class_position: "mystic" }
 		],
 		"s-980-3000-301-0": [{ type: "text", sub_type: "message", message: "Get Out | Get In", message_ES: "Salir| Entrar", message_PT: "Sair | Entrar" }],
 		"s-980-3000-302-0": [{ type: "text", sub_type: "message", message: "Get In", message_ES: "Entrar", message_PT: "Entrar"}],
@@ -75,10 +79,17 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Iframe", message_PT: "Iframe", delay: 4200 }
 		],
 		"s-980-3000-307-0": "s-980-3000-306-0",
-		"s-980-3000-308-0": "s-980-3000-306-0",
+		"s-980-3000-308-0": [
+			{ type: "text", sub_type: "message", message: "AOE (Flying)", message_ES: "АоЕ (Volando)", message_PT: "АоЕ (Voando)" },
+			{ type: "text", sub_type: "message", message: "Dodge",message_ES: "Iframe", message_PT: "Iframe", delay: 4200 }
+		],
 		"s-980-3000-309-0": [
-			{ type: "text", sub_type: "message", message: "Jump", message_ES: "Salto", message_PT: "Salto" },
+			{ type: "text", sub_type: "message", message: "Jump (Pushback)", message_ES: "Salto (Empujar)", message_PT: "Salto (Empurrar)" },
 			{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Iframe", message_PT: "Iframe", delay: 2000 }
+		],
+		"qb-980-3000-980206": [
+			{ type: "text", sub_type: "message", message: "Plague of Exhaustion", message_ES: "Plague of Exhaustion", message_PT: "Plague of Exhaustion", class_position: "priest" },
+			{ type: "text", sub_type: "message", message: "Regression", message_ES: "Regression", message_PT: "Regression", class_position: "mystic" }
 		]
 	};
 };

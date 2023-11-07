@@ -7,6 +7,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	let color = 0;
 	let debuff = 0;
 	let print_wave = true;
+	
+	const is_mt = dispatch._mod.connection.metadata.serverList[dispatch._mod.serverId].name.includes("MT");
 
 	return {
 		// 1 BOSS
@@ -79,7 +81,9 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "despawn_all" }
 		],
 		"s-782-2000-105-0": [{ type: "text", sub_type: "message", message: "Spin", message_ES: "GIRO Atrás", message_PT: "GIRAR Atrás" }],
-		"s-782-2000-108-0": [{ type: "text", sub_type: "message", message: "Shot Forward", message_ES: "Disparo Delantero", message_PT: "Disparo na Frente" }],
+		"s-782-2000-108-0": [{ type: "text", sub_type: "message", message: "Shot Forward", message_ES: "Disparo Delantero", message_PT: "Disparo na Frente" },
+			{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Iframe", message_PT: "Iframe", delay: 500  }
+		],
 		"s-782-2000-109-0": [{ type: "text", sub_type: "message", message: "Wave Forward", message_ES: "Vómito Frente", message_PT: "Vómito Frente" }],
 		"s-782-2000-112-0": [{ type: "text", sub_type: "message", message: "Kick Forward", message_ES: "Patada Frente", message_PT: "Patada Frente" }],
 		"s-782-2000-113-0": [
@@ -118,8 +122,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "despawn_all" }
 		],
 		"h-782-3000-99": [{ type: "func", func: () => print_wave = true }],
-		"h-782-3000-80": [{ type: "text", sub_type: "message", message: "80%", message_ES: "80%", message_PT: "80%" }],
-		"h-782-3000-30": [{ type: "text", sub_type: "message", message: "30%", message_ES: "30%%", message_PT: "30%" }],
+		"h-782-3000-80": [{ type: "text", sub_type: "message", message: "80%", message_ES: "80%", message_PT: "80%", check_func: () => !is_mt }],
+		"h-782-3000-70": [{ type: "text", sub_type: "message", message: "70%", message_ES: "70%", message_PT: "70%", check_func: () => is_mt }],
 		"s-782-3000-109-0": [{ type: "text", sub_type: "message", message: "Front Throw (Target)", message_ES: "Ataque Frontal (Objetivo)", message_PT: "Ataque Frontal (Alvo)" }],
 		"s-782-3000-134-0": [{ type: "text", sub_type: "message", message: "Front Throw (Target)", message_ES: "Ataque Frontal (Objetivo)", message_PT: "Ataque Frontal (Alvo)" }],
 		"s-782-3000-118-0": [{ type: "text", sub_type: "message", message: "Front Triple", message_ES: "Ataque Frontal Triplo", message_PT: "Ataque Frontal Triplo" }],
@@ -136,7 +140,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-782-3000-146-0": [
 			{ type: "text", sub_type: "message", message: "Pulses Left", message_ES: "IZQUIERDA Atrás (Pulsos)", message_PT: "ESQUERDA Atrás (Pulsos)" },
 			{ type: "spawn", func: "circle", args: [true, 553, 200, 350, null, 280, 500, 2000] },
-			{ type: "spawn", func: "marker", args: [false, 215, 370, 5300, 3000, true, null] }, // 1
+			{ type: "spawn", func: "marker", args: [false, 215, 370, is_mt ? 3200 : 5300, 3000, true, null] }, // 1
 			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 15, 160, 2000, 4500] }
 			//{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 12, 320, 2000, 6000] },
 			//{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 10, 480, 2000, 6000] },
@@ -146,7 +150,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-782-3000-154-0": [
 			{ type: "text", sub_type: "message", message: "Pulses Left", message_ES: "IZQUIERDA Atrás (Pulsos)", message_PT: "ESQUERDA Atrás (Pulsos)" },
 			{ type: "spawn", func: "circle", args: [true, 553, 200, 350, null, 280, 500, 2000] },
-			{ type: "spawn", func: "marker", args: [false, 215, 370, 4200, 4000, true, null] }, // 2
+			{ type: "spawn", func: "marker", args: [false, 215, 370, is_mt ? 3200 : 4200, 4000, true, null] }, // 2
 			{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 15, 160, 2000, 4500] }
 			//{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 12, 320, 2000, 6000] },
 			//{ type: "spawn", func: "circle", args: [false, 445, 215, 370, 10, 480, 2000, 6000] },
@@ -156,7 +160,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-782-3000-148-0": [
 			{ type: "text", sub_type: "message", message: "Pulses Right", message_ES: "DERECHA Atrás (Pulsos)", message_PT: "DIREITA Atrás (Pulsos)" },
 			{ type: "spawn", func: "circle", args: [true, 553, 160, 350, null, 280, 500, 2000] },
-			{ type: "spawn", func: "marker", args: [false, 155, 388, 5300, 3000, true, null] }, // 1
+			{ type: "spawn", func: "marker", args: [false, 155, 388, is_mt ? 3200 : 5300, 3000, true, null] }, // 1
 			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 15, 160, 2000, 4500] }
 			//{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 12, 320, 2000, 6000] },
 			//{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 10, 480, 2000, 6000] },
@@ -166,7 +170,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-782-3000-155-0": [
 			{ type: "text", sub_type: "message", message: "Pulses Right", message_ES: "DERECHA Atrás (Pulsos)", message_PT: "DIREITA Atrás (Pulsos)" },
 			{ type: "spawn", func: "circle", args: [true, 553, 160, 350, null, 280, 500, 2000] },
-			{ type: "spawn", func: "marker", args: [false, 155, 388, 4200, 4000, true, null] }, // 2
+			{ type: "spawn", func: "marker", args: [false, 155, 388, is_mt ? 3200 : 4200, 4000, true, null] }, // 2
 			{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 15, 160, 2000, 4500] }
 			//{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 12, 320, 2000, 6000] },
 			//{ type: "spawn", func: "circle", args: [false, 445, 155, 388, 10, 480, 2000, 6000] },
@@ -211,8 +215,12 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-782-3000-152-0": "s-782-3000-141-0", //
 		"s-782-3000-152-1": "s-782-3000-141-0",
 		"s-782-3000-152-2": "s-782-3000-141-0",
-		"s-782-3000-300-0": [{ type: "text", sub_type: "message", message: "Dodge! (Awakening 1)", message_ES: "ESPIERTAR 1 (Iframe)", message_PT: "DESPERTAR 1 (Iframe)", delay: 800 }], // <80%
-		"s-782-3000-399-0": [{ type: "text", sub_type: "message", message: "Dodge! (Awakening 2)", message_ES: "ESPIERTAR 2 (Iframe)", message_PT: "DESPERTAR 2 (Iframe)", delay: 1400 }], // <30%
+		"s-782-3000-300-0": [
+			{ type: "text", sub_type: "message", message: "3" },
+			{ type: "text", sub_type: "message", delay:  400, message: "2" },
+			{ type: "text", sub_type: "message", delay:  800, message: "1" },
+			{ type: "text", sub_type: "message", message: "Dodge! (Awakening 1)", message_ES: "ESPIERTAR 1 (Iframe)", message_PT: "DESPERTAR 1 (Iframe)", delay: 1200 }	
+		],
 		"s-782-3000-360-0": [{ type: "text", sub_type: "message", message: "Dodge! (Explosion)", message_ES: "EXPLOSIÓN (Iframe)", message_PT: "EXPLOSÃO (Iframe)" }],
 		"s-782-3000-351-0": [
 			{ type: "text", sub_type: "message", message: "Stones", message_ES: "Piedras", message_PT: "Pedras" },

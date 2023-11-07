@@ -68,9 +68,12 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Iframe", message_PT: "Iframe", delay: 4500 }
 		],
 		"s-780-3000-307-0": "s-780-3000-306-0",
-		"s-780-3000-308-0": "s-780-3000-306-0",
+		"s-780-3000-308-0": [
+			{ type: "text", sub_type: "message", message: "AOE (Flying)", message_ES: "АоЕ (Volando)", message_PT: "АоЕ (Voando)" },
+			{ type: "text", sub_type: "message", message: "Dodge",message_ES: "Iframe", message_PT: "Iframe", delay: 4500 }
+		],
 		"s-780-3000-309-0": [
-			{ type: "text", sub_type: "message", message: "Jump", message_ES: "Salto", message_PT: "Salto" },
+			{ type: "text", sub_type: "message", message: "Jump (Pushback)", message_ES: "Salto (Empujar)", message_PT: "Salto (Empurrar)" },
 			{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Iframe", message_PT: "Iframe", delay: 2200 }
 		]
 	};

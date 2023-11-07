@@ -6,6 +6,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 
 	let combo_count = 0;
 
+	const is_mt = dispatch._mod.connection.metadata.serverList[dispatch._mod.serverId].name.includes("MT");
+
 	dispatch.hook("S_ABNORMALITY_BEGIN", dispatch._mod.majorPatchVersion >= 107 ? 5 : 4, event => {
 		if (event.id === 31040001)
 			handlers.marker({ id: event.target, color: "yellow", sub_delay: 1000000 });
@@ -24,9 +26,11 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "alert", message: "Dodge", message_ES: "Esquiva", message_PT: "Esquiva", delay: 1450 },
 			{ type: "func", func: () => combo_count = 0 }
 		],
-		"h-3104-1000-35": [{ type: "text", sub_type: "message", message: "35%", message_ES: "35%", message_PT: "35%" }],
-		//"qb-3104-1000-32041000": [{ type: "text", sub_type: "alert", message: "Combo Pizza Soon", message_ES: "Combo Pizza Pronto", message_PT: "Combo Pizza em Breve" }],
-
+		"h-3104-1000-50": [{ type: "text", sub_type: "message", message: "50%", message_ES: "50%", message_PT: "50%", check_func: () => is_mt }],
+		"h-3104-1000-35": [{ type: "text", sub_type: "message", message: "35%", message_ES: "35%", message_PT: "35%", check_func: () => !is_mt }],
+		"qb-3104-1000-32041000": [
+			{ type: "text", sub_type: "alert", message: "Bait (Target)", message_ES: "Bait (Objetivo)", message_PT: "Bait (Alvo)" }
+		],
 		"s-3104-1000-104-0": [
 			{ type: "text", sub_type: "message", message: "Stun (AOE)", message_ES: "Stun (AOE)", message_PT: "Stun (AOE)" },
 			{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Iframe", message_PT: "Iframe", delay: 800 },

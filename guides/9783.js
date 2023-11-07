@@ -84,21 +84,21 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"ab-783-2000-78300222": [ // Red
 			{ type: "event", check_func: () => secondboss_show_book_notify, args: [
 				{ type: "text", sub_type: "message", message: "Take Blue Book", message_ES: "Toma el Libro Azul", message_PT: "Pegue o Livro Azul" },
-				{ type: "text", sub_type: "notification", message: "Take [c=#7777ff]Blue[/c] Book", message_ES: "Toma el Livro [c=#7777ff]Azul[/c]", message_PT: "Pegue o Livro [c=#7777ff]Azul[/c]", speech: false },
+				{ type: "text", sub_type: "notification", message: "Take [c=#05a0fa]Blue[/c] Book", message_ES: "Toma el Livro [c=#05a0fa]Azul[/c]", message_PT: "Pegue o Livro [c=#05a0fa]Azul[/c]", speech: false },
 				{ type: "func", func: () => secondboss_show_book_notify = false }
 			] }
 		],
 		"ab-783-2000-78300223": [ // Blue
 			{ type: "event", check_func: () => secondboss_show_book_notify, args: [
 				{ type: "text", sub_type: "message", message: "Take Green Book", message_ES: "Toma el Libro Verde", message_PT: "Pegue o Livro Verde" },
-				{ type: "text", sub_type: "notification", message: "Take [c=#77ff77]Green[/c] Book", message_ES: "Toma el Livro [c=#7777ff]Verde[/c]", message_PT: "Pegue o Livro [c=#7777ff]Verde[/c]", speech: false },
+				{ type: "text", sub_type: "notification", message: "Take [c=#00a303]Green[/c] Book", message_ES: "Toma el Livro [c=#00a303]Verde[/c]", message_PT: "Pegue o Livro [c=#00a303]Verde[/c]", speech: false },
 				{ type: "func", func: () => secondboss_show_book_notify = false }
 			] }
 		],
 		"ab-783-2000-78300224": [ // Green
 			{ type: "event", check_func: () => secondboss_show_book_notify, args: [
 				{ type: "text", sub_type: "message", message: "Take Red Book", message_ES: "Toma el Libro Rojo", message_PT: "Pegue o Livro Vermelho" },
-				{ type: "text", sub_type: "notification", message: "Take [c=#ff7777]Red[/c] Book", message_ES: "Toma el Libro [c=#7777ff]Rojo[/c]", message_PT: "Pegue o Livro [c=#7777ff]Vermelho[/c]", speech: false },
+				{ type: "text", sub_type: "notification", message: "Take [c=#e82331]Red[/c] Book", message_ES: "Toma el Libro [c=#e82331]Rojo[/c]", message_PT: "Pegue o Livro [c=#e82331]Vermelho[/c]", speech: false },
 				{ type: "func", func: () => secondboss_show_book_notify = false }
 			] }
 		],
@@ -127,7 +127,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "stop_timers" },
 			{ type: "despawn_all" }
 		],
-		"s-783-3000-106-0": [{ type: "text", sub_type: "message", message: "Push", message_ES: "Empujar", message_PT: "Empurrar" }],
+		"s-783-3000-106-0": [{ type: "text", sub_type: "message", message: "Push (Tank)", message_ES: "Empujar (Tank)", message_PT: "Empurrar (Tank)" }],
 		"s-783-3000-110-0": [{ type: "text", sub_type: "message", message: "Throw Front (Stun)", message_ES: "Lanzamiento Frontal (Stun)", message_PT: "Lançar Frente (Stun)" }],
 		"s-783-3000-113-0": [{ type: "text", sub_type: "message", message: "Push Back", message_ES: "Empujar Atrás", message_PT: "Empurrar Atrás" }],
 		"s-783-3000-114-0": [{ type: "text", sub_type: "message", message: "Bait (Target)", message_ES: "Bait (Objetivo)", message_PT: "Bait (Alvo)" }],

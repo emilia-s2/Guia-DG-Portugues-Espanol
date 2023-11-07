@@ -153,7 +153,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", delay: 3000, message: "1" }
 		],
 		"s-781-2000-1138-0": [ // T1
-			{ type: "event", delay: 6700, args: [
+			{ type: "event", delay: 6000, args: [
 				{ type: "text", sub_type: "notification", message: "Out > In > Side > Side", message_PT: "Sair > Entrar > Lado > Lado", message_ES: "Salir > Entrar > Lado > Lado" },
 				// x6 normal + in circle
 				{ type: "spawn", func: "marker", args: [false, 15, 270, 0, 3000, true, null] },
@@ -184,7 +184,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			] }
 		],
 		"s-781-2000-1139-0": [ // T2
-			{ type: "event", delay: 7700, args: [
+			{ type: "event", delay: 7000, args: [
 				{ type: "text", sub_type: "notification", message: "Side > In > Out > Side", message_PT: "Lado > Entrar > Sair > Lado", message_ES: "Lado > Entrar > Salir > Lado" },
 				// x6 reverse
 				{ type: "spawn", func: "marker", args: [false, 45, 270, 0, 1500, true, null] },
@@ -222,7 +222,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			] }
 		],
 		"s-781-2000-1140-0": [ // T1
-			{ type: "event", delay: 6700, args: [
+			{ type: "event", delay: 6000, args: [
 				{ type: "text", sub_type: "notification", message: "Out > In > Side > Side", message_PT: "Sair > Entrar > Lado > Lado", message_ES: "Salir > Entrar > Lado > Lado" },
 				// in circle
 				{ type: "spawn", func: "marker", args: [false, 45, 270, 0, 1500, true, null] },
@@ -253,7 +253,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			] }
 		],
 		"s-781-2000-1141-0": [ // T2
-			{ type: "event", delay: 7700, args: [
+			{ type: "event", delay: 7000, args: [
 				{ type: "text", sub_type: "notification", message: "Out > Side > Side > In", message_PT: "Sair > Lado > Lado > Entrar", message_ES: "Salir > Lado > Lado > Entrar" },
 				// x6 normal
 				{ type: "spawn", func: "marker", args: [false, 15, 270, 0, 1500, true, null] },
@@ -383,6 +383,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-781-3000-3103-0": [{ type: "text", sub_type: "message", message: "(Círculos) Spread", message_PT: "Círculos (Afastar)", message_ES: "Círculos (Separarse)" }],
 		"s-781-3000-3105-0": [{ type: "text", sub_type: "message", message: "(Círculos) Gather", message_PT: "Círculos (Juntar)", message_ES: "Círculos (Reunirse)" }],
 		"s-781-3000-1136-0": [{ type: "text", sub_type: "message", message: "Claw", message_PT: "Garra", message_ES: "Garra" }],
+		"s-781-3000-1136-1": [{ type: "text", sub_type: "message", message: "Dodge", mmessage_PT: "Iframe", message_ES: "Iframe", delay: 1000 }],
 		"s-781-3000-1144-0": [{ type: "text", sub_type: "message", message: "OUT", message_PT: "SAIR", message_ES: "SALIR" }],
 		"s-781-3000-1145-0": [{ type: "text", sub_type: "message", message: "IN", message_PT: "ENTRAR", message_ES: "ENTRAR" }],
 		"s-781-3000-1240-0": [
