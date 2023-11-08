@@ -185,7 +185,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "func", func: thirdboss_mech, args: [119] }
 		],
 		"s-983-3000-122-0": [ // 122 - 123 - 124
-			{ type: "text", sub_type: "message", message: "Throw (Target)", message_ES: "Lanzamiento Atrás (Stun)", message_PT: "Lançar Atrás (Stun)" },,
+			{ type: "text", sub_type: "message", message: "Throw (Target)", message_ES: "Lanzamiento Atrás (Stun)", message_PT: "Lançar Atrás (Stun)" },
 			{ type: "spawn", func: "circle", args: [true, 553, 0, 550, null, 180, 0, 2000] }
 		],
 		"s-983-3000-123-0": [

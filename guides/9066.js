@@ -68,7 +68,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		//
 		"s-466-46601-1105-0": [{ type: "text", sub_type: "message", message: "Stun", message_ES: "Stun", message_PT: "Stun" }],
 		"s-466-46601-1106-0": [{ type: "text", sub_type: "message", message: "Exhaust", message_ES: "Escape", message_PT: "Escape" }],
-		"s-466-46601-1109-0": [{ type: "text", class_position: "tank", sub_type: "message", message: "Front", message_ES: "Frente Ataque", message_PT: "Frente Ataque"}],
+		"s-466-46601-1109-0": [{ type: "text", class_position: "tank", sub_type: "message", message: "Front", message_ES: "Frente Ataque", message_PT: "Frente Ataque" }],
 		"s-466-46601-1110-0": [{ type: "text", sub_type: "message", message: "Tail", message_ES: "Cola", message_PT: "Cauda" }],
 		"s-466-46601-2105-0": "s-466-46601-1105-0",
 		"s-466-46601-2106-0": "s-466-46601-1106-0",
@@ -84,7 +84,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-466-46601-1318-0": [{ type: "func", func: skilld_event.bind(null, 1318) }],
 		// Second boss
 		"s-466-46602-1116-0": [
-			{ type: "text", sub_type: "message", message: "Dodge. Pull", message_ES: "Jalar", message_PT: "Puxar"  },
+			{ type: "text", sub_type: "message", message: "Dodge. Pull", message_ES: "Jalar", message_PT: "Puxar" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 220, 0, 6000] }
 		],
 		"s-466-46602-1223-0": [{ type: "text", sub_type: "message", message: "Double RED", message_ES: "Doble ROJO", message_PT: "VERMELHO Duplo" }],
@@ -94,7 +94,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-466-46602-1312-0": [{ type: "func", func: skilld_event.bind(null, 21312) }],
 		"s-466-46602-1313-0": [{ type: "func", func: skilld_event.bind(null, 21313) }],
 		"s-466-46602-1303-0": [{ type: "func", func: skilld_event.bind(null, 21303) }],
-		"s-466-46602-1105-0": [{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 200, 0, 6000]}],
+		"s-466-46602-1105-0": [{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 200, 0, 6000] }],
 		"s-466-46602-2105-0": "s-466-46602-1105-0",
 		"s-466-46602-2116-0": "s-466-46602-1116-0",
 		"s-466-46602-2113-0": "s-466-46602-1113-0"
