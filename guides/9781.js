@@ -153,7 +153,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", delay: 3000, message: "1" }
 		],
 		"s-781-2000-1138-0": [ // T1
-			{ type: "event", delay: 6000, args: [
+			{ type: "event", delay: 6500, args: [
 				{ type: "text", sub_type: "notification", message: "Out > In > Side > Side", message_PT: "Sair > Entrar > Lado > Lado", message_ES: "Salir > Entrar > Lado > Lado" },
 				// x6 normal + in circle
 				{ type: "spawn", func: "marker", args: [false, 15, 270, 0, 3000, true, null] },
@@ -184,7 +184,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			] }
 		],
 		"s-781-2000-1139-0": [ // T2
-			{ type: "event", delay: 7000, args: [
+			{ type: "event", delay: 7500, args: [
 				{ type: "text", sub_type: "notification", message: "Side > In > Out > Side", message_PT: "Lado > Entrar > Sair > Lado", message_ES: "Lado > Entrar > Salir > Lado" },
 				// x6 reverse
 				{ type: "spawn", func: "marker", args: [false, 45, 270, 0, 1500, true, null] },
@@ -222,7 +222,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			] }
 		],
 		"s-781-2000-1140-0": [ // T1
-			{ type: "event", delay: 6000, args: [
+			{ type: "event", delay: 6500, args: [
 				{ type: "text", sub_type: "notification", message: "Out > In > Side > Side", message_PT: "Sair > Entrar > Lado > Lado", message_ES: "Salir > Entrar > Lado > Lado" },
 				// in circle
 				{ type: "spawn", func: "marker", args: [false, 45, 270, 0, 1500, true, null] },
@@ -253,7 +253,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			] }
 		],
 		"s-781-2000-1141-0": [ // T2
-			{ type: "event", delay: 7000, args: [
+			{ type: "event", delay: 7500, args: [
 				{ type: "text", sub_type: "notification", message: "Out > Side > Side > In", message_PT: "Sair > Lado > Lado > Entrar", message_ES: "Salir > Lado > Lado > Entrar" },
 				// x6 normal
 				{ type: "spawn", func: "marker", args: [false, 15, 270, 0, 1500, true, null] },
