@@ -56,6 +56,8 @@ ID | Nome Dungeons | Idioma | Idioma |  Idioma 
 7011 | Guardian Blightwood | Português | Español |  English
 7011 | Guardian Blightwood | Português | Español |  English
 7015 | Guardian Balder's Refuge | Português | Español |  English
+3106 | Killing Grounds | Português | Español |  English
+3206 | Crimson Killing Grounds | Português | Español |  English
 3104 | Catalepticon / Lumikan's Dream (Normal) | Português | Español |  English
 3204 | Catalepticon / Lumikan's Dream (Difícil) | Português | Español |  English
 3032 | Akalath Quarantine (Training) | Português | Español |  English
