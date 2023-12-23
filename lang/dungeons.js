@@ -77,6 +77,11 @@ module.exports = {
 		"es": "Lumikan's Dream Normal",
 		"en": "Lumikan's Dream Normal"
 	},
+	3106: {
+		"pt": "Killing Grounds",
+		"es": "Killing Grounds",
+		"en": "Killing Grounds"
+	},	
 	3126: {
 		"pt": "Corrupted Skynest (Difícil)",
 		"es": "Corrupted Skynest (Difícil)",
@@ -102,6 +107,11 @@ module.exports = {
 		"es": "Lumikan's Dream (Difícil)",
 		"en": "Lumikan's Dream (Hard)"
 	},
+	3206: {
+		"pt": "Crimson Killing Grounds",
+		"es": "Crimson Killing Grounds",
+		"en": "Crimson Killing Grounds"
+	},	
 	9027: {
 		"pt": "The Plexus (Difícil)",
 		"es": "The Plexus (Difícil)",
