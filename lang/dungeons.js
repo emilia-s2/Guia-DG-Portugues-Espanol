@@ -127,6 +127,11 @@ module.exports = {
 		"es": "Bahaar's Sanctum",
 		"en": "Bahaar's Sanctum"
 	},
+	9050: {
+		"pt": "Rift's Edge (Difícil) (10-Pessoas)",
+		"es": "Rift's Edge (Difícil) (10-Personas)",
+		"en": "Rift's Edge (Hard) (10-Person)"
+	},	
 	9053: {
 		"pt": "Kezzel's Gorge",
 		"es": "Kezzel's Gorge",
@@ -187,6 +192,11 @@ module.exports = {
 		"es": "RK-9 Kennel Normal",
 		"en": "RK-9 Kennel Normal"
 	},
+	9750: {
+		"pt": "Rift's Edge (Normal) (10-Pessoas)",
+		"es": "Rift's Edge (Normal) (10-Personas)",
+		"en": "Rift's Edge (Normal) (10-Person)"
+	},	
 	9739: {
 		"pt": "Red Refuge Normal",
 		"es": "Red Refuge Normal",
@@ -291,5 +301,10 @@ module.exports = {
 		"pt": "Dark Reach Citadel (Difícil)",
 		"es": "Dark Reach Citadel (Difícil)",
 		"en": "Dark Reach Citadel (Hard)"
+	},
+	9994: {
+		"pt": "Thaumetal Refinery (Difícil)",
+		"es": "Thaumetal Refinery (Difícil)",
+		"en": "Thaumetal Refinery (Hard)"
 	}
 };
