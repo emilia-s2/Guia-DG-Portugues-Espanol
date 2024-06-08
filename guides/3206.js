@@ -154,7 +154,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "circle", args: [false, 445, 0, 0, 10, 550, 1500, 5000] },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 860, 1500, 5000] }
 		],
-		"s-3206-1000-512-0": [{ type: "text", sub_type: "message", message: "Turn | Spin", message_ES: "Doblar | Girar",  message_PT: "Virar | Girar" } }],
+		"s-3206-1000-512-0": [{ type: "text", sub_type: "message", message: "Turn | Spin", message_ES: "Doblar | Girar",  message_PT: "Virar | Girar" }],
 		"s-3206-1004-506-0": [{ type: "text", sub_type: "message", message: "Wave", message_ES: "Ola",  message_PT: "Onda" }],
 		"s-3206-1000-522-0": [{ type: "text", sub_type: "message", message: "Bait on distant", message_ES: "Bait al Alejarse",  message_PT: "Bait ao Distanciar" }],
 		"s-3206-1000-523-0": [{ type: "text", sub_type: "message", message: "Bait on resurrect", message_ES: "Bait al Reviver",  message_PT: "Bait ao Reviver" }],

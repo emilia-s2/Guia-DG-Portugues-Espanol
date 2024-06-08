@@ -18,7 +18,6 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "vector", args: [553, 90, 139, 173, 800, 0, 3000] },
 			{ type: "spawn", func: "vector", args: [553, 270, 139, -173, 800, 0, 3000] }
 		],
-		"s-3201-1000-111-0": [
 		"s-3201-1000-111-0": [{ type: "text", sub_type: "message", message_PT: "Spray Atrás (Lento)", message_ES: "Spray Atrás (Lento)", message: "Back Wave" },
 			{ type: "spawn", func: "vector", args: [553, 0, 100, 112, 800, 0, 3000] },
 			{ type: "spawn", func: "vector", args: [553, 0, 100, -112, 800, 0, 3000] }
@@ -167,7 +166,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 300, 0, 3000] },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 3, 1000, 0, 3000] }
 		],
-		"s-3201-2000-236-0": [{ type: "text", sub_type: "message", message_PT: "Repelir a Frente (Bait)", message_ES: "Repelir a Frente (Bait)", message: "Counter Attack (Bait)" },
+		"s-3201-2000-236-0": [{ type: "text", sub_type: "message", message_PT: "Repelir a Frente (Bait)", message_ES: "Repelir a Frente (Bait)", message: "Counter Attack (Bait)" }],
 		"s-3201-2000-238-0": [
 			{ type: "text", sub_type: "message", message_PT: "Sair > Entrar", message_ES: "Salir > Entrar", message: "Out > In" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 300, 0, 3000] }

@@ -657,7 +657,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-981-2000-1141-0": [ // T2
 			{ type: "event", delay: 5500, args: [
-				{ type: "text", sub_type: "notification", message: "Side > Side > Out > In", message_ES: "Lado > Lado > Salir > Entrar", message_PT: "Lado > Lado > Salir > Entrar"" },
+				{ type: "text", sub_type: "notification", message: "Side > Side > Out > In", message_ES: "Lado > Lado > Salir > Entrar", message_PT: "Lado > Lado > Salir > Entrar" },
 				// x6 normal
 				{ type: "spawn", func: "marker", args: [false, 15, 270, 0, 1500, true, null] },
 				{ type: "spawn", func: "marker", args: [false, 75, 270, 0, 1500, true, null] },
