@@ -49,9 +49,13 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", delay: 1750, message: "Dodge!", message_ES: "Iframe", message_PT: "Iframe!" }
 		],
 		"s-3202-1000-1115-0": [
-			{ type: "text", sub_type: "message", message: "AOE Bombs (Gather)", message_ES: "AOE Bombas (Juntar)", message_PT: "AOE Bombas (Juntar)" }],
+			{ type: "text", sub_type: "message", message: "AOE Bombs (Spread)", message_ES: "AOE Bombas (Separarse)", message_PT: "AOE Bombas (Separar)" },
+			{ type: "text", sub_type: "message", delay: 3000, message: "Gather!",message_ES: "AOE Bombas (Juntar)", message_PT: "AOE Bombas (Juntar)" }
+		],
 		"s-3202-1000-2115-0": [
-			{ type: "text", sub_type: "message", message: "AOE Bombs (Gather)", message_ES: "AOE Bombas (Juntar)", message_PT: "AOE Bombas (Juntar)" }],
+			{ type: "text", sub_type: "message", message: "AOE Bombs (Spread)", message_ES: "AOE Bombas (Separarse)", message_PT: "AOE Bombas (Separar)" },
+			{ type: "text", sub_type: "message", delay: 3000, message: "Gather!", message_ES: "AOE Bombas (Juntar)", message_PT: "AOE Bombas (Juntar)" }
+		],	
 		"s-3202-1000-1112-0": [
 			{ type: "text", sub_type: "message", message: "Front | Back Kick", message_ES: "Frente | Atrás Patada", message_PT: "Frente | Atrás Chute" },
 			{ type: "spawn", func: "vector", args: [553, 70, 110, 160, 350, 0, 3000] },
@@ -87,12 +91,14 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 320, 0, 4000] }
 		],
 		"s-3202-1000-1109-0": [
-			{ type: "text", sub_type: "message", message: "Knockdown + Spin", message_ES: "Tumbar + Girar", message_PT: "Derrubar + Girar" },
+			{ type: "text", sub_type: "message", message: "Dodge (Knockdown)", message_ES: "Tumbar", message_PT: "Derrubar" },
+			{ type: "text", sub_type: "message", delay: 1300, message: "Dodge (Spin)", message_ES: "Iframe (Giro)", message_PT: "Iframe (Giro)" },
 			{ type: "spawn", func: "circle", args: [true, 553, 0, 100, 8, 420, 0, 1000] },
 			{ type: "spawn", func: "circle", delay: 1000, args: [true, 553, 180, 0, 8, 415, 0, 3000] }
 		],
 		"s-3202-1000-2109-0": [
-			{ type: "text", sub_type: "message", message: "Knockdown + Spin", message_ES: "Tumbar + Girar", message_PT: "Derrubar + Girar" },
+			{ type: "text", sub_type: "message", message: "Dodge (Knockdown)", message_ES: "Tumbar", message_PT: "Derrubar" },
+			{ type: "text", sub_type: "message", delay: 1300, message: "Dodge (Spin)", message_ES: "Iframe (Giro)", message_PT: "Iframe (Giro)" },
 			{ type: "spawn", func: "circle", args: [true, 553, 0, 100, 8, 420, 0, 1000] },
 			{ type: "spawn", func: "circle", delay: 1000, args: [true, 553, 180, 0, 8, 415, 0, 3000] }
 		],

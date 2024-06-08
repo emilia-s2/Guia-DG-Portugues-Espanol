@@ -10,6 +10,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	let awakening_one = false;
 	let awakening_two = false;
 	let stack_level = 0;
+	let enrage = false;
 	
 	const is_mt = dispatch._mod.connection.metadata.serverList[dispatch._mod.serverId].name.includes("MT");
 
@@ -152,16 +153,22 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		// 3 BOSS
 		"nd-982-3000": [
 			{ type: "stop_timers" },
-			{ type: "despawn_all" }
+			{ type: "despawn_all" },
+			{ type: "func", func: () => enrage = false }
 		],
+		"ns-982-3000": [{ type: "func", func: () => enrage = false }],
+		"rb-982-3000": [{ type: "func", func: () => enrage = true }],
+		"re-982-3000": [{ type: "func", func: () => enrage = false }],
 		"h-982-3000-99": [
 			{ type: "func", func: () => print_wave = true },
 			{ type: "func", func: () => awakening_one = false },
 			{ type: "func", func: () => awakening_two = false },
 			{ type: "func", func: () => stack_level = 0 }
 		],
-		"h-982-3000-80": [{ type: "text", sub_type: "message", message: "80%", message_ES: "80%", message_PT: "80%" }],
-		"h-982-3000-30": [{ type: "text", sub_type: "message", message: "30%", message_ES: "30%%", message_PT: "30%" }],
+		"h-982-3000-90": [{ type: "text", sub_type: "message", message: "90%", message_ES: "90%", message_PT: "90%", check_func: () => is_mt }],
+		"h-982-3000-80": [{ type: "text", sub_type: "message", message: "80%", message_ES: "80%", message_PT: "80%", check_func: () => !is_mt }],
+		"h-982-3000-45": [{ type: "text", sub_type: "message", message: "45%", message_ES: "45%", message_PT: "45%", check_func: () => is_mt }],
+		"h-982-3000-30": [{ type: "text", sub_type: "message", message: "30%", message_ES: "30%", message_PT: "30%", check_func: () => !is_mt }],
 		"s-982-3000-109-0": [{ type: "text", sub_type: "message", message: "Front Throw (Target)", message_ES: "Ataque Frontal (Objetivo)", message_PT: "Ataque Frontal (Alvo)" }],
 		"s-982-3000-134-0": [{ type: "text", sub_type: "message", message: "Front Throw (Target)", message_ES: "Ataque Frontal (Objetivo)", message_PT: "Ataque Frontal (Alvo)" }],
 		"s-982-3000-118-0": [{ type: "text", sub_type: "message", message: "Front Triple", message_ES: "Ataque Frontal Triplo", message_PT: "Ataque Frontal Triplo" }],
@@ -226,8 +233,9 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-982-3000-213-0": [{ type: "text", sub_type: "message", message: "Tail", message_ES: "Cola", message_PT: "Cauda" }],
 		"s-982-3000-215-0": [{ type: "text", sub_type: "message", message: "Tail (Combo)", message_ES: "Cola (Combo)", message_PT: "Cauda (Combo)" }],
 		"s-982-3000-139-0": [
-			{ type: "text", sub_type: "message", message: "Wave + Wing (Left Safe)", message_ES: "Ola (IZQUIERDA Segura)", message_PT: "Onda (ESQUERDA Seguro)", check_func: () => print_wave },
-			{ type: "despawn_all", tag: "wave" },
+			{ type: "text", sub_type: "message", message: `Wave + Wing (Left Safe)`, message_ES: `Ola + Ala (IZQUIERDA Seguro)`, message_PT: `Onda + Asa (ESQUERDA Seguro)`, check_func: () => print_wave && !enrage },
+			{ type: "text", sub_type: "message", message: `Wave Fast + Wing (Left Safe)`, message_ES: `Ola Rápida + Ala (IZQUIERDA Seguro)`, message_PT: `Onda Rápida + Asa (ESQUERDA Seguro)`, check_func: () => print_wave && enrage },
+			{ type: "despawn_all", tag: "wave" },		
 			{ type: "spawn", func: "vector", args: [912, 90, 0, 0, 600, 100, 3000], tag: "wave" },
 			{ type: "spawn", func: "vector", args: [912, 270, 0, 180, 600, 100, 3000], tag: "wave" },
 			{ type: "spawn", func: "marker", args: [false, 270, 200, 100, 4000, true, null], tag: "wave" },
@@ -240,7 +248,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-982-3000-150-1": "s-982-3000-139-0",
 		"s-982-3000-150-2": "s-982-3000-139-0",
 		"s-982-3000-141-0": [
-			{ type: "text", sub_type: "message", message: "Wave + Wing (Right Safe)", message_ES: "Ola (DERECHA Segura)", message_PT: "Onda (DIREITA Seguro)", check_func: () => print_wave },
+			{ type: "text", sub_type: "message", message: "Wave + Wing (Right Safe)", message_ES: "Ola + Ala (DERECHA Seguro)", message_PT: "Onda + Asa (ESQUERDA Seguro", check_func: () => print_wave && !enrage },
+			{ type: "text", sub_type: "message", message: "Wave Fast + Wing (Right Safe)", message_ES: "Ola Rápida + Ala (DERECHA Seguro)", message_PT: "Onda Rápida + Asa (ESQUERDA Seguro", check_func: () => print_wave && enrage },
 			{ type: "despawn_all", tag: "wave" },
 			{ type: "spawn", func: "vector", args: [912, 90, 0, 0, 600, 100, 3000], tag: "wave" },
 			{ type: "spawn", func: "vector", args: [912, 270, 0, 180, 600, 100, 3000], tag: "wave" },

@@ -135,7 +135,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "vector", args: [553, 180, 40, 120, 900, 2000, 3000] },
 			{ type: "spawn", func: "vector", args: [553, 180, 40, 240, 900, 2000, 3000] }
 		],
-		"s-735-3000-129-0": [{ type: "text", class_position: "tank", sub_type: "message", message_PT: "Iframe", message_ES: "Iframe", message: "Iframe" }],
+		"s-735-3000-128-0": [{ type: "text", class_position: "tank", sub_type: "message", message_PT: "Iframe", message_ES: "Iframe", message: "Iframe" }],
 		"s-735-3000-321-0": [
 			{ type: "text", sub_type: "message", message_PT: "ESCUDO!", message_ES: "ESCUDO!", message: "Shield!" },
 			{ type: "text", sub_type: "message", delay: 105000, message_PT: "ESCUDO em 10 segundos!", message_ES: "ESCUDO en 10 segundos!", message: "SHIELD in 10 seconds!" }
