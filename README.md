@@ -109,6 +109,11 @@ ID | Nome Dungeons | Idioma | Idioma |  Idioma 
 9783 | Dark Reach Citadel (Normal) | Português | Español |  English
 9983 | Dark Reach Citadel (Dificil) | Português | Español |  English
 9066 | Demon's Wheel | Português | Español |  English
+9750 | Rift"s Edge (10-Person)  | Português | Español |  English
+9050 | Rift's Edge (Dificil) (10-Person) | Português | Español |  English
+9794 | Thaumetal Refinery (Normal) | Português | Español |  English
+9994 | Thaumetal Refinery (Dificil) | Português | Español |  English
+
 
 ----
 
