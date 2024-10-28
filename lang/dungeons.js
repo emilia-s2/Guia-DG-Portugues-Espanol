@@ -81,7 +81,12 @@ module.exports = {
 		"pt": "Killing Grounds",
 		"es": "Killing Grounds",
 		"en": "Killing Grounds"
-	},	
+	},
+	3107: {
+		"pt": "Corrupted RK-9 Kennel",
+		"es": "Corrupted RK-9 Kennel",
+		"en": "Corrupted RK-9 Kennel"
+	},
 	3126: {
 		"pt": "Corrupted Skynest (Difícil)",
 		"es": "Corrupted Skynest (Difícil)",
