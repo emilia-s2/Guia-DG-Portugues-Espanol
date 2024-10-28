@@ -84,6 +84,7 @@ ID | Nome Dungeons | Idioma | Idioma |  Idioma 
 9735 | RK-9 Kennel (Normal) | Português | Español |  English
 9935 | RK-9 Kennel (Dificil) | Português | Español |  English
 3034 | Rampaging RK-9 Kennel | Português | Español |  English
+3107 | Corrupted RK-9 Kennel | Português | Español |  English
 9770 | Ruinous Manor (Normal) | Português | Español |  English
 9970 | Ruinous Manor (Difícil) | Português | Español |  English
 9980 | Velik's Hold (Difícil) | Português | Español |  English
