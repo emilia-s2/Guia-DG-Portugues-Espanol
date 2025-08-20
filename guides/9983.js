@@ -88,7 +88,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "func", func: () => firstboss_prepare_stun = false, delay: 2700 }
 		],
 		"s-983-1000-104-0": [{ type: "text", sub_type: "message", message: "Jump", message_ES: "Salto", message_PT: "Salto" }],
-		"s-983-1000-109-0": [{ type: "text", sub_type: "message", message: "Push Back", message_ES: "Empujar Atrás", message_PT: "Empurrar Atrás" }],
+		"s-983-1000-109-0": [{ type: "text", sub_type: "message", message: "Push Back", message_ES: "Atrás Empujar", message_PT: "Atrás Empujar" }],
 		"s-983-1000-119-0": [
 			{ type: "text", sub_type: "message", message: "Heavy Attack", message_ES: "Ataque Fuerte", message_PT: "Ataque Forte" },
 			{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Iframe", message_PT: "Iframe", delay: 250 },
@@ -141,11 +141,11 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-983-2000-105-0": [{ type: "text", sub_type: "message", message: "Whip (Dodge)", message_ES: "Látigo (Iframe)", message_PT: "Chicote (Iframe)" }],
 		"s-983-2000-110-0": [{ type: "text", sub_type: "message", message: "Front Attack (Dodge)", message_ES: "Frente Ataque (Esquiva)", message_PT: "Frente Ataque (Esquiva)" }],
-		"s-983-2000-112-0": [{ type: "text", sub_type: "message", message: "Push Back (Right)", message_ES: "Empujar Atrás (Derecha)", message_PT: "Empurrar Atrás (Direita)" }],
+		"s-983-2000-112-0": [{ type: "text", sub_type: "message", message: "Push Back (Right)", message_ES: "Atrás Empujar (Derecha)", message_PT: "Atrás Empurrar (Direita)" }],
 		"s-983-2000-114-0": [{ type: "text", sub_type: "message", message: "Ground Hit", message_ES: "Golpe de tierra", message_PT: "Golpe de Terra" }],
-		"s-983-2000-115-0": [{ type: "text", sub_type: "message", message: "Push Back (Left)", message_ES: "Empujar Atrás (Izquierda)", message_PT: "Empurrar Atrás (Direita)" }],
+		"s-983-2000-115-0": [{ type: "text", sub_type: "message", message: "Push Back (Left)", message_ES: "Atrás Empujar(Izquierda)", message_PT: "Atrás Empurrar (Direita)" }],
 		"s-983-2000-119-0": [{ type: "text", sub_type: "message", message: "Jump (Dodge)", message_ES: "Salto (Iframe)", message_PT: "Salto (Iframe)" }],
-		"s-983-2000-120-0": [{ type: "text", sub_type: "message", message: "Front Attack | Push Back", message_ES: "Frente Ataque | Empujar Atrás", message_PT: "Frente Ataque | Empurrar Atrás" }],
+		"s-983-2000-120-0": [{ type: "text", sub_type: "message", message: "Front Attack | Push Back", message_ES: "Frente Ataque | Atrás Empujar", message_PT: "Frente Ataque | Atrás Empurrar" }],
 		"s-983-2000-206-0": [{ type: "func", func: ent => secondboss_game_id_for_book = ent.gameId }], // prepare to take the book
 		"s-983-2000-316-0": [{ type: "text", sub_type: "message", message: "Fire AOE", message_ES: "Fuero AOE", message_PT: "Fogo АОЕ" }],
 		"s-983-2000-306-0": [
@@ -172,7 +172,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-983-3000-106-0": [{ type: "text", sub_type: "message", message: "Push (Tank)", message_ES: "Empujar (Tank)", message_PT: "Empurrar (Tank)" }],
 		"s-983-3000-110-0": [{ type: "text", sub_type: "message", message: "Throw Front (Stun)", message_ES: "Lanzamiento Frontal (Stun)", message_PT: "Lançar Frente (Stun)" }],
-		"s-983-3000-113-0": [{ type: "text", sub_type: "message", message: "Push Back", message_ES: "Empujar Atrás", message_PT: "Empurrar Atrás" }],
+		"s-983-3000-113-0": [{ type: "text", sub_type: "message", message: "Push Back", message_ES: "Atrás Empujar ", message_PT: "Atrás Empurrar " }],
 		"s-983-3000-114-0": [{ type: "text", sub_type: "message", message: "Bait (Target)", message_ES: "Bait (Objetivo)", message_PT: "Bait (Alvo)" }],
 		"s-983-3000-116-0": [ // 116 - 117 - 118
 			{ type: "text", sub_type: "message", message: "Throw Back (Stun)", message_ES: "Lanzamiento Atrás (Stun)", message_PT: "Lançar Atrás (Stun)" },

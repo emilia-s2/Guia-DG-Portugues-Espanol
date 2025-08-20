@@ -1,4 +1,4 @@
-﻿// Velik's Sanctuary
+﻿// Velik's Sanctuary (Normal)
 //
 // Made by michengs / HSDN
 

@@ -624,7 +624,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		// SECOND FLOOR
 
 		"s-434-2000-1102-0": [{ type: "text", sub_type: "message", message: "SPIN", message_ES: "GIRO", message_PT: "GIRO" }],
-		"s-434-2000-1106-0": [{ type: "text", sub_type: "message", message: "Stomp", message_ES: "Pisar", message_PT: "Pisar" }],
+		"s-434-2000-1106-0": [{ type: "text", sub_type: "message", message: "EVADE/Front AOE", message_ES: "Frente AOE", message_PT: "Frente AOE" }],
 		"s-434-2000-1107-0": [{ type: "text", sub_type: "message", message: "BACK", message_ES: "ATRÁS", message_PT: "ATRÁS" }],
 		"s-434-2000-1108-0": [{ type: "text", sub_type: "message", message: "FRONT", message_ES: "FRENTE", message_PT: "FRENTE" }],
 		"s-434-2000-1109-0": [{ type: "text", sub_type: "message", message: "Back Spin", message_ES: "Giro Atrás", message_PT: "Giro Atrás" }],
@@ -638,7 +638,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-434-2000-1119-0": [{ type: "text", sub_type: "message", message: "PULL", message_ES: "JALAR", message_PT: "PUXAR" }],
 		"s-434-2000-1122-0": [{ type: "text", sub_type: "message", message: "IN", message_ES: "ENTRAR", message_PT: "ENTRAR" }],
 		"s-434-2000-1306-0": [
-			{ type: "text", sub_type: "message", message: "Run away", message_ES: "Huir", message_PT: "Fugir" },
+			{ type: "text", sub_type: "message", message: "Stand by head", message_ES: "Mirate en la Cabeza", message_PT: "Fique de Olho na Cabeça" },
 			{ type: "text", sub_type: "message", message: "4", delay: 5000 },
 			{ type: "text", sub_type: "message", message: "3", delay: 6000 },
 			{ type: "text", sub_type: "message", message: "2", delay: 7000 },

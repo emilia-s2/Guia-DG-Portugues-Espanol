@@ -1,4 +1,4 @@
-// Akalath Quarantine
+// Akalath Quarantine (Normal)
 //
 // made by michengs
 

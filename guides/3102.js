@@ -12,10 +12,10 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 
 		// Ress bait / range check
-		"s-3102-1000-1107-0": [{ type: "text", sub_type: "message", message: "Spectral Throw (Bait)", message_ES: "Lanza Spectral", message_PT: "Arremesso Spectral" },
+		"s-3102-1000-1107-0": [{ type: "text", sub_type: "message", message: "Spectral Throw (Bait)", message_ES: "Lanza Spectral", message_PT: "Lança Spectral" },
 			{ type: "text", sub_type: "message", delay: 1400, message: "Dodge!", message_ES: "Iframe", message_PT: "Iframe!" }
 		],
-		"s-3102-1000-2107-0": [{ type: "text", sub_type: "message", message: "Spectral Throw (Bait)", message_ES: "Lanza Spectral", message_PT: "Arremesso Spectral" },
+		"s-3102-1000-2107-0": [{ type: "text", sub_type: "message", message: "Spectral Throw (Bait)", message_ES: "Lanza Spectral", message_PT: "Lança Spectral" },
 			{ type: "text", sub_type: "message", delay: 1400, message: "Dodge!", message_ES: "Iframe", message_PT: "Iframe!" }
 		],
 		// Basic attacks

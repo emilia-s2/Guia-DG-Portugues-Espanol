@@ -47,8 +47,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-982-1000-106-0": [{ type: "text", class_position: "tank", sub_type: "message", message: "Heavy", message_ES: "Golpe Pesado", message_PT: "Golpe Pesado" }],
 		"s-982-1000-107-0": [
-			{ type: "text", class_position: "dps", sub_type: "message", message: "Pushback", message_ES: "Empujar Atrás", message_PT: "Repelir Atrás" },
-			{ type: "text", class_position: "heal", sub_type: "message", message: "Pushback (Kaia)", message_ES: "Empujar Atrás (Kaia)", message_PT: "Repelir Atrás (Kaia)" },
+			{ type: "text", class_position: "dps", sub_type: "message", message: "Pushback", message_ES: "Atrás Empujar", message_PT: "Atrás Empurrar" },
+			{ type: "text", class_position: "heal", sub_type: "message", message: "Pushback (Kaia)", message_ES: "Atrás Empujar (Kaia)", message_PT: "Atrás Empurrar (Kaia)" },
 			{ type: "spawn", func: "vector", args: [553, 90, 30, 140, 600, 1000, 2000] },
 			{ type: "spawn", func: "vector", args: [553, 270, 30, -140, 600, 1000, 2000] }
 		],

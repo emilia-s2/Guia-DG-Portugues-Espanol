@@ -131,7 +131,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-720-3000-1115-0": [{ type: "text", sub_type: "message", message: "Spin Attack", message_ES: "Ataque Giratorio", message_PT: "Ataque Giratorio" }],
 		"s-720-3000-1120-0": [{ type: "text", sub_type: "message", message: "Energy Beam (Slow)", message_ES: "Rayo de Energia (Lento)", message_PT: "Raio de Energia (Lento)" }],
 		"s-720-3000-1204-0": [{ type: "text", sub_type: "message", message: "Energy Beam (Fast)", message_ES: "Rayo de Energia (Rápido", message_PT: "Raio de Energia (Rápido)" }],
-		"s-720-3000-1206-0": [{ type: "text", sub_type: "message", message: "Orbs", message_ES: "Orbes", message_PT: "Orbes" }],
+		"s-720-3000-1206-0": [{ type: "text", sub_type: "message", message: "Orbs", message_ES: "Orbs", message_PT: "Orbs" }],
 		"s-720-3000-1309-0": [{ type: "text", sub_type: "message", message: "AoE", message_ES: "AoE", message_PT: "AoE" }],
 		"s-720-3000-1310-0": [{ type: "text", sub_type: "message", message: "Puddles", message_ES: "Charcos (Olas)", message_PT: "Poças (Ondas)" }],
 		"s-720-3000-1311-0": "s-720-3000-1310-0",

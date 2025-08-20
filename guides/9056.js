@@ -1,4 +1,4 @@
-﻿// Timescape (Hard)
+﻿// Timescape (Difícil)
 //
 // made by HSDN
 

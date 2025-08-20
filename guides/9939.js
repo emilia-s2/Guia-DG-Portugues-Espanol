@@ -16,7 +16,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"ar-0-0-93910005": [{ type: "func", func: () => first_boss_debuff = false }],
 		"ae-0-0-93910005": [{ type: "func", func: () => first_boss_debuff = true }],
 		"s-939-93910-305-0": [
-			{ type: "text", sub_type: "notification", message: "[c=#00e1ff]Enter the big circle[/c]", message_ES: "[c=#00e1ff]Entra en círculo Grande[/c]", message_PT: "[c=#00e1ff]Entrar no Círculo Grande[/c]", check_func: () => first_boss_debuff, speech: false },
+			{ type: "text", sub_type: "notification", message: "[c=#ffff00]Enter the big circle[/c]", message_ES: "[c=#ffff00]Entra en círculo Grande[/c]", message_PT: "[c=#ffff00]Entrar no Círculo Grande[/c]", check_func: () => first_boss_debuff, speech: false },//#00e1ff
 			{ type: "text", sub_type: "notification", message: "[c=#ff2e32]Exit the big circle[/c]", message_ES: "[c=#ff2e32]Salir de círculo Grande[/c]", message_PT: "[c=#ff2e32]Sair do círculo Grande[/c]", check_func: () => !first_boss_debuff, speech: false },
 			{ type: "text", sub_type: "message", message: "Enter the big circle", message_ES: "Entra en círculo Grande", message_PT: "Entrar no Círculo Grande", check_func: () => first_boss_debuff },
 			{ type: "text", sub_type: "message", message: "Exit the big circle", message_ES: "Salir de círculo Grande", message_PT: "Sair do círculo Grande", check_func: () => !first_boss_debuff }
@@ -40,7 +40,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-939-1000-117-0": [{ type: "text", sub_type: "message", message: "Jump + Spin Stun", message_ES: "Salto + Giro Stun", message_PT: "Salto + Giro Stun" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 275, 0, 3000] }
 		],
-		"s-939-1000-119-0": [{ type: "text", sub_type: "message", message: "Many Hits", message_ES: "Muchos Golpes", message_PT: "Muchos Golpes" }],
+		"s-939-1000-119-0": [{ type: "text", sub_type: "message", message: "Many Hits", message_ES: "Muchos Golpes", message_PT: "Muitos Golpes" }],
 		"s-939-1000-306-0": [
 			{ type: "text", sub_type: "message", message: "Out > In", message_ES: "Salir > Entrar", message_PT: "Sair > Entrar" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 300, 0, 6500] }
@@ -78,7 +78,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-939-2000-304-0": [
 			{ type: "text", sub_type: "message", message: "Pull", message_ES: "Jalar", message_PT: "Puxar" },
-			{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Iframe", message_PT: "Iframe", delay: 1600 }
+			{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Iframe", message_PT: "Iframe", delay: 1600 }//
 		],
 
 		// 3 BOSS
@@ -89,13 +89,13 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"h-939-3001-30": [{ type: "text", sub_type: "message", message: "Reveal soon...", message_ES: "Revelar Pronto...", message_PT: "Revelar em Breve..." }],
 		"s-939-3001-201-0": [
 			{ type: "text", sub_type: "message", message: "Strong Roar (Stun)", message_ES: "Rugido Fuerte (Stun)", message_PT: "Rugido Forte (Stun)" },
-			{ type: "text", sub_type: "message", delay: 3500, message: "Dodge!", message_ES: "Iframe!", message_PT: "Iframe!" },
+			{ type: "text", sub_type: "message", delay: 4500, message: "Dodge!", message_ES: "Iframe!", message_PT: "Iframe!" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 650, 0, 4000] }
 		],
 		"s-939-3001-107-0": [{ type: "text", sub_type: "message", message: "Many Hits", message_ES: "Muchos Golpes", message_PT: "Muitos Golpes" }],
 		"s-939-3001-115-0": [
 			{ type: "text", sub_type: "message", message: "Strong Roar (Stun)", message_PT: "Rugido Stun)", message_PT: "Rugido (Stun)" },
-			{ type: "text", sub_type: "message", delay: 1050, message: "Dodge!", message_ES: "Iframe", message_PT: "Iframe!" },
+			{ type: "text", sub_type: "message", delay: 1500, message: "Dodge!", message_ES: "Iframe", message_PT: "Iframe!" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 650, 0, 4000] }
 		],
 		"s-939-3001-118-0": [{ type: "text", sub_type: "message", message: "Scratching", message_ES: "Rasguno", message_PT: "Arranhar" }],
@@ -105,7 +105,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-939-3001-172-0": [{ type: "text", sub_type: "message", message: "Target", message_ES: "Objetivo", message_PT: "Alvo" }],
 		"s-939-3001-175-0": [
 			{ type: "text", sub_type: "message", message: "Strong Roar (Stun)", message_PT: "Rugido (Stun)", message_PT: "Rugido (Stun)" },
-			{ type: "text", sub_type: "message", delay: 1050, message: "Dodge!", message_ES: "Iframe!", message_PT: "Iframe!" },
+			{ type: "text", sub_type: "message", delay: 1500, message: "Dodge!", message_ES: "Iframe!", message_PT: "Iframe!" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 650, 0, 4000] }
 		],
 		"s-939-3001-177-0": [{ type: "text", sub_type: "message", message: "Backstab", message_ES: "Ataque por la Espalda", message_PT: "Ataque nas Costas" }],

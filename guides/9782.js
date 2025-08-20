@@ -30,8 +30,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "vector", args: [553, 90, 140, 5, 620, 0, 1500] },
 			{ type: "spawn", func: "vector", args: [553, 270, 140, 355, 620, 0, 1500] }
 		],
-		"s-782-1000-109-0": [{ type: "text", sub_type: "message", message: "Rocks (Small)", message_ES: "Rocks (pequenas)", message_PT: "Rochas (pequenas)" }],
-		"s-782-1000-110-0": [{ type: "text", sub_type: "message", message: "Rocks (Large)", message_ES: "Rocks (Grande)", message_PT: "Rochas (Grandes)" }],
+		"s-782-1000-109-0": [{ type: "text", sub_type: "message", message: "Rocks (Small)", message_ES: "Rocas (pequenas)", message_PT: "Rochas (pequenas)" }],
+		"s-782-1000-110-0": [{ type: "text", sub_type: "message", message: "Rocks (Large)", message_ES: "Rocas (Grande)", message_PT: "Rochas (Grandes)" }],
 		"s-782-1000-111-0": [
 			{ type: "text", sub_type: "message", message: "Stun (Dodge)", message_ES: "Stun (Esquiva)", message_PT: "Stun (Esquiva)", delay: 1500 },
 			{ type: "spawn", func: "circle", args: [true, 553, 180, 50, null, 350, 1500, 2000] }
@@ -68,7 +68,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-782-1000-312-0": [
 			{ type: "text", sub_type: "message", message: "Break Golden Flower", message_ES: " Romper la Flor Dorada", message_PT: " Quebrar a Flor Dourada" },
-			{ type: "text", sub_type: "alert", message: "Dodge the Flower!!", message_ES: "Esquiva la Flor", message_PT: "Esquiva da Flor", check_func: () => color === debuff, delay: 1500 }
+			{ type: "text", sub_type: "alert", message: "Dodge the Flower!!", message_ES: "Esquiva de la Flor", message_PT: "Esquiva da Flor", check_func: () => color === debuff, delay: 1500 }
 		],
 		"s-782-1000-308-0": [
 			{ type: "func", func: () => color = 0 },

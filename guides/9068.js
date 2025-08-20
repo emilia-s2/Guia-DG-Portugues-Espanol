@@ -1,4 +1,4 @@
-// Shadow Sanguinary (Dificil)
+// Shadow Sanguinary (Difícil)
 //
 // made by HSDN
 

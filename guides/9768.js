@@ -1,4 +1,4 @@
-// Shadow Sanguinary
+// Shadow Sanguinary (Normal)
 //
 // made by HSDN
 

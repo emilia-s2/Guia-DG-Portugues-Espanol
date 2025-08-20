@@ -1,4 +1,4 @@
-// Corrupted Skynest
+// Corrupted Skynest (Normal)
 //
 // made by michengs / HSDN / ZC
 
@@ -69,7 +69,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 				handlers.text({
 					sub_type: "message",
 					message_PT: "Fim do Debuff em 20 segundos",
-					message_ES: "Дебафф 20 сек.",
+					message_ES: "Fin del Debuff en 20 Secundos.",
 					message: "Debuff 20 seconds"
 				});
 			}

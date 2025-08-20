@@ -54,7 +54,6 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	let hand_glow_id = UNKNOWN;
 	let pizza_spawn_counter = 0;
 	let pizza_event_active = false;
-	let pizza_active_guide = false;
 
 	function start_boss_event() {
 		boss_seventy = false;

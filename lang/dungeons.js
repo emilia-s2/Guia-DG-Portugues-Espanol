@@ -12,6 +12,36 @@ module.exports = {
 		"es": "Guardian Balder's Refuge",
 		"en": "Guardian Balder's Refuge"
 	},
+	2800: {
+		"pt": "Dreadspire Valkyteq",//VALKYTEQ
+		"es": "Dreadspire Valkyteq",
+		"en": "Dreadspire Valkyteq"
+	},	
+	2802: {
+		"pt": "Aesir's End (Difícil)",
+		"es": "Aesir's End (Difícil)",
+		"en": "Aesir's End (Hard)"
+	},
+	2803: {
+		"pt": "Aesir's End (Normal)",
+		"es": "Aesir's End (Normal)",
+		"en": "Aesir's End (Normal)"
+	},
+	2809: {
+		"pt": "The Observatory",
+		"es": "The Observatory",
+		"en": "The Observatory"
+	},
+	2811: {
+		"pt": "Sea of Honor 2?", //2?
+		"es": "Sea of Honor 2?", //2?
+		"en": "Sea of Honor 2?" //2?
+	},
+	2813: {
+		"pt": "Beach River Outpost",
+		"es": "Beach River Outpost",
+		"en": "SBeach River Outpost"
+	},
 	3020: {
 		"pt": "Sea of Honor",
 		"es": "Sea of Honor",
@@ -87,6 +117,16 @@ module.exports = {
 		"es": "Corrupted RK-9 Kennel",
 		"en": "Corrupted RK-9 Kennel"
 	},
+	3111: {
+		"pt": "The Veil (Darkan)",
+		"es": "The Veil (Darkan)",
+		"en": "The Veil (Darkan)"
+	},
+	3123: {
+		"pt": "Akalath Quarantine (Difícil)",
+		"es": "Akalath Quarantine (Difícil)",
+		"en": "Akalath Quarantine (Hard)"
+	},
 	3126: {
 		"pt": "Corrupted Skynest (Difícil)",
 		"es": "Corrupted Skynest (Difícil)",
@@ -118,9 +158,9 @@ module.exports = {
 		"en": "Crimson Killing Grounds"
 	},	
 	9027: {
-		"pt": "The Plexus (Difícil)",
-		"es": "The Plexus (Difícil)",
-		"en": "The Plexus (Hard)"
+		"pt": "The Plexus - Manaya's Core(Difícil)",
+		"es": "The Plexus - Manaya's Core(Difícil)",
+		"en": "The Plexus - Manaya's Core (Hard)"
 	},
 	9034: {
 		"pt": "Dreadspire",
@@ -198,9 +238,9 @@ module.exports = {
 		"en": "RK-9 Kennel Normal"
 	},
 	9750: {
-		"pt": "Rift's Edge (Normal) (10-Pessoas)",
-		"es": "Rift's Edge (Normal) (10-Personas)",
-		"en": "Rift's Edge (Normal) (10-Person)"
+		"pt": "Rift's Edge Normal (10-Pessoas)",
+		"es": "Rift's Edge Normal (10-Personas)",
+		"en": "Rift's Edge Normal (10-Person)"
 	},	
 	9739: {
 		"pt": "Red Refuge Normal",
@@ -306,6 +346,11 @@ module.exports = {
 		"pt": "Dark Reach Citadel (Difícil)",
 		"es": "Dark Reach Citadel (Difícil)",
 		"en": "Dark Reach Citadel (Hard)"
+	},
+	9985: {
+		"pt": "Sanctuary's Ruins (Difícil)",//Agaia
+		"es": "Sanctuary's Ruins (Difícil)",//Agaia
+		"en": "Sanctuary's Ruins (Hard)"//Agaia
 	},
 	9994: {
 		"pt": "Thaumetal Refinery (Difícil)",

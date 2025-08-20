@@ -1,4 +1,4 @@
-// Forsaken Island (Hard)
+// Forsaken Island (Difícil)
 //
 // made by ITunk
 
@@ -7,14 +7,14 @@ module.exports = (dispatch, handlers, guide, lang) => {
 
 	return {
 		// 1 BOSS
-		"s-759-1001-1104-0": [{ type: "text", sub_type: "message", message: "Jump (Stun)", message_PT: "Salto (Stun)", message_ES: "Saltar (Stun)" }],
-		"s-759-1001-2104-0": [{ type: "text", sub_type: "message", message: "Jump (Stun)", message_PT: "Salto (Stun)", message_ES: "Saltar (Stun)" }],
+		"s-759-1001-1104-0": [{ type: "text", sub_type: "message", message: "Jump (Stun)", message_PT: "Salto (Stun)", message_ES: "Salto (Stun)" }],
+		"s-759-1001-2104-0": [{ type: "text", sub_type: "message", message: "Jump (Stun)", message_PT: "Salto (Stun)", message_ES: "Salto (Stun)" }],
 		"s-759-1001-1106-0": [
-			{ type: "text", sub_type: "message", message: "Spin", message_PT: "Girar", message_ES: "Girar" },
+			{ type: "text", sub_type: "message", message: "Spin", message_PT: "Giro", message_ES: "Giro" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 320, 0, 3500] }
 		],
 		"s-759-1001-2106-0": [
-			{ type: "text", sub_type: "message", message: "Spin", message_PT: "Girar", message_ES: "Girar" },
+			{ type: "text", sub_type: "message", message: "Spin", message_PT: "Giro", message_ES: "Giro" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 320, 0, 3500] }
 		],
 		"s-759-1001-3107-0": [
@@ -23,11 +23,11 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "vector", args: [553, 270, 80, 350, 1000, 0, 1500] }
 		],
 		"s-759-1001-3101-0": [
-			{ type: "text", sub_type: "message", message: "Out", message_PT: "Sair", message_ES: "Salir" },
+			{ type: "text", sub_type: "message", message: "Out -> In", message_PT: "Sair > Entrar", message_ES: "Salir > Entrar" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 270, 0, 2000] }
 		],
 		"s-759-1001-3106-0": [
-			{ type: "text", sub_type: "message", message: "In", message_PT: "Entrar", message_ES: "Entrar" },
+			{ type: "text", sub_type: "message", message: "In -> Out", message_PT: "Entrar > Sair", message_ES: "Entrar > Salir" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 245, 0, 2000] }
 		],
 

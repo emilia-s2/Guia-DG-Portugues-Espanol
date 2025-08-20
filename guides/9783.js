@@ -1,4 +1,4 @@
-// Dark Reach Citadel
+// Dark Reach Citadel (Normal)
 //
 // made by ITunk / HSDN / FrostSigil
 

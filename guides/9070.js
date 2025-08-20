@@ -6,6 +6,7 @@ const OPCODES = {
 	"S_DUNGEON_EVENT_GAGE": {
 		366226: 39917,
 		367078: 47028,
+		367080: 57835,
 		367081: 39359,
 		376012: 47078
 	}
@@ -69,7 +70,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 				event_gage = 0;
 			} }
 		],
-		
+
 		"s-470-1000-1105-0": [{ type: "text", sub_type: "message", message: "Jump", message_ES: "Salto", message_PT: "Salto" }],
 		"s-470-1000-1106-0": [{ type: "text", sub_type: "message", message: "Smash", message_ES: "Aplastar", message_PT: "Esmagar" }],
 		"s-470-1000-1120-0": [{ type: "text", sub_type: "message", message: "Pull", message_ES: "Jalar", message_PT: "Puxar" }],
@@ -100,7 +101,6 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", message: "Out", message_ES: "Salir", message_PT: "Sair", check_func: () => is_telling_truth() },
 			{ type: "text", sub_type: "message", message: "In", message_ES: "Entrar", message_PT: "Entrar", check_func: () => !is_telling_truth() }
 		],
-
 		"qb-470-1000-470019": [
 			{ type: "text", sub_type: "alert", message: "Truth", message_ES: "Verdad", message_PT: "Verdade", check_func: () => is_telling_truth() },
 			{ type: "text", sub_type: "alert", message: "Lie", message_ES: "Mentira", message_PT: "Mentira", check_func: () => !is_telling_truth() }

@@ -1,4 +1,4 @@
-// Thaumetal Refinery (Hard)
+// Thaumetal Refinery (Difícil)
 //
 // made by ITunk / Vampic
 
@@ -59,7 +59,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-994-1000-114-0": [{ type: "text", sub_type: "message", message: "Many Attacks | Pull", message_ES: "Muchos Golpes | Jalar", message_PT: "Muitos Golpes | Puxar" }],
 		"s-994-1000-115-0": [{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Iframe", message_PT: "Iframe", delay: 1000 }],
 		"s-994-1000-116-0": [{ type: "text", sub_type: "message", message: "Gather!", message_ES: "Juntar!", message_PT: "Juntar!", delay: 3000 }],
-		"s-994-1000-119-0": [{ type: "text", sub_type: "message", message: "Pushback", message_ES: "Empujar Atrás", message_PT: "Empurrar Atrás" }],
+		"s-994-1000-119-0": [{ type: "text", sub_type: "message", message: "Pushback", message_ES: "Atrás Empujar", message_PT: "Atrás Empurrar" }],
 		"s-994-1000-312-0": [{ type: "text", sub_type: "message", message: "Shield!", message_ES: "Escudo!", message_PT: "Escudo!", delay: 2000 }],
 		"s-994-1000-315-0": [{ type: "text", sub_type: "message", message: "In", message_ES: "Entrar", message_PT: "Entrar" }],
 		"ae-0-0-9941002": [{ type: "text", sub_type: "message", message: "Eye (boss to banana)", message_ES: "Ojo (Boss a Plátano)", message_PT: "Olho (Boss para Banana)" }],
@@ -99,7 +99,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"nd-994-3003": [{ type: "func", func: () => road_from_gameId = null }],
 		"ns-994-3004": [{ type: "func", func: ent => blue_vaccine_loc = ent.pos }], // Синий
 		"ns-994-3005": [{ type: "func", func: ent => red_vaccine_loc = ent.pos }], // Красный
-		"s-994-3000-103-0": [{ type: "text", sub_type: "message", message: "Pushback", message_ES: "Empujar Atrás", message_PT: "Empurrar Atrás" }],
+		"s-994-3000-103-0": [{ type: "text", sub_type: "message", message: "Pushback", message_ES: "Atrás Empujar", message_PT: "Atrás Empurrar" }],
 		"s-994-3000-107-0": [
 			{ type: "spawn", func: "vector", args: [553, 0, 0, 90, 500, 0, 5500] },
 			{ type: "spawn", func: "vector", args: [553, 0, 0, -90, 500, 0, 5500] },

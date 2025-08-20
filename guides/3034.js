@@ -141,10 +141,10 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		}
 		if ([1160, 1170, 1180, 1190].includes(skillid) && boss_seventy) { // <70%
 			if (mech_reverse) {
-				handlers.text({ sub_type: "message", message: "Triple-S | Out", message_PT: "Triplo-S | SAIR", message_ES: "Triplo-S | SALIR" });
+				handlers.text({ sub_type: "message", message: "Triple-S | Out", message_PT: "Triplo-S | SAIR", message_ES: "Triple-S | SALIR" });
 				handlers.text({ sub_type: "message", delay: 4500, message: "Out", message_PT: "SAIR", message_ES: "SALIR" });
 			} else {
-				handlers.text({ sub_type: "message", message: "Triple-S | In", message_PT: "Triplo-S | ENTRAR", message_ES: "Triplo-S | ENTRAR" });
+				handlers.text({ sub_type: "message", message: "Triple-S | In", message_PT: "Triplo-S | ENTRAR", message_ES: "Triple-S | ENTRAR" });
 				handlers.text({ sub_type: "message", delay: 4500, message: "In", message_PT: "ENTRAR", message_ES: "ENTRAR" });
 			}
 			handlers.spawn({ func: "circle", args: [false, 445, 0, 0, 10, 300, 5000, 2000] });

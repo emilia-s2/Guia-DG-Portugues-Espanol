@@ -1,4 +1,4 @@
-// Corrupted Skynest (Hard)
+// Corrupted Skynest (Difícil)
 //
 // made by michengs / HSDN / ZC
 
@@ -334,8 +334,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 
 		"206-0": [{ type: "text", sub_type: "message", message: "Jump Back", message_ES: "Salto Atrás", message_PT: "Salto Atrás" }],
-		"164-0": [{ type: "text", sub_type: "message", message_ES: "R.I.P xD e.e (100%)", message_RU: "R.I.P xD e.e (100%)" }],
-		"165-0": [{ type: "text", sub_type: "message", message_ES: "R.I.P xD e.e (0%)", message_RU: "R.I.P xD e.e (0%)" }],
+		"164-0": [{ type: "text", sub_type: "message", message: "R.I.P xD e.e (100%)", message_ES: "R.I.P xD e.e (0%)", message_PT: "R.I.P xD e.e (0%)" }],
+		"165-0": [{ type: "text", sub_type: "message", message: "R.I.P xD e.e (0%)", message_ES: "R.I.P xD e.e (0%)", message_PT: "R.I.P xD e.e (0%)" }],
 		"137-0": [{ type: "text", sub_type: "message", message: "Knockdown", message_ES: "Tumbar + Explosión Ampla (50metros)", message_PT: "Derrubar + Explosão Ampla (50metros)" }],
 		"138-0": [{ type: "text", sub_type: "message", message: "AoE", message_ES: "AoE", message_PT: "AoE", delay: 1720 }],
 		"139-0": [

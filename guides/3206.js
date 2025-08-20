@@ -32,7 +32,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 					handlers.text({
 						sub_type: "message",
 						message: `Snowball on ${member.name}`,
-						message_ES: `Bola de Nieve eve Activada ${member.name}`,
+						message_ES: `Bola de Nieve Activada ${member.name}`,
 						message_PT: `Bola de Neve Ativada ${member.name}`
 					});
 				} else {
@@ -90,7 +90,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"qb-3206-1000-32061002": [
 			{ type: "text", sub_type: "message", message: "Furthest - OUT", message_ES: "Lejos - Fuera", message_PT: "Longe - Fora", check_func: () => stack === 0 },
 			{ type: "text", sub_type: "message", message: "Furthest - IN", message_ES: "Lejos - Dentro", message_PT: "Longe - Dentro", check_func: () => stack !== 0 },
-			{ type: "text", sub_type: "alert", message: "Soon to give stun...", message_ES: "Dar Stun Pronto...", message_PT: "Dar Stun Embreve...", delay: 2000 }
+			{ type: "text", sub_type: "alert", message: "Soon to give stun...", message_ES: "Dar Stun Pronto...", message_PT: "Dar Stun em Breve...", delay: 2000 }
 		],
 
 		"s-3206-1000-102-0": [

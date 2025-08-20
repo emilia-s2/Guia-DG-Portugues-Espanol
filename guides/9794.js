@@ -1,4 +1,4 @@
-// Thaumetal Refinery
+// Thaumetal Refinery (Normal)
 //
 // made by ITunk / Vampic
 

@@ -12,7 +12,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "despawn_all" }
 		],
 		//"s-3201-1000-103-0": [{ type: "text", class_position:"tank", sub_type: "message", message: "Dodge", message_RU: "Эвейд!" }],
-		"s-3201-1000-104-0": [{ type: "text", class_position: "tank", sub_type: "message", message: "Stun attack", message_RU: "Стан!" }],
+		"s-3201-1000-104-0": [{ type: "text", class_position: "tank", sub_type: "message", message_PT: "Ataque Stun", message_ES: "Ataque Stun", message: "Stun attack" }],
 		"s-3201-1000-107-0": [
 			{ type: "text", sub_type: "message", message_PT: "Empurrar Atrás (Lento)", message_ES: "Empujar Atrás (Lento)", message: "Back" },
 			{ type: "spawn", func: "vector", args: [553, 90, 139, 173, 800, 0, 3000] },
@@ -40,7 +40,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		//"s-3201-1000-121-0": [{ type: "text", class_position:"tank", sub_type: "message", message: "Right", message_RU: "Право" }],
 		//"s-3201-1000-122-0": [{ type: "text", class_position:"tank", sub_type: "message", message: "Left", message_RU: "Лево" }],
-		"s-3201-1000-124-0": [{ type: "text", class_position: "tank", sub_type: "message", message: "Stun attack", message_RU: "Стан (фаст)" }],
+		"s-3201-1000-124-0": [{ type: "text", class_position: "tank", sub_type: "message", message_PT: "Ataque Stun", message_ES: "Ataque Stun", message: "Stun attack" }],
 		"s-3201-1000-127-0": [
 			{ type: "text", class_position: "dps", sub_type: "message", message_PT: "Empurrar Atrás (Rápido)", message_ES: "Empujar Atrás (Rápido)", message: "Back (fast)" },
 			{ type: "text", class_position: "heal", sub_type: "message", message_PT: "Empurrar Atrás (Rápido)", message_ES: "Empujar Atrás (Rápido)", message: "Back (fast)" },

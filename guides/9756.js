@@ -1,4 +1,4 @@
-﻿// Timescape
+﻿// Timescape (Normal)
 //
 // made by HSDN
 

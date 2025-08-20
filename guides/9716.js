@@ -1,4 +1,4 @@
-// Sky Cruiser Endeavor Normal
+// Sky Cruiser Endeavor (Normal)
 //
 // made by michengs / HSDN / Emilia-s2
 
@@ -8,9 +8,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	let back_time = 0;
 	let end_back_time = 0;
 	let is_one_back = false;
-	let is_hp_49 = false;
 	let counter = 0;
-	let enrage = 0;
 	let timer2 = null;
 	
 	function boss_backcombo_event() {
@@ -26,8 +24,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			});
 		}
 
-		timer2 = dispatch.setTimeout(() => counter = 0, enrage == 1 ? 2000 : 3000);
-	}	
+		timer2 = dispatch.setTimeout(() => counter = 0, 3000);
+	}
 
 	function boss_backattack_event() {
 		end_back_time = new Date() - back_time;
@@ -159,9 +157,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "stop_timers" },
 			{ type: "despawn_all" }
 		],
-		"h-716-1000-100": [{ type: "func", func: () => is_hp_49 = false }],
 		"h-716-1000-94": [{ type: "text", sub_type: "message", message: "94%" }],
-		"h-716-1000-49": [{ type: "text", sub_type: "message", message: "49%" }, { type: "func", func: () => is_hp_49 = true }],
+		"h-716-1000-49": [{ type: "text", sub_type: "message", message: "49%" }],
 		"s-716-1000-1101-0": [{ type: "func", func: boss_backattack_event }],
 		"s-716-1000-1102-0": [{ type: "func", func: () => back_time = new Date() }],
 		"s-716-1000-1112-0": [{ type: "text", sub_type: "message", message_PT: "Movimento Atrás", message_ES: "Movimiento Atrás", message: "Back Move" }],

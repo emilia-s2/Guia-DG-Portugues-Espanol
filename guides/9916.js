@@ -1,4 +1,4 @@
-// Sky Cruiser Endeavor Difícil
+// Sky Cruiser Endeavor (Difícil)
 //
 // made by michengs / HSDN / Emilia-s2
 
@@ -26,7 +26,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 					sub_type: "message",
 					message_PT: "360",
 					message_ES: "360",
-					message: "360",
+					message: "360"
 				});
 			}
 		}
@@ -85,30 +85,30 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		prev_date = 0;
 	}
 
-	return {		
+	return {
 		// Mini BOSS 1
 		"qb-916-91660-916045": [{ type: "text", sub_type: "message", message_PT: "Disparo Aleatório", message_ES: "Disparo Aleatorio", message: "Random Shot" }],
 		"s-916-91660-1304-0": [
 			{ type: "spawn", func: "vector", args: [912, 370, 50, 8, 1900, 0, 3000] },
 			{ type: "spawn", func: "vector", args: [912, 360, 50, 0, 1900, 0, 3000] },
 			{ type: "spawn", func: "vector", args: [912, 350, 50, -8, 1900, 0, 3000] }
-		],	
+		],
 		"s-916-91660-1304-1": [
 			{ type: "spawn", func: "vector", args: [912, 370, 50, 8, 1900, 0, 3000] },
 			{ type: "spawn", func: "vector", args: [912, 360, 50, 0, 1900, 0, 3000] },
 			{ type: "spawn", func: "vector", args: [912, 350, 50, -8, 1900, 0, 3000] }
 		],
-		"s-916-91650-1102-0": [{ type: "text", sub_type: "message", message_PT: "Stun", message_ES: "Stun AoE", message: "AoE Stun" }],
+		"s-916-91650-1102-0": [{ type: "text", sub_type: "message", message_PT: "AoE Stun", message_ES: "Stun AoE", message: "AoE Stun" }],
 		"s-916-91650-1104-0": [{ type: "text", sub_type: "message", message_PT: "Alvo Aleatório (Stun)", message_ES: "Objetivo Aleatorio (Stun)", message: "Random Target (Stun)" },
-			{ type: "spawn", func: "semicircle", args: [-33, 38, 912, 0, 0, 8, 550, 0, 3500] },//1
-			{ type: "spawn", func: "semicircle", args: [-30, 35, 912, 0, 0, 8, 500, 0, 3500] },//1
-			{ type: "spawn", func: "semicircle", args: [59, 116, 912, -22, 210, 8, 480, 0, 3500] },//2
-			{ type: "spawn", func: "semicircle", args: [65, 120, 912, -17, 210, 8, 410, 0, 3500] },//2
-			{ type: "spawn", func: "semicircle", args: [-110, -55, 912, 30, 200, 8, 500, 0, 3500] },//3
+			{ type: "spawn", func: "semicircle", args: [-33, 38, 912, 0, 0, 8, 550, 0, 3500] }, //1
+			{ type: "spawn", func: "semicircle", args: [-30, 35, 912, 0, 0, 8, 500, 0, 3500] }, //1
+			{ type: "spawn", func: "semicircle", args: [59, 116, 912, -22, 210, 8, 480, 0, 3500] }, //2
+			{ type: "spawn", func: "semicircle", args: [65, 120, 912, -17, 210, 8, 410, 0, 3500] }, //2
+			{ type: "spawn", func: "semicircle", args: [-110, -55, 912, 30, 200, 8, 500, 0, 3500] }, //3
 			{ type: "spawn", func: "semicircle", args: [-110, -55, 912, 30, 200, 8, 450, 0, 3500] }//3
 		],
-		"s-916-91650-1105-0": [{ type: "text", sub_type: "message", message_PT: "Salto + Cabeçada Alvo", message_ES: "Salto + Cabezazo Objetivo", message: "Jump + Headbutt on Target" }],
-		"s-916-91650-1106-0": [{ type: "text", sub_type: "message", message_PT: "Cabeçada (Alvo)", message_ES: "Cabezazo (Objetivo)", message: "Headbutt (Target)" }],
+		"s-916-91650-1105-0": [{ type: "text", sub_type: "message", message_ES: "Salto + Cabezazo Objetivo", message: "Jump + Headbutt on Target" }],
+		"s-916-91650-1106-0": [{ type: "text", sub_type: "message", message_ES: "Cabezazo (Objetivo)", message: "Headbutt (Target)" }],
 		"s-916-91650-2102-0": "s-916-91650-1102-0",
 		"s-916-91650-2104-0": "s-916-91650-1104-0",
 		"s-916-91650-2105-0": "s-916-91650-1105-0",
@@ -116,22 +116,22 @@ module.exports = (dispatch, handlers, guide, lang) => {
 
 		// Mini BOSS 2
 		"ns-916-91606": [
-			{ type: "spawn", sub_type: "build_object", id: 1, sub_delay: 99999999, pos: { x: 57046, y: 129715, z: 2370, w: -1.08}, ownerName: "DIRECIONAR LASER", message: "LASER ALEATÓRIO" },//1
-			{ type: "spawn", sub_type: "item", id: 88704, sub_delay: 99999999, pos: { x: 57046, y: 129715, z: 2370, w: -1.08} },//1
-			{ type: "spawn", sub_type: "build_object", id: 1, sub_delay: 99999999, pos: { x: 58360, y: 129712, z: 2370, w: -2.09}, ownerName: "DIRECIONAR LASER", message: "LASER ALEATÓRIO" },//2
-			{ type: "spawn", sub_type: "item", id: 88704, sub_delay: 99999999, pos: { x: 58360, y: 129712, z: 2370, w: -2.09} },//2
-			{ type: "spawn", sub_type: "build_object", id: 1, sub_delay: 99999999, pos: { x: 58361, y: 126912, z: 2370, w: 2.00}, ownerName: "DIRECIONAR LASER", message: "LASER ALEATÓRIO" },//3
-			{ type: "spawn", sub_type: "item", id: 88704, sub_delay: 99999999, pos: { x: 58361, y: 126912, z: 2370, w: 2.00} },//3
-			{ type: "spawn", sub_type: "build_object", id: 1, sub_delay: 99999999, pos: { x: 57048, y: 126914, z: 2370, w: 1.06}, ownerName: "DIRECIONAR LASER", message: "LASER ALEATÓRIO" },//4
-			{ type: "spawn", sub_type: "item", id: 88704, sub_delay: 99999999, pos: { x: 57048, y: 126914, z: 2370, w: 1.06} },//4
-			{ type: "spawn", sub_type: "build_object", id: 1, sub_delay: 99999999, pos: { x: 59088, y: 127837, z: 2370, w: 2.76}, ownerName: "DIRECIONAR LASER", message: "LASER ALEATÓRIO" },//4 esquerda atras
-			{ type: "spawn", sub_type: "item", id: 88704, sub_delay: 99999999, pos: { x: 59088, y: 127837, z: 2370, w: 2.76} },//4 esquerda atras
-			{ type: "spawn", sub_type: "build_object", id: 1, sub_delay: 99999999, pos: { x: 56343, y: 127836, z: 2370, w: 0.39}, ownerName: "DIRECIONAR LASER", message: "LASER ALEATÓRIO" },//4 direita atras
-			{ type: "spawn", sub_type: "item", id: 88704, sub_delay: 99999999, pos: { x: 56343, y: 127836, z: 2370, w: 0.39} },//4 direita atras
-			{ type: "spawn", sub_type: "build_object", id: 1, sub_delay: 99999999, pos: { x: 56339, y: 128908, z: 2370, w: -0.38}, ownerName: "DIRECIONAR LASER", message: "LASER ALEATÓRIO" },//4 direita frente
-			{ type: "spawn", sub_type: "item", id: 88704, sub_delay: 99999999, pos: { x: 56339, y: 128908, z: 2370, w: -0.38} },//4 direita frente	
-			{ type: "spawn", sub_type: "build_object", id: 1, sub_delay: 99999999, pos: { x: 59087, y: 128907, z: 2370, w: -2.75}, ownerName: "DIRECIONAR LASER", message: "LASER ALEATÓRIO" },//4 esquerda frente
-			{ type: "spawn", sub_type: "item", id: 88704, sub_delay: 99999999, pos: { x: 59087, y: 128907, z: 2370, w: -2.75} }//4 esquerda frente	
+			{ type: "spawn", sub_type: "build_object", id: 1, sub_delay: 99999999, pos: { x: 57046, y: 129715, z: 2370, w: -1.08 }, ownerName: "DIRECIONAR LASER", message: "LASER" }, //1
+			{ type: "spawn", sub_type: "item", id: 88704, sub_delay: 99999999, pos: { x: 57046, y: 129715, z: 2370, w: -1.08 } }, //1
+			{ type: "spawn", sub_type: "build_object", id: 1, sub_delay: 99999999, pos: { x: 58360, y: 129712, z: 2370, w: -2.09 }, ownerName: "DIRECIONAR LASER", message: "LASER" }, //2
+			{ type: "spawn", sub_type: "item", id: 88704, sub_delay: 99999999, pos: { x: 58360, y: 129712, z: 2370, w: -2.09 } }, //2
+			{ type: "spawn", sub_type: "build_object", id: 1, sub_delay: 99999999, pos: { x: 58361, y: 126912, z: 2370, w: 2.00 }, ownerName: "DIRECIONAR LASER", message: "LASER" }, //3
+			{ type: "spawn", sub_type: "item", id: 88704, sub_delay: 99999999, pos: { x: 58361, y: 126912, z: 2370, w: 2.00 } }, //3
+			{ type: "spawn", sub_type: "build_object", id: 1, sub_delay: 99999999, pos: { x: 57048, y: 126914, z: 2370, w: 1.06 }, ownerName: "DIRECIONAR LASER", message: "LASER" }, //4
+			{ type: "spawn", sub_type: "item", id: 88704, sub_delay: 99999999, pos: { x: 57048, y: 126914, z: 2370, w: 1.06 } }, //4
+			{ type: "spawn", sub_type: "build_object", id: 1, sub_delay: 99999999, pos: { x: 59088, y: 127837, z: 2370, w: 2.76 }, ownerName: "DIRECIONAR LASER", message: "LASER" }, //4 esquerda atras
+			{ type: "spawn", sub_type: "item", id: 88704, sub_delay: 99999999, pos: { x: 59088, y: 127837, z: 2370, w: 2.76 } }, //4 esquerda atras
+			{ type: "spawn", sub_type: "build_object", id: 1, sub_delay: 99999999, pos: { x: 56343, y: 127836, z: 2370, w: 0.39 }, ownerName: "DIRECIONAR LASER", message: "LASER" }, //4 direita atras
+			{ type: "spawn", sub_type: "item", id: 88704, sub_delay: 99999999, pos: { x: 56343, y: 127836, z: 2370, w: 0.39 } }, //4 direita atras
+			{ type: "spawn", sub_type: "build_object", id: 1, sub_delay: 99999999, pos: { x: 56339, y: 128908, z: 2370, w: -0.38 }, ownerName: "DIRECIONAR LASER", message: "LASER" }, //4 direita frente
+			{ type: "spawn", sub_type: "item", id: 88704, sub_delay: 99999999, pos: { x: 56339, y: 128908, z: 2370, w: -0.38 } }, //4 direita frente
+			{ type: "spawn", sub_type: "build_object", id: 1, sub_delay: 99999999, pos: { x: 59087, y: 128907, z: 2370, w: -2.75 }, ownerName: "DIRECIONAR LASER", message: "LASER" }, //4 esquerda frente
+			{ type: "spawn", sub_type: "item", id: 88704, sub_delay: 99999999, pos: { x: 59087, y: 128907, z: 2370, w: -2.75 } }//4 esquerda frente
 		],
 		"s-916-91606-1304-0": [{ type: "text", sub_type: "message", message_PT: "Laser Aleatório", message_ES: "Laser Aleatorio", message: "Random Laser " },
 			{ type: "text", sub_type: "notification", message_PT: "Laser Aleatório em Breve...", message_ES: "Laser Aleatorio Pronto...", message: "Random Laser soon...", delay: 55000 }
@@ -144,20 +144,20 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "circle", args: [false, 553, -10, 230, 15, 210, 2000, 2000] },
 			{ type: "spawn", func: "circle", args: [false, 413, 50, 50, 15, 160, 2000, 2000] }
 		],
-		"s-916-91606-1105-0": [{ type: "text", sub_type: "message", message_PT: "Salto (Iframe)", message_ES: "Salto (Iframe)", message: "Jump (Dodge)" }],
+		"s-916-91606-1107-0": [{ type: "text", sub_type: "message", message_PT: "Salto (Iframe)", message_ES: "Salto (Iframe)", message: "Jump (Dodge)" }],
 		"s-916-91606-1107-0": [{ type: "text", sub_type: "message", message_PT: "Muitos Golpes (alvo)", message_ES: "Muchos Golpes (Objetivo)", message: "Many Hits (Target)" }],
 		"s-916-91606-1302-0": [{ type: "text", sub_type: "message", message_PT: "Laser (PROTEGER)", message_ES: "Laser (PROTEGER)", message: "Laser (PROTECT)" },
 			{ type: "spawn", func: "vector", args: [912, 360, 50, 0, 900, 0, 4000] }
 		],
 		"s-916-91606-1304-1": [{ type: "text", sub_type: "message", message_PT: "Iframe", message_ES: "Iframe", message: "Dodge", delay: 150 }],
 		"s-916-91606-1305-0": [{ type: "text", sub_type: "message", message_PT: "AoEs", message_ES: "AoEs", message: "AoEs" },
-			{ type: "spawn", func: "circle", args: [false, 553, 0, 210, 22, 140, 0, 3000] },//1 front
-			{ type: "spawn", func: "circle", args: [false, 553, 0, -230, 22, 140, 0, 3000] },//2 back
-			{ type: "spawn", func: "circle", args: [false, 553, 90, -230, 22, 140, 0, 2000] },//3 left
-			{ type: "spawn", func: "circle", args: [false, 553, 270, -230, 22, 140, 0, 2000] },//4 right
-			{ type: "spawn", func: "circle", args: [false, 553, 315, 360, 14, 220, 1000, 3000] },//1 front left big
-			{ type: "spawn", func: "circle", args: [false, 553, 135, 360, 14, 220, 1000, 3000] },//2 back right big
-			{ type: "spawn", func: "circle", args: [false, 553, 45, 360, 14, 220, 1000, 2000] },//3 front right big
+			{ type: "spawn", func: "circle", args: [false, 553, 0, 210, 22, 140, 0, 3000] }, //1 front
+			{ type: "spawn", func: "circle", args: [false, 553, 0, -230, 22, 140, 0, 3000] }, //2 back
+			{ type: "spawn", func: "circle", args: [false, 553, 90, -230, 22, 140, 0, 2000] }, //3 left
+			{ type: "spawn", func: "circle", args: [false, 553, 270, -230, 22, 140, 0, 2000] }, //4 right
+			{ type: "spawn", func: "circle", args: [false, 553, 315, 360, 14, 220, 1000, 3000] }, //1 front left big
+			{ type: "spawn", func: "circle", args: [false, 553, 135, 360, 14, 220, 1000, 3000] }, //2 back right big
+			{ type: "spawn", func: "circle", args: [false, 553, 45, 360, 14, 220, 1000, 2000] }, //3 front right big
 			{ type: "spawn", func: "circle", args: [false, 553, 225, 360, 14, 220, 1000, 3000] }//4 back left big
 		],
 		"s-916-91606-2102-0": "s-916-91606-1102-0",

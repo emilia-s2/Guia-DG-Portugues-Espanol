@@ -1,4 +1,4 @@
-// Red Refuge
+// Red Refuge (Normal)
 //
 // made by multarix
 
