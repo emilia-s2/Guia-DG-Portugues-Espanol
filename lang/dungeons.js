@@ -107,6 +107,11 @@ module.exports = {
 		"es": "Lumikan's Dream Normal",
 		"en": "Lumikan's Dream Normal"
 	},
+	3105: {
+		"pt": "Fusion Laboratory",
+		"es": "Fusion Laboratory",
+		"en": "Fusion Laboratory"
+	},
 	3106: {
 		"pt": "Killing Grounds",
 		"es": "Killing Grounds",
@@ -151,6 +156,11 @@ module.exports = {
 		"pt": "Lumikan's Dream (Difícil)",
 		"es": "Lumikan's Dream (Difícil)",
 		"en": "Lumikan's Dream (Hard)"
+	},
+	3205: {
+		"pt": "Cursed Fusion Laboratory",
+		"es": "Cursed Fusion Laboratory",
+		"en": "Cursed Fusion Laboratory"
 	},
 	3206: {
 		"pt": "Crimson Killing Grounds",
