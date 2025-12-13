@@ -182,6 +182,11 @@ module.exports = {
 		"es": "Bahaar's Sanctum",
 		"en": "Bahaar's Sanctum"
 	},
+	9048: {
+		"pt": "Sanctum of the Fire God",
+		"es": "Sanctum of the Fire God",
+		"en": "Sanctum of the Fire God"
+	},
 	9050: {
 		"pt": "Rift's Edge (Difícil) (10-Pessoas)",
 		"es": "Rift's Edge (Difícil) (10-Personas)",
