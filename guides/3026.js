@@ -351,6 +351,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", delay: 1100, message_PT: "Iframe", message_ES: "Iframe", message: "Iframe" }
 		],
 		"206-0": [{ type: "text", sub_type: "message", message_PT: "Salto Atrás", message_ES: "Salto Atrás", message: "Jump Back" }],
+		"206-2": [{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 15, 350, 0, 3000] }],
         "164-0": [{ type: "text", sub_type: "message", message_PT: "R.I.P xD e.e (100%)", message_ES: "R.I.P xD e.e (100%)", message: "R.I.P xD e.e (100%)" }], 
 		"165-0": [{ type: "text", sub_type: "message", message_PT: "R.I.P xD e.e (0%)", message_ES: "R.I.P xD e.e (0%)", message: "R.I.P xD e.e (0%)" }],
 		"137-0": [{ type: "text", sub_type: "message", message_PT: "Derrubar + Explosão Ampla (50metros)", message_ES: "Tumbar + Explosión Ampla (50metros)", message: "Knockdown" }],

@@ -1,4 +1,4 @@
-﻿// Bahaar's Sanctum (Training)
+// Bahaar's Sanctum (Training)
 //
 // made by michengs / Emilia-s2 / HSDN
 
@@ -314,6 +314,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"ab-3037-2000-90442304": [
 			{ type: "text", sub_type: "notification", message: "Stun", message_ES: "Stun", message_PT: "Stun" },
 			{ type: "text", sub_type: "message", message: "Stun", message_ES: "Stun", message_PT: "Stun", speech: false }
-		]
+		],
+		"ab-3037-2000-30372303": "ab-3037-2000-90442303",
+		"ab-3037-2000-30372304": "ab-3037-2000-90442304"
 	};
 };

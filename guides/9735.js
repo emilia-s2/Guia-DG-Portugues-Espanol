@@ -1,4 +1,4 @@
-﻿// RK-9 Kennel (Normal)
+// RK-9 Kennel (Normal)
 //
 // made by michengs
 
@@ -9,6 +9,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "stop_timers" },
 			{ type: "despawn_all" }
 		],
+		"s-735-1000-108-0": [{ type: "text", sub_type: "message", message_PT: "SAIR", message_ES: "SALIR", message: "Get Out" }],
 		"s-735-1000-111-0": [{ type: "text", sub_type: "message", message_PT: "Frente + Atrás", message_ES: "Frente + Atrás", message: "Back + Front" }],
 		"s-735-1000-104-0": [{ type: "text", sub_type: "message", message_PT: "Stun Frontal", message_ES: "Stun Frontal", message: "Front Stun" }],
 		"s-735-1000-112-0": [{ type: "text", sub_type: "message", message_PT: "Ataque Atrás", message_ES: "Ataque Atrás", message: "Back Attack" }],
@@ -130,12 +131,16 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "point", args: [553, 340, 210, 0, 3000] },
 			{ type: "spawn", func: "vector", args: [553, 350, 210, 0, 290, 0, 3000] }
 		],
+		"s-735-3000-125-0": [{ type: "text", sub_type: "message", message_PT: "Frente", message_ES: "Frente", message: "Front" }],
+		"s-735-3000-126-0": [{ type: "text", sub_type: "message", message_PT: "Frente | Atrás", message_ES: "Frente | Atrás", message: "Front | Back" }],
+		"s-735-3000-127-0": [{ type: "text", sub_type: "message", message_PT: "Atrás", message_ES: "Atrás", message: "Back" }],
 		"s-735-3000-128-0": [
-			{ type: "text", sub_type: "message", message_PT: "Atrás Punho Explosivo", message_ES: "Atrás Puño Explosivo", message: "Explosive Back" },
-			{ type: "spawn", func: "vector", args: [553, 180, 40, 120, 900, 2000, 3000] },
-			{ type: "spawn", func: "vector", args: [553, 180, 40, 240, 900, 2000, 3000] }
+			{ type: "text", sub_type: "message", message_PT: "Combo | Onda Atrás", message_ES: "Combo | Ola Atrás", message: "Combo | Back Wave" },
+			{ type: "spawn", func: "vector", args: [553, 180, 40, 120, 1200, 2000, 3000] },
+			{ type: "spawn", func: "vector", args: [553, 180, 40, 240, 1200, 2000, 3000] }
 		],
-		"s-735-3000-128-0": [{ type: "text", class_position: "tank", sub_type: "message", message_PT: "Iframe", message_ES: "Iframe", message: "Iframe" }],
+		"s-735-3000-129-0": [{ type: "text", class_position: "tank", sub_type: "message", message_PT: "Iframe", message_ES: "Iframe", message: "Dodge" }],
+		"qb-735-3000-735312": [{ type: "text", sub_type: "message", message_PT: "!!! Radar !!!", message_ES: "¡¡¡ Radar !!!", message: "!!! Radar !!!" }],
 		"s-735-3000-321-0": [
 			{ type: "text", sub_type: "message", message_PT: "ESCUDO!", message_ES: "ESCUDO!", message: "Shield!" },
 			{ type: "text", sub_type: "message", delay: 105000, message_PT: "ESCUDO em 10 segundos!", message_ES: "ESCUDO en 10 segundos!", message: "SHIELD in 10 seconds!" }
@@ -148,6 +153,13 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-735-3000-325-0": [
 			{ type: "text", sub_type: "message", message_PT: "ENTRAR", message_ES: "ENTRAR", message: "IN" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 285, 0, 3000] }
+		],
+		"s-735-3001-308-0": [
+			{ type: "text", sub_type: "message", message_PT: "Bait!", message_ES: "¡Bait!", message: "Bait!" },
+			{ type: "spawn", func: "vector", args: [912, 0, 0, 0, 300, 0, 2000] },
+			{ type: "spawn", func: "vector", args: [912, 0, 0, 90, 300, 0, 2000] },
+			{ type: "spawn", func: "vector", args: [912, 0, 0, 180, 300, 0, 2000] },
+			{ type: "spawn", func: "vector", args: [912, 0, 0, 270, 300, 0, 2000] }
 		]
 	};
 };

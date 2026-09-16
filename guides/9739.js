@@ -61,6 +61,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 630, 0, 4000] }
 		],	
 		"s-739-3001-107-0": [{ type: "text", sub_type: "message", message: "Many Hits", message_PT: "Muitos Hits (Garras)", message_ES: "Muchos Hits (Garras)" }],
+		"s-739-3001-112-0": [{ type: "text", sub_type: "message", message: "Target", message_PT: "Alvo", message_ES: "Target" }],
 		"s-739-3001-115-0": [
 			{ type: "text", sub_type: "message", message: "Roar (Stun)", message_PT: "Rugido (Stun)", message_ES: "Rugido (Stun)"},
 			{ type: "text", sub_type: "message", message: "Iframe!", message_PT: "Iframe", message_ES: "Iframe", delay: 1800 },
@@ -68,6 +69,13 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-739-3001-118-0": [{ type: "text", sub_type: "message", message: "Scratching", message_PT: "Arranhar", message_ES: "Rasguno"}],
 		// Revealed Argog
+		"s-739-3001-172-0": "s-739-3001-112-0",
+		"s-739-3001-301-0": "s-739-3001-112-0",
+		"s-739-3001-302-0": "s-739-3001-112-0",
+		"s-739-3001-170-0": [
+			{ type: "text", sub_type: "message", message: "Turn + Pushback", message_PT: "Giro + Empurrão", message_ES: "Giro + Empujón" },
+			{ type: "text", sub_type: "message", message: "Pushback", message_PT: "Empurrão", message_ES: "Empujón", delay: 2700 }
+		],
 		"s-739-3001-164-0": [{ type: "text", sub_type: "message", message: "Counter Attack (bleed)", message_PT: "Conta Ataque (Sangramento)", message_ES: "Conta Ataque (Sangramiento)" }],
 		"s-739-3001-167-0": [{ type: "text", sub_type: "message", message: "Many Hits", message_PT: "Muitos Hits (Garras)", message_ES: "Muchos Hits (Garras)"}],
 		"s-739-3001-175-0": [
@@ -79,6 +87,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-739-3001-178-0": [{ type: "text", sub_type: "message", message: "Scratching (bleed)", message_PT: "Arranhar (Sangrar)", message_ES: "Rasguno (Sangrar)" }],
 		"s-739-3001-203-0": [{ type: "text", sub_type: "message", message: "Phantom x3 (bleed)", message_PT: "Fantasma x3 (Sangramento)", message_ES: "Fantasma x3 (Sangramiento)" }],
 		"s-739-3001-207-0": [{ type: "text", sub_type: "message", message: "Phantom x5 (bleed)", message_PT: "Fantasma x5 (Sangramento)", message_ES: "Fantasma x5 (Sangramiento)" }],
+		"s-739-3001-213-0": [{ type: "text", sub_type: "message", message: "Reveal | Phantom (bleed)", message_PT: "Revelar | Fantasma (sangramento)", message_ES: "Revelar | Fantasma (sangrado)" }],
 		"s-739-3001-212-0": [{ type: "text", sub_type: "message", message: "Flash", message_PT: "Flash", message_ES: "Flash" }]
 	};
 };

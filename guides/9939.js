@@ -93,18 +93,25 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 650, 0, 4000] }
 		],
 		"s-939-3001-107-0": [{ type: "text", sub_type: "message", message: "Many Hits", message_ES: "Muchos Golpes", message_PT: "Muitos Golpes" }],
+		"s-939-3001-112-0": [{ type: "text", sub_type: "message", message: "Target", message_ES: "Target", message_PT: "Alvo" }],
 		"s-939-3001-115-0": [
-			{ type: "text", sub_type: "message", message: "Strong Roar (Stun)", message_PT: "Rugido Stun)", message_PT: "Rugido (Stun)" },
+			{ type: "text", sub_type: "message", message: "Strong Roar (Stun)", message_ES: "Rugido (Stun)", message_PT: "Rugido (Stun)" },
 			{ type: "text", sub_type: "message", delay: 1500, message: "Dodge!", message_ES: "Iframe", message_PT: "Iframe!" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 650, 0, 4000] }
 		],
 		"s-939-3001-118-0": [{ type: "text", sub_type: "message", message: "Scratching", message_ES: "Rasguno", message_PT: "Arranhar" }],
 		// Revealed Argog
+		"s-939-3001-172-0": "s-939-3001-112-0",
+		"s-939-3001-301-0": "s-939-3001-112-0",
+		"s-939-3001-302-0": "s-939-3001-112-0",
+		"s-939-3001-170-0": [
+			{ type: "text", sub_type: "message", message: "Turn + Pushback", message_ES: "Giro + Empujón", message_PT: "Giro + Empurrão" },
+			{ type: "text", sub_type: "message", message: "Pushback", message_ES: "Empujón", message_PT: "Empurrão", delay: 2700 }
+		],
 		"s-939-3001-164-0": [{ type: "text", sub_type: "message", message: "Counter Attack (bleed)", message_ES: "Conta Ataque (Sangramiento", message_PT: "Conta Ataque (Sangramento)" }],
 		"s-939-3001-167-0": [{ type: "text", sub_type: "message", message: "Many Hits", message_ES: "Muchos Golpes", message_PT: "Muitos Golpes" }],
-		"s-939-3001-172-0": [{ type: "text", sub_type: "message", message: "Target", message_ES: "Objetivo", message_PT: "Alvo" }],
 		"s-939-3001-175-0": [
-			{ type: "text", sub_type: "message", message: "Strong Roar (Stun)", message_PT: "Rugido (Stun)", message_PT: "Rugido (Stun)" },
+			{ type: "text", sub_type: "message", message: "Strong Roar (Stun)", message_ES: "Rugido (Stun)", message_PT: "Rugido (Stun)" },
 			{ type: "text", sub_type: "message", delay: 1500, message: "Dodge!", message_ES: "Iframe!", message_PT: "Iframe!" },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 10, 650, 0, 4000] }
 		],
@@ -112,6 +119,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-939-3001-178-0": [{ type: "text", sub_type: "message", message: "Scratching (bleed)", message_ES: "Rasguno (Sangrar)", message_PT: "Arranhar (Sangrar)" }],
 		"s-939-3001-203-0": [{ type: "text", sub_type: "message", message: "Phantom x3 (bleed)", message_ES: "Fantasma x3 (Sangramiento)", message_PT: "Fantasma x3 (Sangramento)" }],
 		"s-939-3001-207-0": [{ type: "text", sub_type: "message", message: "Phantom x5 (bleed)", message_ES: "Fantasma x5 (Sangramiento)", message_PT: "Fantasma x5 (Sangramento)" }],
+		"s-939-3001-213-0": [{ type: "text", sub_type: "message", message: "Reveal | Phantom (bleed)", message_ES: "Revelar | Fantasma (sangrado)", message_PT: "Revelar | Fantasma (sangramento)" }],
 		"s-939-3001-212-0": [{ type: "text", sub_type: "message", message: "Flash", message_ES: "Flash", message_PT: "Flash" }]
 	};
 };

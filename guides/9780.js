@@ -53,6 +53,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-780-3000-104-0": [{ type: "text", sub_type: "message", message: "Front Attack", message_ES: "Ataque Frontal", message_PT: "Ataque Frontal" }],
 		"s-780-3000-105-0": [{ type: "text", sub_type: "message", message: "Push Front", message_ES: "Empujón Frontal", message_PT: "Empurrão Frontal" }],
 		"s-780-3000-109-0": [{ type: "text", sub_type: "message", message: "Double Front Attack", message_ES: "Ataque Frontal Doble", message_PT: "Ataque Frontal Duplo" }],
+		"s-780-3000-110-0": [{ type: "text", sub_type: "message", message: "Wave Front", message_ES: "Ola Frente", message_PT: "Onda Frente" }],
 		"s-780-3000-111-0": [{ type: "text", sub_type: "message", message: "Spin", message_ES: "Girar", message_PT: "Giro" }],
 		"s-780-3000-112-0": [{ type: "text", sub_type: "message", message: "Target (Front | Back)", message_ES: "Objetivo (Frente | Atrás)", message_PT: "Alvo (Frente | Atrás)" }],
 		"s-780-3000-112-2": [{ type: "text", sub_type: "message", message: "Front | Back", message_ES: "Ataque Frontal | Atrás", message_PT: "Frente | Atrás" }],

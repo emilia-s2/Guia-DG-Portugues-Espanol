@@ -1,4 +1,4 @@
-﻿// Sanctum of the Fire God
+// Sanctum of the Fire God 2.0
 //
 // made by michengs / Emilia-s2 / HSDN / Vampic / NoobLevelUP
 
@@ -8,6 +8,28 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	const { player } = dispatch.require.library;
 	let print_loading = true;
 	let print_lasers = true;
+	let is_enraged = false;
+	let enrage_timer = null;
+
+	dispatch.hook("S_NPC_STATUS", 2, event => {
+		if (event.gameId === handlers.npcId) {
+			if (enrage_timer) {
+				clearTimeout(enrage_timer);
+				enrage_timer = null;
+			}
+
+			if (event.enraged) {
+				is_enraged = true;
+
+				enrage_timer = setTimeout(() => {
+					is_enraged = false;
+				}, 34450);
+
+			} else {
+				is_enraged = false;
+			}
+		}
+	});
 
 	function waves_event() {
 		handlers.event([
@@ -16,53 +38,93 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "vector", args: [553, 90, 50, 180, 500, 0, 6000] },
 			{ type: "spawn", func: "vector", args: [553, 270, 50, 180, 500, 0, 6000] },
 			{ type: "spawn", func: "circle", args: [false, 445, 0, 0, 6, 400, 0, 6000] },
-			{ type: "text", sub_type: "alert", delay: 60000, message: "Waves soon...", message_ES: "Olas Pronto", message_PT: "Ondas em Breve..." }
+			{ type: "text", sub_type: "alert", delay: 60000, message: "Waves soon...", message_ES: "Olas Pronto...", message_PT: "Ondas em Breve..." }
 		]);
 	}
 
 	dispatch.hook("S_ABNORMALITY_BEGIN", dispatch._mod.majorPatchVersion >= 107 ? 5 : 4, event => {
 		if (event.id === 90442502) {
 			if (dispatch._mod.game.me.is(event.target)) {
-				handlers.text({ sub_type: "notification", message: "Laser on you", message_ES: "Laser en Tu", message_PT: "Laser em Você" });
+				handlers.text({ sub_type: "notification", message: "Laser on you", message_ES: "Láser en Ti", message_PT: "Laser em Você" });
 			} else {
 				const member = player.playersInParty.get(event.target);
 				if (member) {
 					handlers.text({
 						sub_type: "message",
-						message: `Laser on ${member.name}`,
-						message_ES: `Laser Activado ${member.name}`,
-						message_PT: `Laser Ativado ${member.name}`
+						message: `Laser on ${member.name}`, message_ES: "Láser en ${member.name}", message_PT: "Laser em ${member.name}",
+						message_ES: "Láser en ${member.name}", message_PT: "Laser em ${member.name}"
 					});
 				}
 			}
 		}
 	});
 
-	// New Laser
+	// เลเซอร์ 2 (1.0)
 	dispatch.hook("S_ABNORMALITY_BEGIN", dispatch._mod.majorPatchVersion >= 107 ? 5 : 4, event => {
 		if (event.id === 90442503) {
 			if (dispatch._mod.game.me.is(event.target)) {
-				handlers.text({ sub_type: "notification", message: "Laser on you", message_ES: "Laser en Tu", message_PT: "Laser em Você" });
+				handlers.text({ sub_type: "notification", message: "Laser on you", message_ES: "Láser en Ti", message_PT: "Laser em Você" });
 			} else {
 				const member = player.playersInParty.get(event.target);
 				if (member) {
 					handlers.text({
 						sub_type: "message",
-						message: `Laser on ${member.name}`,
-						message_ES: `Laser Activado ${member.name}`,
-						message_PT: `Laser Ativado ${member.name}`
+						message: `Laser on ${member.name}`, message_ES: "Láser en ${member.name}", message_PT: "Laser em ${member.name}",
+						message_ES: "Láser en ${member.name}", message_PT: "Laser em ${member.name}"
 					});
 				}
 			}
 		}
 	});
 
+	let next_debuff = 0; //ดีบัฟ 2.0
+	function debuff_event(send_msg, debuff, ent) {
+		if (next_debuff === 0) {
+			next_debuff = debuff;
+		}
+
+		if (send_msg) {
+			const debuff_messages = {
+				0: { message: "Debuff", message_ES: "Debuff", message_PT: "Debuff" },
+				1: { message: "Debuff 1", message_ES: "Debuff 1", message_PT: "Debuff 1" },
+				2: { message: "Debuff 2", message_ES: "Debuff 2", message_PT: "Debuff 2" },
+				3: { message: "Debuff 3", message_ES: "Debuff 3", message_PT: "Debuff 3" }
+			};
+
+			handlers.text({
+				sub_type: "notification",
+				message: debuff_messages[next_debuff].message,
+				message_ES: debuff_messages[next_debuff].message_ES, message_PT: debuff_messages[next_debuff].message_PT,
+				speech: true
+			});
+
+			if (next_debuff !== 0) {
+				next_debuff++;
+			}
+
+			if (next_debuff > 3) {
+				next_debuff = 1;
+			}
+		}
+	}
+
+	function debuff_removed() {
+		if (next_debuff != 0) {
+			handlers.text({
+				sub_type: "notification",
+				message: `next debuff: ${next_debuff}`, message_ES: `Próximo Debuff: ${next_debuff}`, message_PT: `Próximo Debuff: ${next_debuff}`, speech: false
+			});
+		}
+
+		next_debuff = 0;
+	}
+
 	return {
-		// PHASE 2
 		"nd-448-2000": [
 			{ type: "stop_timers" },
 			{ type: "despawn_all" }
 		],
+		"h-448-2000-10": [{ type: "text", sub_type: "notification", message: "10% Last Wrath [c=#00EAFF]Kaia Save[/c]", message_ES: "10% Última Furia [c=#00EAFF]Kaia Save[/c]", message_PT: "10% Última Fúria [c=#00EAFF]Kaia Save[/c]" }],
 		"ns-448-2000": [
 			{ type: "spawn", func: "marker", args: [false, 0, -700, 100, 60000000, false, ["Throne", "Throne Direction"]] },
 			{ type: "spawn", func: "point", args: [513, 0, 800, 100, 60000000] },
@@ -71,34 +133,72 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		// Not enraged
 		"s-448-2000-1101-0": [
-			{ type: "text", sub_type: "message", message: "4 Hit Combo", message_ES: "4 Hit Combo", message_PT: "4 Hit Combo" },
+			{ type: "text", sub_type: "message", message: "4 Hit Combo", message_ES: "Combo 4 Golpes", message_PT: "Combo 4 Golpes", message_ES: "4 Hit Combo", message_PT: "4 Hit Combo" },
 			{ type: "spawn", func: "vector", args: [553, 0, 0, 195, 500, 0, 3000] },
 			{ type: "spawn", func: "vector", args: [553, 0, 0, 270, 500, 0, 3000] }
 		],
 		"s-448-2000-1103-0": [
-			{ type: "text", sub_type: "message", message: "Front (Dodge)", message_ES: "Frente (Iframe)", message_PT: "Frente (Iframe)" },
+			{ type: "text", sub_type: "message", message: "Front (Dodge)", message_ES: "Frente (Iframe)", message_PT: "Frente (Iframe)", message_ES: "Frente (Iframe)", message_PT: "Frente (Iframe)" },
 			{ type: "spawn", func: "circle", args: [false, 553, 356, 400, 8, 350, 100, 3000] }
 		],
-		"s-448-2000-1107-0": [{ type: "text", sub_type: "message", message: "4 Hit (3)", message_ES: "4 Hit (3)", message_PT: "4 Hit (3)" }],
+		"s-448-2000-1107-0": [{ type: "text", sub_type: "message", message: "4 Hit (3)", message_ES: "4 Golpes (3)", message_PT: "4 Golpes (3)", message_ES: "4 Hit (3)", message_PT: "4 Hit (3)" }],
 
-		"s-448-2000-3202-0": [ // After 4 Hit Donuts Enraged
-			{ type: "text", sub_type: "message", message: "IN - OUT ", message_ES: "SALIR - ENTRAR", message_PT: "SAIR - ENTRAR" },
-			{ type: "spawn", func: "circle", args: [false, 445, 0, 0, 12, 300, 0, 4000] },
-			{ type: "spawn", func: "circle", args: [false, 445, 0, 0, 12, 575, 0, 4000] }
+		// บอสโกรธ (โดนัท)
+		"s-448-2000-3202-0": [
+
+			{
+				type: "text",
+				sub_type: "message",
+				message: "IN > OUT", message_ES: "ENTRAR > SALIR", message_PT: "ENTRAR > SAIR", message_ES: "ENTRAR > SALIR", message_PT: "ENTRAR > SAIR",
+				check_func: () => is_enraged === true
+			},
+			{ type: "spawn", func: "circle", args: [false, 445, 0, 0, 12, 300, 0, 4000], check_func: () => is_enraged === true },
+			{ type: "spawn", func: "circle", args: [false, 445, 0, 0, 12, 575, 0, 4000], check_func: () => is_enraged === true },
+
+			//  ป้าย 4 ด้าน
+			{ type: "spawn", func: "marker", args: [false, 0, 430, 0, 4000, true, ["Safe", "Seguro"]], check_func: () => is_enraged === true },
+			{ type: "spawn", func: "marker", args: [false, 90, 430, 0, 4000, true, ["Safe", "Seguro"]], check_func: () => is_enraged === true },
+			{ type: "spawn", func: "marker", args: [false, 180, 430, 0, 4000, true, ["Safe", "Seguro"]], check_func: () => is_enraged === true },
+			{ type: "spawn", func: "marker", args: [false, 270, 430, 0, 4000, true, ["Safe", "Seguro"]], check_func: () => is_enraged === true },
+
+			{
+				type: "text",
+				sub_type: "message",
+				message: "OUT > IN", message_ES: "SALIR > ENTRAR", message_PT: "SAIR > ENTRAR", message_ES: "SALIR > ENTRAR", message_PT: "SAIR > ENTRAR",
+				check_func: () => is_enraged === false
+			},
+			{ type: "spawn", func: "circle", args: [false, 445, 0, 0, 12, 300, 0, 4000], check_func: () => is_enraged === false },
+			{ type: "spawn", func: "circle", args: [false, 445, 0, 0, 12, 575, 0, 4000], check_func: () => is_enraged === false },
+
+			// ป้าย 4 ด้าน
+			{ type: "spawn", func: "marker", args: [false, 0, 200, 0, 4000, true, ["Safe", "Seguro"]], check_func: () => is_enraged === false },
+			{ type: "spawn", func: "marker", args: [false, 90, 200, 0, 4000, true, ["Safe", "Seguro"]], check_func: () => is_enraged === false },
+			{ type: "spawn", func: "marker", args: [false, 180, 200, 0, 4000, true, ["Safe", "Seguro"]], check_func: () => is_enraged === false },
+			{ type: "spawn", func: "marker", args: [false, 270, 200, 0, 4000, true, ["Safe", "Seguro"]], check_func: () => is_enraged === false }
 		],
 
-		"s-448-2000-3102-0": [ // After 4 Hit Donuts Non-Rnraged
-			{ type: "text", sub_type: "message", message: "IN - OUT ", message_ES: "SALIR - ENTRAR", message_PT: "SAIR - ENTRAR" },
+		// บอสไม่โกรธ (โดนัทปกติ)
+		"s-448-2000-3102-0": [
+			{ type: "text", sub_type: "message", message: "OUT > IN", message_ES: "SALIR > ENTRAR", message_PT: "SAIR > ENTRAR", message_ES: "SALIR > ENTRAR", message_PT: "SAIR > ENTRAR" },
 			{ type: "spawn", func: "circle", args: [false, 445, 0, 0, 12, 300, 0, 4000] },
-			{ type: "spawn", func: "circle", args: [false, 445, 0, 0, 12, 575, 0, 4000] }
+			{ type: "spawn", func: "circle", args: [false, 445, 0, 0, 12, 575, 0, 4000] },
+
+			// ป้าย 4 ด้าน
+			{ type: "spawn", func: "marker", args: [false, 0, 430, 0, 4000, true, ["Safe", "Seguro"]] },
+			{ type: "spawn", func: "marker", args: [false, 90, 430, 0, 4000, true, ["Safe", "Seguro"]] },
+			{ type: "spawn", func: "marker", args: [false, 180, 430, 0, 4000, true, ["Safe", "Seguro"]] },
+			{ type: "spawn", func: "marker", args: [false, 270, 430, 0, 4000, true, ["Safe", "Seguro"]] }
 		],
+
+		"s-448-2000-3402-0": [{ type: "func", func: debuff_event, args: [true, 0] }], //new manaya mech
+		"s-448-2000-3401-0": "s-448-2000-3402-0",
 
 		"s-448-2000-1108-0": [
-			{ type: "text", sub_type: "message", message: "Back Throw", message_ES: "Martillo Atrás (Stun)", message_PT: "Martelo Atrás (Stun)" },
+			{ type: "text", sub_type: "message", message: "Back Throw", message_ES: "Lanzar hacia Atrás", message_PT: "Lançar para Atrás", message_ES: "Martillo Atrás (Stun)", message_PT: "Martelo Atrás (Stun)" },
 			{ type: "spawn", func: "circle", args: [false, 553, 180, 250, 12, 300, 100, 3000] }
 		],
 		"s-448-2000-1111-0": [
-			{ type: "text", sub_type: "message", message: "Back", message_ES: "Atrás", message_PT: "Atrás" },
+			{ type: "text", sub_type: "message", message: "Back", message_ES: "ATRÁS", message_PT: "ATRÁS" },
 			{ type: "spawn", func: "circle", args: [false, 553, 185, 500, 8, 490, 1500, 2000] }
 		],
 		"s-448-2000-1112-0": [
@@ -117,10 +217,10 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "circle", args: [false, 912, 0, 0, 12, 290, 100, 2000] }
 		],
 		"s-448-2000-1116-1": [
-			{ type: "text", sub_type: "message", message: "Out > In", message_ES: "SALIR - ENTRA", message_PT: "SAIR - ENTRAR" },
+			{ type: "text", sub_type: "message", message: "Out > In", message_ES: "SALIR > ENTRAR", message_PT: "SAIR > ENTRAR" },
 			{ type: "spawn", func: "circle", args: [false, 445, 0, 0, 12, 290, 100, 4000] }
 		],
-		"s-448-2000-1117-0": [{ type: "text", sub_type: "message", message: "Jump (Bait)", mmessage_ES: "Salto (Bait)", message_PT: "Pular (Bait)" }],
+		"s-448-2000-1117-0": [{ type: "text", sub_type: "message", message: "Jump (Bait)", message_ES: "Salto (Bait)", message_PT: "Pular (Bait)" }],
 		"s-448-2000-1118-0": [{ type: "text", sub_type: "message", message: "Jump (Tank)", message_ES: "Salto (Tank)", message_PT: "Pular (Tank)" }],
 		"s-448-2000-1118-1": [{ type: "spawn", func: "circle", args: [false, 553, 0, 400, 12, 300, 100, 2000] }],
 		"s-448-2000-1119-0": [
@@ -131,6 +231,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "semicircle", args: [0, 180, 912, 0, 0, 8, 360, 0, 2000] },
 			{ type: "spawn", func: "marker", args: [false, 270, 300, 100, 2000, true, null] }
 		],
+
 		"s-448-2000-1120-0": [
 			{ type: "text", sub_type: "message", message: "Right Swipe", message_ES: "Deslizar Derecha", message_PT: "Deslizar Direita" },
 			{ type: "spawn", func: "semicircle", args: [180, 360, 912, 0, 0, 20, 160, 0, 2000] },
@@ -139,6 +240,20 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "semicircle", args: [180, 360, 912, 0, 0, 8, 360, 0, 2000] },
 			{ type: "spawn", func: "marker", args: [false, 90, 300, 100, 2000, true, null] }
 		],
+		// 2.0
+		"s-448-2000-3313-0": "s-448-2000-1119-0",
+		"s-448-2000-3314-0": "s-448-2000-1120-0",
+		"s-448-2000-3303-0": "s-448-2000-1119-0",
+		"s-448-2000-3304-0": "s-448-2000-1120-0",
+
+		"s-448-2000-3301-0": [ // 2.0
+			{ type: "text", sub_type: "message", message: "Wrath (Double Swipe)", message_ES: "Furia (Golpe Doble)", message_PT: "Fúria (Golpe Duplo)"/*, message_RU: "Облепиха (кайа)"*/ },
+			{ type: "spawn", func: "vector", args: [553, 0, 0, 0, 500, 0, 6000] },
+			{ type: "spawn", func: "vector", args: [553, 0, 0, 180, 500, 0, 6000] }
+		],
+
+		"s-448-2000-3302-0": "s-448-2000-3301-0",
+
 		"s-448-2000-1121-0": [
 			{ type: "text", sub_type: "message", message: "Waves (Left)", message_ES: "Olas (IZQUIERDA)", message_PT: "Ondas (ESQUERDA)" },
 			{ type: "func", func: waves_event },
@@ -185,7 +300,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "circle", args: [false, 553, 185, 500, 8, 490, 100, 2000] }
 		],
 		"s-448-2000-1138-0": [{ type: "text", sub_type: "message", delay: 900, message: "Dodge", message_ES: "Iframe", message_PT: "Iframe" }], // Knockup (Bait)
-		"s-448-2000-1139-0": [{ type: "text", sub_type: "message", delay: 200, message: "Dodge!", message_ES: "Iframe!", message_PT: "Iframe!" }],
+		"s-448-2000-1139-0": [{ type: "text", sub_type: "notification", delay: 0, message: "Stun Boss", message_ES: "Stun Boss", message_PT: "Stun Boss" }],
 		"s-448-2000-1140-0": [
 			{ type: "text", sub_type: "message", message: "Waves (Right)", message_ES: "Olas (DERECHA)", message_PT: "Ondas (DIREITA)" },
 			{ type: "func", func: waves_event },
@@ -221,6 +336,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "spawn", func: "vector", args: [553, 0, 0, 0, 500, 0, 6000] },
 			{ type: "spawn", func: "vector", args: [553, 0, 0, 180, 500, 0, 6000] }
 		],
+
 		// Enraged
 		"s-448-2000-2101-0": "s-448-2000-1101-0",
 		"s-448-2000-2103-0": "s-448-2000-1103-0",
@@ -228,8 +344,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-448-2000-2108-0": "s-448-2000-1108-0",
 		"s-448-2000-2111-0": "s-448-2000-1111-0",
 		"s-448-2000-2112-0": [
-			{ type: "text", sub_type: "notification", delay: 1000, message: "Perfect Defense x2 (Slow)", message_ES: "Defesa Perfecta x2 (Lenta)", message_PT: "Defesa Perfeita  x2 (Lenta)" },
-			{ type: "text", sub_type: "notification", delay: 2400, message: "Block/Dodge", message_ES: "Bloquear/Iframe", message_PT: "Bloquear/Iframe" },
+			{ type: "text", sub_type: "notification", delay: 1000, message: "Perfect Defense x2 (Slow)", message_ES: "Defensa Perfecta x2 (Lenta)", message_PT: "Defesa Perfeita x2 (Lenta)" },
+			{ type: "text", sub_type: "notification", delay: 2400, message: "Block/Dodge", message_ES: "Bloqueo/Iframe", message_PT: "Bloqueio/Iframe" },
 			{ type: "spawn", func: "circle", args: [false, 553, 356, 220, 12, 210, 100, 4000] }
 		],
 		"s-448-2000-2113-0": "s-448-2000-1113-0",
@@ -248,12 +364,12 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-448-2000-2125-0": "s-448-2000-1125-0",
 		"s-448-2000-2131-0": "s-448-2000-1131-0",
 		"s-448-2000-2135-0": [
-			{ type: "text", sub_type: "notification", message: "Perfect Defense x2", message_ES: "Defesa Perfecta x2", message_PT: "Defesa Perfeita x2" },
-			{ type: "text", sub_type: "notification", delay: 800, message: "Block/Dodge", message_ES: "Block/Iframe", message_PT: "Block/Iframe" },
+			{ type: "text", sub_type: "notification", message: "Perfect Defense x2", message_ES: "Defensa Perfecta x2", message_PT: "Defesa Perfeita x2", message_ES: "Defesa Perfecta x2", message_PT: "Defesa Perfeita x2" },
+			{ type: "text", sub_type: "notification", delay: 800, message: "Block/Dodge", message_ES: "Bloqueo/Iframe", message_PT: "Bloqueio/Iframe", message_ES: "Block/Iframe", message_PT: "Block/Iframe" },
 			{ type: "spawn", func: "circle", args: [false, 553, 356, 220, 12, 210, 100, 4000] }
 		],
 		"s-448-2000-2137-0": "s-448-2000-1137-0",
-		"s-448-2000-2138-0": [{ type: "text", sub_type: "message", message: "Dodge", message_ES: "Iframe", message_PT: "Iframe" }], // Knockup (Bait)
+		"s-448-2000-2138-0": [{ type: "text", sub_type: "message", message: "Stun"/*, message_ES: "Stun", message_PT: "Stun"*/ }], // Knockup (Bait)
 		"s-448-2000-2139-0": "s-448-2000-1139-0",
 		"s-448-2000-2140-0": "s-448-2000-1140-0",
 		"s-448-2000-2141-0": "s-448-2000-1141-0",
@@ -261,13 +377,13 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		//
 		"s-448-2500-1201-0": [
 			{ type: "event", check_func: () => print_loading, args: [
-				{ type: "text", sub_type: "alert", message: "Loading lasers...", message_ES: "Cargando Lasers...", message_PT: "Carregando Lasers.." },
+				{ type: "text", sub_type: "alert", message: "Loading lasers...", message_ES: "Cargando láseres...", message_PT: "Carregando lasers...", message_ES: "Cargando Lasers...", message_PT: "Carregando Lasers..." },
 				{ type: "func", func: () => print_loading = false }
 			] }
 		],
 		"s-448-2500-1305-0": [
 			{ type: "event", check_func: () => print_lasers, args: [
-				{ type: "text", sub_type: "message", message: "Laser", message_ES: "Laser", message_PT: "Laser" },
+				{ type: "text", sub_type: "message", message: "Laser", message_ES: "Láser", message_PT: "Laser" },
 				{ type: "func", func: () => print_lasers = false },
 				{ type: "func", func: () => print_lasers = true, delay: 4000 }
 			] },
@@ -276,13 +392,13 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		// New Laser
 		"s-448-2502-1201-0": [
 			{ type: "event", check_func: () => print_loading, args: [
-				{ type: "text", sub_type: "alert", message: "Loading lasers...", message_ES: "Cargando Lasers...", message_PT: "Carregando Lasers..." },
+				{ type: "text", sub_type: "alert", message: "Loading lasers...", message_ES: "Cargando láseres...", message_PT: "Carregando lasers...", message_ES: "Cargando Lasers...", message_PT: "Carregando Lasers..." },
 				{ type: "func", func: () => print_loading = false }
 			] }
 		],
 		"s-448-2502-1305-0": [
 			{ type: "event", check_func: () => print_lasers, args: [
-				{ type: "text", sub_type: "message", message: "Laser", message_ES: "Laser", message_PT: "Laser" },
+				{ type: "text", sub_type: "message", message: "Laser", message_ES: "Láser", message_PT: "Laser" },
 				{ type: "func", func: () => print_lasers = false },
 				{ type: "func", func: () => print_lasers = true, delay: 4000 }
 			] },
@@ -291,8 +407,20 @@ module.exports = (dispatch, handlers, guide, lang) => {
 
 		"ab-448-2000-90442303": [{ type: "text", sub_type: "message", message: "Plague/Regress", message_ES: "Plague/Regress", message_PT: "Plague/Regress" }],
 		"ab-448-2000-90442304": [
-			{ type: "text", sub_type: "notification", message: "Stun", message_ES: "Stun", message_PT: "Stun!", speech: false },
-			{ type: "text", sub_type: "message", message: "Stun", message_ES: "Stun!", message_PT: "Stun!" }
-		]
+			{ type: "text", sub_type: "notification", message: "Stun", message_ES: "Stun", message_PT: "Stun", speech: false },
+			{ type: "text", sub_type: "notification", message: "Stun", message_ES: "Stun", message_PT: "Stun" }
+		],
+
+		//new 2.0
+		"ab-448-2000-4480009": [{ type: "text", sub_type: "notification", message: "[c=#D95FD2]Plague/Regress[/c]", message_ES: "[c=#D95FD2]Plague/Regress[/c]", message_PT: "[c=#D95FD2]Plague/Regress[/c]" }],
+		"ab-448-2000-4480003": [
+			{ type: "text", sub_type: "notification", message: "[c=#1EE3DF]Break Shield[/c]", message_ES: "[c=#1EE3DF]Romper Escudo[/c]", message_PT: "[c=#1EE3DF]Quebrar Escudo[/c]" }
+		],
+
+		"die": [{ type: "func", func: debuff_removed }],
+		"h-448-2000-99": [{ type: "func", func: () => next_debuff = 0 }],
+		"am-448-2000-47702900": [{ type: "func", func: debuff_event, args: [false, 2] }], // 1
+		"am-448-2000-47703000": [{ type: "func", func: debuff_event, args: [false, 3] }], // 2
+		"am-448-2000-47703100": [{ type: "func", func: debuff_event, args: [false, 1] }] // 3
 	};
 };

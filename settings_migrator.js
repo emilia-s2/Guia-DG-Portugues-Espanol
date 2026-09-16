@@ -21,6 +21,7 @@ const DefaultSettings = {
 		"chat": true,
 		"all": false,
 		"s": false,
+		"e": false,
 		"am": false,
 		"ae": false,
 		"ab": false,
@@ -29,6 +30,8 @@ const DefaultSettings = {
 		"h": false,
 		"ns": false,
 		"nd": false,
+		"rb": false,
+		"re": false,
 		"dm": false,
 		"qb": false
 	}

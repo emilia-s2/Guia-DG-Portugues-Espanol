@@ -59,6 +59,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"h-3203-1000-70": [{ type: "func", func: () => gettingserious = true }],
 		"h-3203-1000-30": [{ type: "text", sub_type: "message", message_PT: "30%", message_ES: "30%", message: "30%" }],
 
+		"s-3203-1000-101-0": [{ type: "text", class_position: "tank", sub_type: "message", message_PT: "Soco", message_ES: "Golpe", message: "Punch" }],
+		"s-3203-1000-102-0": [{ type: "text", class_position: "tank", sub_type: "message", message_PT: "Combo", message_ES: "Combo", message: "Combo" }],
 		"s-3203-1000-113-0": [
 			{ type: "text", sub_type: "message", message_PT: "Chute Circular (Stun)", message_ES: "Patada Circular (Stun)", message: "Roundhouse Kick (Stun)", class_position: "tank", check_func: () => gettingserious },
 			{ type: "text", sub_type: "message", message_PT: "Chute Circular", message_ES: "Patada Circular", message: "Roundhouse Kick", class_position: "tank", check_func: () => !gettingserious }
@@ -66,8 +68,11 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-3203-1000-111-0": [{ type: "text", class_position: "tank", sub_type: "message", message_PT: "Derrubar", message_ES: "Tumbar", message: "Knockdown" }],
 		"s-3203-1000-120-0": [{ type: "text", class_position: "tank", sub_type: "message", message_PT: "Derrubar", message_ES: "Tumbar", message: "Knockdown" }],
 		"s-3203-1000-153-0": [{ type: "text", class_position: "tank", sub_type: "message", message_PT: "2 chutes", message_ES: "2 Patada", message: "Two Kicks" }], // 153 108
+		"s-3203-1000-108-0": [{ type: "text", class_position: "tank", sub_type: "message", message_PT: "Soco no Chão", message_ES: "Golpe en el Suelo", message: "Floor Punch" }],
+		"s-3203-1000-127-0": [{ type: "text", class_position: "tank", sub_type: "message", message_PT: "Múltiplos Chutes", message_ES: "Múltiples Patadas", message: "Many Kicks" }],
 		"s-3203-1000-121-0": [{ type: "text", sub_type: "message", message_PT: "Giro + Chute(Stun)", message_ES: "Giro + Patada (Stun)", message: "Flip Kick (Stun)" }],
 		"qb-3203-1000-32031000": [{ type: "text", sub_type: "message", message_PT: "Bait (Iframe)", message_ES: "Bait (Iframe)", message: "Bait (Dodge)" }],
+		"s-3203-1000-124-0": [{ type: "text", sub_type: "message", message_PT: "Iframe", message_ES: "Iframe", message: "Dodge" }],
 		"s-3203-1000-107-0": [{ type: "func", func: back_kick_event, args: [107] }],
 
 		"s-3203-1000-110-0": [
@@ -78,6 +83,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", message_PT: "Salto (Derrubar)", message_ES: "Salto (Tumbar)", message: "Leap (Knockdown)" },
 			{ type: "spawn", func: "circle", args: [true, 553, 0, 0, 12, 240, 0, 2000] }
 		],
+		"s-3203-1000-154-0": [{ type: "text", sub_type: "message", message_PT: "Chute Saltando", message_ES: "Patada Saltando", message: "Jumping Kick" }],
 		// 310 116
 		"s-3203-1000-310-0": [
 			{ type: "text", sub_type: "message", message_PT: "Giro Atrás | Haymaker", message_ES: "Giro Atrás | Haymaker", message: "Back Flip | Haymaker" },
@@ -97,6 +103,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"qb-3203-1000-32031006": [{ type: "text", sub_type: "message", message_PT: "ESCUDO!", message_ES: "ESCUDO", message: "Shield!" }],
 
 		// Target "Ha" attacks 308 32031007 125
+		"s-3203-1000-125-0": [{ type: "text", sub_type: "message", message_PT: "Chute", message_ES: "Patada", message: "Kick" }],
 		"qb-3203-1000-32031007": [
 			{ type: "text", sub_type: "message", message_PT: "Chute (Alvo)", message_ES: "Patada (Objetivo)", message: "Kick (Target)", class_position: "tank" },
 			{ type: "text", sub_type: "message", message_PT: "Iframe (Alvo)", message_ES: "Iframe (Objetivo)", message: "Dodge (Target)", class_position: ["heal", "dps"] },

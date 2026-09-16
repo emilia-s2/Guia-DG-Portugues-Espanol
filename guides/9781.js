@@ -1,4 +1,4 @@
-﻿// Velik's Sanctuary (Normal)
+// Velik's Sanctuary (Normal)
 //
 // Made by michengs / HSDN
 
@@ -138,6 +138,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-781-1000-2115-0": "s-781-1000-1115-0",
 		"s-781-1000-2117-0": "s-781-1000-1117-0",
 		"qb-781-1000-78103": [{ type: "text", sub_type: "message", message: "Lead circle to the stone", message_PT: "Conduza o círculo até a pedra", message_ES: "Conduce el círculo hasta la pedra" }],
+		"qb-781-1000-98103": "qb-781-1000-78103",
 		"qb-781-1000-78107": [{ type: "text", sub_type: "message", message: "Lead circles to the stone", message_PT: "Conduza o círculo até a pedra", message_ES: "Conduce el círculo hasta la pedra" }],
 
 		// 2 BOSS
@@ -328,6 +329,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", message: "Bait (Target)", message_PT: "Bait (Alvo)", message_ES: "Bait (Objetivo)" },
 			{ type: "text", sub_type: "message", message: "Dodge", message_PT: "Iframe", message_ES: "Iframe", delay: 2900 }
 		],
+		"s-781-2000-1302-1": [{ type: "text", sub_type: "message", message: "Dodge", message_PT: "Iframe", message_ES: "Iframe", delay: 1600 }],
 		"s-781-2000-1502-0": [
 			{ type: "text", sub_type: "message", message: "AoE", message_PT: "AoE", message_ES: "AoE" },
 			{ type: "spawn", func: "circle", args: [true, 553, 0, 10, 8, 370, 0, 4000] },
@@ -405,6 +407,8 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-781-3000-2151-0": "s-781-3000-1151-0",
 		"s-781-3000-2152-0": "s-781-3000-1152-0",
 		"s-781-3000-2152-1": "s-781-3000-1152-1",
+		"s-781-3000-2136-0": "s-781-3000-1136-0",
+		"s-781-3000-2136-1": "s-781-3000-1136-1",
 		"s-781-3000-2138-0": "s-781-3000-1138-0"
 	};
 };

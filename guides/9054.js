@@ -47,6 +47,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-454-1000-3104-0": [{ type: "text", sub_type: "message", message_PT: "Quebrar Escudo!", message_ES: "ROMPER ESCUDO!", message: "BREAKE SHIELD!" }],
 
 		// 2 BOSS
+		"s-454-1001-1101-0": [{ type: "text", sub_type: "message", message_PT: "Ataque Frontal", message_ES: "Ataque Frontal", message: "Frontal Attack" }],
 		"s-454-1001-1104-0": [{ type: "text", sub_type: "message", message_PT: "Giro Frontal", message_ES: "Giro Frontal!", message: "Frontal Spin!" }],
 		"s-454-1001-1105-0": [{ type: "text", sub_type: "message", message_PT: "Cauda", message_ES: "Coletazo", message: "Tail" }],
 		"s-454-1001-1108-0": [{ type: "text", sub_type: "message", message_PT: "Veneno Aleatório", message_ES: "Veneno Aleatorio", message: "Random Poison" }],
@@ -56,6 +57,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-454-1001-1110-0": [{ type: "text", sub_type: "message", message_PT: "Giro (Lento)", message_ES: "Giro! (Lento)", message: "Spin! (Slow)" }],
 		"s-454-1001-1113-0": [{ type: "text", sub_type: "message", message_PT: "Poças de Limo", message_ES: "Charco de Limo", message: "Slime Puddle" }],
 		"s-454-1001-1111-0": [{ type: "text", sub_type: "message", message_PT: "Ataque de Carga Giratorio", message_ES: "Ataque de Carga Giratorio", message: "Spin Lunge Attack" }],
+		"s-454-1001-2101-0": "s-454-1001-1101-0",
 		"s-454-1001-2104-0": "s-454-1001-1104-0",
 		"s-454-1001-2105-0": "s-454-1001-1105-0",
 		"s-454-1001-2108-0": "s-454-1001-1108-0",

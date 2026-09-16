@@ -112,6 +112,10 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		
 		// 3 BOSS
 		// Fase 1
+		"nd-427-2001": [
+			{ type: "stop_timers" },
+			{ type: "despawn_all" }
+		],
 		"s-427-2001-1101-0": [{ type: "text", sub_type: "message", message_PT: "Flechas AoE (+)", message_ES: "Flechas AoE (+)", message: "Arrows AoE (+)" },
 			{ type: "spawn", func: "vector", args: [553, 120, 100, 176, 400, 0, 5000] },
 			{ type: "spawn", func: "vector", args: [553, 240, 100, -176, 400, 0, 5000] },

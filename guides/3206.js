@@ -97,7 +97,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "func", func: () => combo_start = true },
 			{ type: "func", func: () => combo_start = false, delay: 1400 }
 		],
-		"s-3206-1000-105-0": [{ type: "text", sub_type: "message", message: "Knockback Spin (Kaia)", message_ES: "Giro Atrás Empujón (KAIA)", message_ES: "Giro Atrás Empurrão (KAIA)", check_func: () => combo_start === true }],
+		"s-3206-1000-105-0": [{ type: "text", sub_type: "message", message: "Knockback Spin (Kaia)", message_ES: "Giro Atrás Empujón (KAIA)", message_PT: "Giro Atrás Empurrão (KAIA)", check_func: () => combo_start === true }],
 		"s-3206-1000-106-0": [
 			{ type: "text", sub_type: "message", message: "Knockback", message_ES: "Atrás (Empujón)", message_PT: "Atrás (Empurrão)" },
 			{ type: "spawn", func: "circle", args: [true, 553, 0, 50, 10, 350, 0, 3000] }
@@ -164,13 +164,13 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		],
 		"s-3206-1000-514-0": "s-3206-1000-513-0",
 
-		"s-3106-1000-502-0": [{ type: "text", sub_type: "message", message: "Unleash", message_ES: "Liberar",  message_PT: "Liberar" }],
-		"s-3106-1000-518-0": [{ type: "text", sub_type: "message", message: "Unleash", message_ES: "Liberar",  message_PT: "Liberar" }],
-		"s-3106-1000-519-0": [{ type: "text", sub_type: "message", message: "Unleash", message_ES: "Liberar",  message_PT: "Liberar" }],
-		"s-3106-1000-306-0": [{ type: "text", sub_type: "message", message: "Spin", message_ES: "Giro",  message_PT: "Giro" }],
-		"s-3106-1000-309-0": [{ type: "text", sub_type: "message", message: "Front", message_ES: "Frente",  message_PT: "Frente" }],
-		"s-3106-1000-311-0": [{ type: "text", sub_type: "message", message: "Evade!", message_ES: "Huir!", message_PT: "Fugir!", delay: 150 }],
-		"s-3106-1000-321-0": [{ type: "text", sub_type: "message", message: "AoE", message_ES: "AoE",  message_PT: "AoE" }],
-		"s-3106-1000-324-0": [{ type: "text", sub_type: "message", message: "AoE", message_ES: "AoE",  message_PT: "AoE" }]
+		"s-3206-1000-502-0": [{ type: "text", sub_type: "message", message: "Unleash", message_ES: "Liberar",  message_PT: "Liberar" }],
+		"s-3206-1000-518-0": [{ type: "text", sub_type: "message", message: "Unleash", message_ES: "Liberar",  message_PT: "Liberar" }],
+		"s-3206-1000-519-0": [{ type: "text", sub_type: "message", message: "Unleash", message_ES: "Liberar",  message_PT: "Liberar" }],
+		"s-3206-1000-306-0": [{ type: "text", sub_type: "message", message: "Spin", message_ES: "Giro",  message_PT: "Giro" }],
+		"s-3206-1000-309-0": [{ type: "text", sub_type: "message", message: "Front", message_ES: "Frente",  message_PT: "Frente" }],
+		"s-3206-1000-311-0": [{ type: "text", sub_type: "message", message: "Evade!", message_ES: "Iframe!", message_PT: "Iframe!", delay: 150 }],
+		"s-3206-1000-321-0": [{ type: "text", sub_type: "message", message: "AoE", message_ES: "AoE",  message_PT: "AoE" }],
+		"s-3206-1000-324-0": [{ type: "text", sub_type: "message", message: "AoE", message_ES: "AoE",  message_PT: "AoE" }]
 	};
 };

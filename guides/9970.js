@@ -71,6 +71,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			{ type: "text", sub_type: "message", message_PT: "50%", message_ES: "50%", message: "50%"},
 		],
 		"h-970-3000-30": [{ type: "text", sub_type: "message", message_PT: "30%", message_ES: "30%", message: "30%"}],
+		"am-970-3000-97000038": [{ type: "func", func: () => thirdboss_skull_debuff = false }],
 		"am-970-3000-97000052": [{ type: "func", func: () => thirdboss_skull_debuff = true }],
 		"ar-970-3000-97000052": [{ type: "func", func: () => thirdboss_skull_debuff = false }],
 		"s-970-3000-1102-0": [

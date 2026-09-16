@@ -13,10 +13,10 @@ module.exports = {
 		"en": "Guardian Balder's Refuge"
 	},
 	2800: {
-		"pt": "Dreadspire Valkyteq",//VALKYTEQ
+		"pt": "Dreadspire Valkyteq", //VALKYTEQ
 		"es": "Dreadspire Valkyteq",
 		"en": "Dreadspire Valkyteq"
-	},	
+	},
 	2802: {
 		"pt": "Aesir's End (Difícil)",
 		"es": "Aesir's End (Difícil)",
@@ -26,6 +26,11 @@ module.exports = {
 		"pt": "Aesir's End (Normal)",
 		"es": "Aesir's End (Normal)",
 		"en": "Aesir's End (Normal)"
+	},
+	2804: {
+		"pt": "Phantom Hideout",
+		"es": "Phantom Hideout",
+		"en": "Phantom Hideout"
 	},
 	2809: {
 		"pt": "The Observatory",
@@ -41,6 +46,16 @@ module.exports = {
 		"pt": "Beach River Outpost",
 		"es": "Beach River Outpost",
 		"en": "SBeach River Outpost"
+	},
+	2814: {
+		"pt": "Abyssal Prison (Arborea Reborn)",
+		"es": "Abyssal Prison (Arborea Reborn)",
+		"en": "Abyssal Prison (Arborea Reborn)"
+	},
+	2816: {
+		"pt": "Kelsaik Hall (Arborea Reborn)",
+		"es": "Kelsaik Hall (Arborea Reborn)",
+		"en": "Kelsaik Hall (Arborea Reborn)"
 	},
 	3020: {
 		"pt": "Sea of Honor",
@@ -87,6 +102,11 @@ module.exports = {
 		"es": "Bahaar's Sanctum (Entreño)",
 		"en": "Bahaar's Sanctum (Training)"
 	},
+	3047: {
+		"pt": "Hall of the Argon Queen (Difícil)",
+		"es": "Hall of the Argon Queen (Difícil)",
+		"en": "Hall of the Argon Queen (Hard)"
+	},
 	3101: {
 		"pt": "Gossamer Vault Normal",
 		"es": "Gossamer Vault Normal",
@@ -122,6 +142,11 @@ module.exports = {
 		"es": "Corrupted RK-9 Kennel",
 		"en": "Corrupted RK-9 Kennel"
 	},
+	3109: {
+		"pt": "Ice Throne",
+		"es": "Ice Throne",
+		"en": "Ice Throne"
+	},
 	3111: {
 		"pt": "The Veil (Darkan)",
 		"es": "The Veil (Darkan)",
@@ -136,6 +161,11 @@ module.exports = {
 		"pt": "Corrupted Skynest (Difícil)",
 		"es": "Corrupted Skynest (Difícil)",
 		"en": "Corrupted Skynest (Hard)"
+	},
+	3147: {
+		"pt": "Hall of the Argon Queen (Difícil) (Asura)",
+		"es": "Hall of the Argon Queen (Difícil) (Asura)",
+		"en": "Hall of the Argon Queen (Hard) (Asura)"
 	},
 	3201: {
 		"pt": "Gossamer Vault (Difícil)",
@@ -166,7 +196,17 @@ module.exports = {
 		"pt": "Crimson Killing Grounds",
 		"es": "Crimson Killing Grounds",
 		"en": "Crimson Killing Grounds"
-	},	
+	},
+	3209: {
+		"pt": "Chaos Ice Throne",
+		"es": "Chaos Ice Throne",
+		"en": "Chaos Ice Throne"
+	},
+	3920: {
+		"pt": "Cursed Antaroth's Abyss (Asura)",
+		"es": "Cursed Antaroth's Abyss (Asura)",
+		"en": "Cursed Antaroth's Abyss (Asura)"
+	},
 	9027: {
 		"pt": "The Plexus - Manaya's Core(Difícil)",
 		"es": "The Plexus - Manaya's Core(Difícil)",
@@ -191,7 +231,7 @@ module.exports = {
 		"pt": "Rift's Edge (Difícil) (10-Pessoas)",
 		"es": "Rift's Edge (Difícil) (10-Personas)",
 		"en": "Rift's Edge (Hard) (10-Person)"
-	},	
+	},
 	9053: {
 		"pt": "Kezzel's Gorge",
 		"es": "Kezzel's Gorge",
@@ -216,7 +256,7 @@ module.exports = {
 		"pt": "Demon's Wheel",
 		"es": "Demon's Wheel",
 		"en": "Demon's Wheel"
-	},	
+	},
 	9067: {
 		"pt": "Demokron Factory (Difícil)",
 		"es": "Demokron Factory (Difícil)",
@@ -231,6 +271,16 @@ module.exports = {
 		"pt": "Manglemire",
 		"es": "Manglemire",
 		"en": "Manglemire"
+	},
+	9156: {
+		"pt": "Timescape (Difícil) (Classic+)",
+		"es": "Timescape (Difícil) (Classic+)",
+		"en": "Timescape (Hard) (Classic+)"
+	},
+	9168: {
+		"pt": "Shadow Sanguinary (Difícil) (Classic+)",
+		"es": "Shadow Sanguinary (Difícil) (Classic+)",
+		"en": "Shadow Sanguinary (Hard) (Classic+)"
 	},
 	9710: {
 		"pt": "Broken Prison",
@@ -252,15 +302,15 @@ module.exports = {
 		"es": "RK-9 Kennel Normal",
 		"en": "RK-9 Kennel Normal"
 	},
-	9750: {
-		"pt": "Rift's Edge Normal (10-Pessoas)",
-		"es": "Rift's Edge Normal (10-Personas)",
-		"en": "Rift's Edge Normal (10-Person)"
-	},	
 	9739: {
 		"pt": "Red Refuge Normal",
 		"es": "Red Refuge Normal",
 		"en": "Red Refuge Normal"
+	},
+	9750: {
+		"pt": "Rift's Edge Normal (10-Pessoas)",
+		"es": "Rift's Edge Normal (10-Personas)",
+		"en": "Rift's Edge Normal (10-Person)"
 	},
 	9754: {
 		"pt": "Bathysmal Rise Normal",
@@ -271,7 +321,7 @@ module.exports = {
 		"pt": "Timescape Normal",
 		"es": "Timescape Normal",
 		"en": "Timescape Normal"
-	},	
+	},
 	9757: {
 		"pt": "Akeron's Inferno Normal",
 		"es": "Akeron's Inferno Normal",
@@ -286,7 +336,7 @@ module.exports = {
 		"pt": "Shadow Sanguinary Normal",
 		"es": "Shadow Sanguinary Normal",
 		"en": "Shadow Sanguinary Normal"
-	},	
+	},
 	9770: {
 		"pt": "Ruinous Manor Normal",
 		"es": "Ruinous Manor Normal",
@@ -317,6 +367,21 @@ module.exports = {
 		"es": "Thaumetal Refinery Normal",
 		"en": "Thaumetal Refinery Normal"
 	},
+	9850: {
+		"pt": "Withering Dreadspire",
+		"es": "Withering Dreadspire",
+		"en": "Withering Dreadspire"
+	},
+	9856: {
+		"pt": "Timescape (Classic+)",
+		"es": "Timescape (Classic+)",
+		"en": "Timescape (Classic+)"
+	},
+	9868: {
+		"pt": "Shadow Sanguinary (Classic+)",
+		"es": "Shadow Sanguinary (Classic+)",
+		"en": "Shadow Sanguinary (Classic+)"
+	},
 	9916: {
 		"pt": "Sky Cruiser Endeavor (Difícil)",
 		"es": "Sky Cruiser Endeavor (Difícil)",
@@ -336,7 +401,7 @@ module.exports = {
 		"pt": "Red Refuge (Difícil)",
 		"es": "Red Refuge (Difícil)",
 		"en": "Red Refuge (Hard)"
-	},	
+	},
 	9970: {
 		"pt": "Ruinous Manor (Difícil)",
 		"es": "Ruinous Manor (Difícil)",
@@ -363,9 +428,9 @@ module.exports = {
 		"en": "Dark Reach Citadel (Hard)"
 	},
 	9985: {
-		"pt": "Sanctuary's Ruins (Difícil)",//Agaia
-		"es": "Sanctuary's Ruins (Difícil)",//Agaia
-		"en": "Sanctuary's Ruins (Hard)"//Agaia
+		"pt": "Sanctuary's Ruins (Difícil)", //Agaia
+		"es": "Sanctuary's Ruins (Difícil)", //Agaia
+		"en": "Sanctuary's Ruins (Hard)" //Agaia
 	},
 	9994: {
 		"pt": "Thaumetal Refinery (Difícil)",
