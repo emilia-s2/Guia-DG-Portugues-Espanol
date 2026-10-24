@@ -4,22 +4,32 @@
 
 module.exports = (dispatch, handlers, guide, lang) => {
 
-	const { player } = dispatch.require.library;
+	const { player, effect } = dispatch.require.library;
 
 	let combo_start = false;
 
-	let stack = 0;
-	let stackTimer = null;
+	// Perto/longe depende do efeito atual do próprio personagem.
+	function personal_position_event(near) {
+		if (dispatch._mod.game.me.alive === false) return;
 
-	function stack_add_event() {
-		stack++;
-		dispatch.clearTimeout(stackTimer);
-		stackTimer = dispatch.setTimeout(() => stack = 0, 86000);
-	}
+		if (!effect || typeof effect.hasAbnormality !== "function") {
+			handlers.text({ sub_type: "message", message: "Check your Cold Surge effect", message_ES: "Comprueba tu efecto de Frío", message_PT: "Confira seu debuff de Frio", speech: false });
+			return;
+		}
 
-	function stack_remove_event() {
-		dispatch.clearTimeout(stackTimer);
-		stack = 0;
+		if (effect.hasAbnormality(32060008)) {
+			handlers.text({ sub_type: "message", message: "Frozen - unable to move", message_ES: "Congelado - no puedes moverte", message_PT: "Congelado - não é possível se mover", speech: false });
+			return;
+		}
+
+		const move_close = near !== effect.hasAbnormality(32060007);
+		handlers.text({
+			sub_type: "notification",
+			message: move_close ? "Move CLOSE to the boss" : "Move AWAY from the boss",
+			message_ES: move_close ? "ACÉRCATE al boss" : "ALÉJATE del boss",
+			message_PT: move_close ? "APROXIME-SE do boss" : "AFASTE-SE do boss",
+			speech: false
+		});
 	}
 
 	dispatch.hook("S_USER_EFFECT", 1, event => {
@@ -69,27 +79,18 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"nd-3206-1000": [
 			{ type: "stop_timers" },
 			{ type: "despawn_all" },
-			{ type: "marker_remove_all" },
-			{ type: "func", func: stack_remove_event }
+			{ type: "marker_remove_all" }
 		],
 		"ns-3206-1000": [
-			{ type: "spawn", func: "marker", args: [false, 3, -700, 100, 60000000, false, ["Giant", "Giant Direction"]] },
-			{ type: "func", func: stack_remove_event }
+			{ type: "spawn", func: "marker", args: [false, 3, -700, 100, 60000000, false, ["Giant", "Giant Direction"]] }
 		],
 
-		"die": [{ type: "func", func: stack_remove_event }],
-
-		"am-3206-1000-32060007": [{ type: "func", func: stack_add_event }],
-		"ar-3206-1000-32060007": [{ type: "func", func: stack_remove_event }],
-
 		"qb-3206-1000-32061001": [
-			{ type: "text", sub_type: "message", message: "Close - IN", message_ES: "Cerca - Dentro", message_PT: "Perto - Dentro", check_func: () => stack === 0 },
-			{ type: "text", sub_type: "message", message: "Close - OUT", message_ES: "Cerca Fuera",  message_PT: "Perto - Fora", check_func: () => stack !== 0 },
+			{ type: "func", func: personal_position_event, args: [true] },
 			{ type: "text", sub_type: "alert", message: "Soon to give stun...", message_ES: "Dar Stun Pronto...", message_PT: "Dar Stun Embreve...", delay: 2000 }
 		],
 		"qb-3206-1000-32061002": [
-			{ type: "text", sub_type: "message", message: "Furthest - OUT", message_ES: "Lejos - Fuera", message_PT: "Longe - Fora", check_func: () => stack === 0 },
-			{ type: "text", sub_type: "message", message: "Furthest - IN", message_ES: "Lejos - Dentro", message_PT: "Longe - Dentro", check_func: () => stack !== 0 },
+			{ type: "func", func: personal_position_event, args: [false] },
 			{ type: "text", sub_type: "alert", message: "Soon to give stun...", message_ES: "Dar Stun Pronto...", message_PT: "Dar Stun em Breve...", delay: 2000 }
 		],
 
@@ -127,28 +128,28 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-3206-1000-215-0": [{ type: "text", sub_type: "message", message: "Somersault", message_ES: "Salto Mortal",  message_PT: "Salto Mortal" }],
 		"s-3206-1000-507-0": [{ type: "text", sub_type: "message", message: "Leash | Jump (Knockdown)", message_ES: "Jalar | Salto (Tumbar)",  message_PT: "Puxar | Salto (Derrubar)" }],
 		"s-3206-1000-508-0": [
-			{ type: "text", sub_type: "message", message: "Donuts (Out > In)", message_ES: "Salir > Entrar",  message_PT: "Sair > Entrar" },
+			{ type: "text", sub_type: "message", message: "Donuts (Out > In)", message_ES: "Salir > Entrar",  message_PT: "SAIR > Entrar" },
 			{ type: "spawn", func: "circle", args: [false, 445, 0, 0, 18, 180, 1500, 5000] },
 			{ type: "spawn", func: "circle", args: [false, 445, 0, 0, 12, 360, 1500, 5000] },
 			{ type: "spawn", func: "circle", args: [false, 445, 0, 0, 10, 550, 1500, 5000] },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 860, 1500, 5000] }
 		],
 		"s-3206-1000-509-0": [
-			{ type: "text", sub_type: "message", message: "Donuts (In > Out)", message_ES: "Entrar > Salir",  message_PT: "Entrar > Sair" },
+			{ type: "text", sub_type: "message", message: "Donuts (In > Out)", message_ES: "Entrar > Salir",  message_PT: "ENTRAR > Sair" },
 			{ type: "spawn", func: "circle", args: [false, 445, 0, 0, 18, 180, 1500, 5000] },
 			{ type: "spawn", func: "circle", args: [false, 445, 0, 0, 12, 360, 1500, 5000] },
 			{ type: "spawn", func: "circle", args: [false, 445, 0, 0, 10, 550, 1500, 5000] },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 860, 1500, 5000] }
 		],
 		"s-3206-1000-516-0": [
-			{ type: "text", sub_type: "message", message: "Donuts Fast (Out > In)", message_ES: "Salir > Entrar (Rapido)",  message_PT: "Sair > Entrar (Rápido)" },
+			{ type: "text", sub_type: "message", message: "Donuts Fast (Out > In)", message_ES: "Salir > Entrar (Rapido)",  message_PT: "SAIR > Entrar (Rápido)" },
 			{ type: "spawn", func: "circle", args: [false, 445, 0, 0, 18, 180, 1500, 5000] },
 			{ type: "spawn", func: "circle", args: [false, 445, 0, 0, 12, 360, 1500, 5000] },
 			{ type: "spawn", func: "circle", args: [false, 445, 0, 0, 10, 550, 1500, 5000] },
 			{ type: "spawn", func: "circle", args: [false, 553, 0, 0, 8, 860, 1500, 5000] }
 		],
 		"s-3206-1000-517-0": [
-			{ type: "text", sub_type: "message", message: "Donuts Fast (In > Out)", message_ES: "Entrar > Salir (Rapido)",  message_PT: "Entrar > Sair (Rápido)" },
+			{ type: "text", sub_type: "message", message: "Donuts Fast (In > Out)", message_ES: "Entrar > Salir (Rapido)",  message_PT: "ENTRAR > Sair (Rápido)" },
 			{ type: "spawn", func: "circle", args: [false, 445, 0, 0, 18, 180, 1500, 5000] },
 			{ type: "spawn", func: "circle", args: [false, 445, 0, 0, 12, 360, 1500, 5000] },
 			{ type: "spawn", func: "circle", args: [false, 445, 0, 0, 10, 550, 1500, 5000] },
