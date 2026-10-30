@@ -12,6 +12,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	const cold_targets = 2;
 	const party_effects = new Map();
 	const party_alive = new Map();
+	let cold_observed = false;
 
 	function party_members() {
 		const members = new Map([[String(player.gameId), { name: player.name, alive: dispatch._mod.game.me.alive }]]);
@@ -35,6 +36,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		else if (Number.isFinite(duration) && duration <= 86400000) until = Date.now() + duration;
 		if (!party_effects.has(id)) party_effects.set(id, new Map());
 		party_effects.get(id).set(event.id, until);
+		if (event.id === 32060007 && until !== null && until > Date.now()) cold_observed = true;
 	}
 
 	function effect_active(target, id) {
@@ -52,6 +54,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	function reset_cold() {
 		party_effects.clear();
 		party_alive.clear();
+		cold_observed = false;
 	}
 
 	function personal_position_event(near) {
@@ -65,7 +68,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 			text = ["FROZEN", "CONGELADO", "CONGELADO"];
 		} else if (cold === null || frozen === null || cold_snap === null) {
 			text = ["CHECK COLD SURGE", "REVISA EL FRÍO", "CONFIRA O FRIO"];
-		} else if (!cold && (player.unsetPlayersInParty || []).length) {
+		} else if (!cold_observed || (!cold && (player.unsetPlayersInParty || []).length)) {
 			text = near ? ["NEAR DEBUFF", "DEBUFF CERCA", "DEBUFF PERTO"] : ["FAR DEBUFF", "DEBUFF LEJOS", "DEBUFF LONGE"];
 		} else {
 			// Propõe as vagas em ordem estável; o jogo resolve pela posição real.
@@ -77,10 +80,9 @@ module.exports = (dispatch, handlers, guide, lang) => {
 				text = ["NO SAFE ROTATION", "SIN ROTACIÓN", "SEM RODÍZIO"];
 			} else {
 				const receive = !cold && candidates.slice(0, cold_targets).includes(String(player.gameId));
-				const close = receive ? near : !near;
 				text = receive
-					? (close ? ["NEAR - RECEIVE", "CERCA - RECIBIR", "PERTO - RECEBER"] : ["FAR - RECEIVE", "LEJOS - RECIBIR", "LONGE - RECEBER"])
-					: (close ? ["NEAR - AVOID", "CERCA - EVITAR", "PERTO - EVITAR"] : ["FAR - AVOID", "LEJOS - EVITAR", "LONGE - EVITAR"]);
+					? (near ? ["(Near Debuff) - RECEIVE", "(Debuff Cerca) - RECIBIR", "(Debuff Perto) - RECEBER"] : ["(Far Debuff) - RECEIVE", "(Debuff Lejos) - RECIBIR", "(Debuff Longe) - RECEBER"])
+					: (near ? ["(Near Debuff) - AVOID", "(Debuff Cerca) - EVITAR", "(Debuff Perto) - EVITAR"] : ["(Far Debuff) - AVOID", "(Debuff Lejos) - EVITAR", "(Debuff Longe) - EVITAR"]);
 			}
 		}
 		handlers.text({ sub_type: "notification", message: text[0], message_ES: text[1], message_PT: text[2], speech: false });
