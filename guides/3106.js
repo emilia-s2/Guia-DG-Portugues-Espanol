@@ -8,28 +8,82 @@ module.exports = (dispatch, handlers, guide, lang) => {
 
 	let combo_start = false;
 
-	// Perto/longe depende do efeito atual do próprio personagem.
+	// Frio é distribuído por posição relativa, não por uma distância fixa.
+	const cold_targets = 1;
+	const party_effects = new Map();
+	const party_alive = new Map();
+
+	function party_members() {
+		const members = new Map([[String(player.gameId), { name: player.name, alive: dispatch._mod.game.me.alive }]]);
+		for (const [id, member] of player.playersInParty) {
+			if (members.size >= 5) break;
+			members.set(String(id), member);
+		}
+		for (const id of party_effects.keys()) if (!members.has(id)) party_effects.delete(id);
+		for (const id of party_alive.keys()) if (!members.has(id)) party_alive.delete(id);
+		return members;
+	}
+
+	function update_party_effect(event, ended = false) {
+		if (event.id !== 32060007 && event.id !== 32060008 && event.id !== 32060016) return;
+		const id = String(event.target);
+		if (!party_members().has(id)) return;
+
+		const duration = Number(event.duration);
+		let until = null;
+		if (ended || (Number.isFinite(duration) && duration <= 0)) until = 0;
+		else if (Number.isFinite(duration) && duration <= 86400000) until = Date.now() + duration;
+		if (!party_effects.has(id)) party_effects.set(id, new Map());
+		party_effects.get(id).set(event.id, until);
+	}
+
+	function effect_active(target, id) {
+		const effects = party_effects.get(String(target));
+		if (effects && effects.has(id)) {
+			const until = effects.get(id);
+			return until === null ? null : until > Date.now();
+		}
+		// Ausência de Begin de outro membro não comprova ausência de debuff.
+		if (String(target) !== String(player.gameId)) return null;
+		if (!effect || typeof effect.hasAbnormality !== "function") return null;
+		return effect.hasAbnormality(id) === false ? false : null;
+	}
+
+	function reset_cold() {
+		party_effects.clear();
+		party_alive.clear();
+	}
+
 	function personal_position_event(near) {
 		if (dispatch._mod.game.me.alive === false) return;
 
-		if (!effect || typeof effect.hasAbnormality !== "function") {
-			handlers.text({ sub_type: "message", message: "Check your Cold Surge effect", message_ES: "Comprueba tu efecto de Frío", message_PT: "Confira seu debuff de Frio", speech: false });
-			return;
+		const cold = effect_active(player.gameId, 32060007);
+		const frozen = effect_active(player.gameId, 32060008);
+		const cold_snap = effect_active(player.gameId, 32060016);
+		let text;
+		if (frozen === true || cold_snap === true) {
+			text = ["FROZEN", "CONGELADO", "CONGELADO"];
+		} else if (cold === null || frozen === null || cold_snap === null) {
+			text = ["CHECK COLD SURGE", "REVISA EL FRÍO", "CONFIRA O FRIO"];
+		} else if (!cold && (player.unsetPlayersInParty || []).length) {
+			text = near ? ["NEAR DEBUFF", "DEBUFF CERCA", "DEBUFF PERTO"] : ["FAR DEBUFF", "DEBUFF LEJOS", "DEBUFF LONGE"];
+		} else {
+			// Propõe as vagas em ordem estável; o jogo resolve pela posição real.
+			const candidates = Array.from(party_members()).filter(([id, member]) => {
+				if (party_alive.get(id) === false || (!party_alive.has(id) && member.alive === false)) return false;
+				return [32060007, 32060008, 32060016].every(effect_id => effect_active(id, effect_id) !== true);
+			}).map(([id]) => id).sort();
+			if (candidates.length < cold_targets) {
+				text = ["NO SAFE ROTATION", "SIN ROTACIÓN", "SEM RODÍZIO"];
+			} else {
+				const receive = !cold && candidates.slice(0, cold_targets).includes(String(player.gameId));
+				const close = receive ? near : !near;
+				text = receive
+					? (close ? ["NEAR - RECEIVE", "CERCA - RECIBIR", "PERTO - RECEBER"] : ["FAR - RECEIVE", "LEJOS - RECIBIR", "LONGE - RECEBER"])
+					: (close ? ["NEAR - AVOID", "CERCA - EVITAR", "PERTO - EVITAR"] : ["FAR - AVOID", "LEJOS - EVITAR", "LONGE - EVITAR"]);
+			}
 		}
-
-		if (effect.hasAbnormality(32060008)) {
-			handlers.text({ sub_type: "message", message: "Frozen - unable to move", message_ES: "Congelado - no puedes moverte", message_PT: "Congelado - não é possível se mover", speech: false });
-			return;
-		}
-
-		const move_close = near !== effect.hasAbnormality(32060007);
-		handlers.text({
-			sub_type: "message",
-			message: move_close ? "Move CLOSE to the boss" : "Move AWAY from the boss",
-			message_ES: move_close ? "ACÉRCATE al boss" : "ALÉJATE del boss",
-			message_PT: move_close ? "APROXIME-SE do boss" : "AFASTE-SE do boss",
-			speech: false
-		});
+		handlers.text({ sub_type: "message", message: text[0], message_ES: text[1], message_PT: text[2], speech: false });
 	}
 
 	dispatch.hook("S_USER_EFFECT", 1, event => {
@@ -56,6 +110,7 @@ module.exports = (dispatch, handlers, guide, lang) => {
 	});
 
 	dispatch.hook("S_ABNORMALITY_BEGIN", dispatch._mod.majorPatchVersion >= 107 ? 5 : 4, event => {
+		update_party_effect(event);
 		if (event.id === 32060024) {
 			if (dispatch._mod.game.me.is(event.target)) {
 				handlers.text({ sub_type: "notification", message: "Eye on you", message_ES: "Ojo en Ti", message_PT: "De Olho em Você" });
@@ -75,15 +130,30 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		}
 	});
 
+	dispatch.hook("S_ABNORMALITY_REFRESH", 2, event => update_party_effect(event));
+	dispatch.hook("S_ABNORMALITY_END", 1, event => update_party_effect(event, true));
+
+	dispatch.hook("S_CREATURE_LIFE", 3, event => {
+		const id = String(event.gameId);
+		if (!party_members().has(id)) return;
+		party_alive.set(id, event.alive);
+		if (!event.alive) party_effects.delete(id);
+	});
+
 	return {
+		"die": [{ type: "func", func: () => party_effects.delete(String(player.gameId)) }],
 		"nd-3106-1000": [
+			{ type: "func", func: reset_cold },
 			{ type: "stop_timers" },
 			{ type: "despawn_all" },
 			{ type: "marker_remove_all" }
 		],
 		"ns-3106-1000": [
+			{ type: "func", func: reset_cold },
 			{ type: "spawn", func: "marker", args: [false, 3, -700, 100, 60000000, false, ["Giant", "Giant Direction"]] }
 		],
+
+		"h-3106-1000-100": [{ type: "func", func: reset_cold }],
 
 		"qb-3106-1000-32061001": [
 			{ type: "func", func: personal_position_event, args: [true] },
