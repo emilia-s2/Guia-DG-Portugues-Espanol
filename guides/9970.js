@@ -99,12 +99,19 @@ module.exports = (dispatch, handlers, guide, lang) => {
 		"s-970-3000-1106-0": [{ type: "text", sub_type: "message", message_PT: "Deslize Frontal", message_ES: "Barrido Frontal", message: "Front Swipe" }],
 		"s-970-3000-2106-0": "s-970-3000-1106-0",
 		"s-970-3000-1110-0": [
-			{ type: "text", sub_type: "message", message_PT: "Cauda AoE (Frente Seguro)", message_ES: "Cola AoE (Frente Seguro)", message: "Tail AoE (Safe front)" },
+			{ type: "text", sub_type: "message", message_PT: "Cauda AoE (Frente Seguro)1", message_ES: "Cola AoE (Frente Seguro)", message: "Tail AoE (Safe front)" },
+			{ type: "text", sub_type: "message", message_PT: "Iframe", message_ES: "Iframe", message: "Dodge", delay: 1500 },
 			{ type: "spawn", func: "semicircle", args: [26, 340, 553, 0, 0, 7, 630, 0, 3000] },
 			{ type: "spawn", func: "vector", args: [553, 4, 40, 338, 600, 0, 3000] },
 			{ type: "spawn", func: "vector", args: [553, -4, 40, -338, 600, 0, 3000] }
 		],
-		"s-970-3000-2110-0": "s-970-3000-1110-0",
+		"s-970-3000-2110-0": [
+			{ type: "text", sub_type: "message", message_PT: "Cauda AoE (Frente Seguro)2", message_ES: "Cola AoE (Frente Seguro)", message: "Tail AoE (Safe front)" },
+			{ type: "text", sub_type: "message", message_PT: "Iframe", message_ES: "Iframe", message: "Dodge", delay: 700 },
+			{ type: "spawn", func: "semicircle", args: [26, 340, 553, 0, 0, 7, 630, 0, 3000] },
+			{ type: "spawn", func: "vector", args: [553, 4, 40, 338, 600, 0, 3000] },
+			{ type: "spawn", func: "vector", args: [553, -4, 40, -338, 600, 0, 3000] }
+		],
 		"s-970-3000-1304-0": [{ type: "text", sub_type: "message", message_PT: "Prepare-se! (Dentro e Fora)", message_ES: "Prepararse! (Dentro y Fuera)", message: "Get Ready!" }],
 		"s-970-3000-1303-0": "s-970-3000-1304-0",
 		"s-970-3000-1113-0": [
