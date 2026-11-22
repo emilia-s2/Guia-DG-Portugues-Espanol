@@ -102,6 +102,11 @@ module.exports = {
 		"es": "Bahaar's Sanctum (Entreño)",
 		"en": "Bahaar's Sanctum (Training)"
 	},
+	3041: {
+		"pt": "Damned Citadel",
+		"es": "Damned Citadel",
+		"en": "Damned Citadel"
+	},
 	3047: {
 		"pt": "Hall of the Argon Queen (Difícil)",
 		"es": "Hall of the Argon Queen (Difícil)",
@@ -201,6 +206,11 @@ module.exports = {
 		"pt": "Chaos Ice Throne",
 		"es": "Chaos Ice Throne",
 		"en": "Chaos Ice Throne"
+	},
+	3400: {
+		"pt": "Catalepticon (Facil)",
+		"es": "Catalepticon (Facil)",
+		"en": "Catalepticon (Facil)"
 	},
 	3920: {
 		"pt": "Cursed Antaroth's Abyss (Asura)",
